@@ -1,0 +1,41 @@
+.body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:#F1F8F6;
+}
+
+.h1-quemsomos{
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+}
+
+
+.div-quemsomos{
+    text-align: center;
+   /* background-color: #6E8898; 
+    border: 1px solid #2E5266; */
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 25px;
+
+}
+div p {
+    text-align: justify;
+}
+
+div img{
+    width: 60%;
+    border-radius: 10px;
+
+}
+
+div h2{
+    color: #2E5266;
+    font-weight: bolder;
+}
+
+div h3{
+    color: #6E8898;
+}
