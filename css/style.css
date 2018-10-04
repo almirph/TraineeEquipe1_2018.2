@@ -1,27 +1,26 @@
-.categoria{
+.nav-link{
+	display: block;
+}
+.pesquisa{
+	padding: 0;
+	line-height: 30px;
 	
-	padding: 6px 8px 6px 12px;
-	margin-bottom: 7.5%;
-	float:left;
-	padding-right: 1px;
-	padding-top: 1px;
+
+	
 
 }
-.categoria a{
-	margin-left: -12px;	
-	border: 1px solid red;
+.categoria{
+	float: left;
 }
-.categoria :hover{
-	color:black;
+.container{
+	margin-top: 7.5%;
 }
-.coluna-1 h1{
-  margin-left: 200px;
-  font-size: 25px;
-  
+.card {
+	
+	margin-left: 5%;
+	margin-bottom: 15px;
+	margin-top: 15px;
 }
-.img-aux {
-  
- 
-  height: 100px;
-  width: 100px;
+.coluna-2,.coluna-3{
+	padding-left: 30px;
 }
