@@ -133,11 +133,7 @@ form{
 /*********************************************************/
 
 
-.container-fluid{
 
-	background-color:#DC2246;
-
-}
 footer{
 
 	margin-top: 50px;
@@ -145,6 +141,10 @@ footer{
 	background-color:#DC2246;
 	/*color: #F1F8F6;*/
 	color: #FFFAFB;
+	border-style: solid;
+	border-bottom: none;
+	border-width: 2px;
+	border-color: black;
 }
 
 .container-fluid img
@@ -207,8 +207,12 @@ padding-right: 200px;
 .col-lg-3 iframe{
 
 	width: 400px;
-	height: 400px;
+	height: 398px;
 	margin-top: 14px;
+	border-style: solid;
+	border-bottom: solid;
+	border-width: 1px;
+	border-color: black;
 
 }
 
@@ -235,7 +239,10 @@ padding-right: 200px;
 }
 .footer-copyright
 {
-
+	border-style: solid;
+	border-top: none;
+	border-width: 2px;
+	border-color: black;
 	background-color: #780116;
 }
 
