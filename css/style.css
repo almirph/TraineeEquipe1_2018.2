@@ -24,3 +24,26 @@
 .coluna-2,.coluna-3{
 	padding-left: 30px;
 }
+.slide-produto,.img-slide-produto {
+	
+	margin-top: 30px;
+	
+
+}
+.produto-centro{
+
+	text-align: center;
+
+}
+.slide-produto{
+	margin-left: 22%;
+	margin-right: 22%;
+	text-align: center;
+}
+.produto-centro p {
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 20px;
+	text-align: left;
+
+}
