@@ -69,3 +69,13 @@ div h3{
       font-weight: bolder;
       
   }
+
+
+.form-inline .btn-secondary {
+    font-weight: bolder;
+}
+
+.form-inline .btn-successs {
+    font-weight: bolder;
+    
+}
