@@ -88,43 +88,6 @@ form{
 	margin-bottom: 18px;
 }
 
-				/* LOCALIZAÇÃO */
-
-/*********************************************************/
-
-
-.localizacao{
-
-	/*background-image: linear-gradient(#D3D0CB, #F1F8F6);*/
-
-}
-
-
-}
-.localizacao h1{
-
-	font-weight: 400;
-	color: #2E5266;
-
-}
-
-
-.localizacao iframe{
-
-	margin-top: 18px;
-	
-	
-}
-
-.localizacao li{
-
-
-}
-
-.localizacao ul{
-
-	margin-top: 18px;
-}
 
 
 
@@ -136,105 +99,70 @@ form{
 
 footer{
 
-	margin-top: 50px;
-	height: 300;
-	background-color:#1E1E24;
-	/*color: #F1F8F6;*/
-	color: #EDF2F4;
-	border-style: solid;
+	border-style: groove;
 	border-bottom: none;
-	border-width: 2px;
+	border-width: 1px;
 	border-color: black;
 }
 
-.container-fluid img
-{
-	height: 50px;
+.rodape{
+
+	margin-top: 50px;
+	background-color:#1E1E24;
+	color:#EDF2F4;
+	border-color: black;
+	border-style: groove;
+	border-width: 1px;
+	
 }
 
-.col-lg-3 img{
-	
-	margin-right: 10px;
-	margin-bottom: 18px;
+.rodape h5{
+
+	font-size: 18px;
+	font-weight: 600;
 }
 
 .col-lg-3 h5{
 
-	font-size: 16px;
-}
-
-
-.col-lg-2  h5, h6{
-
-	font-size: 16px;
-}
-
-
-.list-unstyled li{
-
-	font-size: 16px;
-	line-height: 30px;
-
-}
-
-.glyph ul{
-
-	margin-top: 32px;
-}
-
-.maps{
-
-	padding-left: 18px;
-	padding-bottom:12px;
-	margin-top: 28px;
-
-}
-
-.col-lg-3 iframe{
-
-	width: 400px;
-	height: 398px;
-	margin-top: 14px;
-	border-style: solid;
-	border-bottom: solid;
-	border-width: 1px;
-	border-color: black;
-
-}
-
-.col-lg-3 h4{
-
-	margin-bottom: 18px;
-	padding-bottom: 9px;
-}
-
-.col-lg-2 ul{
-
-	margin-top: 60px;
-	background-color: #2B2C28;
-}
-
-.col-lg-2 li{
-	
-	background-color: #1E1E24;
+	padding-top: 16px;
 	
 }
-.foot{
+
+.col-lg-3 li{
+
+	font-size: 16px;
+	font-weight: 500;
+	
+}
+
+.col-lg-3 i{
+
+	padding-left: 12px;
+}
+
+.input-group{
 
 	padding-top: 12px;
-
 }
-.footer-copyright
-{
-	border-style: solid;
-	border-width: 2px;
-	border-color: black;
+
+.col-lg-12{
+
+	border-top-color: black;
+	border-top-style: groove;
+	border-top-width: 1px;
 	background-color: #2B2D42;
+	width: 100%;
+
+}
+
+.col-lg-12 i{
+
+	margin-right: 18px;
 }
 
 
-.col-lg-7 h4{
-
-	
+.informaçoes-primarias li
+{
+	line-height: 36px;
 
 }
