@@ -1,0 +1,19 @@
+.header-login {
+    margin-right: 10px; 
+  }
+
+  .navbar-light .navbar-nav .nav-link{
+      color:#F1F8F6;
+      font-weight: bolder;
+      
+  }
+
+
+.form-inline .btn-secondary {
+    font-weight: bolder;
+}
+
+.form-inline .btn-successs {
+    font-weight: bolder;
+    
+}
