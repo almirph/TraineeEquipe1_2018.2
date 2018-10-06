@@ -1,4 +1,4 @@
-.body{
+.body-quemsomos{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 400;
@@ -12,12 +12,6 @@
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 20px;
-}
-
-
-.container{
-    border-left: 2px solid #2E5266;
-    border-right: 2px solid #2E5266;
 }
 
 .div-quemsomos{
@@ -56,26 +50,7 @@
     font-weight: bolder;
 }
 
-div h3{
+.div-quemsomos h3{
     color: #6E8898;
 }
 
-.header-login {
-    margin-right: 10px; 
-  }
-
-  .navbar-light .navbar-nav .nav-link{
-      color:#F1F8F6;
-      font-weight: bolder;
-      
-  }
-
-
-.form-inline .btn-secondary {
-    font-weight: bolder;
-}
-
-.form-inline .btn-successs {
-    font-weight: bolder;
-    
-}
