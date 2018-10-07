@@ -1,0 +1,357 @@
+
+html, body{
+	padding: 0;
+	margin: 0;
+	font-family: montserrat;	
+	/* background-image: url(../img/img2.png); */
+
+	
+
+}
+body h1{
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.faixa{
+	background-color: #1E1E24;	
+	padding-bottom: 5px;
+		
+	padding-top: 10px;	
+	line-height: 0px;
+}
+.faixa img {
+	padding-top:  1px;
+	width: 120px;
+	height: 75px;
+	padding-left: 15px;
+}
+.faixa h1{
+	text-align: left;
+	color: white;
+	line-height: middle;
+	height: 0px;
+	margin-bottom: -25px;
+	padding-top: 10px;
+	margin-top: 10px;
+	padding-left: 140px;
+	
+
+}
+.form-control{
+	background-color:#262b2d;
+    border: 1px;
+    border-right: none;
+    padding: 2px;
+    border-radius: 2px;
+}
+.btn-dark	{
+	color: rgba(255,255,255,.5);
+	line-height: 1.2;
+    border-radius: 2px;
+}
+
+.card-img-top{
+	width: 150px;	
+	height: 100%;
+	display: inline-block;
+}
+.nav-home{
+	display: inline-block;
+
+}
+
+}
+.p{
+	padding-left: 80px;
+	padding-top: 30px;
+
+}
+.form-control{
+	width: 100%;
+	height: 25px;
+}
+
+.slide-home {
+	height: 100%;
+	width: 100%;
+	margin-top: 0px;
+	
+	padding-left: 0;
+	padding-right: 0;
+	outline: none;
+
+}
+.carousel-control-prev{
+	background-image: linear-gradient(to left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.3) 100%);
+}
+.carousel-control-next{
+	background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.3) 100%);
+
+}
+
+.p h5{
+	height: 100%;
+	margin-top: 15px;
+	padding-top: 0px;
+	color: black;
+	font-size: 16px;
+
+}
+
+
+.card{
+	height: 100px;
+	width: 150px;
+	display: inline-block; 
+	margin-right: 40px;
+	font-size: 16px;
+}
+.btn-primary{
+    display: inline-block;
+    font-weight: 500;
+    border: 1px solid transparent;
+    padding: 5px;
+    font-size: 15px;
+    line-height: 10px;
+    border-radius: 3px;
+    background-color: #5E6472;
+    text-align: middle;
+    border-color: solid transparent;
+}
+
+.jumbotron-fluid-home {
+    padding-top: 5px;
+    padding-bottom: 30px;    
+    text-align: center;
+    height: auto;
+    
+    
+}
+
+
+	
+body{
+
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+				/* FALE CONOSCO */
+
+/*********************************************************/
+
+.page-header{
+
+	padding-bottom: 9px;
+	margin: 40px 0 20px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #eee;
+	
+
+}
+
+.page-header h1{
+
+	font-size: 36px;
+	height: 39px;
+	text-align: none;
+}
+
+
+.form-group{
+
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+.form-row label{
+
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.faleconosco{
+
+	 /*background-color: #F4F4F6;*/
+	 /*border-bottom-style: groove;
+     border-bottom-width: 0.5px;*/
+}
+
+
+}
+.faleconosco h1, h3{
+
+	font-weight: 200;
+	color: #2E5266;
+}
+
+.faleconosco button{
+
+	font-weight: 400;
+	/*margin-bottom: 12px;*/
+
+
+}
+
+.faleconosco img{
+
+	width: 500px;
+	margin-top: 150px;
+	
+}
+
+.col-lg-6 h3{
+
+	font-size: 24px;
+	margin-top: 18px;
+
+}
+
+.areatexto{
+
+	background-color: #F1F8F6;
+}
+
+
+form{
+
+	margin-bottom: 18px;
+}
+
+
+
+
+						/* FOOTER */
+
+/*********************************************************/
+
+
+
+footer{
+
+	border-style: groove;
+	border-bottom: none;
+	border-width: 1px;
+	border-color: black;
+}
+
+.rodape{
+
+	margin-top: 50px;
+	background-color:#1E1E24;
+	color:#EDF2F4;
+	border-color: black;
+	border-style: groove;
+	border-width: 1px;
+	
+}
+
+.rodape h5{
+
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.col-lg-3 h5{
+
+	padding-top: 16px;
+	
+}
+
+.col-lg-3 li{
+
+	font-size: 16px;
+	font-weight: 500;
+	
+}
+
+.col-lg-3 i{
+
+	padding-left: 12px;
+}
+
+.input-group{
+
+	padding-top: 12px;
+}
+
+.col-lg-12{
+
+	border-top-color: black;
+	border-top-style: groove;
+	border-top-width: 1px;
+	background-color: #2B2D42;
+	width: 100%;
+
+}
+
+.col-lg-12 i{
+
+	margin-right: 18px;
+}
+
+
+.informaçoes-primarias li
+{
+	line-height: 36px;
+
+}
+
+.body-quemsomos{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    background-color:#F1F8F6;
+    
+    
+}
+
+.h1-quemsomos{
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+}
+
+.div-quemsomos{
+    text-align: center;
+   /* background-color: #6E8898; 
+    border: 1px solid #2E5266; */
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 25px;
+
+}
+
+.div-quemsomos figcaption{
+    margin-top: 15px;
+}
+
+.div-quemsomos p {
+    text-align: justify;
+    margin-top: 15px;
+}
+
+.div-quemsomos img{
+    width: 60%;
+    height: 50%;
+    border-radius: 10px;
+  
+
+    box-shadow: 0 4px 8px 0 #6E8898, 0 6px 20px 0 #F1F8F6;
+    
+
+}
+
+.div-quemsomos h2{
+    color: #2E5266;
+    font-weight: bolder;
+}
+
+.div-quemsomos h3{
+    color: #6E8898;
+}
+
