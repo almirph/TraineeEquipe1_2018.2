@@ -14,58 +14,50 @@ html, body{
 	padding-bottom: 5px;
 	height: 100%;	
 	padding-top: 10px;	
-	line-height: 0px;
+	line-height: 10px;
 	width: 100%;
 
 }
 .faixa img {
-	padding-top:  1px;
+	padding-top:  0px;
 	padding-left: 15px;
 	margin-bottom: 10px;
-	margin-left: 3%;
+
 }
 .faixa h1{
 	text-align: left;
 	color: white;
-	line-height: middle;	
+	line-height: 30px;	
 	margin-bottom: -65px;
 	padding-top: 30px;
 	margin-top: 10px;
-	padding-left: 12%;
+	padding-left: 150px;
 	width: 100%;
 	
 
 }
-.form-control{
+
+
+.btn-dark.nav	{
+	color: rgba(255,255,255,.5);
+	line-height: 1.2;
+    border-radius: 2px;
+
+}
+
+
+.nav-home{
+	display: inline-block;
+
+}
+.form-nav{
+	padding-left: 80px;
+	padding-top: 30px;
 	background-color:#262b2d;
     border: 1px;
     border-right: none;
     padding: 2px;
     border-radius: 2px;
-}
-.btn-dark	{
-	color: rgba(255,255,255,.5);
-	line-height: 1.2;
-    border-radius: 2px;
-}
-
-.card-img-top{
-	width: 150px;	
-	height: 100%;
-	display: inline-block;
-}
-.nav-home{
-	display: inline-block;
-
-}
-
-}
-.p{
-	padding-left: 80px;
-	padding-top: 30px;
-
-}
-.form-control{
 	width: 100%;
 	height: 25px;
 }
@@ -78,8 +70,8 @@ html, body{
 	padding-left: 0;
 	padding-right: 0;
 	outline: none;
-
 }
+
 .carousel-control-prev{
 	background-image: linear-gradient(to left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.3) 100%);
 }
@@ -88,35 +80,34 @@ html, body{
 
 }
 
-.p h5{
-	height: 100%;
-	margin-top: 15px;
-	padding-top: 0px;
-	color: black;
-	font-size: 16px;
-
-}
-
-
-.card{
+.card-img-top.new-item {
+	width: 100%;
 	height: 100px;
+}
+.card.card-home{
+	height: 0px;
 	width: 150px;
 	display: inline-block; 
 	margin-right: 40px;
 	font-size: 16px;
 }
+
+
 .jumbotron-fluid-home {
     padding-top: 5px;
     padding-bottom: 30px;    
     text-align: center;
     height: 100%;    
     
+}.display-4.novidades{
+	font-size: 7vw;
 }
-.btn-primary{
+
+.btn-primary.home {
     display: inline-block;
     font-weight: 500;
     border: 1px solid transparent;
-    padding: 5px;
+    padding: 3px;
     font-size: 15px;
     line-height: 10px;
     border-radius: 3px;
@@ -124,8 +115,5 @@ html, body{
     text-align: middle;
     border-color: solid transparent;
 }
-.jumbotron-home h1{
-	width: 100%;
-	height: 100%;
-}
+
 
