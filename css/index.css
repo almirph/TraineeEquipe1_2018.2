@@ -1,14 +1,10 @@
 
-body{
-	/* background-image: url(../img/img2.png); */
+
+html, body{
 	padding: 0;
 	margin: 0;
-	font-family: montserrat;
-}
-
-.home html {
-		
-	
+	font-family: montserrat;	
+	/* background-image: url(../img/img2.png); */
 
 	
 
@@ -23,13 +19,13 @@ body{
 	width: 100%;
 
 }
-.home .faixa img {
+.faixa img {
 	padding-top:  1px;
 	padding-left: 15px;
 	margin-bottom: 10px;
 	margin-left: 3%;
 }
-.home .faixa h1{
+.faixa h1{
 	text-align: left;
 	color: white;
 	line-height: middle;	
@@ -41,41 +37,39 @@ body{
 	
 
 }
-.home .form-control{
+.form-control{
 	background-color:#262b2d;
     border: 1px;
     border-right: none;
     padding: 2px;
-    border-radius: 2px;
+	border-radius: 2px;
+	width: 100%;
+	height: 25px;
 }
-.home .btn-dark	{
+.btn-dark	{
 	color: rgba(255,255,255,.5);
 	line-height: 1.2;
     border-radius: 2px;
 }
 
-.home .card-img-top{
+.card-img-top{
 	width: 150px;	
 	height: 100%;
 	display: inline-block;
 }
-.home .nav-home{
+.nav-home{
 	display: inline-block;
 
 }
 
 
-.home .p{
+.p{
 	padding-left: 80px;
 	padding-top: 30px;
 
 }
-.home .form-control{
-	width: 100%;
-	height: 25px;
-}
 
-.home .slide-home {
+.slide-home {
 	height: 100%;
 	width: 100%;
 	margin-top: 0px;
@@ -85,15 +79,15 @@ body{
 	outline: none;
 
 }
-.home .carousel-control-prev{
+.carousel-control-prev{
 	background-image: linear-gradient(to left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.3) 100%);
 }
-.home .carousel-control-next{
+.carousel-control-next{
 	background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.3) 100%);
 
 }
 
-.home .p h5{
+.p h5{
 	height: 100%;
 	margin-top: 15px;
 	padding-top: 0px;
@@ -103,7 +97,7 @@ body{
 }
 
 
-.home .card{
+.card{
 	height: 100px;
 	width: 150px;
 	display: inline-block; 
@@ -134,11 +128,6 @@ body{
 	height: 100%;
 }
 
-	
-body{
-
-	font-family: 'Montserrat', sans-serif;
-}
 
 
 				/* FALE CONOSCO */
@@ -185,6 +174,10 @@ body{
 
 
 
+
+#form-email{
+	background-color:white;
+}
 .faleconosco h1, h3{
 
 	font-weight: 200;
@@ -302,6 +295,14 @@ footer{
 	line-height: 36px;
 
 }
+
+.rodape .form-control{
+	height: 40px;
+	background-color:white;
+}
+
+/* QUEM SOMOS */
+
 
 .body-quemsomos{
     font-family: Montserrat;
