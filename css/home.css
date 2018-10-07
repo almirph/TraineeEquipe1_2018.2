@@ -2,26 +2,97 @@
 html, body{
 	padding: 0;
 	margin: 0;
+	font-family: montserrat;	
+	background-image: url(../img/img2.png);
+
 	
 
 }
-body h1{
-	text-align: center;
-	margin-top: 20px;
-	margin-bottom: 10px;
+
+.faixa{
+	background-color: #1E1E24;	
+	padding-bottom: 5px;
+	height: 100%;	
+	padding-top: 10px;	
+	line-height: 0px;
+	width: 100%;
+
 }
+.faixa img {
+	padding-top:  1px;
+	padding-left: 15px;
+	margin-bottom: 10px;
+	margin-left: 3%;
+}
+.faixa h1{
+	text-align: left;
+	color: white;
+	line-height: middle;	
+	margin-bottom: -65px;
+	padding-top: 30px;
+	margin-top: 10px;
+	padding-left: 12%;
+	width: 100%;
+	
 
-
+<<<<<<< HEAD
 
 .slide-home {
+=======
+}
+.form-control{
+	background-color:#262b2d;
+    border: 1px;
+    border-right: none;
+    padding: 2px;
+    border-radius: 2px;
+}
+.btn-dark	{
+	color: rgba(255,255,255,.5);
+	line-height: 1.2;
+    border-radius: 2px;
+}
+
+.card-img-top{
+	width: 150px;	
+>>>>>>> 02892ce933f85e02992ab43c84a480f36831ea77
 	height: 100%;
-	width: 100%;
-	margin-top: 500px;
+	display: inline-block;
+}
+.nav-home{
+	display: inline-block;
+
+}
+
 }
 .p{
 	padding-left: 80px;
 	padding-top: 30px;
+
 }
+.form-control{
+	width: 100%;
+	height: 25px;
+}
+
+.slide-home {
+	height: 100%;
+	width: 100%;
+	margin-top: 0px;
+	
+	padding-left: 0;
+	padding-right: 0;
+	outline: none;
+
+}
+.carousel-control-prev{
+	background-image: linear-gradient(to left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.3) 100%);
+}
+.carousel-control-next{
+	background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.3) 100%);
+
+}
+
 .p h5{
 	height: 100%;
 	margin-top: 15px;
@@ -30,6 +101,8 @@ body h1{
 	font-size: 16px;
 
 }
+
+
 .card{
 	height: 100px;
 	width: 150px;
@@ -37,11 +110,27 @@ body h1{
 	margin-right: 40px;
 	font-size: 16px;
 }
-.card-img-top{
-	width: 150px;	
+.jumbotron-fluid-home {
+    padding-top: 5px;
+    padding-bottom: 30px;    
+    text-align: center;
+    height: 100%;    
+    
+}
+.btn-primary{
+    display: inline-block;
+    font-weight: 500;
+    border: 1px solid transparent;
+    padding: 5px;
+    font-size: 15px;
+    line-height: 10px;
+    border-radius: 3px;
+    background-color: #5E6472;
+    text-align: middle;
+    border-color: solid transparent;
+}
+.jumbotron-home h1{
+	width: 100%;
 	height: 100%;
-	display: inline-block;
 }
-.nav-home{
-	display: inline-block;
-}
+
