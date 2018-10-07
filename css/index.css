@@ -38,7 +38,7 @@ html, body{
 
 }
 .form-control{
-	background-color:#262b2d;
+	background-color:white;
     border: 1px;
     border-right: none;
     padding: 2px;
@@ -301,6 +301,8 @@ footer{
 	background-color:white;
 }
 
+
+
 /* QUEM SOMOS */
 
 
@@ -327,7 +329,7 @@ footer{
     border-radius: 10px;
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 25px;
+    /* margin-top: 25px; */
 
 }
 
@@ -360,3 +362,74 @@ footer{
     color: #6E8898;
 }
 
+/* ************************************************Produtos************************************************** */
+
+
+.p-produtos-top h1{
+	margin-left: 10%;
+	margin-top: 5%;
+}
+.categoria{
+	
+	
+	z-index: 100;
+	position:absolute;
+	
+		
+		
+}
+.lista-item{
+	border:0;
+	padding-right: 2%;
+
+	border: 0.5px solid grey;
+		
+}
+
+
+
+.pesquisa{
+	padding-right :  1% ;
+	
+}
+.img-card{
+	margin-top:10%;
+	margin-bottom: 10%;
+}
+.card-produto{
+	margin-left: 15%;
+	margin-bottom:10%;
+}
+.pag-produtos h1{
+	margin-left:17%;
+}
+.slide-produto,.img-slide-produto {
+	
+	margin-top: 30px;
+	
+
+}
+.produto-centro{
+	font-size: 20px;
+	text-align: center;
+
+}
+.container h1{
+	text-align: center;
+
+}
+.slide-produto{
+	margin-left: 22%;
+	margin-right: 22%;
+	text-align: center;
+}
+.produto-centro p {
+	margin-left: 15%;
+	margin-right: 15%;
+	font-weight: 200;
+	text-align: left;
+	font-size: 16px;
+
+
+
+}
