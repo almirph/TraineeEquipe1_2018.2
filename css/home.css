@@ -2,26 +2,94 @@
 html, body{
 	padding: 0;
 	margin: 0;
+	font-family: montserrat;	
+	background-image: url(../img/img2.png);
+
 	
 
 }
 body h1{
 	text-align: center;
-	margin-top: 20px;
-	margin-bottom: 10px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.faixa{
+	background-color: #1E1E24;	
+	padding-bottom: 5px;
+		
+	padding-top: 10px;	
+	line-height: 0px;
+}
+.faixa img {
+	padding-top:  1px;
+	width: 120px;
+	height: 75px;
+	padding-left: 15px;
+}
+.faixa h1{
+	text-align: left;
+	color: white;
+	line-height: middle;
+	height: 0px;
+	margin-bottom: -25px;
+	padding-top: 10px;
+	margin-top: 10px;
+	padding-left: 140px;
+	
+
+}
+.form-control{
+	background-color:#262b2d;
+    border: 1px;
+    border-right: none;
+    padding: 2px;
+    border-radius: 2px;
+}
+.btn-dark	{
+	color: rgba(255,255,255,.5);
+	line-height: 1.2;
+    border-radius: 2px;
 }
 
-
-}
-.slide-home {
+.card-img-top{
+	width: 150px;	
 	height: 100%;
-	width: 100%;
-	margin-top: 500px;
+	display: inline-block;
+}
+.nav-home{
+	display: inline-block;
+
+}
+
 }
 .p{
 	padding-left: 80px;
 	padding-top: 30px;
+
 }
+.form-control{
+	width: 100%;
+	height: 25px;
+}
+
+.slide-home {
+	height: 100%;
+	width: 100%;
+	margin-top: 0px;
+	
+	padding-left: 0;
+	padding-right: 0;
+	outline: none;
+
+}
+.carousel-control-prev{
+	background-image: linear-gradient(to left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.3) 100%);
+}
+.carousel-control-next{
+	background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.3) 100%);
+
+}
+
 .p h5{
 	height: 100%;
 	margin-top: 15px;
@@ -30,6 +98,8 @@ body h1{
 	font-size: 16px;
 
 }
+
+
 .card{
 	height: 100px;
 	width: 150px;
@@ -37,11 +107,25 @@ body h1{
 	margin-right: 40px;
 	font-size: 16px;
 }
-.card-img-top{
-	width: 150px;	
-	height: 100%;
-	display: inline-block;
+.btn-primary{
+    display: inline-block;
+    font-weight: 500;
+    border: 1px solid transparent;
+    padding: 5px;
+    font-size: 15px;
+    line-height: 10px;
+    border-radius: 3px;
+    background-color: #5E6472;
+    text-align: middle;
+    border-color: solid transparent;
 }
-.nav-home{
-	display: inline-block;
+
+.jumbotron-fluid-home {
+    padding-top: 5px;
+    padding-bottom: 30px;    
+    text-align: center;
+    height: auto;
+    
+    
 }
+
