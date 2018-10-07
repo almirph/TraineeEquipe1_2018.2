@@ -8,33 +8,31 @@ html, body{
 	
 
 }
-body h1{
-	text-align: center;
-	margin-top: 30px;
-	margin-bottom: 30px;
-}
+
 .faixa{
 	background-color: #1E1E24;	
 	padding-bottom: 5px;
-		
+	height: 100%;	
 	padding-top: 10px;	
 	line-height: 0px;
+	width: 100%;
+
 }
 .faixa img {
 	padding-top:  1px;
-	width: 120px;
-	height: 75px;
 	padding-left: 15px;
+	margin-bottom: 10px;
+	margin-left: 3%;
 }
 .faixa h1{
 	text-align: left;
 	color: white;
-	line-height: middle;
-	height: 0px;
-	margin-bottom: -25px;
-	padding-top: 10px;
+	line-height: middle;	
+	margin-bottom: -65px;
+	padding-top: 30px;
 	margin-top: 10px;
-	padding-left: 140px;
+	padding-left: 12%;
+	width: 100%;
 	
 
 }
@@ -107,6 +105,13 @@ body h1{
 	margin-right: 40px;
 	font-size: 16px;
 }
+.jumbotron-fluid-home {
+    padding-top: 5px;
+    padding-bottom: 30px;    
+    text-align: center;
+    height: 100%;    
+    
+}
 .btn-primary{
     display: inline-block;
     font-weight: 500;
@@ -119,13 +124,8 @@ body h1{
     text-align: middle;
     border-color: solid transparent;
 }
-
-.jumbotron-fluid-home {
-    padding-top: 5px;
-    padding-bottom: 30px;    
-    text-align: center;
-    height: auto;
-    
-    
+.jumbotron-home h1{
+	width: 100%;
+	height: 100%;
 }
 
