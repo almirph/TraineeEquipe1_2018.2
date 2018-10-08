@@ -2,7 +2,7 @@ html, body{
 	padding: 0;
 	margin: 0;
 	font-family: montserrat;	
-	background-image: url(../img/img2.png);
+	/* background-image: url(../img/img2.png); */
 
 	
 
@@ -70,14 +70,14 @@ html, body{
 	padding-right: 0;
 	outline: none;
 }
-
+/* 
 .carousel-control-prev{
 	background-image: linear-gradient(to left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.3) 100%);
 }
 .carousel-control-next{
 	background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.3) 100%);
 
-}
+} */
 
 .card-img-top.new-item {
 	width: 100%;
@@ -354,7 +354,7 @@ footer{
 }
 .categoria{
 	
-	
+	 	
 	z-index: 100;
 	position:absolute;
 	
@@ -382,7 +382,8 @@ footer{
 	margin-bottom:10%;
 }
 .pag-produtos h1{
-	margin-left:17%;
+	margin-left:15%;
+	
 }
 .slide-produto,.img-slide-produto {
 	
