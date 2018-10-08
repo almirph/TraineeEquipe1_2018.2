@@ -37,7 +37,11 @@ html, body{
 	
 
 }
+<<<<<<< HEAD
 .pesquisar{
+=======
+.form-control{
+>>>>>>> 51287f4bc159d72faf2eec02b53c02b01c2d2abd
 	background-color:white;
     border: 1px;
     border-right: none;
@@ -137,9 +141,13 @@ html, body{
 .page-header{
 
 	padding-bottom: 9px;
+<<<<<<< HEAD
 	padding-top: 40px;
 	margin-left: 0;
 	margin-right: 0;
+=======
+	margin: 40px 0 20px;
+>>>>>>> 51287f4bc159d72faf2eec02b53c02b01c2d2abd
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
 	border-bottom-color: #eee;
@@ -169,12 +177,23 @@ html, body{
 
 .faleconosco{
 
+<<<<<<< HEAD
 	 background-color: #F4F4F6;
+=======
+	 /*background-color: #F4F4F6;*/
+>>>>>>> 51287f4bc159d72faf2eec02b53c02b01c2d2abd
 	 /*border-bottom-style: groove;
      border-bottom-width: 0.5px;*/
 }
 
 
+<<<<<<< HEAD
+=======
+
+
+#form-email{
+	background-color:white;
+>>>>>>> 51287f4bc159d72faf2eec02b53c02b01c2d2abd
 }
 .faleconosco h1, h3{
 
@@ -185,7 +204,11 @@ html, body{
 .faleconosco button{
 
 	font-weight: 400;
+<<<<<<< HEAD
 	margin-bottom: 50px;
+=======
+	/*margin-bottom: 12px;*/
+>>>>>>> 51287f4bc159d72faf2eec02b53c02b01c2d2abd
 
 
 }
@@ -224,12 +247,15 @@ form{
 
 
 
+<<<<<<< HEAD
 					/* FOOTER */
 
 /*********************************************************/
 
 
 
+=======
+>>>>>>> 51287f4bc159d72faf2eec02b53c02b01c2d2abd
 footer{
 
 	border-style: groove;
@@ -240,7 +266,11 @@ footer{
 
 .rodape{
 
+<<<<<<< HEAD
 	/*margin-top: 50px;*/
+=======
+	margin-top: 50px;
+>>>>>>> 51287f4bc159d72faf2eec02b53c02b01c2d2abd
 	background-color:#1E1E24;
 	color:#EDF2F4;
 	border-color: black;
@@ -268,6 +298,7 @@ footer{
 	
 }
 
+<<<<<<< HEAD
 .fa-map-marker-alt{
 
 	padding-left: 12px;
@@ -282,6 +313,11 @@ footer{
 	border-width: 2px;
 	border-color: black;
 	text-align: center;
+=======
+.col-lg-3 i{
+
+	padding-left: 12px;
+>>>>>>> 51287f4bc159d72faf2eec02b53c02b01c2d2abd
 }
 
 .input-group{
@@ -294,8 +330,12 @@ footer{
 	border-top-color: black;
 	border-top-style: groove;
 	border-top-width: 1px;
+<<<<<<< HEAD
 	/*background-color: #2B2D42;*/
 	background-color: #31323E;
+=======
+	background-color: #2B2D42;
+>>>>>>> 51287f4bc159d72faf2eec02b53c02b01c2d2abd
 	width: 100%;
 
 }
@@ -312,6 +352,14 @@ footer{
 
 }
 
+<<<<<<< HEAD
+=======
+.rodape .form-control{
+	height: 40px;
+	background-color:white;
+}
+
+>>>>>>> 51287f4bc159d72faf2eec02b53c02b01c2d2abd
 
 
 /* QUEM SOMOS */
