@@ -18,31 +18,29 @@ body{
 	padding-bottom: 5px;
 	height: 100%;	
 	padding-top: 10px;	
-	line-height: 0px;
+	line-height: 10px;
 	width: 100%;
 
 }
-.home .faixa img {
-	padding-top:  1px;
+.faixa img {
+	padding-top:  0px;
 	padding-left: 15px;
 	margin-bottom: 10px;
-	margin-left: 3%;
+
 }
 .home .faixa h1{
 	text-align: left;
 	color: white;
-	line-height: middle;	
+	line-height: 30px;	
 	margin-bottom: -65px;
 	padding-top: 30px;
 	margin-top: 10px;
-	padding-left: 12%;
+	padding-left: 150px;
 	width: 100%;
 	
 
 
 }
-.home .form-control{
-=======
 
 .slide-home {
 	background-color:#262b2d;
@@ -52,37 +50,29 @@ body{
     border-radius: 2px;
 }
 .home .btn-dark	{
+
+}
+
+.btn-dark.nav	{
 	color: rgba(255,255,255,.5);
 	line-height: 1.2;
     border-radius: 2px;
+
 }
 
-.home .card-img-top{
-	width: 150px;	
-	height: 100%;
-	display: inline-block;
-	height: 100%;
-	display: inline-block;
-}
+
 .nav-home{
 	display: inline-block;
 
 }
-
-
-}
-.home .nav-home{
-	display: inline-block;
-
-}
-
-
-.home .p{
+.form-nav{
 	padding-left: 80px;
 	padding-top: 30px;
-
-}
-.home .form-control{
+	background-color:#262b2d;
+    border: 1px;
+    border-right: none;
+    padding: 2px;
+    border-radius: 2px;
 	width: 100%;
 	height: 25px;
 }
@@ -95,9 +85,9 @@ body{
 	padding-left: 0;
 	padding-right: 0;
 	outline: none;
-
 }
-.home .carousel-control-prev{
+
+.carousel-control-prev{
 	background-image: linear-gradient(to left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.3) 100%);
 }
 .home .carousel-control-next{
@@ -105,35 +95,34 @@ body{
 
 }
 
-.home .p h5{
-	height: 100%;
-	margin-top: 15px;
-	padding-top: 0px;
-	color: black;
-	font-size: 16px;
-
-}
-
-
-.home .card{
+.card-img-top.new-item {
+	width: 100%;
 	height: 100px;
+}
+.card.card-home{
+	height: 0px;
 	width: 150px;
 	display: inline-block; 
 	margin-right: 40px;
 	font-size: 16px;
 }
+
+
 .jumbotron-fluid-home {
     padding-top: 5px;
     padding-bottom: 30px;    
     text-align: center;
     height: 100%;    
     
+}.display-4.novidades{
+	font-size: 7vw;
 }
-.btn-primary{
+
+.btn-primary.home {
     display: inline-block;
     font-weight: 500;
     border: 1px solid transparent;
-    padding: 5px;
+    padding: 3px;
     font-size: 15px;
     line-height: 10px;
     border-radius: 3px;
@@ -141,8 +130,5 @@ body{
     text-align: middle;
     border-color: solid transparent;
 }
-.jumbotron-home h1{
-	width: 100%;
-	height: 100%;
-}
+
 
