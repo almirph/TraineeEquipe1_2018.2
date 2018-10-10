@@ -3,7 +3,7 @@ html, body{
 	padding: 0;
 	margin: 0;
 	font-family: montserrat;	
-	background-image: url(../img/img2.png);
+	
 
 	
 
@@ -11,7 +11,7 @@ html, body{
 
 .faixa{
 	background-color: #1E1E24;	
-	padding-bottom: 5px;
+	padding-bottom: 4px;
 	height: 100%;	
 	padding-top: 10px;	
 	line-height: 10px;
@@ -21,19 +21,20 @@ html, body{
 .faixa img {
 	padding-top:  0px;
 	padding-left: 15px;
-	margin-bottom: 10px;
+	margin-bottom: 0px;
+	padding-bottom: 1%
 
 }
 .faixa h1{
 	text-align: left;
 	color: white;
 	line-height: 30px;	
-	margin-bottom: -65px;
-	padding-top: 30px;
+	margin-bottom: -59px;
+	padding-top: 3%;
 	margin-top: 10px;
-	padding-left: 150px;
+	padding-left: 130px;
 	width: 100%;
-	
+	font-size: 2rem;
 
 }
 
@@ -72,10 +73,10 @@ html, body{
 	outline: none;
 }
 
-.carousel-control-prev{
+.carousel-control-prev.home{
 	background-image: linear-gradient(to left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.3) 100%);
 }
-.carousel-control-next{
+.carousel-control-next.home{
 	background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.3) 100%);
 
 }
@@ -114,6 +115,12 @@ html, body{
     background-color: #5E6472;
     text-align: middle;
     border-color: solid transparent;
+}
+.igor{
+	margin-left: 0;
+	margin-right: 100%;
+	padding-right: 0;
+	padding-left: 0;
 }
 
 
