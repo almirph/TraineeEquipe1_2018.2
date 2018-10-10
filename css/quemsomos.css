@@ -1,0 +1,56 @@
+.body-quemsomos{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    background-color:#F1F8F6;
+    
+    
+}
+
+.h1-quemsomos{
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+}
+
+.div-quemsomos{
+    text-align: center;
+   /* background-color: #6E8898; 
+    border: 1px solid #2E5266; */
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 25px;
+
+}
+
+.div-quemsomos figcaption{
+    margin-top: 15px;
+}
+
+.div-quemsomos p {
+    text-align: justify;
+    margin-top: 15px;
+}
+
+.div-quemsomos img{
+    width: 60%;
+    height: 50%;
+    border-radius: 10px;
+  
+
+    box-shadow: 0 4px 8px 0 #6E8898, 0 6px 20px 0 #F1F8F6;
+    
+
+}
+
+.div-quemsomos h2{
+    color: #2E5266;
+    font-weight: bolder;
+}
+
+.div-quemsomos h3{
+    color: #6E8898;
+}
+
