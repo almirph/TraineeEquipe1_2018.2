@@ -66,11 +66,11 @@
 			<a class="nav-link" href="#body-quemsomos">Quem somos</a>
 		  </li>
 		  <li class="nav-item">
-			<a class="nav-link" href="#faleconosco" >Contato</a>
+			<a class="nav-link" href="#fale-conosco" >Contato</a>
 		  </li>
 		</ul>
 		<form class="form-inline my-2 my-lg-0">
-		  <input class="form-control mr-sm-2" type="search" placeholder="Digite aqui" aria-label="Search">
+		  <input class="form-control mr-sm-2 pesquisar" type="search" placeholder="Digite aqui" aria-label="Search">
 		  <button class="btn btn-sm btn-dark my-2 my-sm-0" type="submit">Pesquisar</button>
 		</form>
 	  </div>
@@ -209,18 +209,6 @@
 <!--------------------------------------------------------------------------------------------!-->
 <div class="body-quemsomos" id="body-quemsomos" >
         <h1 class="h1-quemsomos" > Quem somos </h1>
-            <div id="divHistoria" class="div-quemsomos" >
-                <h2>Nossa História</h2>
-                <img src="../img/nossaHistoria.jpg" alt="unidade franqueada" >
-                <figcaption >
-                    Uma de nossas primeiras lojas franqueadas           
-                </figcaption>
-                <p> Inaugurado em 1995, o Balão da Informática figura entre os maiores e-commerces de tecnologia do Brasil. Do ano da sua
-                    inauguração até hoje em dia, muitas coisas mudaram, exceto nossa necessidade em atender nossos consumidores da
-                    melhor maneira possível. Foi essa mesma paixão que nos fez investir muita energia, tempo, capital, entre vários outros
-                    aspectos que garantem qualidade e segurança. Ao todo, são mais de 2.000.000 (Dois milhões) de clientes satisfeitos. 
-                </p>
-            </div>
             <div id="divFilosofia" class="div-quemsomos" >
                     <h2>Nossa Filosofia</h2>
                     <h3>Compromisso e Qualidade</h3>
@@ -245,8 +233,18 @@
                     com aproximadamente 70 mil itens cadastrados, e um corpo de aproximadamente 400 funcionários para garantir aos clientes a 
                     melhor experiência de compra.
                     </p>
-            
-            
+			</div>
+			<div id="divHistoria" class="div-quemsomos" >
+                <h2>Nossa História</h2>
+                <img src="../img/nossaHistoria.jpg" alt="unidade franqueada" >
+                <figcaption >
+                    Uma de nossas unidades franqueadas          
+                </figcaption>
+                <p> Inaugurado em 1995, o Balão da Informática figura entre os maiores e-commerces de tecnologia do Brasil. Do ano da sua
+                    inauguração até hoje em dia, muitas coisas mudaram, exceto nossa necessidade em atender nossos consumidores da
+                    melhor maneira possível. Foi essa mesma paixão que nos fez investir muita energia, tempo, capital, entre vários outros
+                    aspectos que garantem qualidade e segurança. Ao todo, são mais de 2.000.000 (Dois milhões) de clientes satisfeitos. 
+                </p>
             </div>
         </div>
     
@@ -259,175 +257,186 @@
           <!------------------------------------------------------------------------------------------------------------------>
         
         
-					<div class="faleconosco" id="faleconosco" >
+<div class="faleconosco" id="fale-conosco">
+
+        <div class="container">
+
+          <div class="page-header">
+
+          	<h1>Fale conosco</h1>
+
+          </div>
+
+            <div class="row">
+
+              <div class="col-lg-6">
+                
+                <img src="../img/teclando.jpg" alt="atendimento" class="rounded img-fluid">
+
+              </div>
+
+
+              <div class="col-lg-6">
+
+                <h3>Informe seus dados</h3>
+                  <form>		
+
+                  		<div class="form-row">
+
+                            <div class="form-group col-sm-6">
+
+                              <label for="nome">Nome:</label>
+                              <input type="text" class="form-control areatexto" id="nome" placeholder="Digite seu nome">
+
+                            </div>
+
+                             <div class="form-group col-sm-6">
+
+                              <label for="sobrenome">Sobrenome:</label>
+                              <input type="text" class="form-control areatexto" id="email" placeholder="Digite seu sobrenome">
+                              
+                            </div>
+
+                         </div>
+
+                         <div class="form-row">
+
+                            <div class="form-group col-sm-12">
+
+                            	<label for="email">E-mail:</label>
+                              	<input type="email" class="form-control areatexto" id="email" placeholder="Digite seu e-mail">
+                             </div>
+
+
+                         </div>
+
+						            <div class="form-row">
+
+                          <div class="form-group col-sm-12">
+
+                            	<label for="email">Mensagem:</label>
+                              	<textarea class="form-control areatexto" rows="8" placeholder="Digite sua mensagem"></textarea>
+                          </div>
+
+
+                        </div>
+
+                            <button type = "submit" class="btn btn-secondary areatexto" style="color: black">Enviar</button> 
+
+                  </form>           
+
+              </div>      
+
+            </div>
+            
+          </div>
         
-							<div class="container">
-			
-								<div class="page-header">
-			
-										<h1>Fale conosco</h1>
-			
-								</div>
-			
-									<div class="row">
-			
-										<div class="col-lg-6">
-											
-											<img src="../img/teclando.jpg" alt="atendimento" class="rounded img-fluid">
-			
-										</div>
-			
-			
-										<div class="col-lg-6">
-			
-											<h3>Informe seus dados</h3>
-												<form>		
-			
-																<div class="form-row">
-			
-																	<div class="form-group col-sm-6">
-			
-																		<label for="nome">Nome:</label>
-																		<input type="text" class="form-control areatexto" id="nome" placeholder="Digite seu nome">
-			
-																	</div>
-			
-																	 <div class="form-group col-sm-6">
-			
-																		<label for="sobrenome">Sobrenome:</label>
-																		<input type="text" class="form-control areatexto" id="email" placeholder="Digite seu sobrenome">
-																		
-																	</div>
-			
-															 </div>
-			
-															 <div class="form-row">
-			
-																	<div class="form-group col-sm-12">
-			
-																			<label for="email">E-mail:</label>
-																				<input type="email" class="form-control areatexto" id="email" placeholder="Digite seu e-mail">
-																	 </div>
-			
-			
-															 </div>
-			
-																					<div class="form-row">
-			
-																<div class="form-group col-sm-12">
-			
-																			<label for="email">Mensagem:</label>
-																				<textarea class="form-control areatexto" rows="8" placeholder="Digite sua mensagem"></textarea>
-																</div>
-			
-			
-															</div>
-			
-																	<button type = "submit" class="btn btn-secondary areatexto" style="color: black">Enviar</button> 
-			
-												</form>           
-			
-										</div>      
-			
-									</div>
-									
-								</div>
-							
-			</div>
-			
-																							<!-- FIM FALE CONOSCO -->
-				<!------------------------------------------------------------------------------------------------------------------>
-				<!------------------------------------------------------------------------------------------------------------------>
-			
-			
-			
-			
-																							<!-- INICIO FOOTER -->
-				<!------------------------------------------------------------------------------------------------------------------>
-				<!------------------------------------------------------------------------------------------------------------------>
-			
-			
-			<div class="rodape">
-			
-				<footer>
-			
-					<div class="container-fluid text-center">
-			
-							<div class="row informaçoes-primarias py-3">
-							
-								<div class="col-lg-3">
-			
-									<h5>Nossos telefones:</h5>
-			
-										<ul class="list-unstyled">
-			
-											<li>(31)3456-0967</li>
-											<li>(31)3478-2331</li>
-										</ul>
-									
-								</div>
-			
-								<div class="col-lg-3">
-									
-									<h5>Horario de atendimento:</h5>
-			
-										<ul class="list-unstyled">
-											<li>8h00 às 18h00</li>
-											<li>Segunda à Sábado</li>
-										</ul>           
-								</div>
-			
-								<div class="col-lg-3">
-									
-									<h5>Nossa localização:<a href="#" ><span style="font-size: 26px"><i class="fas fa-map-marker-alt" style="color: white"></i></span></a></h5> 
-			
-									<ul class="list-unstyled">
-			
-										<li>Av. Presidente Costa e Silva</li>
-										<li>Juiz de Fora - MG</li>
-									</ul>
-									
-								</div>
-			
-								<div class="col-lg-3">
-									
-									<h5>Receba nossas novidades por e-mail:</h5>
-			
-									<div class="input-group mb-3">
-											<input type="text" class="form-control" id="#form-email" placeholder="E-mail" aria-label="Recipient's username" aria-describedby="basic-addon2">
-											<div class="input-group-append">
-												<button class="btn btn-outline-secondary" type="button" style="color:white">Cadastrar</button>
-											</div>
-										</div>  
-													
-									</div>
-			
-								</div>
-			
-						 </div>
-			
-							<div class="container-fluid text-center">
-			
-			
-								<div class = "row text-center icons">
-			
-									<div class="col-lg-12 text-center py-2">
-								
-										<span style="font-size: 32px"><i class="fab fa-facebook-f"></i></span>
-										<span style="font-size: 32px"><i class="fab fa-twitter"></i></span>
-										<span style="font-size: 32px"><i class="fab fa-instagram"></i></span>
-										<span style="font-size: 32px"><i class="fab fa-google-plus-g"></i></span>
-			
-									</div>
-			
-								</div>
-			
-							
-							</div>
-			
-				</footer>
-			
-			</div>
+</div>
+
+                                        <!-- FIM FALE CONOSCO -->
+  <!------------------------------------------------------------------------------------------------------------------>
+  <!------------------------------------------------------------------------------------------------------------------>
+
+
+
+
+                                        <!-- INICIO FOOTER -->
+  <!------------------------------------------------------------------------------------------------------------------>
+  <!------------------------------------------------------------------------------------------------------------------>
+
+
+<div class="rodape">
+
+  <footer>
+
+    <div class="container-fluid text-center">
+
+        <div class="row informaçoes-primarias py-3">
+        
+          <div class="col-lg-3">
+
+            <h5>Nossos telefones:</h5>
+
+              <ul class="list-unstyled">
+
+                <li>(31)3456-0967</li>
+                <li>(31)3478-2331</li>
+              </ul>
+            
+          </div>
+
+          <div class="col-lg-3">
+            
+            <h5>Horário de atendimento:</h5>
+
+              <ul class="list-unstyled">
+                <li>8h00 às 18h00</li>
+                <li>Segunda à Sábado</li>
+              </ul>           
+          </div>
+
+          <div class="col-lg-3">
+            
+            <h5>Nossa localização:<span style="font-size: 26px"><button class="fas fa-map-marker-alt" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter"></button></span>  
+
+				<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-centered" role="document">
+				      <div class="modal-body">
+				        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.7803056300645!2d-46.668182784405964!3d-23.612210769358498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a0bf7346baf%3A0xd756d1a0261c4c1a!2sBal%C3%A3o+da+Inform%C3%A1tica+S%C3%A3o+Paulo+Moema!5e0!3m2!1spt-BR!2sbr!4v1539034124567" width="600" height="450" frameborder="0" style="border:1" allowfullscreen></iframe>
+				      </div>
+				  </div>
+				</div>
+
+
+            <ul class="list-unstyled">
+
+              <li>Av. Presidente Costa e Silva</li>
+              <li>Juiz de Fora - MG</li>
+            </ul>
+
+
+            
+          </div>
+
+          <div class="col-lg-3">
+            
+            <h5>Receba nossas novidades por e-mail:</h5>
+
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="E-mail" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button" style="color: white">Cadastrar</button>
+                </div>
+              </div>  
+                    
+            </div>
+
+          </div>
+
+       </div>
+
+        <div class="container-fluid text-center">
+
+
+          <div class = "row text-center icons">
+
+            <div class="col-lg-12 text-center py-2">
+          
+              <span style="font-size: 32px"><i class="fab fa-facebook-f"></i></span>
+              <span style="font-size: 32px"><i class="fab fa-twitter"></i></span>
+              <span style="font-size: 32px"><i class="fab fa-instagram"></i></span>
+              <span style="font-size: 32px"><i class="fab fa-google-plus-g"></i></span>
+
+            </div>
+
+          </div>
+
+        
+        </div>
+
+  </footer>
+
+</div>
 			
 									
 			
