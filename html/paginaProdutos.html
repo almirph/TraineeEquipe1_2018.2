@@ -1,34 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Balão da Informática</title>
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="../css/index.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:200,400" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <title>Balão da Informática</title>
-
-  <!-- Bootstrap -->
-  <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../css/finalstyle.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400" rel="stylesheet">
-
-
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-</head>
+  </head>
 
 <body>
-  
 
-  <!-- /Barra de navegação -->
-  <!-- /Barra de pesquisa categoria -->
+  <!-- NAVBAR -->
+  <!------------------------------------------------------------------------------------------------------------------>
+  <!------------------------------------------------------------------------------------------------------------------>
+  <div class="faixa">
+    <h1>Balão da Informática </h1>
+    <img src="../img/1.png" class="img-fluid" width="120" height="75">
+  </div>
 
-  <!-- /Barra de pesquisa categoria -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <a class="navbar-brand" href="index.html#body-home">
+      <img src="../img/1.png" width="35" height="22"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html#body-home">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Produtos
+        </a>
+        <div class="dropdown-menu home" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="Produtos2.html">Mais vendidos</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Categoria 1</a>
+          <a class="dropdown-item" href="#">Categoria 2</a>
+          <a class="dropdown-item" href="#">Categoria 3</a>
+          <a class="dropdown-item" href="#">Categoria 4</a>
+          <a class="dropdown-item" href="#">Categoria 5</a>
+          <a class="dropdown-item" href="#">Categoria 6</a>
+          <a class="dropdown-item" href="#">Categoria 7</a>
+          <a class="dropdown-item" href="#">Categoria 8</a>
+          <a class="dropdown-item" href="#">Categoria 9</a>
+
+        </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#body-quemsomos">Quem somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#fale-conosco">Contato</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control form-nav mr-sm-2" type="search" placeholder="Digite aqui" aria-label="Search">
+        <button class="btn btn-sm btn-dark nav my-2 my-sm-0" type="submit">Pesquisar</button>
+      </form>
+    </div>
+  </nav>
+  <!-- FIM NAVBAR -->
+  <!------------------------------------------------------------------------------------------------------------------>
+
 
   <nav class="navbar navbar-expand-lg navbar-light categoria">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
@@ -36,66 +87,64 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-  
-      <ul class="list-group mr-auto mt-2 mt-lg-0 ">
-    <li class="list-group-item d-flex justify-content-between align-items-center lista-item">
-      <a href="#">
-        <form class="form-inline my-2 my-lg-0  res-pesquisa">
-          <input class="form-control mr-sm-2 pesquisa" type="search" placeholder="Pesquisar"></form>
-    </li></a>
-    <a href="#">
-      <li class="list-group-item d-flex justify-content-between align-items-center lista-item">
-        Categoria 1
-        <span class="badge badge-primary badge-pill nprodutos">0</span>
-      </li>
-    </a>
-    <a href="#">
-      <li class="list-group-item d-flex justify-content-between align-items-center lista-item">
-        Categoria 2
-        <span class="badge badge-primary badge-pill nprodutos">0</span>
-      </li>
-    </a>
-    <a href="#">
-    <li class="list-group-item d-flex justify-content-between align-items-center lista-item">
-      Categoria 3
-      <span class="badge badge-primary badge-pill nprodutos">0</span>
-    </li></a>
-    <a href="#">
-    <li class="list-group-item d-flex justify-content-between align-items-center lista-item">
-      Categoria 4
-      <span class="badge badge-primary badge-pill nprodutos">0</span>
-    </li>
-  </a>
-  <a href="#">
-    <li class="list-group-item d-flex justify-content-between align-items-center lista-item">
-      Categoria 5
-      <span class="badge badge-primary badge-pill nprodutos">0</span>
-    </li>
-  </a>
-  <a href="#">
-  <li class="list-group-item d-flex justify-content-between align-items-center lista-item">
-    Categoria 6
-    <span class="badge badge-primary badge-pill nprodutos">0</span>
-  </li></a>
-  <a href="#">
-  <li class="list-group-item d-flex justify-content-between align-items-center lista-item">
-    Categoria 7
-    <span class="badge badge-primary badge-pill nprodutos">0</span>
-  </li>
-</a>
-<a href="#">
-  <li class="list-group-item d-flex justify-content-between align-items-center lista-item">
-    Categoria 8
-    <span class="badge badge-primary badge-pill nprodutos">0</span>
-  </li>
-</a>
-<a href="#">
-<li class="list-group-item d-flex justify-content-between align-items-center lista-item">
-  Categoria 9
-  <span class="badge badge-primary badge-pill nprodutos">0</span>
-</li></a>
 
-  </ul>
+      <ul class="list-group mr-auto mt-2 mt-lg-0 ">
+        <a href="#">
+          <li class="list-group-item d-flex justify-content-between align-items-center lista-item">
+            Categoria 1
+            <span class="badge badge-primary badge-pill nprodutos">0</span>
+          </li>
+        </a>
+        <a href="#">
+          <li class="list-group-item d-flex justify-content-between align-items-center lista-item">
+            Categoria 2
+            <span class="badge badge-primary badge-pill nprodutos">0</span>
+          </li>
+        </a>
+        <a href="#">
+          <li class="list-group-item d-flex justify-content-between align-items-center lista-item">
+            Categoria 3
+            <span class="badge badge-primary badge-pill nprodutos">0</span>
+          </li>
+        </a>
+        <a href="#">
+          <li class="list-group-item d-flex justify-content-between align-items-center lista-item">
+            Categoria 4
+            <span class="badge badge-primary badge-pill nprodutos">0</span>
+          </li>
+        </a>
+        <a href="#">
+          <li class="list-group-item d-flex justify-content-between align-items-center lista-item">
+            Categoria 5
+            <span class="badge badge-primary badge-pill nprodutos">0</span>
+          </li>
+        </a>
+        <a href="#">
+          <li class="list-group-item d-flex justify-content-between align-items-center lista-item">
+            Categoria 6
+            <span class="badge badge-primary badge-pill nprodutos">0</span>
+          </li>
+        </a>
+        <a href="#">
+          <li class="list-group-item d-flex justify-content-between align-items-center lista-item">
+            Categoria 7
+            <span class="badge badge-primary badge-pill nprodutos">0</span>
+          </li>
+        </a>
+        <a href="#">
+          <li class="list-group-item d-flex justify-content-between align-items-center lista-item">
+            Categoria 8
+            <span class="badge badge-primary badge-pill nprodutos">0</span>
+          </li>
+        </a>
+        <a href="#">
+          <li class="list-group-item d-flex justify-content-between align-items-center lista-item">
+            Categoria 9
+            <span class="badge badge-primary badge-pill nprodutos">0</span>
+          </li>
+        </a>
+
+      </ul>
 
     </div>
   </nav>
@@ -103,10 +152,10 @@
   <div class="container p-produtos-top">
     <h1>Nome do Produto</h1>
     <div class="row produto-centro">
-       <div class="col-sm">
+      <div class="col-sm">
 
 
-           
+
         <div id="carouselExampleIndicators" class="carousel slide slide-produto" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -134,19 +183,22 @@
           </a>
 
         </div>
-        <h2>Informações do Produto</h2>
-        <p>Computador ICC IV2582S, com processador I5 de 3,20GHZ, alta performance, design incrível, 8GB de memória e
-          HD de 1TB. Excelente produto para voce trabalhar e ter em casa para atender todas as suas necessidades... Não
-         perca esta oportunidade!!!!!</p>
-        <p>Marca: Icc</p>
-        <p>Modelo: IV2582</p>
-        <p>Processador: Intel Core I5 3,2 gHZ</p>
-        <p>Chipset: Intel Express</p>
-        <p>Memória Ram: 8gb Ddr3 1333mhz</p>
-        <p>Hd: 1TB Sata</p>
-        <p>Placa Mãe: ICC Chipset Intel</p>
+        <div class="texto">
+          <h2>Informações do Produto</h2>
+          <p>Computador ICC IV2582S, com processador I5 de 3,20GHZ, alta performance, design incrível, 8GB de memória e
+            HD de 1TB. Excelente produto para voce trabalhar e ter em casa para atender todas as suas necessidades...
+            Não
+            perca esta oportunidade!!!!!</p>
+          <p>Marca: Icc</p>
+          <p>Modelo: IV2582</p>
+          <p>Processador: Intel Core I5 3,2 gHZ</p>
+          <p>Chipset: Intel Express</p>
+          <p>Memória Ram: 8gb Ddr3 1333mhz</p>
+          <p>Hd: 1TB Sata</p>
+          <p>Placa Mãe: ICC Chipset Intel</p>
 
 
+        </div>
       </div>
     </div>
   </div>
@@ -156,81 +208,82 @@
   <div class="rodape">
 
     <footer>
-  
+
       <div class="container-fluid text-center">
-  
-          <div class="row informaçoes-primarias py-3">
-          
-            <div class="col-lg-3">
-  
-              <h5>Nossos telefones:</h5>
-  
-                <ul class="list-unstyled">
-  
-                  <li>(31)3456-0967</li>
-                  <li>(31)3478-2331</li>
-                </ul>
-              
-            </div>
-  
-            <div class="col-lg-3">
-              
-              <h5>Horario de atendimento:</h5>
-  
-                <ul class="list-unstyled">
-                  <li>8h00 às 18h00</li>
-                  <li>Segunda à Sábado</li>
-                </ul>           
-            </div>
-  
-            <div class="col-lg-3">
-              
-              <h5>Nossa localização:<a href="#" ><span style="font-size: 26px"><i class="fas fa-map-marker-alt" style="color: white"></i></span></a></h5> 
-  
-              <ul class="list-unstyled">
-  
-                <li>Av. Presidente Costa e Silva</li>
-                <li>Juiz de Fora - MG</li>
-              </ul>
-              
-            </div>
-  
-            <div class="col-lg-3">
-              
-              <h5>Receba nossas novidades por e-mail:</h5>
-  
-              <div class="input-group mb-3">
-                  <input type="text" class="form-control" placeholder="E-mail" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                  <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button" style="color: white">Cadastrar</button>
-                  </div>
-                </div>  
-                      
-              </div>
-  
-            </div>
-  
-         </div>
-  
-          <div class="container-fluid text-center">
-  
-  
-            <div class = "row text-center icons">
-  
-              <div class="col-lg-12 text-center py-2">
-            
-                <span style="font-size: 32px"><i class="fab fa-facebook-f"></i></span>
-                <span style="font-size: 32px"><i class="fab fa-twitter"></i></span>
-                <span style="font-size: 32px"><i class="fab fa-instagram"></i></span>
-                <span style="font-size: 32px"><i class="fab fa-google-plus-g"></i></span>
-  
-              </div>
-  
-            </div>
-  
-          
+
+        <div class="row informaçoes-primarias py-3">
+
+          <div class="col-lg-3">
+
+            <h5>Nossos telefones:</h5>
+
+            <ul class="list-unstyled">
+
+              <li>(31)3456-0967</li>
+              <li>(31)3478-2331</li>
+            </ul>
+
           </div>
-  
+
+          <div class="col-lg-3">
+
+            <h5>Horario de atendimento:</h5>
+
+            <ul class="list-unstyled">
+              <li>8h00 às 18h00</li>
+              <li>Segunda à Sábado</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3">
+
+            <h5>Nossa localização:<a href="#"><span style="font-size: 26px"><i class="fas fa-map-marker-alt" style="color: white"></i></span></a></h5>
+
+            <ul class="list-unstyled">
+
+              <li>Av. Presidente Costa e Silva</li>
+              <li>Juiz de Fora - MG</li>
+            </ul>
+
+          </div>
+
+          <div class="col-lg-3">
+
+            <h5>Receba nossas novidades por e-mail:</h5>
+
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="E-mail" aria-label="Recipient's username"
+                aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" style="color: white">Cadastrar</button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="container-fluid text-center">
+
+
+        <div class="row text-center icons">
+
+          <div class="col-lg-12 text-center py-2">
+
+            <span style="font-size: 32px"><i class="fab fa-facebook-f"></i></span>
+            <span style="font-size: 32px"><i class="fab fa-twitter"></i></span>
+            <span style="font-size: 32px"><i class="fab fa-instagram"></i></span>
+            <span style="font-size: 32px"><i class="fab fa-google-plus-g"></i></span>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
     </footer>
 
   </div>
