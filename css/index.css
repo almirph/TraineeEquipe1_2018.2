@@ -169,7 +169,7 @@ html, body{
 
 .faleconosco{
 
-	 background-color: #F4F4F6;
+	 background-color: white;
 	 /*border-bottom-style: groove;
      border-bottom-width: 0.5px;*/
 }
@@ -282,6 +282,7 @@ footer{
 	border-width: 2px;
 	border-color: black;
 	text-align: center;
+	width: 100%
 }
 
 .input-group{
@@ -296,7 +297,7 @@ footer{
 	border-top-width: 1px;
 	/*background-color: #2B2D42;*/
 	background-color: #31323E;
-	width: 100%;
+	
 
 }
 
@@ -321,7 +322,7 @@ footer{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 400;
-    background-color:#F1F8F6;
+    background-color:white;
     
     
 }
