@@ -1,8 +1,8 @@
 html, body{
-	
-	
+	padding: 0;
+	margin: 0;
 	font-family: montserrat;	
-	
+	/* background-image: url(../img/img2.png); */
 
 	
 
@@ -70,14 +70,14 @@ html, body{
 	padding-right: 0;
 	outline: none;
 }
-
+/* 
 .carousel-control-prev{
 	background-image: linear-gradient(to left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.3) 100%);
 }
 .carousel-control-next{
 	background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.3) 100%);
 
-}
+} */
 
 .card-img-top.new-item {
 	width: 100%;
@@ -115,14 +115,158 @@ html, body{
     border-color: solid transparent;
 }	 
 body{
+
 	font-family: 'Montserrat', sans-serif;
-	background-image: url(../img/img2.png);
-	padding: 0;
-	margin: 0;
-	font-family: montserrat;
+}
+
+/* inicio Quem somos */
+.body-quemsomos{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    background-color:#F1F8F6;
+    
+    
+}
+
+.h1-quemsomos{
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+}
+
+.div-quemsomos{
+    text-align: center;
+   /* background-color: #6E8898; 
+    border: 1px solid #2E5266; */
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 25px;
+
+}
+
+.div-quemsomos figcaption{
+    margin-top: 15px;
+}
+
+.div-quemsomos p {
+    text-align: justify;
+    margin-top: 15px;
+}
+
+.div-quemsomos img{
+    width: 60%;
+    height: 50%;
+    border-radius: 10px;
+  
+
+    box-shadow: 0 4px 8px 0 #6E8898, 0 6px 20px 0 #F1F8F6;
+    
+
+}
+
+.div-quemsomos h2{
+    color: #2E5266;
+    font-weight: bolder;
+}
+
+.div-quemsomos h3{
+    color: #6E8898;
+}
+
+/* Fim Quem somos */
+
+	
+body{
+
+	font-family: 'Montserrat', sans-serif;
 }
 
 
+				/* FALE CONOSCO */
+
+/*********************************************************/
+
+.page-header{
+
+	padding-bottom: 9px;
+	margin: 40px 0 20px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #eee;
+	
+
+}
+
+.page-header h1{
+
+	font-size: 36px;
+	height: 39px;
+	text-align: none;
+}
+
+
+.form-group{
+
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+.form-row label{
+
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.faleconosco{
+
+	 /*background-color: #F4F4F6;*/
+	 /*border-bottom-style: groove;
+     border-bottom-width: 0.5px;*/
+}
+
+
+}
+.faleconosco h1, h3{
+
+	font-weight: 200;
+	color: #2E5266;
+}
+
+.faleconosco button{
+
+	font-weight: 400;
+	/*margin-bottom: 12px;*/
+
+
+}
+
+.faleconosco img{
+
+	width: 500px;
+	margin-top: 150px;
+	
+}
+
+.col-lg-6 h3{
+
+	font-size: 24px;
+	margin-top: 18px;
+
+}
+
+.areatexto{
+
+	background-color: #F1F8F6;
+}
+
+
+form{
+
+	margin-bottom: 18px;
+}
 
 
 
@@ -203,14 +347,17 @@ footer{
 
 }
 /* ************************************************Produtos************************************************** */
-
+.container {
+padding-left: 5%;
+margin-left: 6%;
+}
 .p-produtos-top h1{
 	margin-left: 10%;
 	margin-top: 5%;
 }
 .categoria{
 	
-	
+	padding-left: 0;	
 	z-index: 100;
 	position:absolute;
 	
@@ -238,7 +385,9 @@ footer{
 	margin-bottom:10%;
 }
 .pag-produtos h1{
-	margin-left:17%;
+	margin-left:15%;
+	text-align: center;
+	
 }
 .slide-produto,.img-slide-produto {
 	
@@ -248,7 +397,7 @@ footer{
 }
 .produto-centro{
 	font-size: 20px;
-	text-align: center;
+	text-align: left;
 
 }
 .container h1{
@@ -270,3 +419,4 @@ footer{
 
 
 }
+
