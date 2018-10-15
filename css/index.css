@@ -4,7 +4,7 @@ html, body{
 	padding: 0;
 	margin: 0;
 	font-family: montserrat;	
-	/* background-image: url(../img/img2.png); */
+	
 
 	
 
@@ -12,110 +12,111 @@ html, body{
 
 .faixa{
 	background-color: #1E1E24;	
-	padding-bottom: 5px;
+	padding-bottom: 4px;
 	height: 100%;	
 	padding-top: 10px;	
-	line-height: 0px;
+	line-height: 10px;
 	width: 100%;
 
 }
 .faixa img {
-	padding-top:  1px;
+	padding-top:  0px;
 	padding-left: 15px;
-	margin-bottom: 10px;
-	margin-left: 3%;
+	margin-bottom: 0px;
+	padding-bottom: 1%
+
 }
 .faixa h1{
 	text-align: left;
 	color: white;
-	line-height: middle;	
-	margin-bottom: -65px;
-	padding-top: 30px;
+	line-height: 30px;	
+	margin-bottom: -59px;
+	padding-top: 3%;
 	margin-top: 10px;
-	padding-left: 12%;
+	padding-left: 130px;
 	width: 100%;
-	
+	font-size: 2.0rem;
 
 }
-.pesquisar{
-	background-color:white;
-    border: 1px;
-    border-right: none;
-    padding: 2px;
-	border-radius: 2px;
-	width: 100%;
-	height: 25px;
+.dropdown-menu.home{
+	left: 120px;
 }
-.btn-dark	{
+
+
+.btn-dark.nav	{
 	color: rgba(255,255,255,.5);
 	line-height: 1.2;
     border-radius: 2px;
+
+}
+.item:active {
+	background-color: white;
 }
 
-.card-img-top{
-	width: 150px;	
-	height: 100%;
-	display: inline-block;
-}
 .nav-home{
 	display: inline-block;
 
 }
-
-
-.p{
+.form-nav{
 	padding-left: 80px;
 	padding-top: 30px;
-
+	background-color:#262b2d;
+    border: 1px;
+    border-right: none;
+    padding: 2px;
+    border-radius: 2px;
+	width: 100%;
+	height: 25px;
 }
 
 .slide-home {
 	height: 100%;
 	width: 100%;
-	margin-top: 0px;
-	
+	margin-top: 0px;	
 	padding-left: 0;
 	padding-right: 0;
 	outline: none;
-
+	
 }
-.carousel-control-prev{
+
+.carousel-control-prev.home{
 	background-image: linear-gradient(to left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.3) 100%);
 }
-.carousel-control-next{
+.carousel-control-next.home{
 	background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.3) 100%);
 
 }
 
-.p h5{
-	height: 100%;
-	margin-top: 15px;
-	padding-top: 0px;
-	color: black;
-	font-size: 16px;
-
-}
-
-
-.card{
+.card-img-top.new-item {
+	width: 100%;
 	height: 100px;
+}
+.card.card-home{
+	height: 0px;
 	width: 150px;
 	display: inline-block; 
 	margin-right: 40px;
 	font-size: 16px;
 }
+
+
 .jumbotron-fluid-home {
     padding-top: 5px;
     padding-bottom: 30px;    
     text-align: center;
-    height: 100%;    
+	height: 100%;    
+	background-color:white;
     
+}.display-4.novidades{
+	font-size: 7vw;
+	text-align: center;
 }
-.btn-primary{
+
+.btn-primary.home {
     display: inline-block;
     font-weight: 500;
     border: 1px solid transparent;
-    padding: 5px;
+    padding: 3px;
     font-size: 15px;
     line-height: 10px;
     border-radius: 3px;
@@ -123,16 +124,21 @@ html, body{
     text-align: middle;
     border-color: solid transparent;
 }
-.jumbotron-home h1{
-	width: 100%;
-	height: 100%;
+.igor{
+	margin-left: 0;
+	margin-right: 100%;
+	padding-right: 0;
+	padding-left: 0;
 }
+
+
 
 
 
 				/* FALE CONOSCO */
 
 /*********************************************************/
+
 
 .page-header{
 
@@ -216,8 +222,6 @@ form{
 }
 
 
-
-
 						/* FOOTER */
 
 /*********************************************************/
@@ -255,10 +259,16 @@ footer{
 	font-weight: 600;
 }
 
+
 .col-lg-3 h5{
 
 	padding-top: 16px;
 	
+}
+
+.pdd-special h5{
+
+	padding-top: 4px;
 }
 
 .col-lg-3 li{
@@ -317,13 +327,21 @@ footer{
 
 /* QUEM SOMOS */
 
+/*********************************************************/
 
 .body-quemsomos{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 400;
+<<<<<<< HEAD
     background-color:white;
     
+=======
+	background-color:white;
+	margin-top: 20px;
+	
+	
+>>>>>>> 87f34915f2d010a2074973d819a3b26bdb3e60e8
     
 }
 
@@ -336,12 +354,11 @@ footer{
 
 .div-quemsomos{
     text-align: center;
-   /* background-color: #6E8898; 
-    border: 1px solid #2E5266; */
-    border-radius: 10px;
+   /* background-color: #6E8898; */
     margin-left: 10%;
-    margin-right: 10%;
-    /* margin-top: 25px; */
+	margin-right: 10%;
+	border-bottom: 1px double  #e0dcdc;
+    
 
 }
 
@@ -367,7 +384,11 @@ footer{
 
 .div-quemsomos h2{
     color: #2E5266;
-    font-weight: bolder;
+	font-weight: bolder;
+	text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
 }
 
 .div-quemsomos h3{
@@ -376,44 +397,68 @@ footer{
 
 /* ************************************************Produtos************************************************** */
 
-
+/* ************************************************Produtos************************************************** */
+/* .container {
+padding-left: 5%;
+margin-left: 6%;
+} */
 .p-produtos-top h1{
 	margin-left: 10%;
 	margin-top: 5%;
 }
 .categoria{
-	
-	
+	padding-left: 0;	
 	z-index: 100;
 	position:absolute;
-	
-		
+	padding-top: 0;
 		
 }
+.saiba-mais{
+	background-color: #1E1E24;
+	border-color: #1E1E24;
+}
+.saiba-mais:hover{
+	background-color: #1E1E24;
+	border-color: #1E1E24;
+
+}
+.saiba-mais:not(:disabled):not(.disabled):active{
+	background-color: #1E1E24;
+	border-color: #1E1E24;
+}
+.page-link{
+	color: #1E1E24;
+}
+
 .lista-item{
+	color: #1E1E24;
 	border:0;
 	padding-right: 2%;
-
+	width: 200px;
 	border: 0.5px solid grey;
 		
 }
-
-
-
-.pesquisa{
-	padding-right :  1% ;
-	
+.page-item.active .page-link.cor-pagina{
+	background-color: #1E1E24;
+	border-color: #1E1E24
 }
+
+
 .img-card{
 	margin-top:10%;
 	margin-bottom: 10%;
 }
 .card-produto{
 	margin-left: 15%;
-	margin-bottom:10%;
+	margin-bottom:10%;	
 }
-.pag-produtos h1{
-	margin-left:17%;
+.pag-produtos h1,h2{
+	margin-left:15%;
+	text-align: center;
+	margin-right: 5%;	
+}
+.texto h2{
+	font-size: 30px;
 }
 .slide-produto,.img-slide-produto {
 	
@@ -421,9 +466,10 @@ footer{
 	
 
 }
+
 .produto-centro{
 	font-size: 20px;
-	text-align: center;
+	text-align: left;
 
 }
 .container h1{
@@ -441,7 +487,8 @@ footer{
 	font-weight: 200;
 	text-align: left;
 	font-size: 16px;
+}
 
-
-
+.nprodutos{
+	background-color: #1E1E24;
 }
