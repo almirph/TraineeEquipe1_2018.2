@@ -141,15 +141,6 @@ html, body{
     background-color: #5E6472;
     text-align: middle;
     border-color: solid transparent;
-<<<<<<< HEAD:css/finalStyle.css
-}	 
-body{
-	font-family: 'Montserrat', sans-serif;
-	background-image: url(../img/img2.png);
-	padding: 0;
-	margin: 0;
-	font-family: montserrat;
-=======
 }
 .igor{
 	margin-left: 0;
@@ -242,7 +233,6 @@ body{
 .areatexto{
 
 	background-color: #F1F8F6;
->>>>>>> d1574a94635e4ec91f9950eb17aad899e21f5a8c:css/index.css
 }
 
 
@@ -521,10 +511,7 @@ margin-left: 6%;
 	text-align: left;
 	font-size: 16px;
 }
-<<<<<<< HEAD:css/finalStyle.css
-=======
 
 .nprodutos{
 	background-color: #1E1E24;
 }
->>>>>>> d1574a94635e4ec91f9950eb17aad899e21f5a8c:css/index.css
