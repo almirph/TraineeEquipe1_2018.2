@@ -1,5 +1,6 @@
 
 
+
 html, body{
 	padding: 0;
 	margin: 0;
@@ -86,6 +87,23 @@ html, body{
 	background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.3) 100%);
 
 }
+@media (max-width: 600px){
+	.icones{ 
+	display: none;
+	 }
+}
+.icones{	
+	padding-top: 20px;
+}
+	
+.text b{
+	font-size: 0.8rem;
+	text-transform: uppercase;	
+}
+.text p{
+	font-size: 0.7rem;
+	}
+	
 
 .card-img-top.new-item {
 	width: 100%;
@@ -135,10 +153,10 @@ html, body{
 
 
 
+
 				/* FALE CONOSCO */
 
 /*********************************************************/
-
 
 .page-header{
 
@@ -222,6 +240,8 @@ form{
 }
 
 
+
+
 						/* FOOTER */
 
 /*********************************************************/
@@ -229,6 +249,9 @@ form{
 
 
 					/* FOOTER */
+
+/*********************************************************/
+/* FOOTER */
 
 /*********************************************************/
 
@@ -259,10 +282,16 @@ footer{
 	font-weight: 600;
 }
 
+
 .col-lg-3 h5{
 
 	padding-top: 16px;
 	
+}
+
+.pdd-special h5{
+
+	padding-top: 4px;
 }
 
 .col-lg-3 li{
@@ -321,14 +350,13 @@ footer{
 
 /* QUEM SOMOS */
 
-/*********************************************************/
 
 .body-quemsomos{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 400;
 	background-color:white;
-	margin-top: 20px;
+	
 	
 	
     
