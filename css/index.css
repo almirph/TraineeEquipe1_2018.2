@@ -49,9 +49,6 @@ html, body{
     border-radius: 2px;
 
 }
-.item:active {
-	background-color: white;
-}
 
 .nav-home{
 	display: inline-block;
@@ -104,8 +101,7 @@ html, body{
     padding-top: 5px;
     padding-bottom: 30px;    
     text-align: center;
-	height: 100%;    
-	background-color:white;
+    height: 100%;    
     
 }.display-4.novidades{
 	font-size: 7vw;
@@ -138,7 +134,6 @@ html, body{
 				/* FALE CONOSCO */
 
 /*********************************************************/
-
 
 .page-header{
 
@@ -222,6 +217,8 @@ form{
 }
 
 
+
+
 						/* FOOTER */
 
 /*********************************************************/
@@ -229,6 +226,9 @@ form{
 
 
 					/* FOOTER */
+
+/*********************************************************/
+/* FOOTER */
 
 /*********************************************************/
 
@@ -259,10 +259,16 @@ footer{
 	font-weight: 600;
 }
 
+
 .col-lg-3 h5{
 
 	padding-top: 16px;
 	
+}
+
+.pdd-special h5{
+
+	padding-top: 4px;
 }
 
 .col-lg-3 li{
@@ -321,16 +327,13 @@ footer{
 
 /* QUEM SOMOS */
 
-/*********************************************************/
 
 .body-quemsomos{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 400;
-	background-color:white;
-	margin-top: 20px;
-	
-	
+    background-color:white;
+    
     
 }
 
@@ -343,11 +346,12 @@ footer{
 
 .div-quemsomos{
     text-align: center;
-   /* background-color: #6E8898; */
+   /* background-color: #6E8898; 
+    border: 1px solid #2E5266; */
+    border-radius: 10px;
     margin-left: 10%;
-	margin-right: 10%;
-	border-bottom: 1px double  #e0dcdc;
-    
+    margin-right: 10%;
+    /* margin-top: 25px; */
 
 }
 
@@ -373,11 +377,7 @@ footer{
 
 .div-quemsomos h2{
     color: #2E5266;
-	font-weight: bolder;
-	text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 20px;
+    font-weight: bolder;
 }
 
 .div-quemsomos h3{
