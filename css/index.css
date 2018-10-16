@@ -4,9 +4,10 @@ html, body{
 	padding: 0;
 	margin: 0;
 	font-family: montserrat;	
-	/* background-image: url(../img/img2.png); */
-	/*background-color: #F4F4F6;*/
-	background-color: white;
+	
+
+	
+
 }
 
 .faixa{
@@ -48,7 +49,9 @@ html, body{
     border-radius: 2px;
 
 }
-
+.item:active {
+	background-color: white;
+}
 
 .nav-home{
 	display: inline-block;
@@ -99,6 +102,7 @@ html, body{
 .text p{
 	font-size: 0.7rem;
 	}
+	
 
 .card-img-top.new-item {
 	width: 100%;
@@ -117,8 +121,8 @@ html, body{
     padding-top: 5px;
     padding-bottom: 30px;    
     text-align: center;
-    height: 100%; 
-    background-color: white;   
+	height: 100%;    
+	background-color:white;
     
 }.display-4.novidades{
 	font-size: 7vw;
@@ -148,9 +152,10 @@ html, body{
 
 
 
-				/* FALE CONOSCO 
+				/* FALE CONOSCO */
 
 /*********************************************************/
+
 
 .page-header{
 
@@ -186,11 +191,10 @@ html, body{
 }
 
 .faleconosco{
-/*
-	 background-color: #F4F4F6;*/
+
+	 background-color: white;
 	 /*border-bottom-style: groove;
      border-bottom-width: 0.5px;*/
-     background-color: white;	
 }
 
 
@@ -233,8 +237,6 @@ form{
 
 	margin-bottom: 18px;
 }
-
-
 
 
 						/* FOOTER */
@@ -301,6 +303,7 @@ footer{
 	border-width: 2px;
 	border-color: black;
 	text-align: center;
+	width: 100%
 }
 
 .input-group{
@@ -315,7 +318,7 @@ footer{
 	border-top-width: 1px;
 	/*background-color: #2B2D42;*/
 	background-color: #31323E;
-	width: 100%;
+	
 
 }
 
@@ -335,17 +338,16 @@ footer{
 
 /* QUEM SOMOS */
 
-
 /*********************************************************/
-
 
 .body-quemsomos{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 400;
-	/*background-color: #F4F4F6;*/
-	background-color: white;
-    
+	background-color:white;
+	margin-top: 20px;
+	
+	
     
 }
 
@@ -353,17 +355,16 @@ footer{
     text-align: center;
     margin-left: 10%;
     margin-right: 10%;
-
+    margin-top: 20px;
 }
 
 .div-quemsomos{
     text-align: center;
-   /* background-color: #6E8898; 
-    border: 1px solid #2E5266; */
-    border-radius: 10px;
+   /* background-color: #6E8898; */
     margin-left: 10%;
-    margin-right: 10%;
-    /* margin-top: 25px; */
+	margin-right: 10%;
+	border-bottom: 1px double  #e0dcdc;
+    
 
 }
 
@@ -389,7 +390,11 @@ footer{
 
 .div-quemsomos h2{
     color: #2E5266;
-    font-weight: bolder;
+	font-weight: bolder;
+	text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
 }
 
 .div-quemsomos h3{
@@ -398,44 +403,68 @@ footer{
 
 /* ************************************************Produtos************************************************** */
 
-
+/* ************************************************Produtos************************************************** */
+/* .container {
+padding-left: 5%;
+margin-left: 6%;
+} */
 .p-produtos-top h1{
 	margin-left: 10%;
 	margin-top: 5%;
 }
 .categoria{
-	
-	
+	padding-left: 0;	
 	z-index: 100;
 	position:absolute;
-	
-		
+	padding-top: 0;
 		
 }
+.saiba-mais{
+	background-color: #1E1E24;
+	border-color: #1E1E24;
+}
+.saiba-mais:hover{
+	background-color: #1E1E24;
+	border-color: #1E1E24;
+
+}
+.saiba-mais:not(:disabled):not(.disabled):active{
+	background-color: #1E1E24;
+	border-color: #1E1E24;
+}
+.page-link{
+	color: #1E1E24;
+}
+
 .lista-item{
+	color: #1E1E24;
 	border:0;
 	padding-right: 2%;
-
+	width: 200px;
 	border: 0.5px solid grey;
 		
 }
-
-
-
-.pesquisa{
-	padding-right :  1% ;
-	
+.page-item.active .page-link.cor-pagina{
+	background-color: #1E1E24;
+	border-color: #1E1E24
 }
+
+
 .img-card{
 	margin-top:10%;
 	margin-bottom: 10%;
 }
 .card-produto{
 	margin-left: 15%;
-	margin-bottom:10%;
+	margin-bottom:10%;	
 }
-.pag-produtos h1{
-	margin-left:17%;
+.pag-produtos h1,h2{
+	margin-left:15%;
+	text-align: center;
+	margin-right: 5%;	
+}
+.texto h2{
+	font-size: 30px;
 }
 .slide-produto,.img-slide-produto {
 	
@@ -443,9 +472,10 @@ footer{
 	
 
 }
+
 .produto-centro{
 	font-size: 20px;
-	text-align: center;
+	text-align: left;
 
 }
 .container h1{
@@ -463,7 +493,8 @@ footer{
 	font-weight: 200;
 	text-align: left;
 	font-size: 16px;
+}
 
-
-
+.nprodutos{
+	background-color: #1E1E24;
 }
