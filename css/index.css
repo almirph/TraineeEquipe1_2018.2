@@ -332,8 +332,10 @@ footer{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 400;
-    background-color:white;
-    
+	background-color:white;
+	
+	
+	
     
 }
 
@@ -346,12 +348,11 @@ footer{
 
 .div-quemsomos{
     text-align: center;
-   /* background-color: #6E8898; 
-    border: 1px solid #2E5266; */
-    border-radius: 10px;
+   /* background-color: #6E8898; */
     margin-left: 10%;
-    margin-right: 10%;
-    /* margin-top: 25px; */
+	margin-right: 10%;
+	border-bottom: 1px double  #e0dcdc;
+    
 
 }
 
@@ -377,7 +378,11 @@ footer{
 
 .div-quemsomos h2{
     color: #2E5266;
-    font-weight: bolder;
+	font-weight: bolder;
+	text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
 }
 
 .div-quemsomos h3{
