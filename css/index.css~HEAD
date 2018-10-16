@@ -1,6 +1,5 @@
 
 
-
 html, body{
 	padding: 0;
 	margin: 0;
@@ -141,15 +140,6 @@ html, body{
     background-color: #5E6472;
     text-align: middle;
     border-color: solid transparent;
-<<<<<<< HEAD:css/finalStyle.css
-}	 
-body{
-	font-family: 'Montserrat', sans-serif;
-	background-image: url(../img/img2.png);
-	padding: 0;
-	margin: 0;
-	font-family: montserrat;
-=======
 }
 .igor{
 	margin-left: 0;
@@ -162,10 +152,10 @@ body{
 
 
 
-
 				/* FALE CONOSCO */
 
 /*********************************************************/
+
 
 .page-header{
 
@@ -199,11 +189,9 @@ body{
 	font-size: 14px;
 	font-weight: 700;
 }
-.faleconosco h1{
-	margin-top: 20px;
-}
+
 .faleconosco{
-	 
+
 	 background-color: white;
 	 /*border-bottom-style: groove;
      border-bottom-width: 0.5px;*/
@@ -242,12 +230,13 @@ body{
 .areatexto{
 
 	background-color: #F1F8F6;
->>>>>>> d1574a94635e4ec91f9950eb17aad899e21f5a8c:css/index.css
 }
 
 
+form{
 
-
+	margin-bottom: 18px;
+}
 
 
 						/* FOOTER */
@@ -257,9 +246,6 @@ body{
 
 
 					/* FOOTER */
-
-/*********************************************************/
-/* FOOTER */
 
 /*********************************************************/
 
@@ -290,16 +276,10 @@ footer{
 	font-weight: 600;
 }
 
-
 .col-lg-3 h5{
 
 	padding-top: 16px;
 	
-}
-
-.pdd-special h5{
-
-	padding-top: 4px;
 }
 
 .col-lg-3 li{
@@ -307,14 +287,6 @@ footer{
 	font-size: 16px;
 	font-weight: 500;
 	
-}
-.loc-tamanho:hover{
-	cursor: pointer;
-	-webkit-transform: scale(0.9);
-  	-moz-transform: scale(0.9);
-  	-o-transform: scale(0.9);
-  	-ms-transform: scale(0.9);
- 	 transform: scale(0.9);
 }
 
 .fa-map-marker-alt{
@@ -366,13 +338,14 @@ footer{
 
 /* QUEM SOMOS */
 
+/*********************************************************/
 
 .body-quemsomos{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 400;
 	background-color:white;
-	
+	margin-top: 20px;
 	
 	
     
@@ -521,10 +494,7 @@ margin-left: 6%;
 	text-align: left;
 	font-size: 16px;
 }
-<<<<<<< HEAD:css/finalStyle.css
-=======
 
 .nprodutos{
 	background-color: #1E1E24;
 }
->>>>>>> d1574a94635e4ec91f9950eb17aad899e21f5a8c:css/index.css
