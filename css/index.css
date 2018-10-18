@@ -10,6 +10,9 @@ html, body{
 	
 
 }
+.dropdown-item:active{
+	background-color: #1E1E24;
+}
 
 .faixa{
 	background-color: #1E1E24;	
@@ -51,8 +54,8 @@ html, body{
 
 }
 .item:active {
-	background-color: white;
-}
+	background-color: rgb(24, 23, 23);
+} 
 
 .nav-home{
 	display: inline-block;
@@ -201,7 +204,7 @@ html, body{
 }
 
 
-}
+
 .faleconosco h1, h3{
 
 	font-weight: 200;
