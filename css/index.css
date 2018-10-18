@@ -5,10 +5,7 @@ html, body{
 	padding: 0;
 	margin: 0;
 	font-family: montserrat;	
-	
-
-	
-
+	box-shadow: none;
 }
 
 .faixa{
@@ -438,46 +435,73 @@ margin-left: 6%;
 	z-index: 100;
 	position:absolute;
 	padding-top: 0;
+	border-radius:0; 
+		
 		
 }
+
 .saiba-mais{
-	background-color: #1E1E24;
+	background-color: #F1F8F6;
 	border-color: #1E1E24;
+	color:	#1E1E24;
 }
 .saiba-mais:hover{
 	background-color: #1E1E24;
 	border-color: #1E1E24;
-
 }
 .saiba-mais:not(:disabled):not(.disabled):active{
 	background-color: #1E1E24;
 	border-color: #1E1E24;
 }
+
 .page-link{
 	color: #1E1E24;
 }
 
 .lista-item{
 	color: #1E1E24;
-	border:0;
 	padding-right: 2%;
 	width: 200px;
-	border: 0.5px solid grey;
-		
+	border: none;
+	background-color:rgb(255,255,255,.75);	
+}
+
+.lista-item:hover{
+	background:#343a40;
+	color:rgba(255,255,255,.75);
+	
+}
+.categoria:hover{
+	text-decoration: none;
+}
+.lista-item :nth-child(2){
+	border-bottom:0.5 solid #1E1E24
 }
 .page-item.active .page-link.cor-pagina{
 	background-color: #1E1E24;
 	border-color: #1E1E24
 }
-
-
+a:hover{
+	text-decoration: none;
+}
+.list-group-item:first-child{ 
+	margin-bottom: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.list-group-item:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
 .img-card{
 	margin-top:10%;
 	margin-bottom: 10%;
+	border: 1px solid #1E1E24;
 }
 .card-produto{
 	margin-left: 15%;
 	margin-bottom:10%;	
+	
 }
 .pag-produtos h1,h2{
 	margin-left:15%;
@@ -518,4 +542,14 @@ margin-left: 6%;
 
 .nprodutos{
 	background-color: #1E1E24;
+}
+@media (max-width: 1000px)
+{
+.categoria{
+	display: none;
+}
+.pag-produtos{
+	text-align: center;
+}
+
 }
