@@ -5,7 +5,8 @@ html, body{
 	padding: 0;
 	margin: 0;
 	font-family: montserrat;	
-	box-shadow: none;
+
+
 }
 
 .faixa{
@@ -75,6 +76,9 @@ html, body{
 	padding-right: 0;
 	outline: none;
 	
+}
+.home-drop{
+	background-color: #1E1E24;
 }
 
 .carousel-control-prev.home{
@@ -436,6 +440,7 @@ margin-left: 6%;
 	position:absolute;
 	padding-top: 0;
 	border-radius:0; 
+	 
 		
 		
 }
