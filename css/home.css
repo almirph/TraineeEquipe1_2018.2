@@ -1,0 +1,144 @@
+
+html, body{
+	padding: 0;
+	margin: 0;
+	font-family: montserrat;	
+	
+
+
+}
+
+.faixa{
+	background-color: #1E1E24;	
+	padding-bottom: 4px;
+	height: 100%;	
+	padding-top: 10px;	
+	line-height: 10px;
+	width: 100%;
+
+}
+.faixa img {
+	padding-top:  0px;
+	padding-left: 15px;
+	margin-bottom: 0px;
+	padding-bottom: 1%
+
+}
+.faixa h1{
+	text-align: left;
+	color: white;
+	line-height: 30px;	
+	margin-bottom: -59px;
+	padding-top: 3%;
+	margin-top: 10px;
+	padding-left: 130px;
+	width: 100%;
+	font-size: 2.0rem;
+
+}
+
+.btn-dark.nav	{
+	color: rgba(255,255,255,.5);
+	line-height: 1.2;
+    border-radius: 2px;
+
+}
+
+
+.nav-home{
+	display: inline-block;
+
+}
+.form-nav{
+	padding-left: 80px;
+	padding-top: 30px;
+	background-color:#262b2d;
+    border: 1px;
+    border-right: none;
+    padding: 2px;
+    border-radius: 2px;
+	width: 100%;
+	height: 25px;
+}
+
+.slide-home {
+	height: 100%;
+	width: 100%;
+	margin-top: 0px;	
+	padding-left: 0;
+	padding-right: 0;
+	outline: none;
+	
+}
+
+.carousel-control-prev.home{
+	background-image: linear-gradient(to left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.3) 100%);
+}
+.carousel-control-next.home{
+	background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.3) 100%);
+
+}
+@media (max-width: 600px){
+	.icones{ 
+	display: none;
+	 }
+}
+.icones{	
+	padding-top: 20px;
+}
+	
+.text b{
+	font-size: 0.8rem;
+	text-transform: uppercase;	
+}
+.text p{
+	font-size: 0.7rem;
+	}
+	
+	
+
+.card-img-top.new-item {
+	width: 100%;
+	height: 100px;
+}
+.card.card-home{
+	height: 0px;
+	width: 150px;
+	display: inline-block; 
+	margin-right: 40px;
+	font-size: 16px;
+}
+
+
+.jumbotron-fluid-home {
+    padding-top: 5px;
+    padding-bottom: 30px;    
+    text-align: center;
+    height: 100%;  
+    background-color: white;  
+    
+}.display-4.novidades{
+	font-size: 3vw;
+	text-align: left;
+}
+
+.btn-primary.home {
+    display: inline-block;
+    font-weight: 500;
+    border: 1px solid transparent;
+    padding: 3px;
+    font-size: 15px;
+    line-height: 10px;
+    border-radius: 3px;
+    background-color: #5E6472;
+    text-align: middle;
+    border-color: solid transparent;
+}
+.igor{
+	margin-left: 0;
+	margin-right: 100%;
+	padding-right: 0;
+	padding-left: 0;
+}
+
+
