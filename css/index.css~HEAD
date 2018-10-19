@@ -1,28 +1,15 @@
 
 
-
 html, body{
 	padding: 0;
 	margin: 0;
 	font-family: montserrat;	
+	
 
-
-}
-.dropdown-item:active{
-	background-color: #1E1E24;
-}
-@media (max-width: 1000px) {
-	.faixa{
-		display: none;
-	}
-	.dropdown-menu.home{
-		text-align: left;
-	}
-	.navbar-brand.icone-balao{
-		display: none;
-	}
+	
 
 }
+
 .faixa{
 	background-color: #1E1E24;	
 	padding-bottom: 4px;
@@ -32,7 +19,6 @@ html, body{
 	width: 100%;
 
 }
-
 .faixa img {
 	padding-top:  0px;
 	padding-left: 15px;
@@ -64,8 +50,8 @@ html, body{
 
 }
 .item:active {
-	background-color: rgb(24, 23, 23);
-} 
+	background-color: white;
+}
 
 .nav-home{
 	display: inline-block;
@@ -92,9 +78,6 @@ html, body{
 	outline: none;
 	
 }
-.home-drop{
-	background-color: #1E1E24;
-}
 
 .carousel-control-prev.home{
 	background-image: linear-gradient(to left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.3) 100%);
@@ -103,7 +86,7 @@ html, body{
 	background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.3) 100%);
 
 }
-@media (max-width: 1000px){
+@media (max-width: 600px){
 	.icones{ 
 	display: none;
 	 }
@@ -141,27 +124,12 @@ html, body{
 	height: 100%;    
 	background-color:white;
     
+}.display-4.novidades{
+	font-size: 7vw;
+	text-align: center;
 }
 
-.mais-vendidos{
-	text-align: left;
-	padding-top: 60px;
-	margin-left: 0px;
-}
-.trophy{
-	margin-top: 8px;
-	text-align: right;
-}
-.maisv h1{
-	font-size: 1.8rem;
-	margin-top: 15px;
-	color: #1E1E24;
-	margin-left: 5px;
-	
-}
-
-
- .btn-primary.home {
+.btn-primary.home {
     display: inline-block;
     font-weight: 500;
     border: 1px solid transparent;
@@ -172,9 +140,13 @@ html, body{
     background-color: #5E6472;
     text-align: middle;
     border-color: solid transparent;
-} 
-
-
+}
+.igor{
+	margin-left: 0;
+	margin-right: 100%;
+	padding-right: 0;
+	padding-left: 0;
+}
 
 
 
@@ -183,6 +155,7 @@ html, body{
 				/* FALE CONOSCO */
 
 /*********************************************************/
+
 
 .page-header{
 
@@ -216,18 +189,16 @@ html, body{
 	font-size: 14px;
 	font-weight: 700;
 }
-.faleconosco h1{
-	margin-top: 20px;
-}
+
 .faleconosco{
-	 
+
 	 background-color: white;
 	 /*border-bottom-style: groove;
      border-bottom-width: 0.5px;*/
 }
 
 
-
+}
 .faleconosco h1, h3{
 
 	font-weight: 200;
@@ -262,8 +233,10 @@ html, body{
 }
 
 
+form{
 
-
+	margin-bottom: 18px;
+}
 
 
 						/* FOOTER */
@@ -273,9 +246,6 @@ html, body{
 
 
 					/* FOOTER */
-
-/*********************************************************/
-/* FOOTER */
 
 /*********************************************************/
 
@@ -306,16 +276,10 @@ footer{
 	font-weight: 600;
 }
 
-
 .col-lg-3 h5{
 
 	padding-top: 16px;
 	
-}
-
-.pdd-special h5{
-
-	padding-top: 4px;
 }
 
 .col-lg-3 li{
@@ -323,10 +287,6 @@ footer{
 	font-size: 16px;
 	font-weight: 500;
 	
-}
-.loc-tamanho:hover{
-	cursor: pointer;
- 	 transform: scale(0.9);
 }
 
 .fa-map-marker-alt{
@@ -378,13 +338,14 @@ footer{
 
 /* QUEM SOMOS */
 
+/*********************************************************/
 
 .body-quemsomos{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 400;
 	background-color:white;
-	
+	margin-top: 20px;
 	
 	
     
@@ -454,75 +415,48 @@ margin-left: 6%;
 .categoria{
 	padding-left: 0;	
 	z-index: 100;
-	position: absolute;
+	position:absolute;
 	padding-top: 0;
-	border-radius:0; 
-	
-	 
-		
 		
 }
-
 .saiba-mais{
-	background-color: #F1F8F6;
+	background-color: #1E1E24;
 	border-color: #1E1E24;
-	color:	#1E1E24;
 }
 .saiba-mais:hover{
 	background-color: #1E1E24;
 	border-color: #1E1E24;
+
 }
 .saiba-mais:not(:disabled):not(.disabled):active{
 	background-color: #1E1E24;
 	border-color: #1E1E24;
 }
-
 .page-link{
 	color: #1E1E24;
 }
 
 .lista-item{
 	color: #1E1E24;
+	border:0;
 	padding-right: 2%;
 	width: 200px;
-	border: none;
-	background-color:rgb(255,255,255,.75);	
-	
-}
-
-.lista-item:hover{
-	background:#343a40;
-	color:rgba(255,255,255,.75);
-	
-}
-.categoria:hover{
-	text-decoration: none;
+	border: 0.5px solid grey;
+		
 }
 .page-item.active .page-link.cor-pagina{
 	background-color: #1E1E24;
 	border-color: #1E1E24
 }
-a:hover{
-	text-decoration: none;
-}
-.list-group-item:first-child{ 
-	margin-bottom: 0;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-}
-.list-group-item:first-child {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-}
+
+
 .img-card{
 	margin-top:10%;
 	margin-bottom: 10%;
-	border: 1px solid #1E1E24;
 }
 .card-produto{
 	margin-left: 15%;
 	margin-bottom:10%;	
-	
 }
 .pag-produtos h1,h2{
 	margin-left:15%;
@@ -544,7 +478,10 @@ a:hover{
 	text-align: left;
 
 }
+.container h1{
+	text-align: center;
 
+}
 .slide-produto{
 	margin-left: 22%;
 	margin-right: 22%;
@@ -560,30 +497,4 @@ a:hover{
 
 .nprodutos{
 	background-color: #1E1E24;
-}
-@media (max-width: 1000px)
-{
-.categoria{
-	display: none;
-}
-.pag-produtos{
-	text-align: center;
-}
-.home.show{
-	background-color:#343a40;
-	
-}
-.home a{
-	color:rgba(255,255,255,.5);
-}
-.home-linha{
-	border-color:#1E1E24; 
-}
-..dropdown-item.active, .dropdown-item:active {
-	background-color: #1E1E24;
-}
-.dropdown-item:focus, .dropdown-item:hover{
-	background-color: #343a40;
-	color:white;
-}
 }
