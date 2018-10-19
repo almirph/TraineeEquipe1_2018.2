@@ -305,10 +305,6 @@ footer{
 }
 .loc-tamanho:hover{
 	cursor: pointer;
-	-webkit-transform: scale(0.9);
-  	-moz-transform: scale(0.9);
-  	-o-transform: scale(0.9);
-  	-ms-transform: scale(0.9);
  	 transform: scale(0.9);
 }
 
@@ -437,9 +433,10 @@ margin-left: 6%;
 .categoria{
 	padding-left: 0;	
 	z-index: 100;
-	position:absolute;
+	position: absolute;
 	padding-top: 0;
 	border-radius:0; 
+	
 	 
 		
 		
@@ -469,6 +466,7 @@ margin-left: 6%;
 	width: 200px;
 	border: none;
 	background-color:rgb(255,255,255,.75);	
+	
 }
 
 .lista-item:hover{
@@ -478,9 +476,6 @@ margin-left: 6%;
 }
 .categoria:hover{
 	text-decoration: none;
-}
-.lista-item :nth-child(2){
-	border-bottom:0.5 solid #1E1E24
 }
 .page-item.active .page-link.cor-pagina{
 	background-color: #1E1E24;
@@ -556,5 +551,21 @@ a:hover{
 .pag-produtos{
 	text-align: center;
 }
-
+.home.show{
+	background-color:#343a40;
+	
+}
+.home a{
+	color:rgba(255,255,255,.5);
+}
+.home-linha{
+	border-color:#1E1E24; 
+}
+..dropdown-item.active, .dropdown-item:active {
+	background-color: #1E1E24;
+}
+.dropdown-item:focus, .dropdown-item:hover{
+	background-color: #343a40;
+	color:white;
+}
 }
