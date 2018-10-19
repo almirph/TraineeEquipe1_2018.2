@@ -365,7 +365,7 @@ footer{
 }
 
 .h1-quemsomos{
-	text-align: left;
+	text-align: center;
 	font-weight: 200;
 	
     
@@ -430,7 +430,7 @@ footer{
 
 .body-quemsomos:hover .h1-quemsomos{
 	transform: scale(1.1);
-	margin-left: 20px;
+	
 }
 .div-quemsomos:hover{
 	font-weight: bold;
