@@ -10,7 +10,18 @@ html, body{
 .dropdown-item:active{
 	background-color: #1E1E24;
 }
+@media (max-width: 1000px) {
+	.faixa{
+		display: none;
+	}
+	.dropdown-menu.home{
+		text-align: left;
+	}
+	.navbar-brand.icone-balao{
+		display: none;
+	}
 
+}
 .faixa{
 	background-color: #1E1E24;	
 	padding-bottom: 4px;
@@ -20,6 +31,7 @@ html, body{
 	width: 100%;
 
 }
+
 .faixa img {
 	padding-top:  0px;
 	padding-left: 15px;
@@ -87,7 +99,7 @@ html, body{
 	background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.3) 100%);
 
 }
-@media (max-width: 600px){
+@media (max-width: 1000px){
 	.icones{ 
 	display: none;
 	 }
@@ -125,12 +137,27 @@ html, body{
 	height: 100%;    
 	background-color:white;
     
-}.display-4.novidades{
-	font-size: 7vw;
-	text-align: center;
 }
 
-.btn-primary.home {
+.mais-vendidos{
+	text-align: left;
+	padding-top: 60px;
+	margin-left: 0px;
+}
+.trophy{
+	margin-top: 8px;
+	text-align: right;
+}
+.maisv h1{
+	font-size: 1.8rem;
+	margin-top: 15px;
+	color: #1E1E24;
+	margin-left: 5px;
+	
+}
+
+
+/* .btn-primary.home {
     display: inline-block;
     font-weight: 500;
     border: 1px solid transparent;
@@ -141,13 +168,8 @@ html, body{
     background-color: #5E6472;
     text-align: middle;
     border-color: solid transparent;
-}
-.igor{
-	margin-left: 0;
-	margin-right: 100%;
-	padding-right: 0;
-	padding-left: 0;
-}
+} */
+
 
 
 
@@ -522,10 +544,7 @@ a:hover{
 	text-align: left;
 
 }
-.container h1{
-	text-align: center;
 
-}
 .slide-produto{
 	margin-left: 22%;
 	margin-right: 22%;
@@ -542,8 +561,6 @@ a:hover{
 .nprodutos{
 	background-color: #1E1E24;
 }
-<<<<<<< HEAD
-=======
 @media (max-width: 1000px)
 {
 .categoria{
@@ -554,4 +571,3 @@ a:hover{
 }
 
 }
->>>>>>> c622fa9af741b8402796e7d3081cebbe7bf5c31b
