@@ -1,10 +1,10 @@
 
-
-
 html, body{
 	padding: 0;
 	margin: 0;
 	font-family: montserrat;	
+	
+
 
 
 }
@@ -37,10 +37,6 @@ html, body{
 	font-size: 2.0rem;
 
 }
-.dropdown-menu.home{
-	left: 120px;
-}
-
 
 .btn-dark.nav	{
 	color: rgba(255,255,255,.5);
@@ -48,9 +44,7 @@ html, body{
     border-radius: 2px;
 
 }
-.item:active {
-	background-color: white;
-}
+
 
 .nav-home{
 	display: inline-block;
@@ -67,7 +61,9 @@ html, body{
 	width: 100%;
 	height: 25px;
 }
-
+.dropdown-menu{
+	left:10%;
+}
 .slide-home {
 	height: 100%;
 	width: 100%;
@@ -76,9 +72,6 @@ html, body{
 	padding-right: 0;
 	outline: none;
 	
-}
-.home-drop{
-	background-color: #1E1E24;
 }
 
 .carousel-control-prev.home{
@@ -105,6 +98,7 @@ html, body{
 	font-size: 0.7rem;
 	}
 	
+	
 
 .card-img-top.new-item {
 	width: 100%;
@@ -123,12 +117,12 @@ html, body{
     padding-top: 5px;
     padding-bottom: 30px;    
     text-align: center;
-	height: 100%;    
-	background-color:white;
+    height: 100%;  
+    background-color: white;  
     
 }.display-4.novidades{
-	font-size: 7vw;
-	text-align: center;
+	font-size: 3vw;
+	text-align: left;
 }
 
 .btn-primary.home {
@@ -149,8 +143,6 @@ html, body{
 	padding-right: 0;
 	padding-left: 0;
 }
-
-
 
 
 
@@ -193,6 +185,7 @@ html, body{
 }
 .faleconosco h1{
 	margin-top: 20px;
+	text-align: center;
 }
 .faleconosco{
 	 
@@ -201,12 +194,18 @@ html, body{
      border-bottom-width: 0.5px;*/
 }
 
-
+.tamanho-fale{
+	width: 25%;
+	
 }
+
 .faleconosco h1, h3{
 
 	font-weight: 200;
 	color: #2E5266;
+}
+.container .faleconosco{
+	display: inline-block;
 }
 
 .faleconosco button{
@@ -237,10 +236,6 @@ html, body{
 }
 
 
-form{
-
-	margin-bottom: 18px;
-}
 
 
 
@@ -305,10 +300,6 @@ footer{
 }
 .loc-tamanho:hover{
 	cursor: pointer;
-	-webkit-transform: scale(0.9);
-  	-moz-transform: scale(0.9);
-  	-o-transform: scale(0.9);
-  	-ms-transform: scale(0.9);
  	 transform: scale(0.9);
 }
 
@@ -368,24 +359,25 @@ footer{
     font-weight: 400;
 	background-color:white;
 	
-	
+	border-bottom: 1px double  #e0dcdc;
 	
     
 }
 
 .h1-quemsomos{
-    text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 20px;
+	text-align: left;
+	font-weight: 200;
+	
+    
 }
+
 
 .div-quemsomos{
     text-align: center;
    /* background-color: #6E8898; */
     margin-left: 10%;
 	margin-right: 10%;
-	border-bottom: 1px double  #e0dcdc;
+	
     
 
 }
@@ -395,14 +387,16 @@ footer{
 }
 
 .div-quemsomos p {
-    text-align: justify;
-    margin-top: 15px;
+    
+	margin-top: 15px;
+	font-size: 20px;
 }
 
 .div-quemsomos img{
-    width: 60%;
-    height: 50%;
-    border-radius: 10px;
+	margin-top: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
   
 
     box-shadow: 0 4px 8px 0 #6E8898, 0 6px 20px 0 #F1F8F6;
@@ -411,7 +405,7 @@ footer{
 }
 
 .div-quemsomos h2{
-    color: #2E5266;
+    color: #31323E;;
 	font-weight: bolder;
 	text-align: center;
     margin-left: 10%;
@@ -420,16 +414,43 @@ footer{
 }
 
 .div-quemsomos h3{
-    color: #6E8898;
+    opacity: 0;
+}
+.div-quemsomos:hover h3{
+	position: relative;
+	top: -200px;
+	font-weight: bold;
+	opacity: 1;
+	color:#31323E;
+}
+.div-quemsomos:hover img{
+	transform: scale(1.1);
+	opacity: 0.5;
+}
+
+.body-quemsomos:hover .h1-quemsomos{
+	transform: scale(1.1);
+	margin-left: 20px;
+}
+.div-quemsomos:hover{
+	font-weight: bold;
+}
+
+@media(max-width: 1000px){
+	.h1-quemsomos{
+		font-size: 40px;
+		
+	}
+	.div-quemsomos h3{
+		opacity: 1;
+		margin-top: 10px;
+	}
 }
 
 /* ************************************************Produtos************************************************** */
 
 /* ************************************************Produtos************************************************** */
-/* .container {
-padding-left: 5%;
-margin-left: 6%;
-} */
+
 .p-produtos-top h1{
 	margin-left: 10%;
 	margin-top: 5%;
@@ -437,9 +458,10 @@ margin-left: 6%;
 .categoria{
 	padding-left: 0;	
 	z-index: 100;
-	position:absolute;
+	position: absolute;
 	padding-top: 0;
 	border-radius:0; 
+	
 	 
 		
 		
@@ -469,18 +491,15 @@ margin-left: 6%;
 	width: 200px;
 	border: none;
 	background-color:rgb(255,255,255,.75);	
+	
 }
 
 .lista-item:hover{
 	background:#343a40;
-	color:rgba(255,255,255,.75);
-	
+	color:rgba(255,255,255,.75);	
 }
 .categoria:hover{
 	text-decoration: none;
-}
-.lista-item :nth-child(2){
-	border-bottom:0.5 solid #1E1E24
 }
 .page-item.active .page-link.cor-pagina{
 	background-color: #1E1E24;
@@ -504,6 +523,7 @@ a:hover{
 	border: 1px solid #1E1E24;
 }
 .card-produto{
+	text-align: auto;
 	margin-left: 15%;
 	margin-bottom:10%;	
 	
@@ -528,10 +548,7 @@ a:hover{
 	text-align: left;
 
 }
-.container h1{
-	text-align: center;
 
-}
 .slide-produto{
 	margin-left: 22%;
 	margin-right: 22%;
@@ -546,15 +563,44 @@ a:hover{
 }
 
 .nprodutos{
-	background-color: #1E1E24;
+	background-color:#1E1E24;
 }
-@media (max-width: 1000px)
+@media(max-width:1200px) and (min-width:1001px)
 {
+	.card-produto{
+		margin-left: 25%;
+	}
+}
+
+
+@media (max-width: 1000px)
+
+{
+	.card-produto{
+text-align: center;
+}
 .categoria{
 	display: none;
 }
 .pag-produtos{
 	text-align: center;
 }
+.dropdown-menu{
+	background-color:#343a40;
+	
+}
+.dropdown-menu a{
+	color:rgba(255,255,255,.5);
+}
+.dropdown-divider{
+	border-color:#1E1E24; 
+}
+..dropdown-item.active, .dropdown-item:active {
+	background-color: #1E1E24;
+}
+.dropdown-item:focus, .dropdown-item:hover{
+	background-color: #343a40;
+	color:white;
 
+}
 }
