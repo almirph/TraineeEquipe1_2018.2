@@ -184,14 +184,13 @@ html, body{
  */
 
 
-
-				/* FALE CONOSCO */
+/* FALE CONOSCO */
 
 /*********************************************************/
 
+/*
 .page-header{
-
-	padding-bottom: 9px;
+	padding-bottom: 12px;
 	padding-top: 40px;
 	margin-left: 0;
 	margin-right: 0;
@@ -199,21 +198,18 @@ html, body{
 	border-bottom-style: solid;
 	border-bottom-color: #eee;
 	
-
 }
-
 .page-header h1{
-
 	font-size: 36px;
 	height: 39px;
 	text-align: none;
 }
-
+*/
 
 .form-group{
 
-	margin-top: 16px;
-	margin-bottom: 16px;
+	margin-top: 8px;
+	margin-bottom: 8px;
 }
 
 .form-row label{
@@ -222,9 +218,10 @@ html, body{
 	font-weight: 700;
 }
 .faleconosco h1{
+
 	margin-top: 20px;
-	text-align: center;
 }
+/*
 .faleconosco{
 	 
 	 background-color: white;
@@ -232,35 +229,32 @@ html, body{
      border-bottom-width: 0.5px;*/
 }
 
-.tamanho-fale{
-	width: 25%;
-	
+/*
 }
-
 .faleconosco h1, h3{
-
 	font-weight: 200;
 	color: #2E5266;
 }
-.container .faleconosco{
-	display: inline-block;
-}
-
 .faleconosco button{
-
 	font-weight: 400;
+	margin-top: 8px;
 	margin-bottom: 50px;
-
-
 }
-
-.faleconosco img{
-
-	width: 500px;
-	margin-top: 150px;
+@media (max-width: 1000px){
+	.faleconosco img{
+	display: none;
 	
 }
-
+}
+.faleconosco img{
+	width: 500px;
+	margin-top: 150px;
+	border-style: groove;
+	border-width: 1px;
+	border-color: black;
+	
+}
+*/
 .col-lg-6 h3{
 
 	font-size: 24px;
@@ -274,6 +268,10 @@ html, body{
 }
 
 
+form{
+
+	margin-bottom: 16px;
+}
 
 
 
@@ -311,6 +309,11 @@ footer{
 	border-width: 1px;
 	
 }
+ .faleconosco-footer{
+
+ 	color:#2E5266;
+ 	text-align: left;
+ }
 
 .rodape h5{
 
@@ -349,6 +352,14 @@ footer{
 	border-width: 0;
 }
 
+.fa-headset{
+
+	padding-left: 12px;
+	background-color:#1E1E24;
+	color: white;
+	border-width: 0;
+}
+
 .modal-body iframe{
 
 	border-style: solid;
@@ -379,12 +390,23 @@ footer{
 	margin-right: 18px;
 }
 
+.col-lg-12 a{
+
+	color: white;
+}
+
+.col-lg-12 i:hover{
+
+	color: black;
+}
+
 
 .informaçoes-primarias li
 {
 	line-height: 36px;
 
 }
+
 
 
 
