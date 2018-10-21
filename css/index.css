@@ -23,7 +23,6 @@ html, body{
 	}
 
 }
-
 .faixa{
 	background-color: #1E1E24;	
 	padding-bottom: 4px;
@@ -53,12 +52,21 @@ html, body{
 
 }
 
+.dropdown-menu.home{
+	left: 120px;
+}
 .btn-dark.nav	{
 	color: rgba(255,255,255,.5);
 	line-height: 1.2;
     border-radius: 2px;
 
 }
+
+.item:active {
+	background-color: rgb(24, 23, 23);
+} 
+
+
 .nav-home{
 	display: inline-block;
 
@@ -104,7 +112,7 @@ html, body{
 	background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.3) 100%);
 
 }
-@media (max-width: 900px){
+@media (max-width: 1000px){
 	.icones{ 
 	display: none;
 	 }
@@ -138,6 +146,26 @@ html, body{
     background-color: white;  
     
 }
+.mais-vendidos{
+	text-align: left;
+	padding-top: 60px;
+	margin-left: 0px;
+}
+.trophy{
+	margin-top: 8px;
+	text-align: right;
+}
+.maisv h1{
+	font-size: 1.8rem;
+	margin-top: 15px;
+	color: #1E1E24;
+	margin-left: 5px;
+	
+}
+/* .display-4.novidades{
+	font-size: 3vw;
+	text-align: left;
+}
 
 .mais-vendidos{
 	text-align: left;
@@ -155,7 +183,7 @@ html, body{
 	margin-left: 5px;
 	
 }
-
+ */
 
 
 
@@ -583,7 +611,11 @@ a:hover{
 		margin-left: 25%;
 	}
 }
-
+@media(max-width:766px){
+	.card-produto{
+		margin-left: 25%;
+	}
+}
 
 @media (max-width: 1000px)
 
