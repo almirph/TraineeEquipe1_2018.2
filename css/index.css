@@ -1,5 +1,6 @@
 
 
+
 html, body{
 	padding: 0;
 	margin: 0;
@@ -86,6 +87,23 @@ html, body{
 	background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.3) 100%);
 
 }
+@media (max-width: 600px){
+	.icones{ 
+	display: none;
+	 }
+}
+.icones{	
+	padding-top: 20px;
+}
+	
+.text b{
+	font-size: 0.8rem;
+	text-transform: uppercase;	
+}
+.text p{
+	font-size: 0.7rem;
+	}
+	
 
 .card-img-top.new-item {
 	width: 100%;
@@ -135,14 +153,15 @@ html, body{
 
 
 
+
 				/* FALE CONOSCO */
 
 /*********************************************************/
 
-
+/*
 .page-header{
 
-	padding-bottom: 9px;
+	padding-bottom: 12px;
 	padding-top: 40px;
 	margin-left: 0;
 	margin-right: 0;
@@ -159,12 +178,12 @@ html, body{
 	height: 39px;
 	text-align: none;
 }
-
+*/
 
 .form-group{
 
-	margin-top: 16px;
-	margin-bottom: 16px;
+	margin-top: 8px;
+	margin-bottom: 8px;
 }
 
 .form-row label{
@@ -172,15 +191,19 @@ html, body{
 	font-size: 14px;
 	font-weight: 700;
 }
+.faleconosco h1{
 
+	margin-top: 20px;
+}
+/*
 .faleconosco{
-
+	 
 	 background-color: white;
 	 /*border-bottom-style: groove;
      border-bottom-width: 0.5px;*/
 }
 
-
+/*
 }
 .faleconosco h1, h3{
 
@@ -191,18 +214,33 @@ html, body{
 .faleconosco button{
 
 	font-weight: 400;
+	margin-top: 8px;
 	margin-bottom: 50px;
 
 
 }
 
+@media (max-width: 1000px){
+
+	.faleconosco img{
+
+
+	display: none;
+	
+}
+}
+
 .faleconosco img{
+
 
 	width: 500px;
 	margin-top: 150px;
+	border-style: groove;
+	border-width: 1px;
+	border-color: black;
 	
 }
-
+*/
 .col-lg-6 h3{
 
 	font-size: 24px;
@@ -218,8 +256,10 @@ html, body{
 
 form{
 
-	margin-bottom: 18px;
+	margin-bottom: 16px;
 }
+
+
 
 
 						/* FOOTER */
@@ -229,6 +269,9 @@ form{
 
 
 					/* FOOTER */
+
+/*********************************************************/
+/* FOOTER */
 
 /*********************************************************/
 
@@ -252,6 +295,11 @@ footer{
 	border-width: 1px;
 	
 }
+ .faleconosco-footer{
+
+ 	color:#2E5266;
+ 	text-align: left;
+ }
 
 .rodape h5{
 
@@ -277,8 +325,20 @@ footer{
 	font-weight: 500;
 	
 }
+.loc-tamanho:hover{
+	cursor: pointer;
+ 	 transform: scale(0.9);
+}
 
 .fa-map-marker-alt{
+
+	padding-left: 12px;
+	background-color:#1E1E24;
+	color: white;
+	border-width: 0;
+}
+
+.fa-headset{
 
 	padding-left: 12px;
 	background-color:#1E1E24;
@@ -316,6 +376,16 @@ footer{
 	margin-right: 18px;
 }
 
+.col-lg-12 a{
+
+	color: white;
+}
+
+.col-lg-12 i:hover{
+
+	color: black;
+}
+
 
 .informaçoes-primarias li
 {
@@ -327,21 +397,15 @@ footer{
 
 /* QUEM SOMOS */
 
-/*********************************************************/
 
 .body-quemsomos{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 400;
-<<<<<<< HEAD
-    background-color:white;
-    
-=======
 	background-color:white;
-	margin-top: 20px;
 	
 	
->>>>>>> 87f34915f2d010a2074973d819a3b26bdb3e60e8
+	
     
 }
 
