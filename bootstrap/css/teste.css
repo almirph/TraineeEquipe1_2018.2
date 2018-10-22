@@ -1,0 +1,65 @@
+	
+body{
+
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+				/* FALE CONOSCO */
+
+/*********************************************************/
+
+
+.form-group{
+
+	margin-top: 20px;
+	margin-bottom: 32px;
+}
+
+.faleconosco{
+
+	 /*background-image: linear-gradient(#9FB1BC, #6E8898);*/
+	 border-style: groove;
+     border-width: 3px;
+	
+}
+
+
+}
+.faleconosco h1, h3{
+
+	font-weight: 400;
+	color: #2E5266;
+
+}
+
+.faleconosco button{
+
+	font-weight: 400;
+	margin-bottom: 12px;
+
+}
+
+.faleconosco img{
+
+	width: 500px;
+	margin-top: 60px;
+	
+
+}
+
+
+.areatexto{
+
+	background-color: #F1F8F6;
+}
+
+.col-md-12 label{
+	
+	font-weight: 400;
+	
+	color:#2E5266;
+}
+
+
+
