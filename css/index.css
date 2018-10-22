@@ -8,6 +8,7 @@ html, body{
 
 
 }
+
 .dropdown-item:active{
 	background-color: #1E1E24;
 }
@@ -51,7 +52,7 @@ html, body{
 	font-size: 2.0rem;
 
 }
-}
+
 .dropdown-menu.home{
 	left: 120px;
 }
@@ -61,7 +62,7 @@ html, body{
     border-radius: 2px;
 
 }
-}
+
 .item:active {
 	background-color: rgb(24, 23, 23);
 } 
@@ -227,7 +228,7 @@ html, body{
 	 background-color: white;
 	 /*border-bottom-style: groove;
      border-bottom-width: 0.5px;*/
-}
+
 
 /*
 }
@@ -396,8 +397,8 @@ footer{
 }
 
 .col-lg-12 i:hover{
-
-	color: black;
+	transform: scale(1.2);
+	/* color: #111; */
 }
 
 
@@ -509,7 +510,7 @@ footer{
 
 /* ************************************************Produtos************************************************** */
 
-/* ************************************************Produtos************************************************** */
+
 
 .p-produtos-top h1{
 	text-align: center;
@@ -522,11 +523,7 @@ footer{
 	position: absolute;
 	padding-top: 0;
 	border-radius:0; 
-	margin-top:7.5%;
-	
-	 
-		
-		
+	margin-top:10%;	
 }
 
 .saiba-mais{
@@ -584,6 +581,11 @@ a:hover{
 	margin-bottom: 10%;
 	border: 1px solid #1E1E24;
 }
+.img-card:hover{
+		-webkit-box-shadow: 18px 14px 10px rgba(50, 50, 50, 0.77);
+        -moz-box-shadow:    18px 14px 10px rgba(50, 50, 50, 0.77);
+        box-shadow:         18px 14px 10px rgba(50, 50, 50, 0.77);
+}
 .card-produto{
 	text-align: auto;
 	margin-left: 15%;
@@ -594,12 +596,18 @@ a:hover{
 
 
 .nprodutos{
-	background-color:#1E1E24;
+	background-color:#262b2d
 }
 @media(max-width:350px)
 {
 	.card-produto{
 		margin-left: 5%;
+	}
+}
+@media(max-width:300px)
+{
+	.card-produto{
+		margin-left: 0;
 	}
 }
 @media(max-width:1200px) and (min-width:1001px)
@@ -612,6 +620,7 @@ a:hover{
 {
 	.card-produto{
 		margin-left: 25%;
+		margin-right: 5%;
 	}
 }
 
@@ -637,12 +646,13 @@ text-align: center;
 .dropdown-divider{
 	border-color:#1E1E24; 
 }
-..dropdown-item.active, .dropdown-item:active {
+.dropdown-item.active, .dropdown-item:active {
 	background-color: #1E1E24;
 }
 .dropdown-item:focus, .dropdown-item:hover{
 	background-color: #343a40;
 	color:white;
+	
 
 }
 }
@@ -688,3 +698,4 @@ text-align: center;
 		margin-left: 15%;
 	}
 }
+
