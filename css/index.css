@@ -8,6 +8,9 @@ html, body{
 
 
 }
+h1{
+	font-size:45px;
+}
 
 .dropdown-item:active{
 	background-color: #1E1E24;
@@ -667,6 +670,7 @@ text-align: center;
 	margin-bottom: 2.5%;
 }
 .img-pagina{
+	
 	width: 100vh;
 	height: 75vh;
 }
@@ -699,3 +703,9 @@ text-align: center;
 	}
 }
 
+.pagina-produtos:hover{
+	transform: scale(1.1);
+}
+#id{
+	transition: all 120ms ease-out;
+}
