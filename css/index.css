@@ -11,7 +11,7 @@ html, body{
 .dropdown-item:active{
 	background-color: #1E1E24;
 }
-@media (max-width: 1000px) {
+@media (max-width: 991px)  {
 	.faixa{
 		display: none;
 	}
