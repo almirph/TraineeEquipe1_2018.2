@@ -2,7 +2,8 @@
 html, body{
 	padding: 0;
 	margin: 0;
-	font-family: montserrat;	
+	font-family: montserrat;
+	background-color: rgb(235, 237, 247) ;	
 	
 
 
@@ -79,7 +80,7 @@ html, body{
 }
 @media (min-width: 992px){
 .nav-botn{
-	margin-left: 35px;
+	margin-left: 30px;
 	
 }
 }
@@ -130,7 +131,8 @@ html, body{
     padding-bottom: 30px;    
     text-align: center;
     height: 100%;  
-    background-color: white;  
+	background-color: rgb(235, 237, 247); 
+	/* background-color: #e5ebff;  */
     
 }
 .mais-vendidos{
@@ -147,6 +149,7 @@ html, body{
 	margin-top: 15px;
 	color: #1E1E24;
 	margin-left: 5px;
+	text-align: left;
 	
 }
 .prod-home {
@@ -154,20 +157,25 @@ html, body{
 	margin-left: 50px;
 	display: inline-flex;
 }
-.img-card-home {
-	margin-top:10%;
-	margin-bottom: 10%;
-	border: 1px solid #1E1E24;
-	flex-wrap: wrap;
+.img-card-home:hover{
+	-webkit-box-shadow: 6px 4px 6px rgba(50, 50, 50, 0.77);
+	-moz-box-shadow:    6px 4px 6px rgba(50, 50, 50, 0.77);
+	box-shadow:         9px 7px 10px rgba(50, 50, 50, 0.77);
+	transition: all 220ms ease-out;
+	transform: scale(1.05);
 }
 @media (max-width: 617px){
-	.card-produto-home{
-		margin-left: 20%;
+	.img-card-home{
+		margin-left: 15%;
 
 	}
 	.form-control{
 		width: 45%;
 	}
+}
+.img-card-home{
+	background-color: rgb(235, 237, 247);
+	text-align: left;
 }
 
 
@@ -175,23 +183,7 @@ html, body{
 
 /*********************************************************/
 
-/*
-.page-header{
-	padding-bottom: 12px;
-	padding-top: 40px;
-	margin-left: 0;
-	margin-right: 0;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-	border-bottom-color: #eee;
-	
-}
-.page-header h1{
-	font-size: 36px;
-	height: 39px;
-	text-align: none;
-}
-*/
+
 
 .form-group{
 
@@ -208,40 +200,10 @@ html, body{
 
 	margin-top: 20px;
 }
-/*
-.faleconosco{
-	 
-	 background-color: white;
-	 /*border-bottom-style: groove;
-     border-bottom-width: 0.5px;*/
 
 
-/*
-}
-.faleconosco h1, h3{
-	font-weight: 200;
-	color: #2E5266;
-}
-.faleconosco button{
-	font-weight: 400;
-	margin-top: 8px;
-	margin-bottom: 50px;
-}
-@media (max-width: 1000px){
-	.faleconosco img{
-	display: none;
-	
-}
-}
-.faleconosco img{
-	width: 500px;
-	margin-top: 150px;
-	border-style: groove;
-	border-width: 1px;
-	border-color: black;
-	
-}
-*/
+
+
 .col-lg-6 h3{
 
 	font-size: 24px;
@@ -477,20 +439,21 @@ footer{
 	color:#31323E;
 }
 .div-quemsomos:hover img{
-	transform: scale(1.1);
-	opacity: 0.5;
+	transform: scale(1.05);
+	opacity: 0.4;
+	-webkit-filter: blur(1px);
+	filter: blur(1px);
+	transition: all 220ms ease-out;
 }
 .body-quemsomos h1{
 
 	padding-bottom:24px;
 	
 }
-.body-quemsomos:hover .h1-quemsomos{
-	transform: scale(1.1);
-	
-}
+
 .div-quemsomos:hover{
 	font-weight: bold;
+	
 }
 
 .quem-somos{
@@ -524,8 +487,9 @@ footer{
 	z-index: 100;
 	position: absolute;
 	padding-top: 0;
-	border-radius:0; 
-	margin-top:4.7%;
+	border-radius: 0.5; 
+	margin-top: 10%;
+	
 		
 }
 
@@ -585,10 +549,12 @@ a:hover{
 	border: 1px solid #1E1E24;
 }
 .img-card:hover{
-		-webkit-box-shadow: 18px 14px 10px rgba(50, 50, 50, 0.77);
-        -moz-box-shadow:    18px 14px 10px rgba(50, 50, 50, 0.77);
-		box-shadow:         18px 14px 10px rgba(50, 50, 50, 0.77);
-		transition: all 180ms ease-out;
+	-webkit-box-shadow: 6px 4px 6px rgba(50, 50, 50, 0.77);
+	-moz-box-shadow:    6px 4px 6px rgba(50, 50, 50, 0.77);
+	box-shadow:         9px 7px 10px rgba(50, 50, 50, 0.77);
+	transition: all 220ms ease-out;
+	transform: scale(1.05);
+		
 }
 .card-produto{
 	text-align: auto;
@@ -596,12 +562,7 @@ a:hover{
 	margin-bottom:10%;	
 	
 }
-.i1:hover{
-	-webkit-box-shadow: 18px 14px 10px rgba(50, 50, 50, 0.77);
-	-moz-box-shadow:    18px 14px 10px rgba(50, 50, 50, 0.77);
-	box-shadow:         18px 14px 10px rgba(50, 50, 50, 0.77);
-	transition: all 180ms ease-out;
-}
+
 
 
 .nprodutos{
@@ -704,7 +665,7 @@ text-align: center;
 {
 	.img-produto-pagina{
 		
-		margin-left: 15%;
+		margin-left: 15%;	
 		
 	}
 	.texto {
@@ -717,5 +678,5 @@ text-align: center;
 	transform: scale(1.1);
 }
 #id{
-	transition: all 120ms ease-out;
+	transition: all 220ms ease-out;
 }
