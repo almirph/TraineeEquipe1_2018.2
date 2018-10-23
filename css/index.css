@@ -79,7 +79,7 @@ html, body{
 }
 @media (min-width: 992px){
 .nav-botn{
-	margin-left: 40px;
+	margin-left: 35px;
 	
 }
 }
@@ -214,7 +214,7 @@ html, body{
 	 background-color: white;
 	 /*border-bottom-style: groove;
      border-bottom-width: 0.5px;*/
-}
+
 
 /*
 }
@@ -525,7 +525,8 @@ footer{
 	position: absolute;
 	padding-top: 0;
 	border-radius:0; 
-	margin-top:10%;	
+	margin-top:4.7%;
+		
 }
 
 .saiba-mais{
@@ -586,7 +587,8 @@ a:hover{
 .img-card:hover{
 		-webkit-box-shadow: 18px 14px 10px rgba(50, 50, 50, 0.77);
         -moz-box-shadow:    18px 14px 10px rgba(50, 50, 50, 0.77);
-        box-shadow:         18px 14px 10px rgba(50, 50, 50, 0.77);
+		box-shadow:         18px 14px 10px rgba(50, 50, 50, 0.77);
+		transition: all 180ms ease-out;
 }
 .card-produto{
 	text-align: auto;
@@ -594,7 +596,12 @@ a:hover{
 	margin-bottom:10%;	
 	
 }
-
+.i1:hover{
+	-webkit-box-shadow: 18px 14px 10px rgba(50, 50, 50, 0.77);
+	-moz-box-shadow:    18px 14px 10px rgba(50, 50, 50, 0.77);
+	box-shadow:         18px 14px 10px rgba(50, 50, 50, 0.77);
+	transition: all 180ms ease-out;
+}
 
 
 .nprodutos{
@@ -633,6 +640,7 @@ a:hover{
 text-align: center;
 } 
 .categoria{
+	
 	display: none;
 }
 .pag-produtos{
@@ -669,9 +677,12 @@ text-align: center;
 	margin-bottom: 2.5%;
 }
 .img-pagina{
-	
-	width: 100vh;
+
+	text-align: center;
+	width: 80vh;
 	height: 75vh;
+	margin-bottom: 2.5%;
+	margin-top: 2.5%;
 }
 .pag-produtos h1{
 	margin-top: 2.5%;
