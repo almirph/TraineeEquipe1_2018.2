@@ -171,27 +171,9 @@ html, body{
 }
 
 
-/* FALE CONOSCO */
+								/************** FALE CONOSCO *************/
 
-/*********************************************************/
-
-/*
-.page-header{
-	padding-bottom: 12px;
-	padding-top: 40px;
-	margin-left: 0;
-	margin-right: 0;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-	border-bottom-color: #eee;
-	
-}
-.page-header h1{
-	font-size: 36px;
-	height: 39px;
-	text-align: none;
-}
-*/
+/**********************************************************************************************************/
 
 .form-group{
 
@@ -208,40 +190,7 @@ html, body{
 
 	margin-top: 20px;
 }
-/*
-.faleconosco{
-	 
-	 background-color: white;
-	 /*border-bottom-style: groove;
-     border-bottom-width: 0.5px;*/
 
-
-/*
-}
-.faleconosco h1, h3{
-	font-weight: 200;
-	color: #2E5266;
-}
-.faleconosco button{
-	font-weight: 400;
-	margin-top: 8px;
-	margin-bottom: 50px;
-}
-@media (max-width: 1000px){
-	.faleconosco img{
-	display: none;
-	
-}
-}
-.faleconosco img{
-	width: 500px;
-	margin-top: 150px;
-	border-style: groove;
-	border-width: 1px;
-	border-color: black;
-	
-}
-*/
 .col-lg-6 h3{
 
 	font-size: 24px;
@@ -263,18 +212,11 @@ form{
 
 
 
-						/* FOOTER */
+						/****************** FOOTER *********************/
 
-/*********************************************************/
+/*********************************************************************************************************/
 
 
-
-					/* FOOTER */
-
-/*********************************************************/
-/* FOOTER */
-
-/*********************************************************/
 
 
 
@@ -403,9 +345,9 @@ footer{
 
 
 
-/* QUEM SOMOS */
+							/********************* QUEM SOMOS *********************/
 
-
+/*********************************************************************************************************/
 .body-quemsomos{
     font-family: Montserrat;
     font-style: normal;
@@ -419,9 +361,7 @@ footer{
 
 .h1-quemsomos{
 	text-align: center;
-	font-weight: 200;
-	
-    
+	font-weight: 200;   
 }
 
 
@@ -485,10 +425,6 @@ footer{
 	padding-bottom:24px;
 	
 }
-.body-quemsomos:hover .h1-quemsomos{
-	transform: scale(1.1);
-	
-}
 .div-quemsomos:hover{
 	font-weight: bold;
 }
@@ -509,8 +445,9 @@ footer{
 	}
 }
 
+						/*************************Produtos**************************/
 
-/* ************************************************Produtos************************************************** */
+/**********************************************************************************************************/
 
 
 
@@ -717,5 +654,5 @@ text-align: center;
 	transform: scale(1.1);
 }
 #id{
-	transition: all 120ms ease-out;
+	transition: all 300ms ease-out;
 }
