@@ -3,7 +3,7 @@ html, body{
 	padding: 0;
 	margin: 0;
 	font-family: montserrat;
-	background-color: rgb(235, 237, 247) ;	
+	/* background-color: rgb(235, 237, 247) ;	 */
 	
 
 
@@ -356,105 +356,46 @@ footer{
 							/********************* QUEM SOMOS *********************/
 
 /*********************************************************************************************************/
-.body-quemsomos{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 400;
-	background-color:white;
-	
-	border-bottom: 1px double  #e0dcdc;
-	
-    
-}
-
-.h1-quemsomos{
+.Titulo-quemsomos
+{
 	text-align: center;
-	font-weight: 200;   
+	margin-top:2.5%;
+	font-size: 26px;
 }
-
-
-.div-quemsomos{
-    text-align: center;
-   /* background-color: #6E8898; */
-    margin-left: 10%;
-	margin-right: 10%;
-	
-    
-
-}
-
-.div-quemsomos figcaption{
-    margin-top: 15px;
-}
-
-.div-quemsomos p {
-    
-	margin-top: 15px;
-	font-size: 20px;
-}
-
-.div-quemsomos img{
-	margin-top: 10px;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-  
-
-    box-shadow: 0 4px 8px 0 #6E8898, 0 6px 20px 0 #F1F8F6;
-    
-
-}
-
-.div-quemsomos h2{
-    color: #31323E;;
-	font-weight: bolder;
+.img-quemsomos
+{
+	margin-top: 2.5%;
+	height: 40vh;
+	width: 60vh;
+	border-radius: 10%;
+	margin-bottom: 2.5%;
 	text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 20px;
-}
+	margin-left: 15%;
+	border:black 1px solid;
+} 
+.body-quemsomos hr{
 
-.div-quemsomos h3{
-    opacity: 0;
+	border: black 0.5px solid ;
 }
-.div-quemsomos:hover h3{
-	position: relative;
-	top: -200px;
-	font-weight: bold;
-	opacity: 1;
-	color:#31323E;
+.texto-quemsomos
+{
+	text-align: justify;
+	margin-top: 5%;
 }
-.div-quemsomos:hover img{
-	transform: scale(1.05);
-	opacity: 0.4;
-	-webkit-filter: blur(1px);
-	filter: blur(1px);
-	transition: all 220ms ease-out;
-}
-.body-quemsomos h1{
+.texto-quemsomos h1
+{
 
-	padding-bottom:24px;
-	
+	text-align: center;
 }
-.div-quemsomos:hover{
-	font-weight: bold;
-	
+.texto-quemsomos p
+{
+	margin-top: 2.5%;
+
 }
+.esquerda
+{
+text-align: justify;
 
-.quem-somos{
-
-	margin-bottom: 24px;
-}
-
-@media(max-width: 1000px){
-	.h1-quemsomos{
-		font-size: 40px;
-		
-	}
-	.div-quemsomos h3{
-		opacity: 1;
-		margin-top: 10px;
-	}
 }
 
 						/*************************Produtos**************************/
