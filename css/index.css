@@ -129,9 +129,9 @@ html, body{
 .jumbotron-fluid-home {
     padding-top: 5px;
     padding-bottom: 30px;    
-    text-align: center;
+    
     height: 100%;  
-	background-color: rgb(235, 237, 247); 
+	
 	/* background-color: #e5ebff;  */
     
 }
@@ -174,7 +174,7 @@ html, body{
 	}
 }
 .img-card-home{
-	background-color: rgb(235, 237, 247);
+	
 	text-align: left;
 }
 
@@ -370,13 +370,10 @@ footer{
 	border-radius: 10%;
 	margin-bottom: 2.5%;
 	text-align: center;
-	margin-left: 15%;
+
 	border:black 1px solid;
 } 
-.body-quemsomos hr{
 
-	border: black 0.5px solid ;
-}
 .texto-quemsomos
 {
 	text-align: justify;
@@ -396,6 +393,35 @@ footer{
 {
 text-align: justify;
 
+}
+.quemsomos-media
+{
+	display: none;
+}
+@media(max-width:1000px)
+{
+	.img-quemsomos
+	{
+		word-wrap: wrap;
+		min-width: 250px;
+	
+	
+
+	}
+	
+	.body-quemsomos
+{
+	text-align: center;
+	margin-top: 5%;
+	
+}
+.quemsomos-media{
+	display: flex;
+}
+.media-quemsomos{
+	display: none;
+}
+	
 }
 
 						/*************************Produtos**************************/
