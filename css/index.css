@@ -389,12 +389,13 @@ footer{
 	margin-top: 2.5%;
 
 }
+
 .esquerda
 {
 text-align: justify;
 
 }
-.quemsomos-media
+.quemsomos-row
 {
 	display: none;
 }
@@ -415,13 +416,20 @@ text-align: justify;
 	margin-top: 5%;
 	
 }
-.quemsomos-media{
-	display: flex;
+
 }
-.media-quemsomos{
-	display: none;
-}
-	
+@media(max-width:576px)
+{
+	.quemsomos-row{
+		display: flex;
+	}
+	.quemsomos-100px{
+		display: none;
+	}
+	.body-quemsomos hr{
+		display: none;
+	}
+		
 }
 
 						/*************************Produtos**************************/
