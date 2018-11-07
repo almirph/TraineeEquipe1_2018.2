@@ -9,15 +9,15 @@
 	<title>Balão da Informática</title>
 
 	<!-- Bootstrap -->
-	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="../css/index.css" rel="stylesheet">
+	<link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../assets/css/index-adm.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,400" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
 	 crossorigin="anonymous">
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<link rel="icon" type="imagem/png" href="../img/2.png" />
+	<link rel="icon" type="imagem/png" href="../assets/img/2.png" />
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -30,15 +30,15 @@
 
 	<div class="faixa" id="body-home">
 		<h1>Balão da Informática </h1>
-		<img src="../img/1.png" class="img-fluid" width="120" height="75">
+		<img src="../assets/img/1.png" class="img-fluid" width="120" height="75">
 	</div>
 
 	<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
 		<a class="navbar-brand icone-balao2" href="index.php#body-home">
-			<img src="../img/1.png" width="38" height="23"> Balão da Informática</a>
+			<img src="../assets/img/1.png" width="38" height="23"> Balão da Informática</a>
 
 		<a class="navbar-brand icone-balao" href="index.html#body-home">
-			<img src="../img/1.png" width="35" height="22"></a>
+			<img src="../assets/img/1.png" width="35" height="22"></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
 		 aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -46,43 +46,47 @@
        
 		<div class="collapse navbar-collapse " id="navbarTogglerDemo02">
 			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-				<li class="nav-item active">
-					<a class="nav-link nav-botn" href="index.php#body-home">Home <span class="sr-only">(current)</span></a>
-				</li>
 				<a class="nav-link dropdown-toggle nav-botn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
 				 aria-haspopup="true" aria-expanded="false">
 					Produtos
 				</a>
 				<div class="dropdown-menu home" aria-labelledby="navbarDropdown">
-					<a class="dropdown-item" href="Produtos2.php">Mais vendidos</a>
-					<div class="dropdown-divider home-linha"></div>
-					<a class="dropdown-item" href="#">Categoria 1</a>
-					<a class="dropdown-item" href="#">Categoria 2</a>
-					<a class="dropdown-item" href="#">Categoria 3</a>
-					<a class="dropdown-item" href="#">Categoria 4</a>
-					<a class="dropdown-item" href="#">Categoria 5</a>
-					<a class="dropdown-item" href="#">Categoria 6</a>
-					<a class="dropdown-item" href="#">Categoria 7</a>
-					<a class="dropdown-item" href="#">Categoria 8</a>
-					<a class="dropdown-item" href="#">Categoria 9</a>
-
-
-
-
+					<a class="dropdown-item" href="#">Inserir</a>
+					<a class="dropdown-item" href="#">Remover/Editar</a>
 				</div>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link nav-botn" href="Quemsomos.php">Quem somos</a>
+				<div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+				
+				<a class="nav-link dropdown-toggle nav-botn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+				 aria-haspopup="true" aria-expanded="false">
+					Categoria
+				</a>
+				<div class="dropdown-menu home" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" href="#">Inserir</a>
+					<a class="dropdown-item" href="#">Remover/Editar</a>
+				</div>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link nav-botn" style="cursor:pointer" id="fale-conosco" data-toggle="modal" data-target="#exampleModal" >Fale conosco</a> 
-		
-					</li>
+				
 			</ul>
+			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+				
+				<a class="nav-link dropdown-toggle nav-botn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+				 aria-haspopup="true" aria-expanded="false">
+					Usuário
+				</a>
+				<div class="dropdown-menu home" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" href="#">Inserir</a>
+					<a class="dropdown-item" href="#">Remover/Editar</a>
+				</div>
+				</li>
+				
+			</ul>
+			<li class="nav-item">
+					<a class="nav-link nav-botn" href="index.php">Logout</a>
+				</li>
 
-			<form class="form-inline my-2 my-lg-0">
-				<input class="form-control mr-sm-2" type="search" placeholder="Digite aqui..." aria-label="Search">
-				<button class="btn btn-outline-secondary btn-md my-2 my-sm-0" type="submit">Pesquisar</button>
-			</form>
+			
+			
 		</div>
 	</nav>

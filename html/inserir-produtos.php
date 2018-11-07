@@ -9,8 +9,10 @@
                 $id_produto=$_POST['id_produtos'];
                 $descricao = $_POST['descricao'];
                 $categoria = $_POST['categoria'];
-                $url_img = $_POST['url_imagem'];
+                $url_img = $_POST['url_imagem'];  
+                $categoria =preg_replace("/[^0-9]/", "", $categoria);
 
+             
                 $server = 'localhost';
                 $user = 'root';
                 $password = '';

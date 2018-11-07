@@ -9,15 +9,15 @@
 	<title>Balão da Informática</title>
 
 	<!-- Bootstrap -->
-	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="../css/index.css" rel="stylesheet">
+	<link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../assets/css/index.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,400" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
 	 crossorigin="anonymous">
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<link rel="icon" type="imagem/png" href="../img/2.png" />
+	<link rel="icon" type="imagem/png" href="../assets/img/2.png" />
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -30,15 +30,15 @@
 
 	<div class="faixa" id="body-home">
 		<h1>Balão da Informática </h1>
-		<img src="../img/1.png" class="img-fluid" width="120" height="75">
+		<img src="../assets/img/1.png" class="img-fluid" width="120" height="75">
 	</div>
 
 	<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
 		<a class="navbar-brand icone-balao2" href="index.php#body-home">
-			<img src="../img/1.png" width="38" height="23"> Balão da Informática</a>
+			<img src="../assets/img/1.png" width="38" height="23"> Balão da Informática</a>
 
 		<a class="navbar-brand icone-balao" href="index.html#body-home">
-			<img src="../img/1.png" width="35" height="22"></a>
+			<img src="../assets/img/1.png" width="35" height="22"></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
 		 aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -56,16 +56,7 @@
 				<div class="dropdown-menu home" aria-labelledby="navbarDropdown">
 					<a class="dropdown-item" href="Produtos2.php">Mais vendidos</a>
 					<div class="dropdown-divider home-linha"></div>
-					<a class="dropdown-item" href="#">Categoria 1</a>
-					<a class="dropdown-item" href="#">Categoria 2</a>
-					<a class="dropdown-item" href="#">Categoria 3</a>
-					<a class="dropdown-item" href="#">Categoria 4</a>
-					<a class="dropdown-item" href="#">Categoria 5</a>
-					<a class="dropdown-item" href="#">Categoria 6</a>
-					<a class="dropdown-item" href="#">Categoria 7</a>
-					<a class="dropdown-item" href="#">Categoria 8</a>
-					<a class="dropdown-item" href="#">Categoria 9</a>
-
+					
 
 
 
