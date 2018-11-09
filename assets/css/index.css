@@ -2,7 +2,8 @@
 html, body{
 	padding: 0;
 	margin: 0;
-	font-family: montserrat;	
+	font-family: montserrat;
+	/* background-color: rgb(235, 237, 247) ;	 */
 	
 
 
@@ -79,7 +80,7 @@ html, body{
 }
 @media (min-width: 992px){
 .nav-botn{
-	margin-left: 40px;
+	margin-left: 30px;
 	
 }
 }
@@ -128,9 +129,10 @@ html, body{
 .jumbotron-fluid-home {
     padding-top: 5px;
     padding-bottom: 30px;    
-    text-align: center;
+    
     height: 100%;  
-    background-color: white;  
+	
+	/* background-color: #e5ebff;  */
     
 }
 .mais-vendidos{
@@ -147,6 +149,7 @@ html, body{
 	margin-top: 15px;
 	color: #1E1E24;
 	margin-left: 5px;
+	text-align: left;
 	
 }
 .prod-home {
@@ -154,46 +157,31 @@ html, body{
 	margin-left: 50px;
 	display: inline-flex;
 }
-.img-card-home {
-	margin-top:10%;
-	margin-bottom: 10%;
-	border: 1px solid #1E1E24;
-	flex-wrap: wrap;
+.img-card-home:hover{
+	-webkit-box-shadow: 6px 4px 6px rgba(50, 50, 50, 0.77);
+	-moz-box-shadow:    6px 4px 6px rgba(50, 50, 50, 0.77);
+	box-shadow:         9px 7px 10px rgba(50, 50, 50, 0.77);
+	transition: all 220ms ease-out;
+	transform: scale(1.05);
 }
 @media (max-width: 617px){
-	.card-produto-home{
-		margin-left: 20%;
+	.img-card-home{
+		margin-left: 15%;
 
 	}
 	.form-control{
 		width: 45%;
 	}
 }
-
-
-
-
-/* FALE CONOSCO */
-
-/*********************************************************/
-
-/*
-.page-header{
-	padding-bottom: 12px;
-	padding-top: 40px;
-	margin-left: 0;
-	margin-right: 0;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-	border-bottom-color: #eee;
+.img-card-home{
 	
+	text-align: left;
 }
-.page-header h1{
-	font-size: 36px;
-	height: 39px;
-	text-align: none;
-}
-*/
+
+
+								/************** FALE CONOSCO *************/
+
+/**********************************************************************************************************/
 
 .form-group{
 
@@ -210,40 +198,7 @@ html, body{
 
 	margin-top: 20px;
 }
-/*
-.faleconosco{
-	 
-	 background-color: white;
-	 /*border-bottom-style: groove;
-     border-bottom-width: 0.5px;*/
 
-
-/*
-}
-.faleconosco h1, h3{
-	font-weight: 200;
-	color: #2E5266;
-}
-.faleconosco button{
-	font-weight: 400;
-	margin-top: 8px;
-	margin-bottom: 50px;
-}
-@media (max-width: 1000px){
-	.faleconosco img{
-	display: none;
-	
-}
-}
-.faleconosco img{
-	width: 500px;
-	margin-top: 150px;
-	border-style: groove;
-	border-width: 1px;
-	border-color: black;
-	
-}
-*/
 .col-lg-6 h3{
 
 	font-size: 24px;
@@ -265,18 +220,11 @@ form{
 
 
 
-						/* FOOTER */
+						/****************** FOOTER *********************/
 
-/*********************************************************/
+/*********************************************************************************************************/
 
 
-
-					/* FOOTER */
-
-/*********************************************************/
-/* FOOTER */
-
-/*********************************************************/
 
 
 
@@ -386,7 +334,7 @@ footer{
 
 .col-lg-12 i:hover{
 
-	color: black;
+	transform: scale(1.2);
 }
 
 
@@ -396,109 +344,99 @@ footer{
 
 }
 
+.lock{
 
-
-
-/* QUEM SOMOS */
-
-
-.body-quemsomos{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 400;
-	background-color:white;
-	
-	border-bottom: 1px double  #e0dcdc;
-	
-    
+	float: right;
+	padding-top: 28px;
 }
 
-.h1-quemsomos{
+
+
+
+							/********************* QUEM SOMOS *********************/
+
+/*********************************************************************************************************/
+.Titulo-quemsomos
+{
 	text-align: center;
-	font-weight: 200;
-	
-    
+	margin-top:2.5%;
+	font-size: 26px;
 }
-
-
-.div-quemsomos{
-    text-align: center;
-   /* background-color: #6E8898; */
-    margin-left: 10%;
-	margin-right: 10%;
-	
-    
-
-}
-
-.div-quemsomos figcaption{
-    margin-top: 15px;
-}
-
-.div-quemsomos p {
-    
-	margin-top: 15px;
-	font-size: 20px;
-}
-
-.div-quemsomos img{
-	margin-top: 10px;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-  
-
-    box-shadow: 0 4px 8px 0 #6E8898, 0 6px 20px 0 #F1F8F6;
-    
-
-}
-
-.div-quemsomos h2{
-    color: #31323E;;
-	font-weight: bolder;
+.img-quemsomos
+{
+	margin-top: 2.5%;
+	height: 40vh;
+	width: 60vh;
+	border-radius: 10%;
+	margin-bottom: 2.5%;
 	text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 20px;
+
+	border:black 1px solid;
+} 
+
+.texto-quemsomos
+{
+	text-align: justify;
+	margin-top: 5%;
+}
+.texto-quemsomos h1
+{
+
+	text-align: center;
+}
+.texto-quemsomos p
+{
+	margin-top: 2.5%;
+
 }
 
-.div-quemsomos h3{
-    opacity: 0;
-}
-.div-quemsomos:hover h3{
-	position: relative;
-	top: -200px;
-	font-weight: bold;
-	opacity: 1;
-	color:#31323E;
-}
-.div-quemsomos:hover img{
-	transform: scale(1.1);
-	opacity: 0.5;
-}
+.esquerda
+{
+text-align: justify;
 
-.body-quemsomos:hover .h1-quemsomos{
-	transform: scale(1.1);
+}
+.quemsomos-row
+{
+	display: none;
+}
+@media(max-width:1000px)
+{
+	.img-quemsomos
+	{
+		word-wrap: wrap;
+		min-width: 250px;
+	
+	
+
+	}
+	
+	.body-quemsomos
+{
+	text-align: center;
+	margin-top: 5%;
 	
 }
-.div-quemsomos:hover{
-	font-weight: bold;
-}
 
-@media(max-width: 1000px){
-	.h1-quemsomos{
-		font-size: 40px;
+}
+@media(max-width:576px)
+{
+	.quemsomos-row{
+		display: flex;
+	}
+	.quemsomos-100px{
+		display: none;
+	}
+	.body-quemsomos hr{
+		display: none;
+	}
 		
-	}
-	.div-quemsomos h3{
-		opacity: 1;
-		margin-top: 10px;
-	}
 }
 
-/* ************************************************Produtos************************************************** */
+						/*************************Produtos**************************/
 
-/* ************************************************Produtos************************************************** */
+/**********************************************************************************************************/
+
+
 
 .p-produtos-top h1{
 	text-align: center;
@@ -510,11 +448,9 @@ footer{
 	z-index: 100;
 	position: absolute;
 	padding-top: 0;
-	border-radius:0; 
-	margin-top:7.5%;
+	border-radius: 0.5; 
+	margin-top: 10%;
 	
-	 
-		
 		
 }
 
@@ -573,6 +509,14 @@ a:hover{
 	margin-bottom: 10%;
 	border: 1px solid #1E1E24;
 }
+.img-card:hover{
+	-webkit-box-shadow: 6px 4px 6px rgba(50, 50, 50, 0.77);
+	-moz-box-shadow:    6px 4px 6px rgba(50, 50, 50, 0.77);
+	box-shadow:         9px 7px 10px rgba(50, 50, 50, 0.77);
+	transition: all 220ms ease-out;
+	transform: scale(1.05);
+		
+}
 .card-produto{
 	text-align: auto;
 	margin-left: 15%;
@@ -583,12 +527,18 @@ a:hover{
 
 
 .nprodutos{
-	background-color:#1E1E24;
+	background-color:#262b2d
 }
 @media(max-width:350px)
 {
 	.card-produto{
 		margin-left: 5%;
+	}
+}
+@media(max-width:300px)
+{
+	.card-produto{
+		margin-left: 0;
 	}
 }
 @media(max-width:1200px) and (min-width:1001px)
@@ -601,6 +551,7 @@ a:hover{
 {
 	.card-produto{
 		margin-left: 25%;
+		margin-right: 5%;
 	}
 }
 
@@ -611,6 +562,7 @@ a:hover{
 text-align: center;
 } 
 .categoria{
+	
 	display: none;
 }
 .pag-produtos{
@@ -632,6 +584,7 @@ text-align: center;
 .dropdown-item:focus, .dropdown-item:hover{
 	background-color: #343a40;
 	color:white;
+	
 
 }
 }
@@ -646,8 +599,12 @@ text-align: center;
 	margin-bottom: 2.5%;
 }
 .img-pagina{
-	width: 100vh;
+
+	text-align: center;
+	width: 80vh;
 	height: 75vh;
+	margin-bottom: 2.5%;
+	margin-top: 2.5%;
 }
 .pag-produtos h1{
 	margin-top: 2.5%;
@@ -669,11 +626,18 @@ text-align: center;
 {
 	.img-produto-pagina{
 		
-		margin-left: 15%;
+		margin-left: 15%;	
 		
 	}
 	.texto {
 		text-align: center;
 		margin-left: 15%;
 	}
+}
+
+.pagina-produtos:hover{
+	transform: scale(1.1);
+}
+#id{
+	transition: all 220ms ease-out;
 }
