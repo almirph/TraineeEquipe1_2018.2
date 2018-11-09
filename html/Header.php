@@ -56,19 +56,13 @@
 				<div class="dropdown-menu home" aria-labelledby="navbarDropdown">
 					<a class="dropdown-item" href="Produtos2.php">Mais vendidos</a>
 					<div class="dropdown-divider home-linha"></div>
-					
-
-
-
+					<a class="dropdown-item" href="#">Categoria 1</a>
 				</div>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link nav-botn" href="Quemsomos.php">Quem somos</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link nav-botn" style="cursor:pointer" id="fale-conosco" data-toggle="modal" data-target="#exampleModal" >Fale conosco</a> 
-		
-					</li>
+				
 			</ul>
 
 			<form class="form-inline my-2 my-lg-0">

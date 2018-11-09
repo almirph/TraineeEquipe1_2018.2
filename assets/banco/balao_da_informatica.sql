@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 07-Nov-2018 às 21:05
+-- Generation Time: 09-Nov-2018 às 21:48
 -- Versão do servidor: 10.1.36-MariaDB
 -- versão do PHP: 7.2.11
 
@@ -33,6 +33,14 @@ CREATE TABLE `categoria` (
   `nome_categoria` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Extraindo dados da tabela `categoria`
+--
+
+INSERT INTO `categoria` (`id_categoria`, `nome_categoria`) VALUES
+(1, 'categoria'),
+(2, 'testando');
+
 -- --------------------------------------------------------
 
 --
@@ -43,10 +51,20 @@ CREATE TABLE `produto` (
   `id_produto` int(11) NOT NULL,
   `id_categoria` int(11) NOT NULL,
   `nome_produto` varchar(50) NOT NULL,
-  `preco` int(11) NOT NULL,
+  `preco` float NOT NULL,
   `descricao` mediumtext NOT NULL,
   `url_imagem` mediumtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `produto`
+--
+
+INSERT INTO `produto` (`id_produto`, `id_categoria`, `nome_produto`, `preco`, `descricao`, `url_imagem`) VALUES
+(1, 1, 'teste1', 2565, 'teste', 'img/img'),
+(3, 1, 'josue', 41, 'joasjdoasd', 'compromisso.jpg'),
+(4, 1, 'josue', 41, 'joasjdoasd', 'compromisso.jpg'),
+(5, 2, 'pedro', 25, 'lab3', 'nossaHistoria2.jpg');
 
 -- --------------------------------------------------------
 
@@ -81,7 +99,30 @@ ALTER TABLE `produto`
 -- Indexes for table `usuario`
 --
 ALTER TABLE `usuario`
-  ADD PRIMARY KEY (`id_usuario`);
+  ADD PRIMARY KEY (`id_usuario`),
+  ADD UNIQUE KEY `email` (`id_usuario`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `categoria`
+--
+ALTER TABLE `categoria`
+  MODIFY `id_categoria` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `produto`
+--
+ALTER TABLE `produto`
+  MODIFY `id_produto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `usuario`
+--
+ALTER TABLE `usuario`
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Constraints for dumped tables
