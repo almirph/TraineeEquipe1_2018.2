@@ -2,7 +2,8 @@
 html, body{
 	padding: 0;
 	margin: 0;
-	font-family: montserrat;	
+	font-family: montserrat;
+	/* background-color: rgb(235, 237, 247) ;	 */
 	
 
 
@@ -11,7 +12,7 @@ html, body{
 .dropdown-item:active{
 	background-color: #1E1E24;
 }
-@media (max-width: 1000px) {
+@media (max-width: 991px)  {
 	.faixa{
 		display: none;
 	}
@@ -22,6 +23,12 @@ html, body{
 		display: none;
 	}
 
+}
+@media (min-width: 992px){
+	.navbar-brand.icone-balao2{
+		display: none;
+		
+	}
 }
 .faixa{
 	background-color: #1E1E24;	
@@ -51,7 +58,7 @@ html, body{
 	font-size: 2.0rem;
 
 }
-}
+
 .dropdown-menu.home{
 	left: 120px;
 }
@@ -61,7 +68,7 @@ html, body{
     border-radius: 2px;
 
 }
-}
+
 .item:active {
 	background-color: rgb(24, 23, 23);
 } 
@@ -71,19 +78,19 @@ html, body{
 	display: inline-block;
 
 }
-.form-nav{
-	padding-left: 80px;
-	padding-top: 30px;
-	background-color:#262b2d;
-    border: 1px;
-    border-right: none;
-    padding: 2px;
-    border-radius: 2px;
-	width: 100%;
-	height: 25px;
+@media (min-width: 992px){
+.nav-botn{
+	margin-left: 30px;
+	
 }
-.dropdown-menu{
-	left:10%;
+}
+
+
+.dropdown-menu.home{
+	left: 13.5rem;
+	border-radius: 2px;
+	margin-top: -1px;
+	
 }
 .slide-home {
 	height: 100%;
@@ -118,28 +125,14 @@ html, body{
 .text p{
 	font-size: 0.7rem;
 	}
-	
-	
-
-.card-img-top.new-item {
-	width: 100%;
-	height: 100px;
-}
-.card.card-home{
-	height: 0px;
-	width: 150px;
-	display: inline-block; 
-	margin-right: 40px;
-	font-size: 16px;
-}
-
 
 .jumbotron-fluid-home {
     padding-top: 5px;
     padding-bottom: 30px;    
-    text-align: center;
+    
     height: 100%;  
-    background-color: white;  
+	
+	/* background-color: #e5ebff;  */
     
 }
 .mais-vendidos{
@@ -156,55 +149,41 @@ html, body{
 	margin-top: 15px;
 	color: #1E1E24;
 	margin-left: 5px;
+	text-align: left;
 	
 }
-/* .display-4.novidades{
-	font-size: 3vw;
+.prod-home {
+	text-align: center;
+	margin-left: 50px;
+	display: inline-flex;
+}
+.img-card-home:hover{
+	-webkit-box-shadow: 6px 4px 6px rgba(50, 50, 50, 0.77);
+	-moz-box-shadow:    6px 4px 6px rgba(50, 50, 50, 0.77);
+	box-shadow:         9px 7px 10px rgba(50, 50, 50, 0.77);
+	transition: all 220ms ease-out;
+	transform: scale(1.05);
+}
+@media (max-width: 617px){
+	.img-card-home{
+		margin-left: 15%;
+
+	}
+	.form-control{
+		width: 45%;
+	}
+}
+.img-card-home{
+	
 	text-align: left;
 }
 
-.btn-primary.home {
-    display: inline-block;
-    font-weight: 500;
-    border: 1px solid transparent;
-    padding: 3px;
-    font-size: 15px;
-    line-height: 10px;
-    border-radius: 3px;
-    background-color: #5E6472;
-    text-align: middle;
-    border-color: solid transparent;
-}
-.igor{
-	margin-left: 0;
-	margin-right: 100%;
-	padding-right: 0;
-	padding-left: 0;
-}
- */
+
+								/************** FALE CONOSCO *************/
+
+/**********************************************************************************************************/
 
 
-/* FALE CONOSCO */
-
-/*********************************************************/
-
-/*
-.page-header{
-	padding-bottom: 12px;
-	padding-top: 40px;
-	margin-left: 0;
-	margin-right: 0;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-	border-bottom-color: #eee;
-	
-}
-.page-header h1{
-	font-size: 36px;
-	height: 39px;
-	text-align: none;
-}
-*/
 
 .form-group{
 
@@ -221,40 +200,7 @@ html, body{
 
 	margin-top: 20px;
 }
-/*
-.faleconosco{
-	 
-	 background-color: white;
-	 /*border-bottom-style: groove;
-     border-bottom-width: 0.5px;*/
-}
 
-/*
-}
-.faleconosco h1, h3{
-	font-weight: 200;
-	color: #2E5266;
-}
-.faleconosco button{
-	font-weight: 400;
-	margin-top: 8px;
-	margin-bottom: 50px;
-}
-@media (max-width: 1000px){
-	.faleconosco img{
-	display: none;
-	
-}
-}
-.faleconosco img{
-	width: 500px;
-	margin-top: 150px;
-	border-style: groove;
-	border-width: 1px;
-	border-color: black;
-	
-}
-*/
 .col-lg-6 h3{
 
 	font-size: 24px;
@@ -264,7 +210,7 @@ html, body{
 
 .areatexto{
 
-	background-color: #F1F8F6;
+	background-color: *#F1F8F6;
 }
 
 
@@ -275,19 +221,25 @@ form{
 
 
 
+.alerta{
 
-						/* FOOTER */
+	font-size: 12px;
+	padding: 8px;
+}
 
-/*********************************************************/
+.text-mensagem textarea{
+
+	margin-bottom: 24px;
+}
 
 
 
-					/* FOOTER */
 
-/*********************************************************/
-/* FOOTER */
+						/****************** FOOTER *********************/
 
-/*********************************************************/
+/*********************************************************************************************************/
+
+
 
 
 
@@ -385,6 +337,7 @@ footer{
 
 }
 
+
 .col-lg-12 i{
 
 	margin-right: 18px;
@@ -416,115 +369,90 @@ footer{
 
 
 
-/* QUEM SOMOS */
+							/********************* QUEM SOMOS *********************/
 
-
-.body-quemsomos{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 400;
-	background-color:white;
-	
-	border-bottom: 1px double  #e0dcdc;
-	
-    
-}
-
-.h1-quemsomos{
+/*********************************************************************************************************/
+.Titulo-quemsomos
+{
 	text-align: center;
-	font-weight: 200;
-	
-    
+	margin-top:2.5%;
+	font-size: 26px;
 }
-
-
-.div-quemsomos{
-    text-align: center;
-   /* background-color: #6E8898; */
-    margin-left: 10%;
-	margin-right: 10%;
-	
-    
-
-}
-
-.div-quemsomos figcaption{
-    margin-top: 15px;
-}
-
-.div-quemsomos p {
-    
-	margin-top: 15px;
-	font-size: 20px;
-}
-
-.div-quemsomos img{
-	margin-top: 10px;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-  
-
-    box-shadow: 0 4px 8px 0 #6E8898, 0 6px 20px 0 #F1F8F6;
-    
-
-}
-
-.div-quemsomos h2{
-    color: #31323E;;
-	font-weight: bolder;
+.img-quemsomos
+{
+	margin-top: 2.5%;
+	height: 40vh;
+	width: 60vh;
+	border-radius: 10%;
+	margin-bottom: 2.5%;
 	text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 20px;
+
+	border:black 1px solid;
+} 
+
+.texto-quemsomos
+{
+	text-align: justify;
+	margin-top: 5%;
+}
+.texto-quemsomos h1
+{
+
+	text-align: center;
+}
+.texto-quemsomos p
+{
+	margin-top: 2.5%;
+
 }
 
-.div-quemsomos h3{
-    opacity: 0;
-}
-.div-quemsomos:hover h3{
-	position: relative;
-	top: -200px;
-	font-weight: bold;
-	opacity: 1;
-	color:#31323E;
-}
-.div-quemsomos:hover img{
-	transform: scale(1.1);
-	opacity: 0.5;
-}
-.body-quemsomos h1{
+.esquerda
+{
+text-align: justify;
 
-	padding-bottom:24px;
+}
+.quemsomos-row
+{
+	display: none;
+}
+@media(max-width:1000px)
+{
+	.img-quemsomos
+	{
+		word-wrap: wrap;
+		min-width: 250px;
+	
+	
+
+	}
+	
+	.body-quemsomos
+{
+	text-align: center;
+	margin-top: 5%;
 	
 }
-.body-quemsomos:hover .h1-quemsomos{
-	transform: scale(1.1);
-	
-}
-.div-quemsomos:hover{
-	font-weight: bold;
-}
 
-.quem-somos{
-
-	margin-bottom: 24px;
 }
-
-@media(max-width: 1000px){
-	.h1-quemsomos{
-		font-size: 40px;
+@media(max-width:576px)
+{
+	.quemsomos-row{
+		display: flex;
+	}
+	.quemsomos-100px{
+		display: none;
+	}
+	.body-quemsomos hr{
+		display: none;
+	}
 		
-	}
-	.div-quemsomos h3{
-		opacity: 1;
-		margin-top: 10px;
-	}
 }
 
-/* ************************************************Produtos************************************************** */
+						/*************************Produtos**************************/
 
-/* ************************************************Produtos************************************************** */
+/**********************************************************************************************************/
+
+
 
 .p-produtos-top h1{
 	text-align: center;
@@ -536,11 +464,9 @@ footer{
 	z-index: 100;
 	position: absolute;
 	padding-top: 0;
-	border-radius:0; 
-	margin-top:7.5%;
+	border-radius: 0.5; 
+	margin-top: 10%;
 	
-	 
-		
 		
 }
 
@@ -599,6 +525,14 @@ a:hover{
 	margin-bottom: 10%;
 	border: 1px solid #1E1E24;
 }
+.img-card:hover{
+	-webkit-box-shadow: 6px 4px 6px rgba(50, 50, 50, 0.77);
+	-moz-box-shadow:    6px 4px 6px rgba(50, 50, 50, 0.77);
+	box-shadow:         9px 7px 10px rgba(50, 50, 50, 0.77);
+	transition: all 220ms ease-out;
+	transform: scale(1.05);
+		
+}
 .card-produto{
 	text-align: auto;
 	margin-left: 15%;
@@ -609,12 +543,18 @@ a:hover{
 
 
 .nprodutos{
-	background-color:#1E1E24;
+	background-color:#262b2d
 }
 @media(max-width:350px)
 {
 	.card-produto{
 		margin-left: 5%;
+	}
+}
+@media(max-width:300px)
+{
+	.card-produto{
+		margin-left: 0;
 	}
 }
 @media(max-width:1200px) and (min-width:1001px)
@@ -627,6 +567,7 @@ a:hover{
 {
 	.card-produto{
 		margin-left: 25%;
+		margin-right: 5%;
 	}
 }
 
@@ -637,6 +578,7 @@ a:hover{
 text-align: center;
 } 
 .categoria{
+	
 	display: none;
 }
 .pag-produtos{
@@ -652,12 +594,13 @@ text-align: center;
 .dropdown-divider{
 	border-color:#1E1E24; 
 }
-..dropdown-item.active, .dropdown-item:active {
+.dropdown-item.active, .dropdown-item:active {
 	background-color: #1E1E24;
 }
 .dropdown-item:focus, .dropdown-item:hover{
 	background-color: #343a40;
 	color:white;
+	
 
 }
 }
@@ -672,8 +615,12 @@ text-align: center;
 	margin-bottom: 2.5%;
 }
 .img-pagina{
-	width: 100vh;
+
+	text-align: center;
+	width: 80vh;
 	height: 75vh;
+	margin-bottom: 2.5%;
+	margin-top: 2.5%;
 }
 .pag-produtos h1{
 	margin-top: 2.5%;
@@ -695,11 +642,28 @@ text-align: center;
 {
 	.img-produto-pagina{
 		
-		margin-left: 15%;
+		margin-left: 15%;	
 		
 	}
 	.texto {
 		text-align: center;
 		margin-left: 15%;
 	}
+}
+
+.pagina-produtos:hover{
+	transform: scale(1.1);
+}
+#id{
+	transition: all 220ms ease-out;
+}
+.form-group input{
+
+	margin-bottom: 8px;
+}
+
+.faleconosco2 h1{
+
+	margin-top: 16px;
+
 }
