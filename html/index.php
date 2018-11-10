@@ -19,13 +19,13 @@
 			</ol>
 			<div class="carousel-inner">
 				<div class="carousel-item active img-slide-home">
-					<img class="d-block w-100" src="../img/Lenovo-ThinkPad.jpg" alt="First slide">
+					<img class="d-block w-100" src="../assets/img/Lenovo-ThinkPad.jpg" alt="First slide">
 				</div>
 				<div class="carousel-item img-slide-home">
-					<img class="d-block w-100" src="../img/k7-Banner.png" alt="Second slide">
+					<img class="d-block w-100" src="../assets/img/k7-Banner.png" alt="Second slide">
 				</div>
 				<div class="carousel-item img-slide-home">
-					<img class="d-block w-100" src="../img/Dell-laptop.jpg" alt="Third slide">
+					<img class="d-block w-100" src="../assets/img/Dell-laptop.jpg" alt="Third slide">
 				</div>
 			</div>
 
@@ -122,7 +122,7 @@
 				<div class="row card-produto-home">
 					<div class="col-sm">
 						<div class="card img-card" style="width: 14rem;">
-							<img class="card-img-top" src="../img/teclado1.jpg" alt="Card image cap">
+							<img class="card-img-top" src="../assets/img/teclado1.jpg" alt="Card image cap">
 							<div class="card-body">
 
 								<h5 class="card-title">Nome do Produto</h5>
@@ -133,7 +133,7 @@
 					</div>
 					<div class="col-sm">
 						<div class="card img-card" style="width: 14rem;">
-							<img class="card-img-top" src="../img/teclado2.jpg" alt="Card image cap">
+							<img class="card-img-top" src="../assets/img/teclado2.jpg" alt="Card image cap">
 							<div class="card-body">
 
 								<h5 class="card-title">Nome do Produto</h5>
@@ -144,7 +144,7 @@
 					</div>
 					<div class="col-sm">
 						<div class="card img-card" style="width: 14rem;">
-							<img class="card-img-top" src="../img/teclado3.jpg" alt="Card image cap">
+							<img class="card-img-top" src="../assets/img/teclado3.jpg" alt="Card image cap">
 							<div class="card-body">
 
 								<h5 class="card-title">Nome do Produto</h5>
@@ -155,7 +155,7 @@
 					</div>
 					<div class="col-sm">
 						<div class="card img-card" style="width: 14rem;">
-							<img class="card-img-top" src="../img/teste-produto.jpg" alt="Card image cap">
+							<img class="card-img-top" src="../assets/img/teste-produto.jpg" alt="Card image cap">
 							<div class="card-body">
 
 								<h5 class="card-title">Nome do Produto</h5>

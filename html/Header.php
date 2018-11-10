@@ -27,6 +27,20 @@
 </head>
 
 <body>
+<?php
+               
+			   $server = 'localhost';
+			   $user = 'root';
+			   $password = '';
+			   $db_name = 'balao_da_informatica';
+			   $port = '3306';
+
+								  
+			   $db_connect = new mysqli($server,$user,$password,$db_name,$port);
+			   mysqli_set_charset($db_connect,"utf-8");
+
+				
+?>
 
 	<div class="faixa" id="body-home">
 		<h1>Balão da Informática </h1>
@@ -56,11 +70,21 @@
 				<div class="dropdown-menu home" aria-labelledby="navbarDropdown">
 					<a class="dropdown-item" href="Produtos2.php">Mais vendidos</a>
 					<div class="dropdown-divider home-linha"></div>
-					<a class="dropdown-item" href="#">Categoria 1</a>
+
+				<?php	$sql = "SELECT * FROM categoria";
+						$result = $db_connect->query($sql);
+						while ($row2 = $result->fetch_assoc())
+					{?>
+						<a class="dropdown-item" href="#"><?php echo $row2['nome_categoria'];?></a>					
+				<?php } 	?>
+				
 				</div>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link nav-botn" href="Quemsomos.php">Quem somos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link nav-botn" href="faleconosco.php">Fale conosco</a>
 				</li>
 				
 			</ul>
