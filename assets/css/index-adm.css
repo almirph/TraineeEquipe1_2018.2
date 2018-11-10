@@ -213,3 +213,11 @@ footer{
 	float: right;
 	padding-top: 28px;
 }
+.pp-adm{
+    margin-top: 7.5px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.problema-formulario{
+    color:red;
+}

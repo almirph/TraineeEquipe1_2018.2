@@ -1,12 +1,4 @@
-<?php include 'Header.php'; ?>	<!-- FIM NAVBAR -->
-	<!------------------------------------------------------------------------------------------------------------------>
-	<!------------------------------------------------------------------------------------------------------------------>
-
-
-	<!-- QUEM SOMOS
-          ---------------------------------------------------------------------------------------------------------------->
-	<!------------------------------------------------------------------------------------------------------------------>
-	<!--------------------------------------------------------------------------------------------!-->
+<?php include 'Header.php'; ?>	
 	<div class="body-quemsomos">
 		<div class="container">
 			<div class="Titulo-quemsomos">
@@ -14,7 +6,7 @@
 			</div>
 			<div class="row grid-quemsomos quemsomos-100px">
 				<div class="col-sm ">
-					<img class="img-quemsomos esquerda-1 img-fluid" src="../img/nossaHistoria.jpg" alt="unidade franqueada">
+					<img class="img-quemsomos esquerda-1 img-fluid" src="../assets/img/nossaHistoria.jpg" alt="unidade franqueada">
 				</div>
 				<div class="col-sm texto-quemsomos direita ">
 					<h1>Missão</h1>
@@ -31,13 +23,13 @@
 						colaboradores e parceiros. </p>
 				</div>
 				<div class="col-sm">
-					<img class="img-quemsomos direita img-fluid" src="../img/nossaEstrutura.jpg" alt="uma grande estrutura para você">
+					<img class="img-quemsomos direita img-fluid" src="../assets/img/nossaEstrutura.jpg" alt="uma grande estrutura para você">
 				</div>
 				</div>
 				<hr>
 			<div class="row grid-quemsomos quemsomos-100px">
 				<div class="col-sm ">
-					<img class="img-quemsomos esquerda-1 img-fluid" src="../img/compromisso.jpg" alt="Nosso Compromisso é com você">
+					<img class="img-quemsomos esquerda-1 img-fluid" src="../assets/img/compromisso.jpg" alt="Nosso Compromisso é com você">
 				</div>
 				<div class="col texto-quemsomos direita">
 					<h1>Valores</h1>
@@ -55,12 +47,12 @@
 						e seus resultados muito melhores! </p>
 				</div>
 				<div class="col-sm">
-					<img class="img-quemsomos direita img-fluid" src="../img/nossaEstrutura.jpg" alt="uma grande estrutura para você">
+					<img class="img-quemsomos direita img-fluid" src="../assets/img/nossaEstrutura.jpg" alt="uma grande estrutura para você">
 				</div>
 			</div>
 			<div class="row grid-quemsomos quemsomos-row">
 				<div class="col-sm order-sm-1">
-					<img class="img-quemsomos esquerda-1 img-fluid" src="../img/nossaHistoria.jpg" alt="unidade franqueada">
+					<img class="img-quemsomos esquerda-1 img-fluid" src="../assets/img/nossaHistoria.jpg" alt="unidade franqueada">
 				</div>
 				<div class="col-sm texto-quemsomos direita order-sm-1 ">
 					<h1>Missão</h1>
@@ -72,7 +64,7 @@
 
 			<div class="row grid-quemsomos quemsomos-row">
 				<div class="col-sm">
-					<img class="img-quemsomos direita img-fluid" src="../img/nossaEstrutura.jpg" alt="uma grande estrutura para você">
+					<img class="img-quemsomos direita img-fluid" src="../assets/img/nossaEstrutura.jpg" alt="uma grande estrutura para você">
 				
 				<div class="col-sm texto-quemsomos esquerda">
 					<h1>Visão</h1>
@@ -84,7 +76,7 @@
 
 			<div class="row grid-quemsomos quemsomos-row">
 				<div class="col-sm  order-sm-1">
-					<img class="img-quemsomos esquerda-1 img-fluid" src="../img/compromisso.jpg" alt="Nosso Compromisso é com você">
+					<img class="img-quemsomos esquerda-1 img-fluid" src="../assets/img/compromisso.jpg" alt="Nosso Compromisso é com você">
 				</div>
 				<div class="col-sm texto-quemsomos direita order-sm-2">
 					<h1>Valores</h1>
@@ -96,7 +88,7 @@
 			
 			<div class="row grid-quemsomos quemsomos-row">
 				<div class="col-sm ">
-					<img class="img-quemsomos direita img-fluid" src="../img/nossaEstrutura.jpg" alt="uma grande estrutura para você">
+					<img class="img-quemsomos direita img-fluid" src="../assets/img/nossaEstrutura.jpg" alt="uma grande estrutura para você">
 				</div>
 				<div class="col-sm texto-quemsomos esquerda">
 					<h1>Objetivo</h1>

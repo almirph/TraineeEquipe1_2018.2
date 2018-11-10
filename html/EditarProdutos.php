@@ -47,27 +47,12 @@
                   elseif($url_img == ''){
                     $aviso_validacao6 = "Campo Obrigatório";
                   }else{
-                $sql = "INSERT INTO produto 
-                 VALUES ('','$categoria','$nome','$preco','$descricao','$url_img') ";
+                        
+                    $editar = "UPDATE `produto` SET `id_produto` = '756', `id_categoria` = '2',
+                   `preco` = '3505', `descricao` = 'xd1', `url_imagem` = 'note1.jpg' WHERE `produto`.`id_produto` = 75;"
+                    $resultado1 = $db_connect->query($editar);
 
-                if( $db_connect->query($sql)== true )
-                {
-                  $msg_envio =  'Produto cadastrado com sucesso';
-                  echo $msg_envio;
-                  
-                              $nome=NULL;
-                              $preco=NULL;
-                              $descricao = NULL;
-                              $categoria = NULL;
-                              $categoria1= NULL;
-                              $url_img = NULL; 
-                               
-                }else{
-                  $msg_envio =  "Erro no cadastro do produto" . mysqli_error($db_connect);
-                  echo $msg_envio;
-                }
-                }
-              }
+              
 ?>
 <?php 
 
@@ -93,19 +78,19 @@
                       <select class="form-control" name="categoria" >
                         <option>
              <?php            
-             $auxiliar = $row1['id_categoria'];
-            $resultado1 = "SELECT * FROM categoria WHERE id_categoria == '$auxiliar'";
-            $resulto1 = $db_connect->query($resultado1);
-            $row3 = $resulto1->fetch_assoc();
+            $auxiliar = $row1['id_categoria'];
+            $resultado1 = "SELECT * FROM categoria WHERE id_categoria LIKE '$auxiliar'";
+            $resulto1 = $db_connect->query($resultado1); 
+            $row3= $resulto1->fetch_assoc();
             ?>
                         <?php echo $row3['nome_categoria'].'(' . $row1['id_categoria'] . ')';?>
                         </option>
                            
-                        <?php $sql = "SELECT * FROM categoria";
+                    <?php $sql = "SELECT * FROM categoria";
 
-                        $result = $db_connect->query($sql);
+                  $result = $db_connect->query($sql);
 
-                        while ($row2 = $result->fetch_assoc())
+                  while ($row2 = $result->fetch_assoc())
                 {?>
                             <?php if($row2['id_categoria'] != $row3['id_categoria']){?>
                             <option ><?php echo $row2['nome_categoria'] . '(' . $row2['id_categoria'] . ')';?></option>
@@ -142,7 +127,7 @@
                       
               <div class="pp-adm">
                       <button type="submit" class="btn btn-outline-dark ">Editar produto</button>
-                      <button href="paginaprodutos-adm.php" type="button" class="btn btn-outline-dark ">Voltar</button>
+                      <a href="pagina_de_listagem.php"><button  type="button" class="btn btn-outline-danger" >Voltar</button></a>
               </div>  
                     </form>
                           

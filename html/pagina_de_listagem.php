@@ -13,7 +13,10 @@
                 $port = '3306';
 
                 $db_connect = new mysqli($server,$user,$password,$db_name,$port);
-                mysqli_set_charset($db_connect,"utf-8");
+                mysqli_set_charset($db_connect,"utf-8")
+                
+                        
+                
 ?>
 
 <div class="table-responsive">
@@ -30,46 +33,61 @@
   <tbody>
     <tr>
       <?php 
+              
+              if($_POST != NULL){
+                $auxiliar = $_POST['deleta'];
+                $delete = "DELETE FROM `produto` WHERE `produto`.`id_produto` = $auxiliar";
+              $result = $db_connect->query($delete);
+              }
+                
+             
+              
               $sql = "SELECT * FROM produto";
 
               $result = $db_connect->query($sql);
               while ($row = $result->fetch_assoc())
       {?>
       <tr>
-      
+              
               <td><?php echo $row['nome_produto'];?></td>
               <td><?php echo $row['preco'];?></td>
-              <!-- Botão para acionar modal -->
+              
               <td>
+
+            <div  data-toggle="modal" data-target="#myModalRemarks<?php echo $row['nome_produto'];?>">
+            <a><img width="22" height="22" src="../assets/img/lixo.png" method="post"></a>
+            </div>
+        <!--    <a href="#myModalRemarks<?php echo $row['nome_produto'];?>" class="remarksBtn" data-toggle="modal"><i class="fa fa-info-circle fa-lg">Go Forward</i></a> -->
+        <div class="modal fade" id="myModalRemarks<?php echo $row['nome_produto'];?>" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+                
           
-              <div   data-toggle="modal" data-target="#ExemploModalCentralizado">
-              <a><img width="22" height="22" src="../assets/img/lixo.png" metod="post"></a>
-              </div>
-              </td>
-              <!-- Modal -->
-              <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-dialog">
+                  <!-- Modal content -->
                   <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="TituloModalCentralizado">Remover produto</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
+                      <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title"></h4>
+                      </div>
+                      <div class="modal-body">
                        Deseja mesmo remover o produto <?php echo $row['nome_produto'] ;?>?
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
-                      <button href = "index.php" type="button" class="btn btn-outline-dark " name="deletar" >Sim</button>                    
-                                    </div>
+                    
+                      
+                      <a href="pagina_de_listagem.php">
+                      
+                      <form method="POST">
+                        <input  id="editar" value="<?php echo $row['id_produto'];?>" name="deleta" type="hidden"> 
+                        <button  type="submit" class="btn btn-outline-dark "    >Sim</button></a>
+                      </form>                                        
+
                   </div>
-                </div>
-                  </div>
+            </div>
+          </div>                  
+
+</td>
                   <td>
-                  <form method="GET">
-                  <input  id="editar" value="<?php  $row['id_produto'];?>" type="hidden"> 
-                  </form>
                   <a href="EditarProdutos.php?id_usuario=<?php echo $row['id_produto'] ?>"><img  width="22" height="22" src="../assets/img/lapis.png" </a>
                   </td>
           </tr>    

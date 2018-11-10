@@ -8,15 +8,15 @@
                 $password = '';
                 $db_name = 'balao_da_informatica';
                 $port = '3306';
-                                 $aviso_validacao1 = $aviso_validacao2 = $aviso_validacao3 = $aviso_validacao4 = $aviso_validacao5= $aviso_validacao6 = "";
-                                  $nome="";
-                                  $preco="";
-                                  $id_produto="";
-                                  $descricao = "";
-                                  $categoria = "";
-                                  $categoria1= "";
-                                  $url_img = "";
-                                    
+                $aviso_validacao1 = $aviso_validacao2 = $aviso_validacao3 = $aviso_validacao4 = $aviso_validacao5= $aviso_validacao6 = "";
+                $nome="";
+                $preco="";
+                $id_produto="";
+                $descricao = "";
+                $categoria = "";
+                $categoria1= "";
+                $url_img = "";
+                print_r($_POST);
                 $db_connect = new mysqli($server,$user,$password,$db_name,$port);
                 mysqli_set_charset($db_connect,"utf-8");
                                 
@@ -46,6 +46,7 @@
                   elseif($url_img == ''){
                     $aviso_validacao6 = "Campo Obrigatório";
                   }else{
+                    
                 $sql = "INSERT INTO produto 
                  VALUES ('','$categoria','$nome','$preco','$descricao','$url_img') ";
 
@@ -53,6 +54,7 @@
                 {
                   $msg_envio =  'Produto cadastrado com sucesso';
                   echo $msg_envio;
+                              
                   
                               $nome=NULL;
                               $preco=NULL;
@@ -60,7 +62,9 @@
                               $categoria = NULL;
                               $categoria1= NULL;
                               $url_img = NULL; 
-                               
+                              $_POST = NULL; 
+                              echo $_POST['categoria'];
+                              print_r($_POST);           
                 }else{
                   $msg_envio =  "Erro no cadastro do produto" . mysqli_error($db_connect);
                   echo $msg_envio;
@@ -98,11 +102,11 @@
                         <?php } ?>
                       </select>
                       <div class="problema-formulario" ><?php echo $aviso_validacao5?></div>                    
-         
+                      
                     </div>
                     <div class="form-group col-sm-6">
                     <label>Preço</label>
-                    <input type="number" autocomplete="off" name ="preco"class="form-control"  >
+                    <input type="number" autocomplete="off" name ="preco"class="form-control" value="<?php echo $preco;?>" >
                     <div class="problema-formulario" ><?php echo $aviso_validacao2?></div>  
                   </div>
 </div>
@@ -111,7 +115,7 @@
               
                     <div class="form-group">
                     <label>Descrição</label>
-                    <textarea class="form-control"  autocomplete="off" name='descricao' rows="3" ></textarea>
+                    <textarea class="form-control"  autocomplete="off" name='descricao' rows="3" ><?php echo $descricao;?></textarea>
                     <div class="problema-formulario" ><?php echo $aviso_validacao4?></div>
                   </div>
                   
