@@ -27,13 +27,15 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 
+
+		
+
+
+
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 
-			unset($nome);
-			unset($sobrenome);
-			unset($email);
-			unset($texto); 
+
 
 
 
@@ -134,9 +136,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
         // Enviar E-mail
 			$mail->send();
+
+			unset($nome);
+			unset($sobrenome);
+			unset($email);
+			unset($texto); 
 			
 		}
-		 catch (Exception $e) {
+		catch (Exception $e) {
 			echo 'A mensagem não foi enviada pelo seguinte motivo: ', $mail->ErrorInfo;
 		}
 
@@ -145,12 +152,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 		$sobrenome = NULL;
 		$email = NULL;
 		$sucess_text = '* O formulário foi enviado com sucesso';
+		header("Location: faleconosco.php");
 
 		
-
-
-
-
+	
 	} 
 }
 
@@ -168,7 +173,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 	<hr>
 
 	<form action="faleconosco.php" method="post">
-
+		
 		<div class="form-row">
 
 			<div class="form-group col-sm-6">
@@ -243,6 +248,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 		
 
 	</form>
+<?php 
+		
+
+		?>
 
 
 </div>

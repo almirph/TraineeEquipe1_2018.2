@@ -46,47 +46,54 @@
        
 		<div class="collapse navbar-collapse " id="navbarTogglerDemo02">
 			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-				<a class="nav-link dropdown-toggle nav-botn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-				 aria-haspopup="true" aria-expanded="false">
-					Produtos
+			<li class="nav-item">
+				<div class="dropdown">
+				<a class="nav-link dropdown-toggle nav-botn" style="cursor:pointer" role="button" id="dropdownMenuButton" data-toggle="dropdown" 
+				aria-haspopup="true" aria-expanded="false">
+					Produto
 				</a>
-				<div class="dropdown-menu home" aria-labelledby="navbarDropdown">
-					<a class="dropdown-item" href="#">Inserir</a>
-					<a class="dropdown-item" href="#">Remover/Editar</a>
+				<div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+					<a class="dropdown-item" href="paginaprodutos-adm.php">Inserir produto</a>
+					<a class="dropdown-item" href="pagina_de_listagem.php">Remover/Editar produto</a>
+					
+				</div>
 				</div>
 				</li>
-				<div class="collapse navbar-collapse " id="navbarTogglerDemo02">
-			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-				
-				<a class="nav-link dropdown-toggle nav-botn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-				 aria-haspopup="true" aria-expanded="false">
+				<li class="nav-item">
+				<div class="dropdown">
+				<a class="nav-link dropdown-toggle nav-botn" style="cursor:pointer" role="button" id="dropdownMenuButton" data-toggle="dropdown" 
+				aria-haspopup="true" aria-expanded="false">
 					Categoria
 				</a>
-				<div class="dropdown-menu home" aria-labelledby="navbarDropdown">
-					<a class="dropdown-item" href="#">Inserir</a>
-					<a class="dropdown-item" href="#">Remover/Editar</a>
+				<div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+					<a class="dropdown-item" href="#">Inserir categoria</a>
+					<a class="dropdown-item" href="#">Remover/Editar categoria</a>
+					
+				</div>
 				</div>
 				</li>
-				
-			</ul>
-			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-				
-				<a class="nav-link dropdown-toggle nav-botn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-				 aria-haspopup="true" aria-expanded="false">
+				<li class="nav-item">
+				<div class="dropdown">
+				<a class="nav-link dropdown-toggle nav-botn" style="cursor:pointer" role="button" id="dropdownMenuButton" data-toggle="dropdown" 
+				aria-haspopup="true" aria-expanded="false">
 					Usuário
 				</a>
-				<div class="dropdown-menu home" aria-labelledby="navbarDropdown">
-					<a class="dropdown-item" href="#">Inserir</a>
-					<a class="dropdown-item" href="#">Remover/Editar</a>
+				<div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+					<a class="dropdown-item" href="#">Inserir usuário</a>
+					<a class="dropdown-item" href="#">Remover/Editar usuário</a>
+					
 				</div>
+				</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link nav-botn" href="index.php">Logout</a>
 				</li>
 				
 			</ul>
-			<li class="nav-item">
-					<a class="nav-link nav-botn" href="index.php">Logout</a>
-				</li>
 
-			
-			
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="Digite aqui..." aria-label="Search">
+				<button class="btn btn-outline-secondary btn-md my-2 my-sm-0" type="submit">Pesquisar</button>
+			</form>
 		</div>
 	</nav>

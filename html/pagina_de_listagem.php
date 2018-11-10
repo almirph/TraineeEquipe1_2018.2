@@ -1,4 +1,4 @@
-<?php include "Header-adm.php"?>
+<?php include "header-adm.php"?>
 
 
 <div class="container ">
@@ -20,7 +20,7 @@
 <table class="table table-sm">
   <thead>
     <tr>
-      <th scope="col">ID</th>
+      
       <th scope="col">Nome</th>
       <th scope="col">Preço</th>
       <th scope="col">Remover</th>
@@ -36,12 +36,43 @@
               while ($row = $result->fetch_assoc())
       {?>
       <tr>
-              <td><?php echo $row['id_produto'];?></td>
+      
               <td><?php echo $row['nome_produto'];?></td>
               <td><?php echo $row['preco'];?></td>
-              <td><a href="#"><img  width="22" height="22" src="../assets/img/lixo.png" ></a></td>
-              <td><a href="#"><img  width="22" height="22" src="../assets/img/lapis.png" ></a></td> 
-        </tr>    
+              <!-- Botão para acionar modal -->
+              <td>
+          
+              <div   data-toggle="modal" data-target="#ExemploModalCentralizado">
+              <a><img width="22" height="22" src="../assets/img/lixo.png" metod="post"></a>
+              </div>
+              </td>
+              <!-- Modal -->
+              <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="TituloModalCentralizado">Remover produto</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                       Deseja mesmo remover o produto <?php echo $row['nome_produto'] ;?>?
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
+                      <button href = "index.php" type="button" class="btn btn-outline-dark " name="deletar" >Sim</button>                    
+                                    </div>
+                  </div>
+                </div>
+                  </div>
+                  <td>
+                  <form method="GET">
+                  <input  id="editar" value="<?php  $row['id_produto'];?>" type="hidden"> 
+                  </form>
+                  <a href="EditarProdutos.php?id_usuario=<?php echo $row['id_produto'] ?>"><img  width="22" height="22" src="../assets/img/lapis.png" </a>
+                  </td>
+          </tr>    
              
 
       <?php     }      ?>
@@ -51,3 +82,6 @@
 </table>
 </div>
 </div>
+
+
+<?php include "footer.php"?>
