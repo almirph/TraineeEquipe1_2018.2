@@ -1,4 +1,4 @@
-<?php include "header-adm.php"?>
+<?php include "Header-adm.php"?>
 
 
 <div class="container ">

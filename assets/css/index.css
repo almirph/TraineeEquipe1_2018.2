@@ -210,7 +210,7 @@ html, body{
 
 .areatexto{
 
-	background-color: *#F1F8F6;
+	background-color: #F1F8F6;
 }
 
 
@@ -372,11 +372,26 @@ footer{
 							/********************* QUEM SOMOS *********************/
 
 /*********************************************************************************************************/
+.body-quemsomos h3{
+
+	font-size: 30px;
+	font-weight: 30px;
+	margin-bottom: 12px;
+}
+
+
+.body-quemsomos p{
+
+	font-size: 16px;
+	font-weight: 12px;
+}
+
 .Titulo-quemsomos
 {
-	text-align: center;
-	margin-top:2.5%;
+	margin-top:24px;
+	margin-left: 16px;
 	font-size: 26px;
+	padding-bottom: 12px;
 }
 .img-quemsomos
 {
@@ -386,7 +401,6 @@ footer{
 	border-radius: 10%;
 	margin-bottom: 2.5%;
 	text-align: center;
-
 	border:black 1px solid;
 } 
 
@@ -405,6 +419,24 @@ footer{
 	margin-top: 2.5%;
 
 }
+.quem-somos3{
+
+	margin-left: 10px;
+}
+
+.quem-somos{
+
+	margin-left: 12px;
+}
+
+.about{
+
+	margin-bottom: 24px;
+	margin-top: 24px;
+	padding-bottom: 24px;
+	padding-top: 24px;
+	
+}
 
 .esquerda
 {
@@ -415,12 +447,13 @@ text-align: justify;
 {
 	display: none;
 }
-@media(max-width:1000px)
+@media(max-width:991px)
 {
 	.img-quemsomos
 	{
 		word-wrap: wrap;
 		min-width: 250px;
+		display: none;
 	
 	
 
@@ -442,9 +475,7 @@ text-align: justify;
 	.quemsomos-100px{
 		display: none;
 	}
-	.body-quemsomos hr{
-		display: none;
-	}
+	
 		
 }
 
@@ -664,6 +695,15 @@ text-align: center;
 
 .faleconosco2 h1{
 
-	margin-top: 16px;
+	margin-top: 20px;
+	font-weight: 18px;
+	font-weight: 550;
 
+}
+
+.faleconosco2 i{
+
+	margin-right: 32px;
+	margin-top: 8px;
+	padding-top: 8px;
 }
