@@ -66,11 +66,12 @@
                   </div>
                 </div>
                   </div>
+                  <td>
                   <form method="GET">
-                  <input  id="editar" value="<?php  $row['id_produto'];?>"> 
+                  <input  id="editar" value="<?php  $row['id_produto'];?>" type="hidden"> 
                   </form>
-                  <a href="EditarProdutos.php?id_usuario=<?php echo $row['id_produto'] ?>"> Link </a>
-
+                  <a href="EditarProdutos.php?id_usuario=<?php echo $row['id_produto'] ?>"><img  width="22" height="22" src="../assets/img/lapis.png" </a>
+                  </td>
           </tr>    
              
 
