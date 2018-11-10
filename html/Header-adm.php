@@ -10,7 +10,7 @@
 
 	<!-- Bootstrap -->
 	<link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="../assets/css/index.css" rel="stylesheet">
+	<link href="../assets/css/index-adm.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,400" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
 	 crossorigin="anonymous">
@@ -46,21 +46,47 @@
        
 		<div class="collapse navbar-collapse " id="navbarTogglerDemo02">
 			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-				<li class="nav-item active">
-					<a class="nav-link nav-botn" href="index.php#body-home">Home <span class="sr-only">(current)</span></a>
-				</li>
-				<a class="nav-link dropdown-toggle nav-botn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-				 aria-haspopup="true" aria-expanded="false">
-					Produtos
+			<li class="nav-item">
+				<div class="dropdown">
+				<a class="nav-link dropdown-toggle nav-botn" style="cursor:pointer" role="button" id="dropdownMenuButton" data-toggle="dropdown" 
+				aria-haspopup="true" aria-expanded="false">
+					Produto
 				</a>
-				<div class="dropdown-menu home" aria-labelledby="navbarDropdown">
-					<a class="dropdown-item" href="Produtos2.php">Mais vendidos</a>
-					<div class="dropdown-divider home-linha"></div>
-					<a class="dropdown-item" href="#">Categoria 1</a>
+				<div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+					<a class="dropdown-item" href="paginaprodutos-adm.php">Inserir produto</a>
+					<a class="dropdown-item" href="pagina_de_listagem.php">Remover/Editar produto</a>
+					
+				</div>
 				</div>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link nav-botn" href="Quemsomos.php">Quem somos</a>
+				<div class="dropdown">
+				<a class="nav-link dropdown-toggle nav-botn" style="cursor:pointer" role="button" id="dropdownMenuButton" data-toggle="dropdown" 
+				aria-haspopup="true" aria-expanded="false">
+					Categoria
+				</a>
+				<div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+					<a class="dropdown-item" href="#">Inserir categoria</a>
+					<a class="dropdown-item" href="#">Remover/Editar categoria</a>
+					
+				</div>
+				</div>
+				</li>
+				<li class="nav-item">
+				<div class="dropdown">
+				<a class="nav-link dropdown-toggle nav-botn" style="cursor:pointer" role="button" id="dropdownMenuButton" data-toggle="dropdown" 
+				aria-haspopup="true" aria-expanded="false">
+					Usuário
+				</a>
+				<div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+					<a class="dropdown-item" href="#">Inserir usuário</a>
+					<a class="dropdown-item" href="#">Remover/Editar usuário</a>
+					
+				</div>
+				</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link nav-botn" href="index.php">Logout</a>
 				</li>
 				
 			</ul>

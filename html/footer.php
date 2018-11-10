@@ -39,7 +39,7 @@
                      <div class="form-group col-sm-6">
 
                       <label for="sobrenome">Sobrenome:</label>
-                      <input type="text" class="form-control areatexto" id="name" placeholder="Digite seu sobrenome">
+                      <input type="text" class="form-control areatexto" id="sobrenome" placeholder="Digite seu sobrenome">
                       
                     </div>
 

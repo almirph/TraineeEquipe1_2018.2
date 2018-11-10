@@ -78,7 +78,7 @@
 
       <h1>Nome do produto</h1>
       <div class="img-produto-pagina">
-        <img src="../img/teclado-pagprodutos.jpg" class="img-fluid img-pagina" alt="Imagem responsiva">
+        <img src="../assets/img/teclado-pagprodutos.jpg" class="img-fluid img-pagina" alt="Imagem responsiva">
       </div>
       <div class=texto>
       <h2>Informações do Produto</h2>
