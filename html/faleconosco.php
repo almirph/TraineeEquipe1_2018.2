@@ -30,6 +30,13 @@ use PHPMailer\PHPMailer\Exception;
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 
+			unset($nome);
+			unset($sobrenome);
+			unset($email);
+			unset($texto); 
+
+
+
 	$nome = $_POST['nome'];
 	$sobrenome = $_POST['sobrenome'];
 	$email = $_POST['email'];
@@ -232,6 +239,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 		<div class="modal-footer">
 			<button type ="submit" type="button" class="btn btn-outline-dark">Enviar</button>
 		</div>
+
+		
 
 	</form>
 
