@@ -97,20 +97,21 @@
                           </button>
                       </div>
                       <div class="modal-body">
-                        <form>
-                          <div class="form-group">
-                            <label for="exampleInputEmail1">E-mail</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu e-mail">
-                            
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">Senha</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Digite sua senha">
-                        </div>
-                        <hr>
-                        <button type="submit" class="btn btn-outline-dark">Login</button>
                         
-                    </form>
+                      <form action="valida-login.php" method="post">
+                        <div class="form-group">
+                        <label for="txUsuario">Usuario</label>
+                        <input type="text" name = "usuario" class="form-control" id="txUsuario"  placeholder="Digite seu nome de usuario">
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="txSenha">Senha</label>
+                        <input type="password" name="senha" class="form-control" id="txSenha" placeholder="Digite sua senha">
+                    </div>
+                    <hr>
+                    <button type="submit" class="btn btn-outline-dark" value="Entrar">Login</button>
+                    
+                </form>
                 </div>
                 
             </div>
