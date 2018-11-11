@@ -183,6 +183,8 @@ html, body{
 
 /**********************************************************************************************************/
 
+
+
 .form-group{
 
 	margin-top: 8px;
@@ -216,6 +218,20 @@ form{
 
 	margin-bottom: 16px;
 }
+
+
+
+.alerta{
+
+	font-size: 12px;
+	padding: 8px;
+}
+
+.text-mensagem textarea{
+
+	margin-bottom: 24px;
+}
+
 
 
 
