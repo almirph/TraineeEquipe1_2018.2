@@ -1,89 +1,24 @@
 
-		<div class="rodape">
+<div class="rodape">
 
-<footer>
+    <footer>
 
-    <div class="container-fluid text-center">
+        <div class="container-fluid text-center">
 
             <div class="row informaçoes-primarias py-3">
-            
-                <div class="col-lg-3 pdd-special">
+                
+                <div class="col-lg-3">
 
                     
-                    <h5 id="fale-conosco">Fale conosco:<span style="font-size: 26px"><button class="fas fa-headset loc-tamanho" type="button" class="btn btn-primary " data-toggle="modal" data-target="#exampleModal"></button></span></h5> 
+                    <h5 id="fale-conosco">Nossos telefones:</h5>
+                    
+                    
 
-                <div class="modal fade faleconosco-footer" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h3 class="modal-title" id="exampleModalLabel">Fale conosco</h3>
-                        
-                        
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body faleconosco">
+                    <ul class="list-unstyled">
 
-                        <form>
-                          
-                  <div class="form-row">
-
-                    <div class="form-group col-sm-6">
-
-                      <label for="nome" style="text-align: left;">Nome:</label>
-                      <input type="text" class="form-control areatexto" id="name" placeholder="Digite seu nome">
-
-                    </div>
-
-                     <div class="form-group col-sm-6">
-
-                      <label for="sobrenome">Sobrenome:</label>
-                      <input type="text" class="form-control areatexto" id="name" placeholder="Digite seu sobrenome">
-                      
-                    </div>
-
-                 </div>
-
-                 <div class="form-row">
-
-                    <div class="form-group col-sm-12">
-
-                        <label for="email">E-mail:</label>
-                          <input type="email" class="form-control areatexto" id="email" placeholder="Digite seu e-mail">
-                     </div>
-
-
-                 </div>
-
-                    <div class="form-row">
-
-                  <div class="form-group col-sm-12">
-
-                        <label for="email">Mensagem:</label>
-                          <textarea class="form-control areatexto" rows="8" placeholder="Digite sua mensagem"></textarea>
-                  </div>
-
-
-                </div>
-
-                        </form>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-outline-dark">Enviar</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-            
-            
-            
-
-                        <ul class="list-unstyled">
-
-                            <li>(31)3456-0967</li>
-                            <li>(31)3478-2331</li>
-                        </ul>
+                        <li>(31)3456-0967</li>
+                        <li>(31)3478-2331</li>
+                    </ul>
                     
                 </div>
 
@@ -91,23 +26,23 @@
                     
                     <h5>Horário de atendimento:</h5>
 
-                        <ul class="list-unstyled">
-                            <li>8h00 às 18h00</li>
-                            <li>Segunda à Sábado</li>
-                        </ul>           
+                    <ul class="list-unstyled">
+                        <li>8h00 às 18h00</li>
+                        <li>Segunda à Sábado</li>
+                    </ul>           
                 </div>
 
                 <div class="col-lg-3 pdd-special ">
 
                     <h5>Nossa localização:<span style="font-size: 26px"><button class="fas fa-map-marker-alt loc-tamanho" type="button" class="btn btn-primary " data-toggle="modal" data-target="#exampleModalCenter"></button></span></h5>  
 
-            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">	
-                        <div class="modal-body">
-                            <iframe  class="col-lg-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.7803056300645!2d-46.668182784405964!3d-23.612210769358498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a0bf7346baf%3A0xd756d1a0261c4c1a!2sBal%C3%A3o+da+Inform%C3%A1tica+S%C3%A3o+Paulo+Moema!5e0!3m2!1spt-BR!2sbr!4v1539034124567" width="650" height="450" frameborder="0" style="border:1" allowfullscreen></iframe>
-                        </div>
-                </div>	  
-            </div>
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">	
+                            <div class="modal-body">
+                                <iframe  class="col-lg-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.7803056300645!2d-46.668182784405964!3d-23.612210769358498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a0bf7346baf%3A0xd756d1a0261c4c1a!2sBal%C3%A3o+da+Inform%C3%A1tica+S%C3%A3o+Paulo+Moema!5e0!3m2!1spt-BR!2sbr!4v1539034124567" width="650" height="450" frameborder="0" style="border:1" allowfullscreen></iframe>
+                            </div>
+                        </div>	  
+                    </div>
 
 
                     <ul class="list-unstyled">
@@ -125,70 +60,71 @@
                     <h5>Receba nossas novidades por <br> e-mail:</h5>
 
                     <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="E-mail" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-secondary" type="button" style="color: white">Cadastrar</button>
-                            </div>
-                        </div>  
-                                    
-                    </div>
-
+                        <input type="text" class="form-control" placeholder="E-mail" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" style="color: white">Cadastrar</button>
+                        </div>
+                    </div>  
+                    
                 </div>
 
-         </div>
-
-            <div class="container-fluid text-center">
-
-
-                <div class = "row text-center icons">
-
-                    <div class="col-lg-12 text-center py-2">
-                
-                        <span style="font-size: 32px"><a href="https://www.facebook.com/balaodainformatica.com.br/"><i class="fab fa-facebook-f"></i></a></span>
-                        <span style="font-size: 32px"><a href="https://twitter.com/balaoinfo"><i class="fab fa-twitter"></i></a></span>
-                        <span style="font-size: 32px"><a href="https://www.instagram.com/balaoitatiba/"><i class="fab fa-instagram"></i></a></span>
-                        <span style="font-size: 32px"><a href="https://plus.google.com/discover"><i class="fab fa-google-plus-g"></i></a></span>
-                        <span style="font-size: 12px" class="lock" data-toggle="modal" data-target="#login"><i class="fas fa-lock"></i></span>
-
-                        
-
-                            <div class="modal fade faleconosco-footer" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                              <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Tela do usuário</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                    </button>
-                                  </div>
-                                  <div class="modal-body">
-                                    <form>
-                                          <div class="form-group">
-                                            <label for="exampleInputEmail1">E-mail</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu e-mail">
-                                            
-                                          </div>
-                                          <div class="form-group">
-                                            <label for="exampleInputPassword1">Senha</label>
-                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Digite sua senha">
-                                          </div>
-                                          <hr>
-                                              <button type="submit" class="btn btn-outline-dark">Login</button>
-                                         
-                                        </form>
-                                  </div>
-                                 
-                                </div>
-                              </div>
-                            </div>
-                        
-                        
-                    </div>
-
-                </div>
-
-            
             </div>
+
+        </div>
+
+        <div class="container-fluid text-center">
+
+
+            <div class = "row text-center icons">
+
+                <div class="col-lg-12 text-center py-2">
+                    
+                    <span style="font-size: 32px"><a href="https://www.facebook.com/balaodainformatica.com.br/"><i class="fab fa-facebook-f"></i></a></span>
+                    <span style="font-size: 32px"><a href="https://twitter.com/balaoinfo"><i class="fab fa-twitter"></i></a></span>
+                    <span style="font-size: 32px"><a href="https://www.instagram.com/balaoitatiba/"><i class="fab fa-instagram"></i></a></span>
+                    <span style="font-size: 32px"><a href="https://plus.google.com/discover"><i class="fab fa-google-plus-g"></i></a></span>
+                    <span style="font-size: 12px" class="lock" data-toggle="modal" data-target="#login"><i class="fas fa-lock"></i></span>
+
+                    
+
+                    <div class="modal fade faleconosco-footer" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Tela do usuário</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+                      <div class="modal-body">
+                        
+                      <form action="valida-login.php" method="post">
+                        <div class="form-group">
+                        <label for="txUsuario">Usuario</label>
+                        <input type="text" name = "usuario" class="form-control" id="txUsuario"  placeholder="Digite seu nome de usuario">
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="txSenha">Senha</label>
+                        <input type="password" name="senha" class="form-control" id="txSenha" placeholder="Digite sua senha">
+                    </div>
+                    <hr>
+                    <button type="submit" class="btn btn-outline-dark" value="Entrar">Login</button>
+                    
+                </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    
+</div>
+
+</div>
+
+
+</div>
 
 </footer>
 

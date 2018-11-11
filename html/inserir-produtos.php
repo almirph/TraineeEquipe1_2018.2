@@ -1,9 +1,8 @@
-<?php include "header.php" ?>
+<?php include "header-adm.php" ?>
 
 
 
-            <pre><?php print_r($_POST);?></pre>
-<?php 
+            <?php 
                 $nome=$_POST['nome'];
                 $preco=$_POST['preco'];
                 $id_produto=$_POST['id_produtos'];
@@ -22,17 +21,7 @@
                 $db_connect = new mysqli($server,$user,$password,$db_name,$port);
                 mysqli_set_charset($db_connect,"utf-8");
 
-                 $sql = "INSERT INTO produto(id_produto,id_categoria,nome_produto,preco,descricao,url_imagem) 
-                 VALUES ('$id_produto','$categoria','$nome','$preco','$descricao','$url_img') ";
-
-                if( $db_connect->query($sql)== true )
-                {
-                  $msg_envio =  'Produto enviado para o banco';
-                  echo $msg_envio;
-                }else{
-                  $msg_envio =  "Nao foi possível enviar o produto" . mysqli_error($db_connect);
-                  echo $msg_envio;
-                }
+                 
                 
 ?>
 

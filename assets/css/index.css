@@ -183,6 +183,8 @@ html, body{
 
 /**********************************************************************************************************/
 
+
+
 .form-group{
 
 	margin-top: 8px;
@@ -216,6 +218,20 @@ form{
 
 	margin-bottom: 16px;
 }
+
+
+
+.alerta{
+
+	font-size: 12px;
+	padding: 8px;
+}
+
+.text-mensagem textarea{
+
+	margin-bottom: 24px;
+}
+
 
 
 
@@ -507,7 +523,7 @@ a:hover{
 .img-card{
 	margin-top:10%;
 	margin-bottom: 10%;
-	border: 1px solid #1E1E24;
+	
 }
 .img-card:hover{
 	-webkit-box-shadow: 6px 4px 6px rgba(50, 50, 50, 0.77);
@@ -587,6 +603,9 @@ text-align: center;
 	
 
 }
+}
+.pag-produtos h5{
+	font-size:12px;
 }
 .titulo-pag-produtos h1,h2{
 	text-align: center;

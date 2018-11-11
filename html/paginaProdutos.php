@@ -14,60 +14,7 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 
         <ul class="list-group mr-auto mt-2 mt-lg-0 ">
-          <a href="#">
-            <li class="list-group-item d-flex justify-content-between align-items-center lista-item">
-              Categoria 1
-              <span class="badge badge-primary badge-pill nprodutos"></span>
-            </li>
-          </a>
-          <a href="#">
-            <li class="list-group-item d-flex justify-content-between align-items-center lista-item">
-              Categoria 2
-              <span class="badge badge-primary badge-pill nprodutos"></span>
-            </li>
-          </a>
-          <a href="#">
-            <li class="list-group-item d-flex justify-content-between align-items-center lista-item">
-              Categoria 3
-              <span class="badge badge-primary badge-pill nprodutos"></span>
-            </li>
-          </a>
-          <a href="#">
-            <li class="list-group-item d-flex justify-content-between align-items-center lista-item">
-              Categoria 4
-              <span class="badge badge-primary badge-pill nprodutos"></span>
-            </li>
-          </a>
-          <a href="#">
-            <li class="list-group-item d-flex justify-content-between align-items-center lista-item">
-              Categoria 5
-              <span class="badge badge-primary badge-pill nprodutos"></span>
-            </li>
-          </a>
-          <a href="#">
-            <li class="list-group-item d-flex justify-content-between align-items-center lista-item">
-              Categoria 6
-              <span class="badge badge-primary badge-pill nprodutos"></span>
-            </li>
-          </a>
-          <a href="#">
-            <li class="list-group-item d-flex justify-content-between align-items-center lista-item">
-              Categoria 7
-              <span class="badge badge-primary badge-pill nprodutos"></span>
-            </li>
-          </a>
-          <a href="#">
-            <li class="list-group-item d-flex justify-content-between align-items-center lista-item">
-              Categoria 8
-              <span class="badge badge-primary badge-pill nprodutos"></span>
-            </li>
-          </a>
-          <a href="#">
-            <li class="list-group-item d-flex justify-content-between align-items-center lista-item">
-              Categoria 9
-              <span class="badge badge-primary badge-pill nprodutos"></span>
-            </li>
-          </a>
+          <?php include 'nav-categoria.php'?>
 
         </ul>
 
