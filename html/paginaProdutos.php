@@ -20,7 +20,7 @@
 
       </div>
     </nav>
-    </nav>
+    
     <div class="container titulo-pag-produtos">
 
       <h1>Nome do produto</h1>
