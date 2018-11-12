@@ -78,7 +78,7 @@
                                 
                             
                                 <td>
-                                    <a href="editar_categoria.php?id_usuario=<?php echo $row['id_categoria'] ?>"><img  width="22" height="22" src="../assets/img/pencil.png" </a>
+                                    <a href="editar_categoria.php?id_categoria=<?php echo $row['id_categoria'] ?>"><img  width="22" height="22" src="../assets/img/pencil.png" </a>
                                 </td>
                             
                             </tr>    
