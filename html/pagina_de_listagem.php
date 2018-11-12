@@ -1,3 +1,4 @@
+<?php session_start();?> 
 <?php include "header-adm.php"?>
 
 
@@ -6,6 +7,7 @@
 <h1> Lista de produtos </h1>
 </div>
 <?php
+                echo $_SESSION['msg'];      
                 $server = 'localhost';
                 $user = 'root';
                 $password = '';
@@ -78,7 +80,7 @@
                       <a href="pagina_de_listagem.php">
                       
                       <form method="POST">
-                        <input  id="editar" value="<?php echo $row['id_produto'];?>" name="deleta" type="hidden"> 
+                        <input  id="deleta" value="<?php echo $row['id_produto'];?>" name="deleta" type="hidden"> 
                         <button  type="submit" class="btn btn-outline-dark "    >Sim</button></a>
                       </form>                                        
 
@@ -88,7 +90,7 @@
 
 </td>
                   <td>
-                  <a href="EditarProdutos.php?id_usuario=<?php echo $row['id_produto'] ?>"><img  width="22" height="22" src="../assets/img/lapis.png" </a>
+                  <a href="EditarProdutos.php?id_produto=<?php echo $row['id_produto'] ?>"><img  width="22" height="22" src="../assets/img/lapis.png" </a>
                   </td>
           </tr>    
              
