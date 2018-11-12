@@ -47,18 +47,20 @@
                   elseif($url_img == ''){
                     $aviso_validacao6 = "Campo Obrigatório";
                   }else{
-                
+                        
                     $editar = "UPDATE `produto` SET `id_produto` = '756', `id_categoria` = '2',
                    `preco` = '3505', `descricao` = 'xd1', `url_imagem` = 'note1.jpg' WHERE `produto`.`id_produto` = 75;"
                     $resultado1 = $db_connect->query($editar);
 
               
-                  }
+?>
+<?php 
+
             
             $resultado = "SELECT * FROM produto WHERE id_produto LIKE '$auxiliar'";
             $resulto = $db_connect->query($resultado);
             $row1 = $resulto->fetch_assoc();
-                  }
+            
 ?>
 <div class = "lista-adm">
                 <h1>Editar Produtos</h1>
