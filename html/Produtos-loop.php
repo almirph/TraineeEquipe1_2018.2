@@ -16,17 +16,20 @@
 
                     while ($row2 = $result->fetch_assoc())
          
-         {
-         $auxiliar = "../assets/img/.'$row2['url_imagem']'";?>
-              <div class="row card-produto">
-        <a href="paginaProdutos.php ">
-        <div class="col-sm">
-        <div class="card img-card" style="width:16rem;">
-          <img class="card-img-top" src='$auxiliar' alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title"><?php echo $row2['nome_produto'];?></h5>
-            <h5><?php echo $row2['preco'];?><h5>
-          </a>
+         {?>
+          <a href=" ">
+          
+          <div class="col-sm">
+            <div class="card img-card" style="width:16rem;">
+              <img class="card-img-top" src="../assets/imagem_banco/<?php echo $row2['url_imagem']; ?>" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title"><?php echo $row2['nome_produto'];?></h5>
+                <h5>R$<?php echo $row2['preco'];?><h5>
+              </a>
+              </div>
+            </div>
+          </div>
+    
 
                           
                          <?php } ?>
