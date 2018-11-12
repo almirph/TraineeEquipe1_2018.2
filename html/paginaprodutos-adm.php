@@ -16,7 +16,6 @@
                 $categoria = "";
                 $categoria1= "";
                 $url_img = "";
-                print_r($_POST);
                 $db_connect = new mysqli($server,$user,$password,$db_name,$port);
                 mysqli_set_charset($db_connect,"utf-8");
                                 
@@ -49,7 +48,6 @@
                     
                 $sql = "INSERT INTO produto 
                  VALUES ('','$categoria','$nome','$preco','$descricao','$url_img') ";
-
                 if( $db_connect->query($sql)== true )
                 {
                   $msg_envio =  'Produto cadastrado com sucesso';
@@ -92,9 +90,7 @@
                         </option>
                         
                     <?php $sql = "SELECT * FROM categoria";
-
                       $result = $db_connect->query($sql);
-
                     while ($row2 = $result->fetch_assoc())
          
          {?>
