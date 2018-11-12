@@ -523,16 +523,10 @@ footer{
 	font-size: 26px;
 	padding-bottom: 12px;
 
-							/********************* QUEM SOMOS *********************/
+}							/********************* QUEM SOMOS *********************/
 
 /*********************************************************************************************************/
-.Titulo-quemsomos
-{
-	text-align: center;
-	margin-top:2.5%;
-	font-size: 26px;
 
-}
 .img-quemsomos
 {
 	margin-top: 2.5%;
@@ -584,7 +578,7 @@ footer{
 {
 	text-align: justify;
 
-
+}
 .esquerda
 {
 text-align: justify;
@@ -596,7 +590,7 @@ text-align: justify;
 	display: none;
 }
 
-@media(max-width:991px)
+@media(max-width:991px){}
 
 @media(max-width:1000px)
 {
@@ -619,6 +613,7 @@ text-align: justify;
 		margin-top: 5%;
 
 	}
+}
 
 {
 	text-align: center;
@@ -787,6 +782,7 @@ a:hover{
 @media (max-width: 1000px)
 
 {
+
 	.card-produto{
 
 		text-align: center;
@@ -818,6 +814,9 @@ a:hover{
 
 	}
 
+
+.card-produto{
+
 text-align: center;
 } 
 .categoria{
@@ -835,7 +834,7 @@ text-align: center;
 	color:rgba(255,255,255,.5);
 }
 .dropdown-divider{
-	border-color:#1E1E24; 
+	border-color:#1e1e245c; 
 }
 .dropdown-item.active, .dropdown-item:active {
 	background-color: #1E1E24;
