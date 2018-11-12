@@ -1,6 +1,6 @@
 <?php include 'Header-adm.php'; ?>  
 
-<div class ="container">
+
 <?php
                
                 $server = 'localhost';
@@ -32,26 +32,23 @@
 
                             if( $db_connect->query($sql)== true ){
                                 
-                                $msg_envio =  'Categoria cadastrada com sucesso';
-                                echo $msg_envio;                      
-                                $categoria = NULL;                                            
-                                echo $_POST['categoria'];
-                                print_r($_POST);           
+                                $aviso =  'Categoria cadastrada com sucesso';
+                                echo $aviso;                      
+                                $categoria = NULL;                                                      
                             
                             }   else{
-                                    
-                                    $msg_envio =  "Erro no cadastro da categoria" . mysqli_error($db_connect);
-                                    echo $msg_envio;
+                                    $aviso =  "Erro no cadastro da categoria" . mysqli_error($db_connect);
+                                    echo $aviso;
                                 }
                         }
                 }
 ?>
+<div class ="container">
 
-              <div class = "lista-adm"><h1>Página Categorias</h1></div>
+              <div class = "titulo-categoria"><h1>Página Categorias</h1></div>
               <hr>
                 
-                <form  action ="categoria.php" method="post">
-                    
+                <form  action ="categoria.php" method="post">                   
                     
                 <div class="form-row" type="categoria">
                         
@@ -61,27 +58,19 @@
                                 <input type="text" autocomplete="off" name="categoria" class="form-control"  maxlength="50" value="<?php echo $categoria;?>">
                                 <div class="problema-formulario" ><?php echo $aviso_validacao1?></div>
                             </div>
-                        </div>                                 
-                                  
-                </div>               
-                    
-                    
-              
-                    
-                
-                
-                
-                <div class="pp-adm">
+                        </div>
+
+                </div>
+
+                <div class="btn-categoria">
                         <button type="submit" class="btn btn-outline-dark ">Inserir Categoria</button>
-                </div>  
-                
-                
-                
-                
+                </div>                
+                                
                 </form>
+
                 <pre><?php print_r($_POST) ?></pre>
                           
         </div>
 
 
-                      <?php include 'footer.php'?>
+<?php include 'footer.php'?>

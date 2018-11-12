@@ -221,8 +221,13 @@ footer{
 .problema-formulario{
     color:red;
 }
-.edit_categoria h1{
+.titulo-categoria h1{
 	margin-top: 7.5px;
     text-align: center;
     margin-bottom: 27.5px;
+}
+.btn-categoria{
+	margin-top: 7.5px;
+    text-align: center;
+    margin-bottom: 15px;
 }
