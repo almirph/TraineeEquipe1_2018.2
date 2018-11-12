@@ -1,9 +1,5 @@
 <?php
-
-
-
-            
-
+       
              
                 $server = 'localhost';
                 $user = 'root';
