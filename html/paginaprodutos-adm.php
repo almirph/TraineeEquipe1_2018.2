@@ -1,8 +1,9 @@
+<?php session_start();?>
 <?php include 'Header-adm.php'; ?>  
 
 <div class ="container">
 <?php
-               
+                print_r($_SESSION);         
                 $server = 'localhost';
                 $user = 'root';
                 $password = '';
@@ -26,59 +27,19 @@
                   $descricao = $_POST['descricao'];
                   $categoria1 = $_POST['categoria'];
                   $url_img = $_POST['url_imagem'];  
-                  $categoria =preg_replace("/[^0-9]/", "", $categoria1);
-                  
-                  if($nome=="")
-                  {
-                      static $aviso_validacao1;
-                      $aviso_validacao1 = "Campo Obrigatório";
-                  }
-                  elseif($categoria == ''){
-                    $aviso_validacao5 = "Campo Obrigatório";
-                  }
-                  elseif($preco == ''){
-                    $aviso_validacao2 = "Campo Obrigatório";
-                  }
-                  elseif($descricao == ''){ 
-                   $aviso_validacao4 = "Campo Obrigatório";
-                  }               
-                  elseif($url_img == ''){
-                    $aviso_validacao6 = "Campo Obrigatório";
-                  }else{
-                    
-                $sql = "INSERT INTO produto 
-                 VALUES ('','$categoria','$nome','$preco','$descricao','$url_img') ";
-                if( $db_connect->query($sql)== true )
-                {
-                  $msg_envio =  'Produto cadastrado com sucesso';
-                  echo $msg_envio;
-                              
-                  
-                              $nome=NULL;
-                              $preco=NULL;
-                              $descricao = NULL;
-                              $categoria = NULL;
-                              $categoria1= NULL;
-                              $url_img = NULL; 
-                              $_POST = NULL; 
-                              echo $_POST['categoria'];
-                              print_r($_POST);           
-                }else{
-                  $msg_envio =  "Erro no cadastro do produto" . mysqli_error($db_connect);
-                  echo $msg_envio;
+                  $categoria =preg_replace("/[^0-9]/", "", $categoria1);    
                 }
-                }
-              }
+              
 ?>
 
               <div class = "lista-adm">
                 <h1>Pagina Produtos</h1>
                 </div>
-                <form  action ="paginaprodutos-adm.php" method="post">
+                <form  action ="inserir-produtos.php" method="post">
                 <div class="form-group">
                     <label>Nome</label>
                     <input type="text" autocomplete="off" name="nome" class="form-control"  maxlength="50" value="<?php echo $nome;?>">
-                    <div class="problema-formulario" ><?php echo $aviso_validacao1?></div>
+                    <div class="problema-formulario" ><?php echo $_SESSION['nome'];?></div>
                   </div>
             <div class="form-row" type="categoria">
                     

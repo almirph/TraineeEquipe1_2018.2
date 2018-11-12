@@ -29,15 +29,11 @@
           }else{
             $resultado = mysqli_fetch_assoc($query);
     
-            // Se a sessão não existir, inicia uma
             if (!isset($_SESSION)) session_start();
           
-            // Salva os dados encontrados na sessão
             $_SESSION['UsuarioID'] = $resultado['id_usario'];
             $_SESSION['UsuarioNome'] = $resultado['usuario'];
             
-          
-            // Redireciona o visitante
-            header("Location: produtos2.php"); exit;
+            header("Location: paginaprodutos-adm.php"); exit;
           }
     

@@ -1,5 +1,5 @@
 <?php
-            $auxiliar = $_GET['id_usuario'];                   
+                $auxiliar = $_GET['id_usuario'];                   
                 $server = 'localhost';
                 $user = 'root';
                 $password = '';
