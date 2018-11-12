@@ -15,10 +15,11 @@
                 print_r($_POST);
                 $db_connect = new mysqli($server,$user,$password,$db_name,$port);
                 mysqli_set_charset($db_connect,"utf-8");
+                
                                 
-                if($_SERVER['REQUEST_METHOD'] == 'POST')
+                if($_SERVER['REQUEST_METHOD'] == 'GET')
                 {                  
-                    $nova_categoria = $_POST['categoria'];                  
+                    $nova_categoria = $_GET['categoria'];                  
             
                     
                     if($nova_categoria==""){
@@ -28,8 +29,8 @@
                     
                     }    else{                    
                             if( $categoria = $nova_categoria){
-                                $sql = "UPDATE `categoria` SET `nome_categoria` = '$nova_categoria'  WHERE `categoria`";
-
+                                $sql = "UPDATE `categoria` SET `nome_categoria` = '$categoria' WHERE `categoria`.`id_categoria` = `$id_categoria`";
+                                mysqli_query($sql);
                             if( $db_connect->query($sql)== true ){
                                 
                                 $aviso =  'Categoria editada com sucesso';
@@ -55,7 +56,7 @@
                         
                         <div class="form-group col-sm-6">
                             <div class="form-group">
-                                <label>Digite o nome desejado para ediçao:</label>
+                                <label>Digite o nome desejado para ediçao da categoria <?php    echo $categoria ?></label>
                                 <input type="text" autocomplete="off" name="categoria" class="form-control"  maxlength="50" value="<?php echo $categoria;?>">
                                 <div class="problema-formulario" ><?php echo $aviso_validacao1?></div>
                             </div>
