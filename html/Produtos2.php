@@ -16,22 +16,30 @@
   <div class="container pag-produtos">
     <h1>Mais Vendidos</h1><br>
     <div class="row card-produto">
-      <?php include 'Produtos-loop.php'?>
+
+      <?php           
+      
+      $sql = "SELECT * FROM produto";
+      $result = $db_connect->query($sql);
+
+      while ($row2 = $result->fetch_assoc())
+
+      {?>
+      <a href="paginaProdutos.php?id_produto=<?php echo $row2['id_produto'];?>">
+
+      <div class="col-sm">
+      <div class="card img-card" style="width:16rem;">
+      <img class="card-img-top" src="../assets/imagem_banco/<?php echo $row2['url_imagem']; ?>" alt="Card image cap">
+      <div class="card-body">
+      <h5 class="card-title"style='color:black; font-size:16px;'><?php echo $row2['nome_produto'];?></h5>
+      <h5 style='color:red; font-size:26px;'>R$ <?php echo $row2['preco'];?><h5>
+      </a>
       </div>
       </div>
-  <div class="produtos-pagina">
-    <nav aria-label="...">
-      <ul class="pagination justify-content-end">
-        <li class="page-item active pagina-produtos cor-pagina1  "><a class="page-link cor-pagina " href="#">1<span class="sr-only">(atual)</span></a></li>
-        <li class="page-item ">
-          <a class="page-link pagina-produtos" href="#">2 </a>
-        </li>
-        <li class="page-item pagina-produtos"><a class="page-link" href="#">3</a></li>
-        <li class="page-item">
-          <a class="page-link pagina-produtos" href="#">Próximo</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-<!-- INICIO FOOTER -->
+      </div>
+
+     <?php }?>
+      </div>
+      </div>
+
         <?php include 'footer.php'?>
