@@ -25,12 +25,9 @@
                 $categoria1 = $_POST['categoria'];
                 $url_img = $_POST['url_imagem'];  
                 $categoria =preg_replace("/[^0-9]/", "", $categoria1);
-
                 $sql = "UPDATE `produto` SET `id_categoria` = '$categoria', `nome_produto` = '$nome', `preco` = '$preco', `descricao` = '$descricao', 
                 `url_imagem` = '$url_img' WHERE `produto`.`id_produto` = '$id_produto';";
-
                 //$resultado_edita =$db_connect->query($result_produto);
-
                 if( $db_connect->query($sql)== true )
                 {
                   $_SESSION['msg'] = "<p>Produto editado com sucesso.</p>";
@@ -43,5 +40,4 @@
                    header("Location: EditarProdutos.php?id_produto=$id_produto");
   
                 }
-
 ?>

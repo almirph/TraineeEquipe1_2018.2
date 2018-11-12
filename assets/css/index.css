@@ -4,6 +4,7 @@ html, body{
 	margin: 0;
 	font-family: montserrat;
 	/* background-color: rgb(235, 237, 247) ;	 */
+
 	
 
 
@@ -65,7 +66,11 @@ html, body{
 .btn-dark.nav	{
 	color: rgba(255,255,255,.5);
 	line-height: 1.2;
+
+	border-radius: 2px;
+
     border-radius: 2px;
+
 
 }
 
@@ -79,10 +84,17 @@ html, body{
 
 }
 @media (min-width: 992px){
+
+	.nav-botn{
+		margin-left: 30px;
+
+	}
+
 .nav-botn{
 	margin-left: 30px;
 	
 }
+
 }
 
 
@@ -110,20 +122,36 @@ html, body{
 
 }
 @media (max-width: 1000px){
-	.icones{ 
+
+		display: none;
+	}
+
 	display: none;
 	 }
+
 }
 .icones{	
 	padding-top: 20px;
 }
-	
+
 .text b{
 	font-size: 0.8rem;
 	text-transform: uppercase;	
 }
 .text p{
 	font-size: 0.7rem;
+
+}
+
+.jumbotron-fluid-home {
+	padding-top: 5px;
+	padding-bottom: 30px;    
+
+	height: 100%;  
+	
+	/* background-color: #e5ebff;  */
+
+
 	}
 
 .jumbotron-fluid-home {
@@ -134,6 +162,7 @@ html, body{
 	
 	/* background-color: #e5ebff;  */
     
+
 }
 .mais-vendidos{
 	text-align: left;
@@ -179,7 +208,11 @@ html, body{
 }
 
 
+
+/************** FALE CONOSCO *************/
+
 								/************** FALE CONOSCO *************/
+
 
 /**********************************************************************************************************/
 
@@ -236,7 +269,11 @@ form{
 
 
 
+/****************** FOOTER *********************/
+
+
 						/****************** FOOTER *********************/
+
 
 /*********************************************************************************************************/
 
@@ -250,6 +287,7 @@ footer{
 	border-bottom: none;
 	border-width: 1px;
 	border-color: black;
+
 }
 
 .rodape{
@@ -262,11 +300,19 @@ footer{
 	border-width: 1px;
 	
 }
+
+.faleconosco-footer{
+
+	color:#2E5266;
+	text-align: left;
+}
+=======
  .faleconosco-footer{
 
  	color:#2E5266;
  	text-align: left;
  }
+
 
 .rodape h5{
 
@@ -292,17 +338,92 @@ footer{
 	font-weight: 500;
 	
 }
+
+
+.lista-de-usuarios h1{
+
+	margin-top: 18px;
+}
+.cadastrar-usuarios h1{
+
+	margin-top: 18px;
+}
+.fa-plus{
+
+
+	margin-top: 12px;
+	margin-bottom: 34px;
+	color: black;
+}
+
+.fa-plus:hover{
+
+	transform: scale(0.9);
+	color: black;
+}
+
+.fa-arrow-left{
+
+	color: black;
+}
+
+.fa-arrow-left:hover{
+
+	color: black;
+	transform: scale(0.9);
+}
+
+.loc-tamanho:hover {
+    cursor: pointer;
+}
 .loc-tamanho:hover{
 	cursor: pointer;
  	 transform: scale(0.9);
+
 }
 
 .fa-map-marker-alt{
 
 	padding-left: 12px;
 	background-color:#1E1E24;
+
+	border-width: 0;
+	color: white;
+}
+
+.fa-trash-alt
+{
+	
+
+	background-color: white;
+	
+	border-width: 0;
+	
+}
+
+.fa-trash-alt:hover{
+
+	transform: scale(0.9);
+	cursor: pointer; 
+}
+
+.fa-pen:hover{
+
+	transform: scale(0.9);
+	cursor: pointer; 
+}
+
+.fa-pen{
+
+	background-color: white;
+	margin-left: 18px;
+	border-width: 0;
+
+
+
 	color: white;
 	border-width: 0;
+
 }
 
 .fa-headset{
@@ -338,6 +459,14 @@ footer{
 
 }
 
+
+.table-bordered form{
+
+	display: inline-block;
+}
+
+
+
 .col-lg-12 i{
 
 	margin-right: 18px;
@@ -369,15 +498,35 @@ footer{
 
 
 
-							/********************* QUEM SOMOS *********************/
+
+/********************* QUEM SOMOS *********************/
 
 /*********************************************************************************************************/
+.body-quemsomos h3{
+
+	font-size: 30px;
+	font-weight: 30px;
+	margin-bottom: 12px;
+}
+
+
+.body-quemsomos p{
+
+	font-size: 16px;
+	font-weight: 12px;
+}
+
 .Titulo-quemsomos
 {
-	text-align: center;
-	margin-top:2.5%;
+	margin-top:24px;
+	margin-left: 16px;
 	font-size: 26px;
-}
+	padding-bottom: 12px;
+
+}							/********************* QUEM SOMOS *********************/
+
+/*********************************************************************************************************/
+
 .img-quemsomos
 {
 	margin-top: 2.5%;
@@ -406,32 +555,72 @@ footer{
 
 }
 
+.quem-somos3{
+
+	margin-left: 10px;
+}
+
+.quem-somos{
+
+	margin-left: 12px;
+}
+
+.about{
+
+	margin-bottom: 24px;
+	margin-top: 24px;
+	padding-bottom: 24px;
+	padding-top: 24px;
+	
+}
+
+.esquerda
+{
+	text-align: justify;
+
+}
 .esquerda
 {
 text-align: justify;
+
 
 }
 .quemsomos-row
 {
 	display: none;
 }
+
+@media(max-width:991px){}
+
 @media(max-width:1000px)
 {
 	.img-quemsomos
 	{
 		word-wrap: wrap;
 		min-width: 250px;
-	
-	
+
+		display: none;
+
+
+
 
 	}
 	
 	.body-quemsomos
+
+	{
+		text-align: center;
+		margin-top: 5%;
+
+	}
+}
+
 {
 	text-align: center;
 	margin-top: 5%;
 	
 }
+
 
 }
 @media(max-width:576px)
@@ -442,6 +631,13 @@ text-align: justify;
 	.quemsomos-100px{
 		display: none;
 	}
+
+	
+
+}
+
+/*************************Produtos**************************/
+
 	.body-quemsomos hr{
 		display: none;
 	}
@@ -449,6 +645,7 @@ text-align: justify;
 }
 
 						/*************************Produtos**************************/
+
 
 /**********************************************************************************************************/
 
@@ -467,7 +664,7 @@ text-align: justify;
 	border-radius: 0.5; 
 	margin-top: 10%;
 	
-		
+
 }
 
 .saiba-mais{
@@ -513,17 +710,28 @@ a:hover{
 }
 .list-group-item:first-child{ 
 	margin-bottom: 0;
+
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.list-group-item:first-child {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
 }
 .list-group-item:first-child {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+
 }
 .img-card{
 	margin-top:10%;
 	margin-bottom: 10%;
-	
+
+	border: 1px solid #1E1E24;
+
 }
 .img-card:hover{
 	-webkit-box-shadow: 6px 4px 6px rgba(50, 50, 50, 0.77);
@@ -531,7 +739,7 @@ a:hover{
 	box-shadow:         9px 7px 10px rgba(50, 50, 50, 0.77);
 	transition: all 220ms ease-out;
 	transform: scale(1.05);
-		
+
 }
 .card-produto{
 	text-align: auto;
@@ -574,7 +782,41 @@ a:hover{
 @media (max-width: 1000px)
 
 {
+
 	.card-produto{
+
+		text-align: center;
+	} 
+	.categoria{
+
+		display: none;
+	}
+	.pag-produtos{
+		text-align: center;
+	}
+	.dropdown-menu{
+		background-color:#343a40;
+
+	}
+	.dropdown-menu a{
+		color:rgba(255,255,255,.5);
+	}
+	.dropdown-divider{
+		border-color:#1E1E24; 
+	}
+	.dropdown-item.active, .dropdown-item:active {
+		background-color: #1E1E24;
+	}
+	.dropdown-item:focus, .dropdown-item:hover{
+		background-color: #343a40;
+		color:white;
+
+
+	}
+
+
+.card-produto{
+
 text-align: center;
 } 
 .categoria{
@@ -592,7 +834,7 @@ text-align: center;
 	color:rgba(255,255,255,.5);
 }
 .dropdown-divider{
-	border-color:#1E1E24; 
+	border-color:#1e1e245c; 
 }
 .dropdown-item.active, .dropdown-item:active {
 	background-color: #1E1E24;
@@ -606,6 +848,7 @@ text-align: center;
 }
 .pag-produtos h5{
 	font-size:12px;
+
 }
 .titulo-pag-produtos h1,h2{
 	text-align: center;
@@ -659,4 +902,25 @@ text-align: center;
 }
 #id{
 	transition: all 220ms ease-out;
+
+}
+.form-group input{
+
+	margin-bottom: 8px;
+}
+
+.faleconosco2 h1{
+
+	margin-top: 20px;
+	font-weight: 18px;
+	font-weight: 550;
+
+}
+
+.faleconosco2 i{
+
+	margin-right: 32px;
+	margin-top: 8px;
+	padding-top: 8px;
+
 }

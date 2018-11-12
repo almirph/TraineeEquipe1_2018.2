@@ -69,8 +69,8 @@
 					Categoria
 				</a>
 				<div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
-					<a class="dropdown-item" href="#">Inserir categoria</a>
-					<a class="dropdown-item" href="#">Remover/Editar categoria</a>
+					<a class="dropdown-item" href="categoria.php">Inserir categoria</a>
+					<a class="dropdown-item" href="lista_categoria.php">Remover/Editar categoria</a>
 					
 				</div>
 				</div>

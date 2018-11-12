@@ -24,7 +24,6 @@
               
 ?>
 <?php 
-
             
             $resultado = "SELECT * FROM produto WHERE id_produto LIKE '$auxiliar'";
             $resulto = $db_connect->query($resultado);

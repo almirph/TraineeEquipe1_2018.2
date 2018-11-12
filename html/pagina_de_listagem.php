@@ -1,7 +1,5 @@
 <?php session_start();?> 
 <?php include "header-adm.php"?>
-
-
 <div class="container ">
   <div class="lista-adm">
 <h1> Lista de produtos </h1>
@@ -13,7 +11,6 @@
                 $password = '';
                 $db_name = 'balao_da_informatica';
                 $port = '3306';
-
                 $db_connect = new mysqli($server,$user,$password,$db_name,$port);
                 mysqli_set_charset($db_connect,"utf-8")
                 
@@ -45,7 +42,6 @@
              
               
               $sql = "SELECT * FROM produto";
-
               $result = $db_connect->query($sql);
               while ($row = $result->fetch_assoc())
       {?>

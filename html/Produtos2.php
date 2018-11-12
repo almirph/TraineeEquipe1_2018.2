@@ -11,10 +11,8 @@
       <ul class="list-group mr-auto mt-2 mt-lg-0  menu-list">
       <?php include "nav-categoria.php"?>
       </ul>
-
     </div>
   </nav>
-
   <div class="container pag-produtos">
     <h1>Mais Vendidos</h1><br>
     <div class="row card-produto">
@@ -26,7 +24,6 @@
             <h5 class="card-title">Nome do Produto</h5>
             <h5>Preço<h5>
           </a>
-
           </div>
         </div>
       </div>
@@ -38,7 +35,6 @@
             <h5 class="card-title">Nome do Produto</h5>
             <h5>Preço<h5>
           </a>
-
           </div>
         </div>
       </div>
@@ -50,7 +46,6 @@
             <h5 class="card-title">Nome do Produto</h5>
             <h5>Preço<h5>
           </a>
-
           </div>
         </div>
       </div>
@@ -62,7 +57,6 @@
             <h5 class="card-title">Nome do Produto</h5>
             <h5>Preço<h5>
           </a>
-
           </div>
         </div>
       </div>
@@ -74,7 +68,6 @@
             <h5 class="card-title">Nome do Produto</h5>
             <h5>Preço<h5>
           </a>
-
           </div>
         </div>
       </div>
@@ -86,7 +79,6 @@
             <h5 class="card-title">Nome do Produto</h5>
             <h5>Preço<h5>
           </a>
-
           </div>
         </div>
       </div>
@@ -98,7 +90,6 @@
             <h5 class="card-title">Nome do Produto</h5>
             <h5>Preço<h5>
           </a>
-
           </div>
         </div>
       </div>
@@ -110,7 +101,6 @@
             <h5 class="card-title">Nome do Produto</h5>
             <h5>Preço<h5>
           </a>
-
           </div>
         </div>
       </div>
@@ -122,7 +112,6 @@
             <h5 class="card-title">Nome do Produto</h5>
             <h5>Preço<h5>
           </a>
-
           </div>
         </div>
       </div>
@@ -134,7 +123,6 @@
             <h5 class="card-title">Nome do Produto</h5>
             <h5>Preço<h5>
           </a>
-
           </div>
         </div>
       </div>
@@ -146,7 +134,6 @@
             <h5 class="card-title">Nome do Produto</h5>
             <h5>Preço<h5>
           </a>
-
           </div>
         </div>
       </div>
@@ -158,7 +145,6 @@
             <h5 class="card-title">Nome do Produto</h5>
             <h5>Preço<h5>
           </a>
-
           </div>
         </div>
       </div>
@@ -167,7 +153,6 @@
   <div class="produtos-pagina">
     <nav aria-label="...">
       <ul class="pagination justify-content-end">
-
         <li class="page-item active pagina-produtos cor-pagina1  "><a class="page-link cor-pagina " href="#">1<span class="sr-only">(atual)</span></a></li>
         <li class="page-item ">
           <a class="page-link pagina-produtos" href="#">2 </a>
