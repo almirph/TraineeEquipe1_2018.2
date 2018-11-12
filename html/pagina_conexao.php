@@ -1,9 +1,5 @@
 <?php
-<<<<<<< HEAD
-                $auxiliar = $_GET['id_usuario'];                   
-=======
                              
->>>>>>> master
                 $server = 'localhost';
                 $user = 'root';
                 $password = '';
