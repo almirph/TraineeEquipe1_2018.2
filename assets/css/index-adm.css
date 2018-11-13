@@ -85,11 +85,13 @@ html, body{
 }
 }
 
+
 .lista-adm h1
 {
     margin-top: 7.5px;
     text-align: center;
     margin-bottom: 27.5px;
+
 }
 
 footer{
@@ -220,14 +222,88 @@ footer{
 }
 .problema-formulario{
     color:red;
+
 }
-.titulo-categoria h1{
-	margin-top: 7.5px;
-    text-align: center;
-    margin-bottom: 27.5px;
+
+.fa-map-marker-alt{
+
+	padding-left: 12px;
+	background-color:#1E1E24;
+
+	border-width: 0;
+	color: white;
 }
-.btn-categoria{
-	margin-top: 7.5px;
-    text-align: center;
-    margin-bottom: 15px;
+
+.fa-trash-alt
+{
+	
+
+	background-color: white;
+	
+	border-width: 0;
+	
+}
+
+.fa-trash-alt:hover{
+
+	transform: scale(0.9);
+	cursor: pointer; 
+}
+
+.fa-pen:hover{
+
+	transform: scale(0.9);
+	cursor: pointer; 
+}
+
+.fa-pen{
+
+	background-color: white;
+	margin-left: 18px;
+	border-width: 0;
+}
+
+.fa-plus{
+
+	color: black;
+	margin-top: 12px;
+	margin-bottom: 34px;
+	
+}
+
+.fa-plus:hover{
+
+	transform: scale(0.9);
+	color: black;
+}
+
+.lista-de-usuarios h1{
+
+	margin-top: 18px;
+}
+.cadastrar-usuarios h1{
+
+	margin-top: 18px;
+}
+.table-bordered form{
+
+	display: inline-block;
+
+
+}
+
+.cadastrar-usuarios button{
+
+	margin-bottom: 18px;
+}
+
+.fa-arrow-left{
+
+	color: black;
+}
+
+.fa-arrow-left:hover{
+
+	color: black;
+	transform: scale(0.9);
 }
