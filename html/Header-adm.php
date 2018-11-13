@@ -55,14 +55,14 @@
 					Tabelas
 				</a>
 				<div class="dropdown-menu home" aria-labelledby="navbarDropdown">
-					<a class="dropdown-item" href="Produtos2.php">Cadastrar produtos</a>
-					<a class="dropdown-item" href="Produtos2.php">Lista de produtos</a>
+					<a class="dropdown-item" href="paginaprodutos-adm.php">Cadastrar produtos</a>
+					<a class="dropdown-item" href="pagina_de_listagem.php">Lista de produtos</a>
 					<div class="dropdown-divider home-linha"></div>
 					<a class="dropdown-item" href="cadastrar.php">Cadastrar usuarios</a>		
 					<a class="dropdown-item" href="inicial.php">Lista de usuarios</a>
 					<div class="dropdown-divider home-linha"></div>
-					<a class="dropdown-item" href="Produtos2.php">Cadastrar categorias</a>
-					<a class="dropdown-item" href="Produtos2.php">Lista de categorias</a>
+					<a class="dropdown-item" href="categoria.php">Cadastrar categorias</a>
+					<a class="dropdown-item" href="lista_categoria.php">Lista de categorias</a>
 				
 				</div>
 				</li>

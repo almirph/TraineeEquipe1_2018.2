@@ -1,4 +1,4 @@
-<?php include 'Header-adm.php'; ?>  
+<?php include 'Header-adm.php'; ?>
 
 
 <?php
@@ -40,34 +40,39 @@
                         }
                 }
 ?>
-<div class ="container">
+<div class="container">
 
-              <div class = "titulo-categoria"><h1>Página Categorias</h1></div>
-              <hr>
-                
-                <form  action ="categoria.php" method="post">                   
-                    
+        <div class="titulo-categoria">
+                <h1>Página Categorias</h1>
+        </div>
+        <hr>
+
+        <form action="categoria.php" method="post">
+
                 <div class="form-row" type="categoria">
-                        
+
                         <div class="form-group col-sm-6">
-                            <div class="form-group">
-                                <label>Categoria:</label>
-                                <input type="text" autocomplete="off" name="categoria" class="form-control"  maxlength="50" value="<?php echo $categoria;?>">
-                                <div class="problema-formulario" ><?php echo $aviso_validacao1?></div>
-                            </div>
+                                <div class="form-group">
+                                        <label>Categoria:</label>
+                                        <input type="text" autocomplete="off" name="categoria" class="form-control"
+                                                maxlength="50" value="<?php echo $categoria;?>">
+                                        <div class="problema-formulario">
+                                                <?php echo $aviso_validacao1?>
+                                        </div>
+                                </div>
                         </div>
 
                 </div>
 
                 <div class="btn-categoria">
                         <button type="submit" class="btn btn-outline-dark ">Inserir Categoria</button>
-                </div>                
-                                
-                </form>
+                </div>
 
-                
-                          
-        </div>
+        </form>
+
+
+
+</div>
 
 
 <?php include 'footer.php'?>
