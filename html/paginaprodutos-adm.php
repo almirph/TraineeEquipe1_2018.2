@@ -21,7 +21,8 @@
                 
                 if(isset($_SESSION['msg']))
                 {
-                  unset($_SESSION['nome']);
+                  echo $_SESSION['msg'];
+                  unset($_SESSION);
               
                  
                 }

@@ -57,7 +57,7 @@
                 }
                 else{
                 $sql = "INSERT INTO produto 
-                VALUES ('','2','OLA','2' ,'descricao','url_img') ";
+                VALUES ('','$_SESSION','OLA','2' ,'descricao','$_SESSION['url_img']') ";
                 echo $aux;
                 
                 if( $db_connect->query($sql)== true )
@@ -70,7 +70,7 @@
                     
                       $msg = mysqli_error($db_connect);
                       echo $msg;
-                      //header("Location: paginaprodutos-adm.php");
+                      header("Location: paginaprodutos-adm.php");
     
                   }
                   

@@ -68,7 +68,7 @@
 				</li>
 
 				<li class="nav-item">
-					<a class="nav-link nav-botn" href="#">Logout</a>
+					<a class="nav-link nav-botn" href="logout.php">Logout</a>
 				</li>
 				
 				
