@@ -6,56 +6,71 @@
                 $password = '';
                 $db_name = 'balao_da_informatica';
                 $port = '3306';
-                $nome="";
-                $preco=""; 
-                $descricao = "";
-                $categoria = "";
-                $categoria1= "";
-                $url_img = "";
                 $result_produto;
+                $aux = 0;
                                     
                 $db_connect = new mysqli($server,$user,$password,$db_name,$port);
                 mysqli_set_charset($db_connect,"utf-8");
-                $nome=$_POST['nome'];
-                $preco=$_POST['preco'];
-                $descricao = $_POST['descricao'];
-                $categoria1 = $_POST['categoria'];
-                $url_img = $_POST['url_imagem'];  
+                  
                 $categoria =preg_replace("/[^0-9]/", "", $categoria1);
-                if($nome=="")
+                if(empty($_POST['nome']))
                 {
-                  $_SESSION['nome'] = "<p>Campo obrigatório</p>";
-                  header("Location: paginaprodutos-adm.php");
+                  $_SESSION['nome'] = "";
+                  $aux=$aux+1;
                 }
-                elseif($categoria == ''){
-                  $_SESSION['categoria'] = "<p>Campo obrigatório</p>";
-                      header("Location: paginaprodutos-adm.php");
+                else{
+                  $_SESSION['nome']=$_POST['nome'];
                 }
-                elseif($preco == ''){
-                  $_SESSION['preco'] = "<p>Campo obrigatório</p>";
-                      header("Location: paginaprodutos-adm.php");
+                if(empty($_POST['categoria'])){
+                  
+                  $_SESSION['categoria'] = "";
+                  $aux=$aux+1; 
                 }
-                elseif($descricao == ''){ 
-                 $_SESSION['descricao'] = "<p>Campo obrigatório</p>";
-                      header("Location: paginaprodutos-adm.php");
-                }               
-                elseif($url_img == ''){
-                  $_SESSION[''] = "<p>Campo obrigatório</p>";
-                      header("Location: paginaprodutos-adm.php");
+                else{
+
+                  
+                  $_SESSION['categoria'] =2;
+                }
+                if(empty($_POST['preco'])){
+                  $_SESSION['preco'] = "";
+                  $aux=$aux+1;   
+                }
+                else
+                {
+                  $_SESSION['preco'] = $_POST['preco'];
+                }
+                if(empty($_POST['descricao'])){ 
+                 $_SESSION['descricao'] = "";
+                $aux=$aux+1;
                 }else{
+                  $_SESSION['descricao']=$_POST['descricao'];
+                }              
+                if(empty($_POST['url_imagem'])){
+                  $_SESSION['url_imagem'] = "";
+                  $aux=$aux+1;
+                }else{
+                  $_SESSION['url_imagem']=$_POST['url_imagem'];
+                }if($aux>0)
+                {
+                    $_SESSION['erro']="xd";
+                    header("Location:paginaproduto-adm.php");
+                }
+                else{
                 $sql = "INSERT INTO produto 
-                VALUES ('','$categoria','$nome','$preco','$descricao','$url_img') ";
+                VALUES ('','2','OLA','2' ,'descricao','url_img') ";
+                echo $aux;
                 
                 if( $db_connect->query($sql)== true )
                   {
                     
-                      $_SESSION['msg'] = "<p>Produto editado com sucesso.</p>";
+                      $_SESSION['msg'] = "1";
                       header("Location: paginaprodutos-adm.php");             
                            
                   }else{
                     
-                      $_SESSION['msg'] = "<p>Não foi possível editar o produto</p>";
-                      header("Location: paginaprodutos-adm.php");
+                      $msg = mysqli_error($db_connect);
+                      echo $msg;
+                      //header("Location: paginaprodutos-adm.php");
     
                   }
                   

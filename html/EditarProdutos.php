@@ -54,9 +54,7 @@
           <?php echo $row_banco_categoria['nome_categoria'].'(' . $row_banco_categoria['id_categoria'] . ')';?>
           </option>
           
-                        <?php echo $row_banco_categoria['nome_categoria'].'(' . $row1['id_categoria'] . ')';?>
-                        </option>
-                           
+                        
                     <?php $sql = "SELECT * FROM categoria";
                   $result = $db_connect->query($sql);
                   while ($row2 = $result->fetch_assoc())
