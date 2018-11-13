@@ -104,7 +104,7 @@
 	<div class="container mais-vendidos">
 		<div class="row ">
 			<div class="col-1 trophy">
-				
+				<span style="font-size: 28px"><i class="fas fa-trophy"></i></span>
 
 			</div>
 			<div class="col-10 maisv">

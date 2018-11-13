@@ -14,8 +14,8 @@
        {
            header("Location: index.php"); exit;
        }   
-       $login = ($_POST['usuario']);
-       $senha= ($_POST['senha']);
+       $login = $_POST['usuario'];
+       $senha= md5(md5($_POST['senha']));
     
 
        
@@ -38,6 +38,6 @@
             
           
             // Redireciona o visitante
-            header("Location: produtos2.php"); exit;
+            header("Location: inicial.php"); exit;
           }
     
