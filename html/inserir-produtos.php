@@ -53,7 +53,7 @@
                 }if($aux>0)
                 {
                     $_SESSION['erro']="xd";
-                    header("Location:paginaproduto-adm.php");
+                    header("Location:paginaprodutos-adm.php");
                 }
                 else{
                 $sql = "INSERT INTO produto 

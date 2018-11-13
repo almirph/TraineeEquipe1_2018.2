@@ -121,15 +121,8 @@ html, body{
 	background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.3) 100%);
 
 }
-@media (max-width: 1000px){
 
-		display: none;
-	}
 
-	display: none;
-	 }
-
-}
 .icones{	
 	padding-top: 20px;
 }
@@ -306,7 +299,7 @@ footer{
 	color:#2E5266;
 	text-align: left;
 }
-=======
+
  .faleconosco-footer{
 
  	color:#2E5266;
@@ -615,14 +608,9 @@ text-align: justify;
 	}
 }
 
-{
-	text-align: center;
-	margin-top: 5%;
-	
-}
 
 
-}
+
 @media(max-width:576px)
 {
 	.quemsomos-row{
@@ -642,7 +630,7 @@ text-align: justify;
 		display: none;
 	}
 		
-}
+
 
 						/*************************Produtos**************************/
 
