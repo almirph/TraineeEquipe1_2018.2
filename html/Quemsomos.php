@@ -1,5 +1,7 @@
-<?php include 'Header.php'; ?>	
-		
+<?php include 'header.php';?>
+
+	<!-- QUEM SOMOS
+          ---------------------------------------------------------------------------------------------------------------->
 	<div class="body-quemsomos">
 		<div class="container">
 			<div class="Titulo-quemsomos">
@@ -109,5 +111,4 @@
 
 
 
-	<!-- INICIO FOOTER -->
-	<?php include 'footer.php'?>
+<?php include 'footer.php'?>

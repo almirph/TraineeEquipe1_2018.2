@@ -1,4 +1,5 @@
 
+
 html, body{
 	padding: 0;
 	margin: 0;
@@ -495,31 +496,12 @@ footer{
 /********************* QUEM SOMOS *********************/
 
 /*********************************************************************************************************/
-.body-quemsomos h3{
-
-	font-size: 30px;
-	font-weight: 30px;
-	margin-bottom: 12px;
-}
-
-
-.body-quemsomos p{
-
-	font-size: 16px;
-	font-weight: 12px;
-}
-
 .Titulo-quemsomos
 {
-	margin-top:24px;
-	margin-left: 16px;
+	text-align: center;
+	margin-top:2.5%;
 	font-size: 26px;
-	padding-bottom: 12px;
-
-}							/********************* QUEM SOMOS *********************/
-
-/*********************************************************************************************************/
-
+}
 .img-quemsomos
 {
 	margin-top: 2.5%;
@@ -548,69 +530,34 @@ footer{
 
 }
 
-.quem-somos3{
-
-	margin-left: 10px;
-}
-
-.quem-somos{
-
-	margin-left: 12px;
-}
-
-.about{
-
-	margin-bottom: 24px;
-	margin-top: 24px;
-	padding-bottom: 24px;
-	padding-top: 24px;
-	
-}
-
-.esquerda
-{
-	text-align: justify;
-
-}
 .esquerda
 {
 text-align: justify;
-
 
 }
 .quemsomos-row
 {
 	display: none;
 }
-
-@media(max-width:991px){}
-
 @media(max-width:1000px)
 {
 	.img-quemsomos
 	{
 		word-wrap: wrap;
 		min-width: 250px;
-
-		display: none;
-
-
-
+	
+	
 
 	}
 	
 	.body-quemsomos
-
-	{
-		text-align: center;
-		margin-top: 5%;
-
-	}
+{
+	text-align: center;
+	margin-top: 5%;
+	
 }
 
-
-
-
+}
 @media(max-width:576px)
 {
 	.quemsomos-row{
@@ -619,16 +566,12 @@ text-align: justify;
 	.quemsomos-100px{
 		display: none;
 	}
-
-	
-
-}
-
-/*************************Produtos**************************/
-
 	.body-quemsomos hr{
 		display: none;
 	}
+		
+}
+
 		
 
 
