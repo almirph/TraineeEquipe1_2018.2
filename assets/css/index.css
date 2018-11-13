@@ -126,10 +126,6 @@ html, body{
 		display: none;
 	}
 
-	display: none;
-	 }
-
-}
 .icones{	
 	padding-top: 20px;
 }
@@ -306,7 +302,7 @@ footer{
 	color:#2E5266;
 	text-align: left;
 }
-=======
+
  .faleconosco-footer{
 
  	color:#2E5266;
@@ -521,7 +517,7 @@ footer{
 	padding-bottom: 12px;
 
 							/********************* QUEM SOMOS *********************/
-
+}
 /*********************************************************************************************************/
 .Titulo-quemsomos
 {
@@ -581,7 +577,7 @@ footer{
 {
 	text-align: justify;
 
-
+}
 .esquerda
 {
 text-align: justify;
@@ -593,7 +589,7 @@ text-align: justify;
 	display: none;
 }
 
-@media(max-width:991px)
+
 
 @media(max-width:1000px)
 {
@@ -617,11 +613,8 @@ text-align: justify;
 
 	}
 
-{
-	text-align: center;
-	margin-top: 5%;
-	
-}
+
+
 
 
 }
@@ -644,7 +637,7 @@ text-align: justify;
 		display: none;
 	}
 		
-}
+
 
 						/*************************Produtos**************************/
 
@@ -843,7 +836,7 @@ text-align: center;
 	
 
 }
-}
+
 .pag-produtos h5{
 	font-size:12px;
 
