@@ -8,11 +8,11 @@
                 $port = '3306';
                 $result_produto;
                 $aux = 0;
-                                    
+                 $nome = $_SESSION['nome'];
                 $db_connect = new mysqli($server,$user,$password,$db_name,$port);
                 mysqli_set_charset($db_connect,"utf-8");
                   
-                $categoria =preg_replace("/[^0-9]/", "", $categoria1);
+                
                 if(empty($_POST['nome']))
                 {
                   $_SESSION['nome'] = "";
@@ -52,12 +52,13 @@
                   $_SESSION['url_imagem']=$_POST['url_imagem'];
                 }if($aux>0)
                 {
-                    $_SESSION['erro']="xd";
-                    header("Location:paginaprodutos-adm.php");
+                    
+                  
+                   header("Location:paginaprodutos-adm.php");
                 }
                 else{
                 $sql = "INSERT INTO produto 
-                VALUES ('','$_SESSION','OLA','2' ,'descricao','$_SESSION['url_img']') ";
+                VALUES ('',''','OLA','2' ,'descricao','') ";
                 echo $aux;
                 
                 if( $db_connect->query($sql)== true )

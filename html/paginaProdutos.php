@@ -14,23 +14,26 @@
     </nav>
     
     <?php    
-    print_r($_GET);       
+           
       $auxiliar = $_GET['id_produto'];
-      $result_produto = "SELECT * FROM categoria WHERE id_categoria LIKE '$auxiliar'";
+      $result_produto = "SELECT * FROM produto WHERE id_produto = '$auxiliar'";
       $resulto1 = $db_connect->query($result_produto); 
-      $row_banco_categoria = $resulto1->fetch_assoc();
-      ($row2 = $result->fetch_assoc())
-      {?>
+      
+      $row2 = $resulto1->fetch_assoc();
+      
+      
+      
+      ?>
     <div class="container titulo-pag-produtos">
       <h1><?php echo $row2['nome_produto'];?></h1>
       <div class="img-produto-pagina">
-        <img src="../assets/img/teclado-pagprodutos.jpg" class="img-fluid img-pagina" alt="Imagem responsiva">
+        <img src="../assets/imagem_banco/<?php echo $row2['url_imagem'];?>" class="img-fluid img-pagina" alt="Imagem responsiva">
       </div>
       <div class=texto>
       <h2>Informações do Produto</h2>
-      <p>Teclado com teclas "chiclet" totalmente programáveis com função de gravação de macros. O formato slim das teclas com 2 milímetros do Razer Deathstalker garantem menos tempo para o acionamento das mesmas, com uma reação mais rápida a diversas situações e inimigos. Seus dedos podem se mover rapidamente entre as teclas, assegurando que o seu plano para dominar o jogo inteiro seja executado imediatamente.
-        Tecnologia anti-ghosting para o pressionamento simultâneo de até 10 teclas. Habilitado para o Razer Synapse 2.0, sincronize o cérebro do Razer DeathStalker Expert com um servidor de nuvem para baixar o driver e atualizações de firmware, bem como salvar as suas configurações individuais.</p>
+      <p><?php echo $row2['descricao'];?></p>
+      <p style='color:red; font-size:26px;'>R$<?php echo $row2['preco'];?></p>
+      </div>
     </div>
-    </div>
-      <?php  }?>
+      
        <?php include 'footer.php'?>
