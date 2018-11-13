@@ -1,6 +1,4 @@
-<?php include 'header.php';
-
-
+<?php include 'Header-adm.php';
 include 'pagina_conexao.php';
 
 

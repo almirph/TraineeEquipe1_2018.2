@@ -11,8 +11,6 @@
                 $aviso_validacao1 = "";                
                 $categoria = "";
 
-                
-                print_r($_POST);
                 $db_connect = new mysqli($server,$user,$password,$db_name,$port);
                 mysqli_set_charset($db_connect,"utf-8");
                                 
@@ -31,12 +29,11 @@
                             $sql = "INSERT INTO `categoria` (`nome_categoria`) VALUES ('$categoria')";
 
                             if( $db_connect->query($sql)== true ){
-                                
-                                $aviso =  'Categoria cadastrada com sucesso';
-                                echo $aviso;                      
-                                $categoria = NULL;                                                      
                             
-                            }   else{
+                            
+                                                                                                        
+                            
+                             } else{
                                     $aviso =  "Erro no cadastro da categoria" . mysqli_error($db_connect);
                                     echo $aviso;
                                 }
@@ -68,7 +65,7 @@
                                 
                 </form>
 
-                <pre><?php print_r($_POST) ?></pre>
+                
                           
         </div>
 
