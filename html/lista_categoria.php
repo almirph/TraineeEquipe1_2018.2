@@ -1,3 +1,4 @@
+<?php session_start();?>
 <?php include "header-adm.php";?>
 
 <?php
@@ -15,15 +16,20 @@
 ?>
 <div class="container">
     <div class="titulo-categoria">
+    <?php 
+if( !isset ($_SESSION ['0']))
+{
+    ?>
+        <div class="alert alert-success" role="alert">
+            A simple success alert—check it out!
+        </div>
+    <?php
+    
+}
+?>
         <h1>Lista de Categorias</h1>
     </div>
-    <?php 
-    if( !isset ($_SESSION ['0']))
-    {
-        print_r($_POST);
-    }
 
-?>
 
     <div class="table-responsive">
         <table class="table table-sm">

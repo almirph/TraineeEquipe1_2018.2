@@ -24,13 +24,13 @@
                 //$resultado_edita =$db_connect->query($result_categoria);
                 if( $db_connect->query($sql)== true )
                 {
-                  $aviso = "<p>categoria editado com sucesso.</p>";
+                  $_SESSION['0'] = "<p>categoria editado com sucesso.</p>";
                   echo $aviso;
                   header("Location: lista_categoria.php");  
                     
                 }else{               
                     
-                    $aviso = "<p>Não foi possível editar a categoria</p>";
+                    $_SESSION['0'] = "<p>Não foi possível editar a categoria</p>";
                     echo $aviso;
                     header("Location: lista_categoria.php");
   

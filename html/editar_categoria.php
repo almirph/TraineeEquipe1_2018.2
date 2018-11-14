@@ -1,3 +1,4 @@
+<?php session_start();?>
 <?php include "header-adm.php";?>
 <div class="container">
     <?php
@@ -13,19 +14,30 @@
                                   $id_categoria="";
                                   $categoria = "";
                                   $categoria1= "";
-                                  $result_categoria;                    
+                                  $result_categoria;
+                                  $_SESSION[''];                    
                 $db_connect = new mysqli($server,$user,$password,$db_name,$port);
                 mysqli_set_charset($db_connect,"utf-8");
                                   
               
 ?>
     <?php 
+
+            if( !isset ($_SESSION ['0']))
+            {
+                ?>
+                    <div class="alert alert-success" role="alert">
+                        A simple success alert—check it out!
+                    </div>
+                <?php
+                
+            }
             
             $resultado = "SELECT * FROM categoria WHERE id_categoria LIKE '$auxiliar'";
             $resulto = $db_connect->query($resultado);
             $row1 = $resulto->fetch_assoc();
             print_r($row1);
-?>
+    ?>
     <div class="lista-adm">
         <h1>Editar categoria</h1>
     </div>
