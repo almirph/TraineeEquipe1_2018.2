@@ -6,7 +6,11 @@ include 'pagina_conexao.php';
 
 $auxiliar = $_GET['id_usuario'];
 
+if(isset($_SESSION['msg_envio'])){
 
+	echo $_SESSION['msg_envio'];
+	unset($_SESSION['msg_envio']);
+}
 
 
 
