@@ -96,7 +96,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 		</div>
 		<div class="form-group">
 			<label for="exampleInputPassword1">Senha</label>
-			<input name="senha" type="password" class="form-control" required id="exampleInputPassword1" value="<?php if(isset($row1['senha'])){ echo $row1['senha'];} ?>" placeholder="Senha">
+			<input name="senha" type="password" class="form-control" required id="exampleInputPassword1" placeholder="Senha">
 			<?php if(isset($erro_senha)){ ?>
 
 				<div class="alert alert-danger alerta" role="alert"><?= $erro_senha; ?></div>

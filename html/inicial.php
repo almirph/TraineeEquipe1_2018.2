@@ -48,8 +48,8 @@ function selectIdPessoa($id){
 			<tr>
 				<th scope="col">#</th>
 				<th scope="col">Nome</th>
-				<th scope="col">Senha</th>
 				<th scope="col">Ação</th>
+				
 			</tr>
 		</thead>
 		<tbody>
@@ -67,8 +67,8 @@ function selectIdPessoa($id){
 					<tr>
 						<th scope="row"><?php echo $row['id_usuario']; ?></th>
 						<td><?php echo $row['login']; ?></td>
-						<td><?php echo $row['senha']; ?></td>
 						<td>
+						
 
 					<form name="excluir" action="inicial.php" method="POST">
 
