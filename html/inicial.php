@@ -1,19 +1,26 @@
 <?php include 'Header-adm.php';
+session_start();
 
+$_SESSION['msg'] = 'Usuario deletado com sucesso.';
 
 include 'pagina_conexao.php';
+if(isset($_SESSION['msg_envio'])){
 
+	echo $_SESSION['msg_envio'];
+	unset($_SESSION['msg_envio']);
+}
 
 if(isset($_POST['acao'])){
 
 
-if($_POST['acao']=='excluir')
-{
+	if($_POST['acao']=='excluir')
+	{
 
-	$sql_code = "DELETE FROM usuario WHERE id_usuario = '{$_POST['id']}'";
-	$db_connect->query($sql_code);
-	
-}
+		$sql_code = "DELETE FROM usuario WHERE id_usuario = '{$_POST['id']}'";
+		$db_connect->query($sql_code);
+		echo $_SESSION['msg'];
+
+	}
 }
 
 function selectIdPessoa($id){
@@ -48,8 +55,8 @@ function selectIdPessoa($id){
 			<tr>
 				<th scope="col">#</th>
 				<th scope="col">Nome</th>
-				<th scope="col">Senha</th>
 				<th scope="col">Ação</th>
+				
 			</tr>
 		</thead>
 		<tbody>
@@ -67,33 +74,33 @@ function selectIdPessoa($id){
 					<tr>
 						<th scope="row"><?php echo $row['id_usuario']; ?></th>
 						<td><?php echo $row['login']; ?></td>
-						<td><?php echo $row['senha']; ?></td>
 						<td>
 
-					<form name="excluir" action="inicial.php" method="POST">
 
-						<input type="hidden" name="id" value="<?php echo $row['id_usuario']; ?>">
-						<input type="hidden" name="acao" value="excluir">
-						<span style="font-size: 24px"><button class="fas fa-trash-alt" type="submit" name="excluir" value="Excluir"></button></span>
+							<form name="excluir" action="inicial.php" method="POST">
 
-					</form>
+								<input type="hidden" name="id" value="<?php echo $row['id_usuario']; ?>">
+								<input type="hidden" name="acao" value="excluir">
+								<span style="font-size: 24px"><button class="fas fa-trash-alt" type="submit" name="excluir" value="Excluir"></button></span>
 
-					<form name="alterar" action="editar_usuario.php?id_usuario=<?php echo $row['id_usuario'] ?>" method="POST">
+							</form>
 
-						<input type="hidden" name="id" value="<?php echo $row['id_usuario']; ?>">
-						<span style="font-size: 24px"><button class="fas fa-pen" type="submit" name="editar" value="Editar"></button></span>
+							<form name="alterar" action="editar_usuario.php?id_usuario=<?php echo $row['id_usuario'] ?>" method="POST">
 
-					</form>
+								<input type="hidden" name="id" value="<?php echo $row['id_usuario']; ?>">
+								<span style="font-size: 24px"><button class="fas fa-pen" type="submit" name="editar" value="Editar"></button></span>
+
+							</form>
 
 
 
-				</td>
-			</tr>
+						</td>
+					</tr>
 
-		<?php } ?>
+				<?php } ?>
 
-	</tbody>
-</table>
-</div>
+			</tbody>
+		</table>
+	</div>
 
-<?php include 'footer.php' ?>
+	<?php include 'footer.php' ?>

@@ -1,5 +1,6 @@
 <?php include 'Header-adm.php';
 include 'pagina_conexao.php';
+session_start();
 
 
 
@@ -50,6 +51,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 		{
 			$msg_envio =  'Usuario registrado com sucesso';
 			echo $msg_envio;
+			$_SESSION['msg_envio'] = 'Usuario ' . $_POST['nome'] . ' registrado com sucesso.';
 
 
 			$nome=NULL;
