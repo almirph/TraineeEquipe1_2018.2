@@ -20,19 +20,22 @@
                 $categoria = $categoria1;
                 $sql = "UPDATE `categoria` SET `nome_categoria` = '$categoria' 
                 WHERE `categoria`.`id_categoria` = '$id_categoria';";
+
+              
                 
                 //$resultado_edita =$db_connect->query($result_categoria);
                 if( $db_connect->query($sql)== true )
                 {
-                  $_SESSION['0'] = "<p>categoria editado com sucesso.</p>";
-                  echo $aviso;
+                  $_SESSION['alerta'] = "<p>categoria editada com sucesso.</p>";
+                  
                   header("Location: lista_categoria.php");  
                     
                 }else{               
                     
-                    $_SESSION['0'] = "<p>Não foi possível editar a categoria</p>";
-                    echo $aviso;
+                    $_SESSION['alerta'] = "<p>Não foi possível editar a categoria</p>";
+                    
                     header("Location: lista_categoria.php");
   
                 }
+               
 ?>

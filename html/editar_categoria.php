@@ -8,6 +8,7 @@
                 $password = '';
                 $db_name = 'balao_da_informatica';
                 $port = '3306';
+                                    
                                  $aviso_validacao1 = $aviso_validacao2 = $aviso_validacao3 = $aviso_validacao4 = $aviso_validacao5= $aviso_validacao6 = "";
                                  $auxiliar =$_GET['id_categoria'];
                                   $nome="";                                  
@@ -15,23 +16,15 @@
                                   $categoria = "";
                                   $categoria1= "";
                                   $result_categoria;
-                                  $_SESSION[''];                    
                 $db_connect = new mysqli($server,$user,$password,$db_name,$port);
                 mysqli_set_charset($db_connect,"utf-8");
                                   
-              
+                
+
 ?>
     <?php 
 
-            if( !isset ($_SESSION ['0']))
-            {
-                ?>
-                    <div class="alert alert-success" role="alert">
-                        A simple success alert—check it out!
-                    </div>
-                <?php
-                
-            }
+            
             
             $resultado = "SELECT * FROM categoria WHERE id_categoria LIKE '$auxiliar'";
             $resulto = $db_connect->query($resultado);

@@ -11,21 +11,25 @@
 
                 $db_connect = new mysqli($server,$user,$password,$db_name,$port);
                 mysqli_set_charset($db_connect,"utf-8")          
-                
-        
-?>
+                print_r($_SESSION);
+                ?>
 <div class="container">
     <div class="titulo-categoria">
     <?php 
-if( !isset ($_SESSION ['0']))
+if( !isset ($_SESSION ['alerta']))
 {
+    $_SESSION['alerta'] = '0'
     ?>
         <div class="alert alert-success" role="alert">
             A simple success alert—check it out!
         </div>
     <?php
+    unset($_SESSION['alerta']);
+    
+    
     
 }
+
 ?>
         <h1>Lista de Categorias</h1>
     </div>
@@ -47,7 +51,7 @@ if( !isset ($_SESSION ['0']))
                         $auxiliar = $_POST['deleta'];
                         $delete = "DELETE FROM `categoria` WHERE `categoria`.`id_categoria` = $auxiliar";
                         $result = $db_connect->query($delete);
-                    }                             
+                        }                             
                         $sql = "SELECT * FROM categoria";
                         $result = $db_connect->query($sql);
                         
