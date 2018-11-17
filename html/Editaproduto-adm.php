@@ -30,7 +30,7 @@
                 //$resultado_edita =$db_connect->query($result_produto);
                 if( $db_connect->query($sql)== true )
                 {
-                  $_SESSION['msg'] = "<p>Produto editado com sucesso.</p>";
+                  $_SESSION['msg'] = "produto editado";
                   header("Location: pagina_de_listagem.php");  
                            
                 }else{

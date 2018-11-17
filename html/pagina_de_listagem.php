@@ -1,36 +1,48 @@
 <?php session_start();?> 
 <?php include "header-adm.php"?>
-<div class="container ">
-  <div class="lista-adm">
-<h1> Lista de produtos </h1>
-</div>
-<?php
-                      
-                $server = 'localhost';
-                $user = 'root';
-                $password = '';
-                $db_name = 'balao_da_informatica';
-                $port = '3306';
-                $db_connect = new mysqli($server,$user,$password,$db_name,$port);
-                mysqli_set_charset($db_connect,"utf-8")
-                
-                        
-                
-?>
+<?php include 'pagina_conexao.php';?>
+          <?php 
+          if(!empty($_POST['deleta']))
+          {
+            {?>
+              <div class="alert alert-success" role="alert">
+              Produto deletado com sucesso.
+              </div>
+            <?php }
+            $_POST['deleta']=NULL;
+          }
+            
+          if(isset($_SESSION['msg']))
+          {
+            if($_SESSION['msg']=='produto editado')
+            {?>
+              <div class="alert alert-success" role="alert">
+              Produto editado com sucesso.
+              </div>
+            <?php }
+          
+              $_SESSION['msg']=NULL;
+              }?>
+              <div class="container lista-de-usuarios">
 
-<div class="table-responsive">
-<table class="table table-sm">
-  <thead>
-    <tr>
-      
-      <th scope="col">Nome</th>
-      <th scope="col">Preço</th>
-      <th scope="col">Remover</th>
-      <th scope="col">Editar</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
+              <h1> Lista de produtos </h1>
+
+              <hr>
+
+              <span style="font-size: 24px;"><a href="paginaprodutos-adm.php" class="fas fa-plus" alt="Cadastrar novo usuario"></a></span>
+
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    
+                    <th scope="col">Nome</th>
+                    <th scope="col">Preço</th>
+                    <th scope="col">Ação</th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+
       <?php 
               
               if($_POST != NULL){
@@ -51,7 +63,7 @@
               <td><?php echo $row['preco'];?></td>
               
               <td>
-
+              <form name="excluir">
             <div  data-toggle="modal" data-target="#myModalRemarks<?php echo $row['nome_produto'];?>">
             <a><img width="22" height="22" src="../assets/img/lixo.png" method="post"></a>
             </div>
@@ -79,15 +91,17 @@
                         <input  id="deleta" value="<?php echo $row['id_produto'];?>" name="deleta" type="hidden"> 
                         <button  type="submit" class="btn btn-outline-dark "    >Sim</button></a>
                       </form>                                        
-
+        
                   </div>
             </div>
           </div>                  
+      </div>
+          </form>
 
-</td>
-                  <td>
-                  <a href="EditarProdutos.php?id_produto=<?php echo $row['id_produto'] ?>"><img  width="22" height="22" src="../assets/img/lapis.png" </a>
-                  </td>
+                  <form name="editar">
+                  <a href="EditarProdutos.php?id_produto=<?php echo $row['id_produto'] ?>"><img  width="24" height="26" src="../assets/img/pencil.png"> </a>
+      </form>  
+                </td>
           </tr>    
              
 
