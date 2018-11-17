@@ -73,7 +73,7 @@
 						$result = $db_connect->query($sql);
 						while ($row2 = $result->fetch_assoc())
 					{?>
-						<a class="dropdown-item" href="#"><?php echo $row2['nome_categoria'];?></a>					
+						<a class="dropdown-item" href="produtos.php?id_categoria=<?php echo $row2['id_categoria'];?>"><?php echo $row2['nome_categoria'];?></a>					
 				<?php } 	?>
 				
 				</div>
