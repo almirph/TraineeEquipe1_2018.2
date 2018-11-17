@@ -3,6 +3,7 @@ html, body{
 	padding: 0;
 	margin: 0;
 	font-family: montserrat;
+	padding-bottom: 100px;
 	/* background-color: rgb(235, 237, 247) ;	 */
 	
 
@@ -100,6 +101,12 @@ footer{
 	border-bottom: none;
 	border-width: 1px;
 	border-color: black;
+	
+    
+
+    
+  
+   
 }
 
 .rodape{
@@ -110,7 +117,7 @@ footer{
 	border-color: black;
 	border-style: groove;
 	border-width: 1px;
-	
+
 }
  .faleconosco-footer{
 
