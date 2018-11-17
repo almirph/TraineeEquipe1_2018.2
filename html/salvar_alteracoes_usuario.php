@@ -7,7 +7,7 @@
 <?php 
 
 session_start();
-
+$_SESSION['msg_envio'] = 'Login de ID ' . $_POST['id_usuario'] . ' alterado para ' . $_POST['nome'] . ' com sucesso.';
 $id=$_POST['id_usuario'];
 $nome=$_POST['nome'];
 $senha=md5(md5($_POST ['senha']));
