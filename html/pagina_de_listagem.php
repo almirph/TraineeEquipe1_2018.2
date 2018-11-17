@@ -5,7 +5,7 @@
 <h1> Lista de produtos </h1>
 </div>
 <?php
-                echo $_SESSION['msg'];      
+                      
                 $server = 'localhost';
                 $user = 'root';
                 $password = '';
