@@ -9,6 +9,7 @@
                                 $nome="";
                                 $categoria = "";
                                 $categoria1= "";
+                                $alerta = NULL;
                                 
                                     
                 $db_connect = new mysqli($server,$user,$password,$db_name,$port);
@@ -25,11 +26,14 @@
                 
                 //$resultado_edita =$db_connect->query($result_categoria);
                 if( $db_connect->query($sql)== true )
-                {
-                  $_SESSION['alerta'] = "<p>categoria editada com sucesso.</p>";
-                  
-                  header("Location: lista_categoria.php");  
+                {?>
                     
+                  <?php    
+                  
+                   $_SESSION['alerta'] = "<p>categoria editada com sucesso.</p>";
+                   $_SESSION['alerta']=1;
+                  header("Location: lista_categoria.php");  
+
                 }else{               
                     
                     $_SESSION['alerta'] = "<p>Não foi possível editar a categoria</p>";

@@ -9,7 +9,7 @@
                 $db_name = 'balao_da_informatica';
                 $port = '3306';
                                     
-                                 $aviso_validacao1 = $aviso_validacao2 = $aviso_validacao3 = $aviso_validacao4 = $aviso_validacao5= $aviso_validacao6 = "";
+                                 $aviso_validacao1 = "";
                                  $auxiliar =$_GET['id_categoria'];
                                   $nome="";                                  
                                   $id_categoria="";

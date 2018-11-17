@@ -1,5 +1,5 @@
 <?php session_start();?>
-<?php include 'Header-adm.php'; ?>
+<?php include 'header-adm.php'; ?>
 
 
 <?php
@@ -35,8 +35,8 @@
                                                                                                         
                             
                              } else{
-                                    $aviso =  "Erro no cadastro da categoria" . mysqli_error($db_connect);
-                                    echo $aviso;
+                                    $dag =  "Erro no cadastro da categoria" . mysqli_error($db_connect);
+                                    echo $dag;
                                 }
                         }
                 }

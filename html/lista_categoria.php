@@ -1,5 +1,33 @@
 <?php session_start();?>
 <?php include "header-adm.php";?>
+<?php
+
+
+ 
+    if( !isset ($_SESSION ['0']))
+    {
+        if ($_SESSION['alerta']==1){ ?>
+            <div class="alert alert-success" role="alert">
+                Categoria editada com sucesso!
+            </div>
+        <?php
+            $_SESSION['msg']=NULL;
+            $_SESSION['nome']=NULL;
+            $_SESSION['descricao']=NULL;
+            $_SESSION['preco']=NULL;
+            $_SESSION['url_imagem']=NULL;
+            $_SESSION['categoria']=NULL;
+            $_SESSION['aviso']=NULL;
+            $_SESSION['alerta']=NULL;
+            $aviso = '';
+        }
+           
+        
+        
+    }
+
+?>
+
 
 <?php
                 $server = 'localhost';
@@ -11,26 +39,10 @@
 
                 $db_connect = new mysqli($server,$user,$password,$db_name,$port);
                 mysqli_set_charset($db_connect,"utf-8")          
-                print_r($_SESSION);
                 ?>
 <div class="container">
     <div class="titulo-categoria">
-    <?php 
-if( !isset ($_SESSION ['alerta']))
-{
-    $_SESSION['alerta'] = '0'
-    ?>
-        <div class="alert alert-success" role="alert">
-            A simple success alert—check it out!
-        </div>
-    <?php
-    unset($_SESSION['alerta']);
-    
-    
-    
-}
-
-?>
+   
         <h1>Lista de Categorias</h1>
     </div>
 
