@@ -1,9 +1,25 @@
 <?php session_start();?>
-<?php include 'Header-adm.php'; ?>
+<?php include 'Header-adm.php'; 
+if(isset($_SESSION['msg']))
+                {
+                  if($_SESSION['msg']=='ok')
+                  {?>
+                    <div class="alert alert-success" role="alert">
+                    Produto cadastrado com sucesso.
+                    </div>
+                  <?php }
+                    $_SESSION['msg']=NULL;
+                    $_SESSION['nome']=NULL;
+                    $_SESSION['descricao']=NULL;
+                    $_SESSION['preco']=NULL;
+                    $_SESSION['url_imagem']=NULL;
+                    $_SESSION['categoria']=NULL;  
+              
+            }?>
 
 <div class="container">
   <?php
-
+                print_r($_SESSION);
                 $server = 'localhost';
                 $user = 'root';
                 $password = '';
@@ -19,13 +35,9 @@
                 $url_img = "";
                 $db_connect = new mysqli($server,$user,$password,$db_name,$port);
                 
-                if(isset($_SESSION['msg']))
-                {
-                  echo $_SESSION['msg'];
-                  unset($_SESSION);
-              
-                 
-                }
+                
+                  
+                   
                 
                 mysqli_set_charset($db_connect,"utf-8");
                                 
@@ -77,6 +89,10 @@
   <div class="lista-adm">
     <h1>Adicionar Produto</h1>
   </div>
+  <hr>
+
+
+<span style="font-size: 24px;"><a href="pagina_de_listagem.php" class="fas fa-arrow-left"></a></span>
   <form action="inserir-produtos.php" method="post">
     <div class="form-group">
       <label>Nome</label>

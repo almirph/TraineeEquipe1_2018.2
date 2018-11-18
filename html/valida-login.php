@@ -22,13 +22,12 @@
           echo"<script language='javascript' type='text/javascript'>alert('Login e/ou senha incorretos');window.location.href='index.php';</script>";
                
           }else{
-            $resultado = mysqli_fetch_assoc($query);
+            $resultado = mysqli_fetch_assoc($confirma_login);
     
-            if (!isset($_SESSION)) session_start();
-          
-            $_SESSION['UsuarioID'] = $resultado['id_usario'];
-            $_SESSION['UsuarioNome'] = $resultado['usuario'];
-            
+            if (!isset($_SESSION)) 
+            session_start();
+            $_SESSION['ID'] = $resultado['id_usuario'];
+            $_SESSION['Usuario'] = $resultado['login'];
             header("Location: paginaprodutos-adm.php"); exit;
           }
           

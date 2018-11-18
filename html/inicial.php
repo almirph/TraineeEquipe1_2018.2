@@ -1,7 +1,7 @@
 <?php include 'Header-adm.php';
 session_start();
 
-$_SESSION['msg'] = 'Usuario deletado com sucesso.';
+$_SESSION['msg_delete'] = 'Usuario deletado com sucesso.';
 
 include 'pagina_conexao.php';
 if(isset($_SESSION['msg_envio'])){
@@ -18,7 +18,8 @@ if(isset($_POST['acao'])){
 
 		$sql_code = "DELETE FROM usuario WHERE id_usuario = '{$_POST['id']}'";
 		$db_connect->query($sql_code);
-		echo $_SESSION['msg'];
+		echo $_SESSION['msg_delete'];
+		unset($_SESSION['msg_delete']);
 
 	}
 }

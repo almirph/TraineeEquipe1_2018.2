@@ -4,12 +4,16 @@ html, body{
 	padding: 0;
 	margin: 0;
 	font-family: montserrat;
+	
 	/* background-color: rgb(235, 237, 247) ;	 */
 
 	
 
 
 
+}
+.container{
+	min-height: 150px;
 }
 .dropdown-item:active{
 	background-color: #1E1E24;
@@ -282,6 +286,7 @@ footer{
 	border-width: 1px;
 	border-color: black;
 
+
 }
 
 .rodape{
@@ -292,6 +297,7 @@ footer{
 	border-color: black;
 	border-style: groove;
 	border-width: 1px;
+
 	
 }
 
