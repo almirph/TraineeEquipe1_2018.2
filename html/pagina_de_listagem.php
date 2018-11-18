@@ -9,8 +9,7 @@
               Produto deletado com sucesso.
               </div>
             <?php }
-            $_POST['deleta']=NULL;
-          }
+                    }
             
           if(isset($_SESSION['msg']))
           {
@@ -23,34 +22,35 @@
           
               $_SESSION['msg']=NULL;
               }?>
+              <div class="container lista-de-usuarios">
 
+              <h1> Lista de produtos </h1>
 
-<div class="container ">
-  <div class="lista-adm">
-<h1> Lista de produtos </h1>
-</div>
+              <hr>
 
+              <span style="font-size: 24px;"><a href="paginaprodutos-adm.php" class="fas fa-plus" alt="Cadastrar novo usuario"></a></span>
 
-<div class="table-responsive">
-<table class="table table-sm">
-  <thead>
-    <tr>
-      
-      <th scope="col">Nome</th>
-      <th scope="col">Preço</th>
-      <th scope="col">Remover</th>
-      <th scope="col">Editar</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    
+                    <th scope="col">Nome</th>
+                    <th scope="col-3">Preço</th>
+                    <th scope="col-2">Ação</th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+
       <?php 
               
               if($_POST != NULL){
                 $auxiliar = $_POST['deleta'];
                 $delete = "DELETE FROM `produto` WHERE `produto`.`id_produto` = $auxiliar";
               $result = $db_connect->query($delete);
-              }
+              $_POST['deleta']=NULL;
+  
+            }
                 
              
               
@@ -64,9 +64,9 @@
               <td><?php echo $row['preco'];?></td>
               
               <td>
-
-            <div  data-toggle="modal" data-target="#myModalRemarks<?php echo $row['nome_produto'];?>">
-            <a><img width="22" height="22" src="../assets/img/lixo.png" method="post"></a>
+             <div style="float:left"> 
+            <div data-toggle="modal" data-target="#myModalRemarks<?php echo $row['nome_produto'];?>">
+            <span style="font-size: 24px;"><button class="fas fa-trash-alt" type="submit" name="excluir" value="Excluir"></button></span>
             </div>
         <!--    <a href="#myModalRemarks<?php echo $row['nome_produto'];?>" class="remarksBtn" data-toggle="modal"><i class="fa fa-info-circle fa-lg">Go Forward</i></a> -->
         <div class="modal fade" id="myModalRemarks<?php echo $row['nome_produto'];?>" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
@@ -88,19 +88,24 @@
                       
                       <a href="pagina_de_listagem.php">
                       
-                      <form method="POST">
+                      <form style="float:left" method="POST">
                         <input  id="deleta" value="<?php echo $row['id_produto'];?>" name="deleta" type="hidden"> 
                         <button  type="submit" class="btn btn-outline-dark "    >Sim</button></a>
-                      </form>                                        
-
+                                                             
+        </div>
                   </div>
             </div>
           </div>                  
+      </div>
+          </form>
+            <form name="editar" action="EditarProdutos.php?id_produto=<?php echo $row['id_produto'] ?>" method="POST">
 
-</td>
-                  <td>
-                  <a href="EditarProdutos.php?id_produto=<?php echo $row['id_produto'] ?>"><img  width="22" height="22" src="../assets/img/lapis.png" </a>
-                  </td>
+								<input type="hidden" name="id" value="<?php echo $row['id_usuario']; ?>">
+								<span style="font-size: 24px;"><button class="fas fa-pen" type="submit" name="editar" value="Editar"></button></span>
+
+							
+      </form>  
+                </td>
           </tr>    
              
 
