@@ -19,7 +19,7 @@ if(isset($_SESSION['msg']))
 
 <div class="container">
   <?php
-
+                print_r($_SESSION);
                 $server = 'localhost';
                 $user = 'root';
                 $password = '';
