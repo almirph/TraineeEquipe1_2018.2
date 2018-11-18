@@ -47,14 +47,12 @@
     </div>
 
 
-    <div class="table-responsive">
-        <table class="table table-sm">
+    <span style="font-size: 24px;"><a href="categoria.php?p=categoria" class="fas fa-plus" alt="Cadastrar novo usuario"></a></span>
+        <table class="table table-bordered cat">
             <thead>
                 <tr>
                     <th scope="col">Categoria</th>
-                    <th scope="col">ID Categoria</th>
-                    <th scope="col">Remover</th>
-                    <th scope="col">Editar</th>
+                    <th scope="col">Ação</th>
                 </tr>
             </thead>
             <tbody>
@@ -72,18 +70,20 @@
                     <td>
                         <?php echo $row['nome_categoria'];?>
                     </td>
-                    <td>
-                        <?php echo $row['id_categoria'];?>
-                    </td>
+                    
 
                     <td>
                         <div data-toggle="modal" data-target="#myModalRemarks<?php echo $row['nome_categoria'];?>">
-                            <a><img width="22" height="22" src="../assets/img/lixo.png" method="post"></a>
+                        <span style="font-size: 22px"><button class="fas fa-trash-alt" 
+                        type="submit" name="excluir" value="Excluir"></button></span>
+                        
                         </div>
 
                         <div class="modal fade" id="myModalRemarks<?php echo $row['nome_categoria'];?>" tabindex="-1"
                             role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
                             <div class="modal-dialog">
+                               
+                               
                                 <!-- Modal content -->
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -110,16 +110,23 @@
                                 </div>
                             </div>
                         </div>
+                        
+                        
+                        <form name="alterar" action="editar_categoria.php?id_categoria=<?php echo $row['id_categoria'] ?>" method="POST">
+
+							<input type="hidden" name="id" value="<?php echo $row['id_categoria']; ?>">
+							<span style="font-size: 22px"><button class="fas fa-pen" type="submit" name="editar" value="Editar"></button></span>
+
+						</form>
+                    
 
                     </td>
 
 
-                    <td>
-                        <a href="editar_categoria.php?id_categoria=<?php echo $row['id_categoria'] ?>"><img width="22"
-                                height="22" src="../assets/img/pencil.png">
-                    </td>
+                    
 
                 </tr>
+               
 
 
                 <?php     }      ?>

@@ -307,3 +307,9 @@ footer{
 	color: black;
 	transform: scale(0.9);
 }
+.table-bordered.cat{
+
+	display: inline-block;
+
+
+}
