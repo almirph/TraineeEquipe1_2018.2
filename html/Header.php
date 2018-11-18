@@ -49,7 +49,7 @@
 		<a class="navbar-brand icone-balao2" href="index.php#body-home">
 			<img src="../assets/img/1.png" width="38" height="23"> Balão da Informática</a>
 
-		<a class="navbar-brand icone-balao" href="index.html#body-home">
+		<a class="navbar-brand icone-balao" href="cadastrar.php">
 			<img src="../assets/img/1.png" width="35" height="22"></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
 		 aria-expanded="false" aria-label="Toggle navigation">
