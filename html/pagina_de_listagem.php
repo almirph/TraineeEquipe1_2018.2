@@ -78,21 +78,25 @@
                       <div class="modal-header">
                           <button type="button" class="close" data-dismiss="modal">&times;</button>
                           <h4 class="modal-title"></h4>
-                      </div>
-                      <div class="modal-body">
-                       Deseja mesmo remover o produto <?php echo $row['nome_produto'] ;?>?
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
-                    
+                        </div>
+                        <div class="modal-body">
+                         Deseja mesmo remover o produto <?php echo $row['nome_produto'] ;?>?
+                       </div>
+                       <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
+
+
+                        <a href="pagina_de_listagem.php">
+
+                          <form method="POST">
+                            <input   value="<?php echo $row['id_produto'];?>" name="deleta" type="hidden"> 
+                            <button  type="submit" class="btn btn-outline-dark "    >Sim</button></a>
+                          </form>                                        
+
+                        </div>
                       
-                      <a href="pagina_de_listagem.php">
                       
-                      <form style="float:left" method="POST">
-                        <input  id="deleta" value="<?php echo $row['id_produto'];?>" name="deleta" type="hidden"> 
-                        <button  type="submit" class="btn btn-outline-dark "    >Sim</button></a>
-                                                             
-        </div>
+                      
                   </div>
             </div>
           </div>                  

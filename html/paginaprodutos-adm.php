@@ -89,6 +89,10 @@ if(isset($_SESSION['msg']))
   <div class="lista-adm">
     <h1>Adicionar Produto</h1>
   </div>
+  <hr>
+
+
+<span style="font-size: 24px;"><a href="pagina_de_listagem.php" class="fas fa-arrow-left"></a></span>
   <form action="inserir-produtos.php" method="post">
     <div class="form-group">
       <label>Nome</label>

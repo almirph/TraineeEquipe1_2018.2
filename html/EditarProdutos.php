@@ -28,11 +28,13 @@
             $resultado = "SELECT * FROM produto WHERE id_produto LIKE '$auxiliar'";
             $resulto = $db_connect->query($resultado);
             $row1 = $resulto->fetch_assoc();
-            print_r($row1);
+            
 ?>
 <div class = "lista-adm">
   <h1>Editar Produtos</h1>
   </div>
+  <hr>
+  <span style="font-size: 24px;"><a href="pagina_de_listagem.php" class="fas fa-arrow-left"></a></span>
   <form  action ="Editaproduto-adm.php" method="post">
   <div class="form-group">
     <input type="hidden"  name="id_produto"  value="<?php echo $auxiliar;?>">
@@ -90,7 +92,7 @@
         </div>
 <div class="pp-adm">
         <button type="submit" class="btn btn-outline-dark ">Editar produto</button>
-        <a href="pagina_de_listagem.php"><button type="button" class="btn btn-outline-dark ">Voltar</button></a>
+        
 </div>  
 
       </form>
