@@ -1,5 +1,5 @@
 
-<?php include "header-adm.php";?>
+<?php include "header.php";?>
 <?php 
  $server = 'localhost';
  $user = 'root';
@@ -17,10 +17,7 @@
 ?>
 
 
-<form action="buscar.php" enctype="multipart/form-data" method="POST">
-    <input type="text" name="pesquisar" placeholder="Digite aqui...">
-    <input type="submit" name="buscar" value="Procurar">
-</form>
+
 
 <?php
      if(isset($_POST['pesquisar'])){
@@ -34,14 +31,27 @@
 
          }else{
             while($row = mysqli_fetch_array($query)) {
-                $prod = $row['nome_produto'];
+                // $prod = $row['nome_produto'];
 
-                $output = $prod;
+                
+                // print_r("$prod");
+                // echo '<br>';
+                ?>
+                <div class="col-sm">
+      <div class="card img-card" style="width:16rem;">
+      <img class="card-img-top" src="../assets/imagem_banco/<?php echo $row['url_imagem']; ?>" alt="Card image cap">
+      <div class="card-body">
+      <h5 class="card-title"style='color:black; font-size:16px;'><?php echo $row['nome_produto'];?></h5>
+      <h5 style='color:red; font-size:26px;'>R$ <?php echo $row['preco'];?><h5>
+      </a>
+      </div>
+      </div>
+      </div>
+                <?php
             }
          }
      }
 
-     print("$output");
 ?>
 
 
