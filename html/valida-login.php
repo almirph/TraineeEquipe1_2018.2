@@ -28,6 +28,6 @@
             session_start();
             $_SESSION['ID'] = $resultado['id_usuario'];
             $_SESSION['Usuario'] = $resultado['login'];
-            header("Location: paginaprodutos-adm.php"); exit;
+            header("Location: index-adm.php"); exit;
           }
           
