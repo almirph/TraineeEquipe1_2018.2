@@ -41,16 +41,15 @@
 ?>
 
 	<div class="faixa" id="body-home">
-		<h1>Balão da Informática </h1>
-		<img src="../assets/img/1.png" class="img-fluid" width="120" height="75">
+		
+		<img src="../assets/img/nl2.png" class="img-fluid" >
 	</div>
 
 	<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
 		<a class="navbar-brand icone-balao2" href="index.php#body-home">
-			<img src="../assets/img/1.png" width="38" height="23"> Balão da Informática</a>
+			<img src="../assets/img/nl2.png" width="160" height="48" ></a>
 
-		<a class="navbar-brand icone-balao" href="cadastrar.php">
-			<img src="../assets/img/1.png" width="35" height="22"></a>
+		
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
 		 aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -87,9 +86,33 @@
 				
 			</ul>
 
-			<form class="form-inline my-2 my-lg-0">
-				<input class="form-control mr-sm-2" type="search" placeholder="Digite aqui..." aria-label="Search">
-				<button class="btn btn-outline-secondary btn-md my-2 my-sm-0" type="submit">Pesquisar</button>
+			
+			<form class="form-inline my-2 my-lg-0" action="buscar.php" enctype="multipart/form-data" method="POST">
+				<input class="form-control mr-sm-2" type="text" placeholder="Digite aqui..." name="pesquisar">
+				<button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Pesquisar</button>
 			</form>
-		</div>
+
+<?php
+     if(isset($_POST['pesquisar'])){
+         $pesquisar_p = $_POST['pesquisar'];
+         $pesquisar_p = preg_replace("[#^0-9a-z#]","","$pesquisar_p");
+		 //PESQUISAR NA CATEGORIA SE NÃO TIVE RNA CATEGORIA, FAZ IF E RETONA 0 A UMA VARIAVEL
+		 //PESQUISA NO BANCO SE NO PRODUTOS E VE SE FAZ A PESQUISA SE É UM PRODUTO OU CATEGORIA, SE FOR CATEGORIA 
+		 // MANDA PRA PAGINA CATEGORIA
+         $query = mysqli_query($db_connect,"SELECT * FROM produto WHERE nome_produto LIKE '%$pesquisar_p%'");
+         $count = mysqli_num_rows($query);
+         if($count == 0) {
+            header("Location: paginaProdutos.php");
+
+         }else{
+            while($row = mysqli_fetch_array($query)) {
+                $prod = $row['nome_produto'];
+
+                
+            }
+         }
+     }
+
+     
+?>
 	</nav>

@@ -9,6 +9,9 @@ html, body{
 
 
 }
+.container{
+	min-height: 320px;
+}
 .dropdown-item:active{
 	background-color: #1E1E24;
 }
@@ -305,4 +308,10 @@ footer{
 
 	color: black;
 	transform: scale(0.9);
+}
+.table-bordered.cat{
+
+	display: inline-block;
+
+
 }

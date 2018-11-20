@@ -4,12 +4,16 @@ html, body{
 	padding: 0;
 	margin: 0;
 	font-family: montserrat;
+	
 	/* background-color: rgb(235, 237, 247) ;	 */
 
 	
 
 
 
+}
+.container{
+	min-height: 150px;
 }
 .dropdown-item:active{
 	background-color: #1E1E24;
@@ -22,6 +26,9 @@ html, body{
 		text-align: left;
 	}
 	.navbar-brand.icone-balao{
+		display: none;
+	}
+	.icones{
 		display: none;
 	}
 
@@ -43,7 +50,7 @@ html, body{
 }
 .faixa img {
 	padding-top:  0px;
-	padding-left: 15px;
+	padding-left: 35%;
 	margin-bottom: 0px;
 	padding-bottom: 1%
 
@@ -100,7 +107,7 @@ html, body{
 
 
 .dropdown-menu.home{
-	left: 13.5rem;
+	
 	border-radius: 2px;
 	margin-top: -1px;
 	
@@ -125,7 +132,7 @@ html, body{
 
 
 .icones{	
-	padding-top: 20px;
+	padding-top: 10px;
 }
 
 .text b{
@@ -138,30 +145,21 @@ html, body{
 }
 
 .jumbotron-fluid-home {
-	padding-top: 5px;
-	padding-bottom: 30px;    
-
+	padding-top: 0px;
+	padding-bottom: 30px;
 	height: 100%;  
 	
-	/* background-color: #e5ebff;  */
+	background-color: #ffffff; 
 
 
 	}
 
-.jumbotron-fluid-home {
-    padding-top: 5px;
-    padding-bottom: 30px;    
-    
-    height: 100%;  
-	
-	/* background-color: #e5ebff;  */
-    
 
-}
 .mais-vendidos{
 	text-align: left;
-	padding-top: 60px;
+	padding-top: 0px;
 	margin-left: 0px;
+	margin-bottom: -100px;
 }
 .trophy{
 	margin-top: 8px;
@@ -282,6 +280,7 @@ footer{
 	border-width: 1px;
 	border-color: black;
 
+
 }
 
 .rodape{
@@ -292,6 +291,7 @@ footer{
 	border-color: black;
 	border-style: groove;
 	border-width: 1px;
+
 	
 }
 
