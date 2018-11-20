@@ -2,7 +2,7 @@
 <div class="container">
 
 
-<h1>Bem vindo 
-<?php echo $_SESSION['Usuario'];?> a parte do administrador</h1> 
+<h1>Bem vindo, 
+<?php echo $_SESSION['Usuario'];?> !</h1> 
 </div>
 <?php include "footer.php";?>
