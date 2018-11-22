@@ -1,4 +1,5 @@
 <?php 
+
     if (!isset($_SESSION)) session_start();
     
   // Verifica se não há a variável da sessão que identifica o usuário

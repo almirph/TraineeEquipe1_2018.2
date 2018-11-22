@@ -6,11 +6,23 @@ include 'pagina_conexao.php';
 
 $auxiliar = $_GET['id_usuario'];
 
-if(isset($_SESSION['msg_envio'])){
+if(isset($_SESSION['msg_diferente'])){ ?>
 
-	echo $_SESSION['msg_envio'];
-	unset($_SESSION['msg_envio']);
-}
+	<div class="alert alert-danger" role="alert">
+	   <?php echo $_SESSION['msg_diferente']; unset($_SESSION['msg_diferente']);?>
+	</div>
+
+<?php }
+
+
+if(isset($_SESSION['msg_envio'])){ ?>
+
+	<div class="alert alert-success" role="alert">
+	   <?php echo $_SESSION['msg_envio']; unset($_SESSION['msg_envio']);?>
+	</div>
+
+	
+<?php }
 
 
 
@@ -29,7 +41,7 @@ function clean_input($data){
 $resultado = "SELECT * FROM usuario WHERE id_usuario LIKE '$auxiliar'";
 $resulto = $db_connect->query($resultado);
 $row1 = $resulto->fetch_assoc();
-print_r($row1);
+
 
 
 
