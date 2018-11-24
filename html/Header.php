@@ -42,7 +42,7 @@
 
 	<div class="faixa" id="body-home">
 		
-		<img src="../assets/img/nl2.png" class="img-fluid" >
+		<a href="index-adm.php"><img src="../assets/img/nl2.png" class="img-fluid" ></a>
 	</div>
 
 	<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">

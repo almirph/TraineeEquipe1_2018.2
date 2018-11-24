@@ -7,24 +7,33 @@
 <?php 
 
 session_start();
-$_SESSION['msg_envio'] = 'Login de ID ' . $_POST['id_usuario'] . ' alterado para ' . $_POST['nome'] . ' com sucesso.';
+
 $id=$_POST['id_usuario'];
 $nome=$_POST['nome'];
 $senha=md5(md5($_POST ['senha']));
 $csenha=md5(md5($_POST['csenha']));
 
 
-if($senha == $csenha){
+if($senha != $csenha){
+
+    $_SESSION['msg_diferente'] = "Senhas diferem uma da outra, não foi possível modificar o usuário.";
+    header("Location: inicial.php");
 
 
-    $sql = "UPDATE usuario SET login ='$nome', senha = '$senha'  WHERE id_usuario ='$id'";
+    
+}
+else{
+
+   
+
+   $sql = "UPDATE usuario SET login ='$nome', senha = '$senha'  WHERE id_usuario ='$id'";
 
 
 
     if( $db_connect->query($sql)== true )
     {
 
-        $_SESSION['msg'] = "<p>Usuario alterado com sucesso.</p>";
+        $_SESSION['msg_envio'] = 'Login de ID ' . $_POST['id_usuario'] . ' alterado para ' . $_POST['nome'] . ' com sucesso.';
         header("Location: inicial.php");
         
 
@@ -35,11 +44,6 @@ if($senha == $csenha){
         header("Location: editar_usuario.php?id_usuario=$id_usuario");
 
     }
-}
-else{
-
-   $_SESSION['msg'] = "<p>Senhas diferem uma da outra.</p>";
-   header("Location: editar_usuario.php");
 
 }
 ?>
