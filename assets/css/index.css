@@ -580,7 +580,10 @@ text-align: justify;
 
 /**********************************************************************************************************/
 
-
+.paginacao{
+	margin: 0,5px solid black;
+	bottom: 0px;
+}
 
 .p-produtos-top h1{
 	text-align: center;

@@ -1,101 +1,73 @@
 <?php
-    //inclusão da conexão com banco de dados
-   include 'pagina_conexao.php'
-    //A quantidade de valor a ser exibida
-    $quantidade = 3;
-    //a pagina atual
-    $pagina     = (isset($_GET['pagina'])) ? (int)$_GET['pagina'] : 1;
-    //Calcula a pagina de qual valor será exibido
+    
+    
+    
+    
+    
+    
+    
+                             
+    $server = 'localhost';
+    $user = 'root';
+    $password = '';
+    $db_name = 'balao_da_informatica';
+    $port = '3306';
+
+
+    $db_connect = new mysqli($server,$user,$password,$db_name,$port);
+    mysqli_set_charset($db_connect,"utf-8");
+
+     
+   
+
+    $quantidade = 12;
+    
+    if((isset($_GET['pagina']))==true)
+    {
+        $pagina = $_GET['pagina'];
+    }
+    if($pagina == '')
+    {
+        $pagina = '1';
+    }
     $inicio     = ($quantidade * $pagina) - $quantidade;
 
-    //Monta o SQL com LIMIT para exibição dos dados  
-    $sql = "SELECT * FROM novidades ORDER BY  data DESC LIMIT $inicio, $quantidade";
-    //Executa o SQL
-    $qr  = mysql_query($sql) or die(mysql_error());
-    //Percorre os campos da tabela
-    while($ln = mysql_fetch_assoc($qr)){?>
+    
+    $sql = "SELECT * FROM produto ORDER BY id_produto DESC LIMIT $inicio, $quantidade";
+    $result = $db_connect->query($sql);
+    while ($row2 = $result->fetch_assoc())
+{?>
 
-                <div id="noticias">
-                <div style="border-bottom:1px dotted #CCC; width:700px; padding:15px; margin-left:-65px;">
-            <!--echo '<div style="color:#999; font-size:10px; width:auto; margin-top:2px; margin-bottom:-3px;">'.formata_data($data).'</div>';-->
-
-                <div id="titulo">
-        <?php echo $ln['titulo'];?>
-                </div>
-        <img src="fotos/<?php echo $ln['foto'];?> " style="width:250px; float:left; margin-right:25px; margin-bottom:15px; padding:10px; border:2px solid #D8D8D8;"/>
-        <div id="descricao">
-        <?php echo $ln['descricao']?></div>
-                </div>
-                </div>
-                </div>
+                
         <?php }?>
 
 
         <?php
-  /**
-   * SEGUNDA PARTE DA PAGINAÇÃO
-   */
-  //SQL para saber o total
-  $sqlTotal   = "SELECT id FROM novidades";
-  //Executa o SQL
-  $qrTotal    = mysql_query($sqlTotal) or die(mysql_error());
-  //Total de Registro na tabela
-  $numTotal   = mysql_num_rows($qrTotal);
-  //O calculo do Total de página ser exibido
-  $totalPagina= ceil($numTotal/$quantidade);
-   /**
-    * Defini o valor máximo a ser exibida na página tanto para direita quando para esquerda
-    */
-   $exibir = 3;
-   /**
-    * Aqui montará o link que voltará uma pagina
-    * Caso o valor seja zero, por padrão ficará o valor 1
-    */
+  
+  $sqlTotal   = "SELECT id_produto FROM produto";
+  $qrTotal    = $db_connect->query($sqlTotal);
+    $numTotal   = $qrTotal->num_rows;
+    
+    $totalPagina= ceil($numTotal/$quantidade);
+    echo $totalPagina;
+   
    $anterior  = (($pagina - 1) == 0) ? 1 : $pagina - 1;
-   /**
-    * Aqui montará o link que ir para proxima pagina
-    * Caso pagina +1 for maior ou igual ao total, ele terá o valor do total
-    * caso contrario, ele pegar o valor da página + 1
-    */
-   $posterior = (($pagina+1) >= $totalPagina) ? $totalPagina : $pagina+1;
-   /**
-    * Agora monta o Link paar Primeira Página
-    * Depois O link para voltar uma página
-    */
-  /**
-    * Agora monta o Link para Próxima Página
-    * Depois O link para Última Página
-    */
+   $proximo = (($pagina+1) >= $totalPagina) ? $totalPagina : $pagina+1;
     ?>
-    <div id="navegacao">
-        <?php
-        echo '<a href="?pagina=1">primeira</a> | ';
-        echo "<a href=\"?pagina=$anterior\">anterior</a> | ";
-    ?>
-        <?php
-         /**
-    * O loop para exibir os valores à esquerda
-    */
-   for($i = $pagina-$exibir; $i <= $pagina-1; $i++){
-       if($i > 0)
-        echo '<a href="?pagina='.$i.'"> '.$i.' </a>';
-  }
+    <div id="paginacao">
+        <?php 
+            if($pagina != '1')
+            {?>
+                <a href="?pagina=<?php echo $anterior;?>">anterior</a>
+            <?php }
 
-  echo '<a href="?pagina='.$pagina.'"><strong>'.$pagina.'</strong></a>';
+        
+         for($i = 1; $i < $totalPagina + 1; $i++) { 
+        echo "<a href='pagination.php?pagina=$i'>".$i."</a> "; 
+    } 
 
-  for($i = $pagina+1; $i < $pagina+$exibir; $i++){
-       if($i <= $totalPagina)
-        echo '<a href="?pagina='.$i.'"> '.$i.' </a>';
-  }
-
-   /**
-    * Depois o link da página atual
-    */
-   /**
-    * O loop para exibir os valores à direita
-    */
-
-    ?>
-    <?php echo " | <a href=\"?pagina=$posterior\">próxima</a> | ";
-    echo "  <a href=\"?pagina=$totalPagina\">última</a>";
-    ?>
+  if($pagina != $totalPagina)
+  {?>
+      <a href="?pagina=<?php echo $proximo;?>">próximo</a>
+  <?php }?>
+  </div>
