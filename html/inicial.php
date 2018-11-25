@@ -1,27 +1,49 @@
 <?php include 'Header-adm.php';
-session_start();
+
 
 $_SESSION['msg_delete'] = 'Usuario deletado com sucesso.';
 
-include 'pagina_conexao.php';
-if(isset($_SESSION['msg_envio'])){
 
-	echo $_SESSION['msg_envio'];
-	unset($_SESSION['msg_envio']);
-}
+include 'pagina_conexao.php';
+
+if(isset($_SESSION['msg_diferente'])){ ?>
+
+	<div class="alert alert-danger" role="alert">
+	   <?php echo $_SESSION['msg_diferente']; unset($_SESSION['msg_diferente']);?>
+	</div>
+
+<?php }
+
+if(isset($_SESSION['msg_envio'])){ ?>
+
+	<div class="alert alert-success" role="alert">
+	   <?php echo $_SESSION['msg_envio']; unset($_SESSION['msg_envio']);?>
+	</div>
+
+	
+	
+<?php } ?>
+
+<?php
 
 if(isset($_POST['acao'])){
 
 
 	if($_POST['acao']=='excluir')
-	{
+	{ 
 
 		$sql_code = "DELETE FROM usuario WHERE id_usuario = '{$_POST['id']}'";
 		$db_connect->query($sql_code);
-		echo $_SESSION['msg_delete'];
-		unset($_SESSION['msg_delete']);
+		?>
 
-	}
+		<div class="alert alert-success" role="alert">
+	   		<?php echo $_SESSION['msg_delete']; unset($_SESSION['msg_delete']);?>
+		</div>
+		
+
+	<?php } ?>
+
+	<?php
 }
 
 function selectIdPessoa($id){
@@ -33,13 +55,6 @@ function selectIdPessoa($id){
 
 	return $pessoa;
 }
-
-
-
-
-
-
-
 
 ?>
 

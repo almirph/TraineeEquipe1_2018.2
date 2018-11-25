@@ -5,6 +5,10 @@ html, body{
 	margin: 0;
 	font-family: montserrat;
 	
+	position:absolute;
+	width:100%;
+	
+	
 	/* background-color: rgb(235, 237, 247) ;	 */
 
 	
