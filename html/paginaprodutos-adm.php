@@ -1,5 +1,5 @@
-<?php session_start();?>
-<?php include 'Header-adm.php'; 
+<?php include "pagina_conexao.php";?>
+<?php include 'Header-adm.php';
 if(isset($_SESSION['msg']))
                 {
                   if($_SESSION['msg']=='ok')
@@ -9,82 +9,11 @@ if(isset($_SESSION['msg']))
                     </div>
                   <?php }
                     $_SESSION['msg']=NULL;
-                    $_SESSION['nome']=NULL;
-                    $_SESSION['descricao']=NULL;
-                    $_SESSION['preco']=NULL;
-                    $_SESSION['url_imagem']=NULL;
-                    $_SESSION['categoria']=NULL;  
-              
+                
             }?>
 
 <div class="container">
-  <?php
-                print_r($_SESSION);
-                $server = 'localhost';
-                $user = 'root';
-                $password = '';
-                $db_name = 'balao_da_informatica';
-                $port = '3306';
-                $aviso_validacao1 = $aviso_validacao2 = $aviso_validacao3 = $aviso_validacao4 = $aviso_validacao5 = "";
-                $nome="";
-                $preco="";
-                $id_produto="";
-                $descricao = "";
-                $categoria = "";
-                $categoria1= "";
-                $url_img = "";
-                $db_connect = new mysqli($server,$user,$password,$db_name,$port);
-                
-                
-                  
-                   
-                
-                mysqli_set_charset($db_connect,"utf-8");
-                                
-                if(isset($_SESSION['nome']))
-                {
-                  
-                  if(empty($_SESSION['nome']))
-                  {
-                    $aviso_validacao1 = "Campo Obrigatório";
-                  }
-                  else
-                  {
-                    $nome = $_SESSION['nome'];
-                  }
-                  
-                  if (empty($_SESSION['url_imagem']))
-                  {  
-                    $aviso_validacao5 = "Campo Obrigatório";
-                  }
-                  else{
-                    $url_imagem = $_SESSION['url_imagem'];
-                  }
-                  if (empty($_SESSION['descricao']))
-                  {
-                    $aviso_validacao4 = "Campo Obrigatório";
-                  }
-                  else{
-                    $descricao = $_SESSION['descricao'];
-                  }
-                  if (empty($_SESSION['preco']))
-                  {
-                    $aviso_validacao3 = "Campo Obrigatório";
-                  }
-                  else{
-                    $preco = $_SESSION['preco'];
-                  }
-                  if(empty($_SESSION['categoria']))
-                  {
-                    $aviso_validacao2 = "Campo Obrigatório";
-                  }
-                  else
-                  {
-                    $categoria=$_SESSION['categoria'];
-                  }
-                }
-              
-?>
+
 
   <div class="lista-adm">
     <h1>Adicionar Produto</h1>
@@ -96,18 +25,16 @@ if(isset($_SESSION['msg']))
   <form action="inserir-produtos.php" method="post">
     <div class="form-group">
       <label>Nome</label>
-      <input type="text" autocomplete="off" name="nome" class="form-control" maxlength="50" value="<?php echo $nome;?>">
-      <div class="problema-formulario">
-        <?php echo $aviso_validacao1?>
-      </div>
+      <input type="text" autocomplete="off" required="required" name="nome" class="form-control" maxlength="50" >
+      
     </div>
     <div class="form-row" type="categoria">
 
       <div class="form-group col-sm-6">
         <label>Categoria</label>
-        <select class="form-control" name="categoria">
+        <select class="form-control" name="categoria" required="required" >
           <option>
-            <?php echo $categoria;?>
+          
           </option>
 
           <?php $sql = "SELECT * FROM categoria";
@@ -121,17 +48,11 @@ if(isset($_SESSION['msg']))
           </option>
           <?php } ?>
         </select>
-        <div class="problema-formulario">
-          <?php echo $aviso_validacao2?>
-        </div>
-
+      
       </div>
       <div class="form-group col-sm-6">
         <label>Preço</label>
-        <input type="number" autocomplete="off" name="preco" class="form-control" value="<?php echo $preco;?>">
-        <div class="problema-formulario">
-          <?php echo $aviso_validacao3?>
-        </div>
+        <input type="number" step="0.01" autocomplete="off" name="preco" class="form-control" required="required" >
       </div>
     </div>
 
@@ -139,19 +60,13 @@ if(isset($_SESSION['msg']))
 
     <div class="form-group">
       <label>Descrição</label>
-      <textarea class="form-control" autocomplete="off" name='descricao' rows="3"><?php echo $descricao;?></textarea>
-      <div class="problema-formulario">
-        <?php echo $aviso_validacao4?>
-      </div>
+      <textarea class="form-control" autocomplete="off" name='descricao' rows="3" required="required"></textarea>
+      
     </div>
-
-    <div class="form-group">
+    <div class="form-group "  enctype="multipart/form-data">
       <label>URL da imagem </label><br>
-      <input type="file" autocomplete="off" name="url_imagem">
-      <div class="problema-formulario">
-        <?php echo $aviso_validacao5?>
+      <input type="file" autocomplete="off" name="url_imagem"  accept="image/*" required="required"  >
       </div>
-    </div>
     <div class="pp-adm">
       <button type="submit" class="btn btn-outline-dark ">Inserir produto</button>
     </div>

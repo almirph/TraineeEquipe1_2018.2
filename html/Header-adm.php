@@ -76,5 +76,5 @@
 
 		</div>
 	</nav>
-	
+<?php include "pagina_conexao.php";?>	
 <?php include "Verifica-login.php";?>
