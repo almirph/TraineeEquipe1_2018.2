@@ -40,6 +40,8 @@
 				
 ?>
 
+<div id="container">
+	<div id="main">
 	<div class="faixa" id="body-home">
 		
 		<a href="index-adm.php"><img src="../assets/img/nl2.png" class="img-fluid" ></a>
