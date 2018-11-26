@@ -40,6 +40,8 @@
 				
 ?>
 
+<div id="container">
+	<div id="main">
 	<div class="faixa" id="body-home">
 		
 		<a href="index-adm.php"><img src="../assets/img/nl2.png" class="img-fluid" ></a>
@@ -72,7 +74,7 @@
 						$result = $db_connect->query($sql);
 						while ($row2 = $result->fetch_assoc())
 					{?>
-						<a class="dropdown-item" href="produtos.php?id_categoria=<?php echo $row2['id_categoria'];?>"><?php echo $row2['nome_categoria'];?></a>					
+						<a class="dropdown-item" href="produtos.php?id_categoria=<?php echo $row2['id_categoria'];?>&pagina=1"><?php echo $row2['nome_categoria'];?></a>					
 				<?php } 	?>
 				
 				</div>

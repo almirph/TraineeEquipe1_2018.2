@@ -3,15 +3,15 @@ html, body{
 	padding: 0;
 	margin: 0;
 	font-family: montserrat;
-	position:absolute;
-	width:100%;
-	
+	min-height: 100%;
 	/* background-color: rgb(235, 237, 247) ;	 */
 	
 
 
 
 }
+
+
 .container{
 	min-height: 320px;
 }
@@ -108,6 +108,9 @@ footer{
 	border-bottom: none;
 	border-width: 1px;
 	border-color: black;
+	
+   
+    
 }
 
 .rodape{
