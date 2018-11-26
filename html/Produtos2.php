@@ -33,11 +33,11 @@
       <div class="card-body">
       <h5 class="card-title"style='color:black; font-size:16px;'><?php echo $row2['nome_produto'];?></h5>
       <h5 style='color:red; font-size:26px;'>R$ <?php echo $row2['preco'];?><h5>
+      
+      </div>
+      </div>
+      </div>
       </a>
-      </div>
-      </div>
-      </div>
-
      <?php }?>
       </div>
       </div>

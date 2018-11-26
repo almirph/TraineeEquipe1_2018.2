@@ -38,7 +38,7 @@
   
       
       
-        $sql = "SELECT *FROM produto  WHERE id_categoria LIKE '$auxiliar' LIMIT $inicio, $quantidade";
+        $sql = "SELECT *FROM produto  WHERE id_categoria LIKE '$auxiliar' ORDER BY id_categoria DESC LIMIT $inicio, $quantidade ";
         $result=$db_connect->query($sql);
        while( $row2 = $result->fetch_assoc())
         {?> 
@@ -56,16 +56,20 @@
       </div>
       </div>
         <?php }
-        $sqlTotal   = "SELECT id_produto FROM produto ";
-  $qrTotal    = $db_connect->query($sqlTotal);
-    $numTotal   = $qrTotal->num_rows;
+              $sqlTotal   = "SELECT id_produto FROM produto  WHERE id_categoria  LIKE '$auxiliar'";
+              $qrTotal    = $db_connect->query($sqlTotal);
+              $numTotal   = $qrTotal->num_rows;
     
     $totalPagina= ceil($numTotal/$quantidade);
   
    
    $anterior  = (($pagina - 1) == 0) ? 1 : $pagina - 1;
    $proximo = (($pagina+1) >= $totalPagina) ? $totalPagina : $pagina+1;
-    ?>
+    ?>          
+      </div>
+      
+      </div>
+      
     <div class="paginacao">
         <?php 
             if($pagina != '1')
@@ -73,19 +77,15 @@
                 <a href="produtos.php?id_categoria=<?php echo $auxiliar;?>&pagina=<?php echo $anterior;?>">anterior</a>
             <?php }
 
-        
+            if($totalPagina > 1 ){
          for($i = 1; $i < $totalPagina + 1; $i++) { ?>
-        <a href='produtos.php?id_categoria=<?php echo $auxiliar;?>&pagina=<?php $i;?>'><?php echo $i;?></a>
+        <a class="letra" href='produtos.php?id_categoria=<?php echo $auxiliar;?>&pagina=<?php echo $i;?>'><?php echo $i;?></a>
     <?php } 
-
-  if($pagina != $totalPagina)
+            }
+  if($pagina != $totalPagina && $totalPagina > 1)
   {?> 
-      <a href="produtos.php?id_categoria=<?php echo $auxiliar;?>&pagina=<?php echo $proximo;?>">próximo</a>
+      <a class="letras" href="produtos.php?id_categoria=<?php echo $auxiliar;?>&pagina=<?php echo $proximo;?>">próximo</a>
   <?php }?>
   </div>
-          
-      </div>
-      
-      </div>
-      
+
         <?php include 'footer.php'?>

@@ -584,9 +584,22 @@ text-align: justify;
 
 /**********************************************************************************************************/
 
-.paginacao{
-	margin: 0,5px solid black;
-	bottom: 0px;
+.paginacao {
+	text-align: right;
+	margin-right: 30px;
+	font-size:25px;
+	margin-bottom: 30px;
+	
+}
+.paginacao a{
+	color:black;
+}
+.letra:hover{
+	-webkit-box-shadow: 6px 4px 6px rgba(50, 50, 50, 0.77);
+	-moz-box-shadow:    6px 4px 6px rgba(50, 50, 50, 0.77);
+	box-shadow:         9px 7px 0px rgba(50, 50, 50, 0.77);
+	transition: all 220ms ease-out;
+	transform: scale(1.05);
 }
 
 .p-produtos-top h1{
