@@ -27,9 +27,13 @@
               <h1> Lista de produtos </h1>
 
               <hr>
-
+              <nav class="navbar">
               <span style="font-size: 24px;"><a href="paginaprodutos-adm.php" class="fas fa-plus" alt="Cadastrar novo usuario"></a></span>
-
+              <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+              </form>
+              </nav>
               <table class="table table-bordered">
                 <thead>
                   <tr>
@@ -43,7 +47,19 @@
                 <tbody>
 
       <?php 
-              
+           
+          $quantidade = 15;
+          $pagina = "";
+          if((isset($_GET['pagina']))==true)
+          {
+              $pagina = $_GET['pagina'];
+          }
+          if($pagina == '')
+          {
+              $pagina = '1';
+          }
+          $inicio     = ($quantidade * $pagina) - $quantidade;
+          
               if($_POST != NULL){
                 $auxiliar = $_POST['deleta'];
                 $delete = "DELETE FROM `produto` WHERE `produto`.`id_produto` = $auxiliar";
@@ -54,7 +70,7 @@
                 
              
               
-              $sql = "SELECT * FROM produto";
+              $sql = "SELECT * FROM produto ORDER BY id_categoria DESC LIMIT $inicio, $quantidade ";
               $result = $db_connect->query($sql);
               while ($row = $result->fetch_assoc())
       {?>
@@ -113,11 +129,51 @@
           </tr>    
              
 
-      <?php     }      ?>
+      <?php     }      
+            $sqlTotal   = "SELECT id_produto FROM produto";
+            $qrTotal    = $db_connect->query($sqlTotal);
+            $numTotal   = $qrTotal->num_rows;
+ 
+            $totalPagina= ceil($numTotal/$quantidade);
+
+
+            $anterior  = (($pagina - 1) == 0) ? 1 : $pagina - 1;
+            $proximo = (($pagina+1) >= $totalPagina) ? $totalPagina : $pagina+1;
+ 
+      ?>
     
     </tr>
 </tbody>
 </table>
+<nav >
+  <ul class="pagination justify-content-end">
+  <?php 
+            if($pagina != '1')
+            {?>
+    <li class="page-item">
+      <a class="page-link" href="pagina_de_listagem.php?pagina=<?php echo $anterior;?>">anterior</a>
+    </li>
+  
+            <?php } ?>
+            <?php
+            if($totalPagina > 1 ){
+         for($i = 1; $i < $totalPagina + 1; $i++) { ?>
+        
+    <li class="page-item"><a class="page-link" href='pagina_de_listagem.php?pagina=<?php echo $i;?>'><?php echo $i;?></a></li>
+    <?php } 
+            }
+      ?>
+  
+  <?php 
+   if($pagina != $totalPagina && $totalPagina > 1)
+  {?> 
+  
+    <li class="page-item">
+      <a class="page-link" href="pagina_de_listagem.php?pagina=<?php echo $proximo;?>">próximo</a>
+    </li>
+    <?php }?>
+  </ul>
+</nav>
 </div>
 </div>
 
