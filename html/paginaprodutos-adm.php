@@ -8,6 +8,12 @@ if(isset($_SESSION['msg']))
                     Produto cadastrado com sucesso.
                     </div>
                   <?php }
+                  if($_SESSION['msg']=='erro')
+                  {?>
+                    <div class="alert alert-success" role="alert">
+                    Produto não cadastrado.
+                    </div>
+                  <?php }
                     $_SESSION['msg']=NULL;
                 
             }?>
@@ -44,7 +50,7 @@ if(isset($_SESSION['msg']))
          {?>
 
           <option>
-            <?php echo $row2['nome_categoria'] . '(' . $row2['id_categoria'] . ')';?>
+            <?php echo $row2['nome_categoria'] ;?>
           </option>
           <?php } ?>
         </select>
