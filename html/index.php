@@ -118,50 +118,27 @@
 
 			<div class="container home-produtos">
 				<div class="row card-produto-home">
-					<div class="col-sm">
-						<div class="card img-card" style="width: 14rem;">
-							<img class="card-img-top" src="../assets/img/teclado1.jpg" alt="Card image cap">
-							<div class="card-body">
+				<?php           
+      $quantidade = '4';
+      $sql = "SELECT * FROM produto ORDER BY id_produto DESC LIMIT $quantidade";
+      $result = $db_connect->query($sql);
 
-								<h5 class="card-title">Nome do Produto</h5>
-								<p class="card-text">Breve descrição a respeito do produto</p>
-								<a href="paginaProdutos.html " class="btn btn-primary saiba-mais">Saiba mais </a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm">
-						<div class="card img-card" style="width: 14rem;">
-							<img class="card-img-top" src="../assets/img/teclado2.jpg" alt="Card image cap">
-							<div class="card-body">
+      while ($row2 = $result->fetch_assoc())
 
-								<h5 class="card-title">Nome do Produto</h5>
-								<p class="card-text">Breve descrição a respeito do produto</p>
-								<a href="paginaProdutos.html " class="btn btn-primary saiba-mais">Saiba mais </a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm">
-						<div class="card img-card" style="width: 14rem;">
-							<img class="card-img-top" src="../assets/img/teclado3.jpg" alt="Card image cap">
-							<div class="card-body">
+      {?>
+      <a href="paginaProdutos.php?id_produto=<?php echo $row2['id_produto'];?>">
 
-								<h5 class="card-title">Nome do Produto</h5>
-								<p class="card-text">Breve descrição a respeito do produto</p>
-								<a href="paginaProdutos.html " class="btn btn-primary saiba-mais">Saiba mais </a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm">
-						<div class="card img-card" style="width: 14rem;">
-							<img class="card-img-top" src="../assets/img/teste-produto.jpg" alt="Card image cap">
-							<div class="card-body">
-
-								<h5 class="card-title">Nome do Produto</h5>
-								<p class="card-text">Breve descrição a respeito do produto</p>
-								<a href="paginaProdutos.html " class="btn btn-primary saiba-mais">Saiba mais </a>
-							</div>
-						</div>
-					</div>
+      <div class="col-sm">
+      <div class="card img-card" style="width:14rem;">
+      <img class="card-img-top" src="../assets/imagem_banco/<?php echo $row2['url_imagem']; ?>" alt="Card image cap">
+      <div class="card-body">
+      <h5 class="card-title"style='color:black; font-size:16px;'><?php echo $row2['nome_produto'];?></h5>
+      <h5 style='color:red; font-size:26px;'>R$ <?php echo $row2['preco'];?><h5>
+      </div>
+      </div>
+      </div>
+      </a>
+     <?php }?>
 
 
 

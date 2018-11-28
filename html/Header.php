@@ -28,16 +28,7 @@
 
 <body>
 <?php
-               
-			   $server = 'localhost';
-			   $user = 'root';
-			   $password = '';
-			   $db_name = 'balao_da_informatica';
-			   $port = '3306';
-								  
-			   $db_connect = new mysqli($server,$user,$password,$db_name,$port);
-			   mysqli_set_charset($db_connect,"utf-8");
-				
+      include 'pagina_conexao.php';			
 ?>
 
 <div id="container">
@@ -67,7 +58,7 @@
 					Produtos
 				</a>
 				<div class="dropdown-menu home" aria-labelledby="navbarDropdown">
-					<a class="dropdown-item" href="Produtos2.php">Mais vendidos</a>
+					<a class="dropdown-item" href="Produtos2.php">Novidades</a>
 					<div class="dropdown-divider home-linha"></div>
 
 				<?php	$sql = "SELECT * FROM categoria";
