@@ -14,12 +14,12 @@
     </div>
   </nav>
   <div class="container pag-produtos">
-    <h1>Mais Vendidos</h1><br>
+    <h1>Novidades</h1><br>
     <div class="row card-produto">
 
       <?php           
-      
-      $sql = "SELECT * FROM produto";
+      $quantidade = '12';
+      $sql = "SELECT * FROM produto ORDER BY id_produto DESC LIMIT $quantidade";
       $result = $db_connect->query($sql);
 
       while ($row2 = $result->fetch_assoc())
@@ -33,11 +33,10 @@
       <div class="card-body">
       <h5 class="card-title"style='color:black; font-size:16px;'><?php echo $row2['nome_produto'];?></h5>
       <h5 style='color:red; font-size:26px;'>R$ <?php echo $row2['preco'];?><h5>
+      </div>
+      </div>
+      </div>
       </a>
-      </div>
-      </div>
-      </div>
-
      <?php }?>
       </div>
       </div>
