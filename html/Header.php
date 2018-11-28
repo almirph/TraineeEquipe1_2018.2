@@ -95,7 +95,7 @@
          $query = mysqli_query($db_connect,"SELECT * FROM produto WHERE nome_produto LIKE '%$pesquisar_p%'");
          $count = mysqli_num_rows($query);
          if($count == 0) {
-            header("Location: paginaProdutos.php");
+            header("Location: paginaNovidades.php");
 
          }else{
             while($row = mysqli_fetch_array($query)) {

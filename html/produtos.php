@@ -70,23 +70,33 @@
       </div>
       
       </div>
-      
-    <div class="paginacao">
-        <?php 
+  <nav >
+  <ul class="pagination justify-content-end">
+  <?php 
             if($pagina != '1')
             {?>
-                <a href="buscar.php?pagina=<?php echo $anterior;?>">anterior</a>
-            <?php }
-
+    <li class="page-item">
+      <a class="page-link" href="produtos.php?id_categoria=<?php echo $auxiliar;?>&pagina=<?php echo $anterior;?>">anterior</a>
+    </li>
+  
+            <?php } ?>
+            <?php
             if($totalPagina > 1 ){
          for($i = 1; $i < $totalPagina + 1; $i++) { ?>
-        <a class="letra" href='produtos.php?id_categoria=<?php echo $auxiliar;?>&pagina=<?php echo $i;?>'><?php echo $i;?></a>
+        
+    <li class="page-item"><a class="page-link" href='produtos.php?id_categoria=<?php echo $auxiliar;?>&pagina=<?php echo $i;?>'><?php echo $i;?></a></li>
     <?php } 
             }
-  if($pagina != $totalPagina && $totalPagina > 1)
+      ?>
+  
+  <?php 
+   if($pagina != $totalPagina && $totalPagina > 1)
   {?> 
-      <a class="letras" href="produtos.php?id_categoria=<?php echo $auxiliar;?>&pagina=<?php echo $proximo;?>">próximo</a>
-  <?php }?>
-  </div>
-
-        <?php include 'footer.php'?>
+  
+    <li class="page-item">
+      <a class="page-link" href="produtos.php?id_categoria=<?php echo $auxiliar;?>&pagina=<?php echo $proximo;?>">próximo</a>
+    </li>
+    <?php }?>
+  </ul>
+</nav>
+            <?php include 'footer.php'?>

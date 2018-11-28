@@ -73,6 +73,11 @@ if(isset($_SESSION['msg']))
       <label>URL da imagem </label><br>
       <input type="file" autocomplete="off" name="url_imagem"  accept="image/*" required="required"  >
       </div>
+      <?php
+ 
+
+ 
+?>
     <div class="pp-adm">
       <button type="submit" class="btn btn-outline-dark ">Inserir produto</button>
     </div>

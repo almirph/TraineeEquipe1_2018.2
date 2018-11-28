@@ -98,25 +98,36 @@ $proximo = (($pagina+1) >= $totalPagina) ? $totalPagina : $pagina+1;
     </div>
 </div>
 
-<div class="paginacao">
-    <?php 
+<nav >
+  <ul class="pagination justify-content-end">
+  <?php 
             if($pagina != '1')
             {?>
-   <a class="letras" href="buscar.php?pesquisar=<?php echo $pesquisar_p;?>&pagina=<?php echo $anterior;?>">anterior</a>
-    <?php }
-
+    <li class="page-item">
+      <a class="page-link" href="buscar.php?pesquisar=<?php echo $pesquisar_p;?>&pagina=<?php echo $anterior;?>">anterior</a>
+    </li>
+  
+            <?php } ?>
+            <?php
             if($totalPagina > 1 ){
          for($i = 1; $i < $totalPagina + 1; $i++) { ?>
-    <a class="letra" href='buscar.php?pesquisar=<?php echo $pesquisar_p;?>&pagina=<?php echo $i;?>'>
-        <?php echo $i;?></a>
+        
+    <li class="page-item"><a class="page-link" href="buscar.php?pesquisar=<?php echo $pesquisar_p;?>&pagina=<?php echo $i;?>"><?php echo $i;?></a></li>
     <?php } 
             }
-  if($pagina != $totalPagina && $totalPagina > 1)
-  {?>
-    <a class="letras" href="buscar.php?pesquisar=<?php echo $pesquisar_p;?>&pagina=<?php echo $proximo;?>">próximo</a>
+      ?>
+  
+  <?php 
+   if($pagina != $totalPagina && $totalPagina > 1)
+  {?> 
+  
+    <li class="page-item">
+      <a class="page-link" href="buscar.php?pesquisar=<?php echo $pesquisar_p;?>&pagina=<?php echo $proximo;?>">próximo</a>
+    </li>
     <?php }?>
-</div>
-
+  </ul>
+</nav>
+  
 
 
 
