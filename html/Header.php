@@ -58,7 +58,7 @@
 					Produtos
 				</a>
 				<div class="dropdown-menu home" aria-labelledby="navbarDropdown">
-					<a class="dropdown-item" href="Produtos2.php">Novidades</a>
+					<a class="dropdown-item" href="paginaNovidades.php".>Novidades</a>
 					<div class="dropdown-divider home-linha"></div>
 
 				<?php	$sql = "SELECT * FROM categoria";
@@ -80,14 +80,14 @@
 			</ul>
 
 			
-			<form class="form-inline my-2 my-lg-0" action="buscar.php" enctype="multipart/form-data" method="POST">
+			<form class="form-inline my-2 my-lg-0" action="buscar.php?&pagina=1" enctype="multipart/form-data" method="GET">
 				<input class="form-control mr-sm-2" type="text" placeholder="Digite aqui..." name="pesquisar">
 				<button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Pesquisar</button>
 			</form>
 
 <?php
-     if(isset($_POST['pesquisar'])){
-         $pesquisar_p = $_POST['pesquisar'];
+     if(isset($_GET['pesquisar'])){
+         $pesquisar_p = $_GET['pesquisar'];
          $pesquisar_p = preg_replace("[#^0-9a-z#]","","$pesquisar_p");
 		 //PESQUISAR NA CATEGORIA SE NÃO TIVE RNA CATEGORIA, FAZ IF E RETONA 0 A UMA VARIAVEL
 		 //PESQUISA NO BANCO SE NO PRODUTOS E VE SE FAZ A PESQUISA SE É UM PRODUTO OU CATEGORIA, SE FOR CATEGORIA 

@@ -27,7 +27,7 @@
       {?>
       <a href="paginaProdutos.php?id_produto=<?php echo $row2['id_produto'];?>">
 
-      <div class="col-sm">
+      <div class="col-sm-4">
       <div class="card img-card" style="width:16rem;">
       <img class="card-img-top" src="../assets/imagem_banco/<?php echo $row2['url_imagem']; ?>" alt="Card image cap">
       <div class="card-body">

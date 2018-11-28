@@ -51,10 +51,11 @@
       <div class="card-body">
       <h5 class="card-title"style='color:black; font-size:16px;'><?php echo $row2['nome_produto'];?></h5>
       <h5 style='color:red; font-size:26px;'>R$ <?php echo $row2['preco'];?><h5>
+      
+      </div>
+      </div>
+      </div>
       </a>
-      </div>
-      </div>
-      </div>
         <?php }
               $sqlTotal   = "SELECT id_produto FROM produto  WHERE id_categoria  LIKE '$auxiliar'";
               $qrTotal    = $db_connect->query($sqlTotal);
@@ -74,7 +75,7 @@
         <?php 
             if($pagina != '1')
             {?>
-                <a href="produtos.php?id_categoria=<?php echo $auxiliar;?>&pagina=<?php echo $anterior;?>">anterior</a>
+                <a href="buscar.php?pagina=<?php echo $anterior;?>">anterior</a>
             <?php }
 
             if($totalPagina > 1 ){
