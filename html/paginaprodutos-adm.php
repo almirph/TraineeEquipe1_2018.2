@@ -14,6 +14,12 @@ if(isset($_SESSION['msg']))
                     Produto não cadastrado.
                     </div>
                   <?php }
+                  if($_SESSION['msg']=='formato')
+                  {?>
+                    <div class="alert alert-danger" role="alert">
+                      O formato de arquivo não foi aceito.
+                    </div>
+                  <?php }
                     $_SESSION['msg']=NULL;
                 
             }?>
