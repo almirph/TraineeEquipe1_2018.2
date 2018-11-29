@@ -6,21 +6,19 @@
                 $user = 'root';
                 $password = '';
                 $db_name = 'balao_da_informatica';
-                $port = '3306';
-                                 
-                                 $auxiliar =$_GET['id_produto'];
-                                  $nome="";
-                                  $preco="";
-                                  $id_produto="";
-                                  $descricao = "";
-                                  $categoria = "";
-                                  $categoria1= "";
-                                  $url_img = "";
-                                  $result_produto;                    
+                $port = '3306';                                 
+                $auxiliar =$_GET['id_produto'];
+                $nome="";
+                $preco="";
+                $id_produto="";
+                $descricao = "";
+                $categoria = "";
+                $categoria1= "";
+                $url_img = "";
+                $result_produto;                    
                 $db_connect = new mysqli($server,$user,$password,$db_name,$port);
                 mysqli_set_charset($db_connect,"utf-8");
-                                  
-              
+                    
 ?>
   <?php 
             
@@ -39,7 +37,7 @@
       <input type="hidden" name="id_produto" value="<?php echo $auxiliar;?>">
       <label>Nome</label>
       <input type="text" autocomplete="off" name="nome" required="required" class="form-control" maxlength="50" value="<?php echo $row1['nome_produto'];?>">
-      
+
     </div>
     <div class="form-row" type="categoria">
       <?php            
@@ -50,7 +48,7 @@
             ?>
       <div class="form-group col-sm-6">
         <label>Categoria</label>
-        <select  required="required" class="form-control" name="categoria">
+        <select required="required" class="form-control" name="categoria">
           <option>
             <?php echo $row_banco_categoria['nome_categoria'].'(' . $row_banco_categoria['id_categoria'] . ')';?>
           </option>
@@ -68,12 +66,12 @@
           <?php                        }           
                  } ?>
         </select>
-       
+
       </div>
       <div class="form-group col-sm-6">
         <label>Preço</label>
         <input type="number" autocomplete="off" required="required" name="preco" class="form-control" value="<?php echo $row1['preco'];?>">
-        
+
       </div>
     </div>
 
@@ -82,13 +80,13 @@
     <div class="form-group">
       <label>Descrição</label>
       <textarea class="form-control" required="required" autocomplete="off" name='descricao' rows="3"><?php echo $row1['descricao'];?></textarea>
-     
+
     </div>
 
     <div class="form-group">
       <label>URL da imagem </label><br>
       <input type="file" required="required" autocomplete="off" name="url_imagem">
-      
+
     </div>
     <div class="pp-adm">
       <button type="submit" class="btn btn-outline-dark ">Editar produto</button>

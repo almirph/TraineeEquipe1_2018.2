@@ -18,9 +18,9 @@
        
         $confirma_login = mysqli_query($db_connect,"SELECT * FROM usuario WHERE login = '$login' AND senha = '$senha'") or die("erro ao selecionar");
         
-        if (mysqli_num_rows($confirma_login)<=0){
-          echo"<script language='javascript' type='text/javascript'>alert('Login e/ou senha incorretos');window.location.href='index.php';</script>";
-               
+        if (mysqli_num_rows($confirma_login)<=0){?>
+          <script language='javascript' type='text/javascript'>alert('Login e/ou senha incorretos');window.location.href='index.php';</script>;
+          <?php    
           }else{
             $resultado = mysqli_fetch_assoc($confirma_login);
     

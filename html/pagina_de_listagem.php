@@ -31,7 +31,7 @@
               <span style="font-size: 24px;"><a href="paginaprodutos-adm.php" class="fas fa-plus" alt="Cadastrar novo usuario"></a></span>
               <form class="form-inline my-2 my-lg-0" action="buscarLista.php?&pagina=1" enctype="multipart/form-data" method="GET">
                 <input class="form-control mr-sm-2" type="text" placeholder="Digite aqui..." name="pesquisar">
-                <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Pesquisar</button>
+                <button class="btn btn-dark my-2 my-sm-0" type="submit">Pesquisar</button>
               </form>
               </nav>
               <table class="table table-bordered">

@@ -154,9 +154,10 @@
 
 
 			<hr class="my-4">
+			<div class="home-lab">
 			<p class="lead">Para ver mais novidades</p>
-			<a class="btn btn-outline-dark btn-lg" href="Produtos2.html" role="button">Clique Aqui</a>
-			<div id ="body-quemsomos"></div>
+			<a class="btn btn-dark btn-lg" href="Produtos2.html" role="button">Clique Aqui</a>	
+			</div>
 		</div>
 	</div>
 	

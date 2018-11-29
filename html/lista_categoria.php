@@ -8,10 +8,11 @@
  
     if( !isset ($_SESSION ['0']))
     {
-        if ($_SESSION['alerta']==1){ ?>
-<div class="alert alert-success" role="alert">
-    Categoria editada com sucesso!
-</div>
+        if (!isset( $_SESSION['alerta'])){
+                if($_SESSION['alerta']=='1') ?>
+            <div class="alert alert-success" role="alert">
+                Categoria editada com sucesso!
+            </div>
 <?php
             $_SESSION['msg']=NULL;
             $_SESSION['nome']=NULL;
@@ -21,7 +22,7 @@
             $_SESSION['categoria']=NULL;
             $_SESSION['aviso']=NULL;
             $_SESSION['alerta']=NULL;
-            $aviso = '';
+            
         }
            
         
@@ -116,7 +117,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <form name="editar" action="editar_categoria.php?id_categoria=<?php echo $row['id_categoria'] ?>"
                         method="POST">
 
