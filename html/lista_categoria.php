@@ -1,4 +1,4 @@
-<?php session_start();?>
+
 <?php include "header-adm.php";?>
 
 
@@ -41,7 +41,7 @@
                 mysqli_set_charset($db_connect,"utf-8")          
                 ?>
 <div class="container">
-    <div class="titulo-categoria">
+    <div class="lista-adm">
 
         <h1>Lista de Categorias</h1>
     </div>

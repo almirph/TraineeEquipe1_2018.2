@@ -34,16 +34,13 @@
                             
                                                                                                         
                             
-                             } else{
-                                    $dag =  "Erro no cadastro da categoria" . mysqli_error($db_connect);
-                                    echo $dag;
-                                }
+                             } 
                         }
                 }
 ?>
 <div class="container">
 
-        <div class="titulo-categoria">
+        <div class="lista-adm">
                 <h1>Página Categorias</h1>
         </div>
         <hr>
@@ -56,7 +53,7 @@
                                 <div class="form-group">
                                         <label>Categoria:</label>
                                         <input type="text" autocomplete="off" name="categoria" class="form-control"
-                                                maxlength="50" value="<?php echo $categoria;?>">
+                                                maxlength="50" required="required">
                                         <div class="problema-formulario">
                                                 <?php echo $aviso_validacao1?>
                                         </div>
