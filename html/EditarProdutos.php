@@ -89,7 +89,7 @@
 
     </div>
     <div class="pp-adm">
-      <button type="submit" class="btn btn-outline-dark ">Editar produto</button>
+      <button type="submit" class="btn btn-dark ">Editar produto</button>
 
     </div>
 

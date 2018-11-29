@@ -179,7 +179,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 			<div class="form-group col-sm-6">
 
 				<label for="nome" style="text-align: left;">Nome:</label>
-				<input type="text" class="form-control " name="nome" id="name" placeholder="Digite seu nome" value="<?php if(isset($nome)){ echo $nome;} ?>">
+				<input type="text" class="form-control "  required="required" name="nome" id="name" placeholder="Digite seu nome" value="<?php if(isset($nome)){ echo $nome;} ?>">
 				<?php if(isset($erro_nome)){ ?>
 
 					<div class="alert alert-danger alerta" role="alert"><?= $erro_nome; ?></div>
@@ -190,7 +190,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 			<div class="form-group col-sm-6">
 
 				<label for="sobrenome">Sobrenome:</label>
-				<input type="text" class="form-control " id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome" value="<?php if(isset($sobrenome)){ echo $sobrenome;} ?>">
+				<input type="text" class="form-control required="required"" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome" value="<?php if(isset($sobrenome)){ echo $sobrenome;} ?>">
 
 				<?php if(isset($erro_sobrenome)){ ?>
 
@@ -207,7 +207,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 			<div class="form-group col-sm-12">
 
 				<label for="email">E-mail:</label>
-				<input type="email" class="form-control " id="email" name="email" placeholder="Digite seu e-mail" value="<?php if(isset($email)){ echo $email;} ?>">
+				<input type="email" class="form-control " required="required" id="email" name="email" placeholder="Digite seu e-mail" value="<?php if(isset($email)){ echo $email;} ?>">
 
 				<?php if(isset($erro_email)){ ?>
 
@@ -223,7 +223,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 			<div class="form-group col-sm-12">
 
 				<label for="email">Mensagem:</label>
-				<textarea class="form-control " rows="8" name="mensagem" placeholder="Digite sua mensagem" value="<?php if(isset($texto)){ echo $texto;} ?>"></textarea>
+				<textarea class="form-control " rows="8" required="required" name="mensagem" placeholder="Digite sua mensagem" value="<?php if(isset($texto)){ echo $texto;} ?>"></textarea>
 
 				<?php if(isset($erro_texto)){ ?>
 
