@@ -7,7 +7,7 @@
                 $password = '';
                 $db_name = 'balao_da_informatica';
                 $port = '3306';
-                                 $aviso_validacao1 = $aviso_validacao2 = $aviso_validacao3 = $aviso_validacao4 = $aviso_validacao5= $aviso_validacao6 = "";
+                                 
                                  $auxiliar =$_GET['id_produto'];
                                   $nome="";
                                   $preco="";
@@ -38,10 +38,8 @@
     <div class="form-group">
       <input type="hidden" name="id_produto" value="<?php echo $auxiliar;?>">
       <label>Nome</label>
-      <input type="text" autocomplete="off" name="nome" class="form-control" maxlength="50" value="<?php echo $row1['nome_produto'];?>">
-      <div class="problema-formulario">
-        <?php echo $aviso_validacao1?>
-      </div>
+      <input type="text" autocomplete="off" name="nome" required="required" class="form-control" maxlength="50" value="<?php echo $row1['nome_produto'];?>">
+      
     </div>
     <div class="form-row" type="categoria">
       <?php            
@@ -52,7 +50,7 @@
             ?>
       <div class="form-group col-sm-6">
         <label>Categoria</label>
-        <select class="form-control" name="categoria">
+        <select  required="required" class="form-control" name="categoria">
           <option>
             <?php echo $row_banco_categoria['nome_categoria'].'(' . $row_banco_categoria['id_categoria'] . ')';?>
           </option>
@@ -70,17 +68,12 @@
           <?php                        }           
                  } ?>
         </select>
-        <div class="problema-formulario">
-          <?php echo $aviso_validacao5?>
-        </div>
-
+       
       </div>
       <div class="form-group col-sm-6">
         <label>Preço</label>
-        <input type="number" autocomplete="off" name="preco" class="form-control" value="<?php echo $row1['preco'];?>">
-        <div class="problema-formulario">
-          <?php echo $aviso_validacao2?>
-        </div>
+        <input type="number" autocomplete="off" required="required" name="preco" class="form-control" value="<?php echo $row1['preco'];?>">
+        
       </div>
     </div>
 
@@ -88,18 +81,14 @@
 
     <div class="form-group">
       <label>Descrição</label>
-      <textarea class="form-control" autocomplete="off" name='descricao' rows="3"><?php echo $row1['descricao'];?></textarea>
-      <div class="problema-formulario">
-        <?php echo $aviso_validacao4?>
-      </div>
+      <textarea class="form-control" required="required" autocomplete="off" name='descricao' rows="3"><?php echo $row1['descricao'];?></textarea>
+     
     </div>
 
     <div class="form-group">
       <label>URL da imagem </label><br>
-      <input type="file" autocomplete="off" name="url_imagem">
-      <div class="problema-formulario">
-        <?php echo $aviso_validacao6?>
-      </div>
+      <input type="file" required="required" autocomplete="off" name="url_imagem">
+      
     </div>
     <div class="pp-adm">
       <button type="submit" class="btn btn-outline-dark ">Editar produto</button>
