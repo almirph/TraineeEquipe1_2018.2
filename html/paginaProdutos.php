@@ -31,8 +31,8 @@
       </div>
       <div class=texto>
       <h2>Informações do Produto</h2>
+      
       <p style='color:red; font-size:26px;'>R$<?php echo $row2['preco'];?></p>
-      <p><?php echo $row2['descricao'];?></p>  
       </div>
     </div>
       

@@ -45,9 +45,7 @@ if(isset($_SESSION['msg']))
       <div class="form-group col-sm-6">
         <label>Categoria</label>
         <select class="form-control" name="categoria" required="required">
-          <option>
-
-          </option>
+          <option hidden></option>
 
           <?php $sql = "SELECT * FROM categoria";
                       $result = $db_connect->query($sql);

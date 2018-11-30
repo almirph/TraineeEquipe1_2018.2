@@ -47,10 +47,9 @@
                $query = mysqli_query($db_connect,"SELECT * FROM produto WHERE nome_produto LIKE '%$pesquisar_p%' ORDER BY id_categoria DESC LIMIT $inicio, $quantidade ");
                $count = mysqli_num_rows($query);
                }
-               if($count == 0) {
-                echo"<script language='javascript' type='text/javascript'>alert('Produto não encontrado');window.location.href='pagina_de_listagem.php';</script>";
-                 
-                }?>
+               if($count == 0) :?>
+                <script  language='javascript' type='text/javascript'>alert('Produto não encontrado');window.location.href='pagina_de_listagem.php';</script> 
+            <?php endif;?>
     <nav class="navbar">
         <span style="font-size: 24px;"><a href="paginaprodutos-adm.php" class="fas fa-plus" alt="Cadastrar novo usuario"></a></span>
         <form class="form-inline my-2 my-lg-0" action="buscarLista.php?&pagina=1" enctype="multipart/form-data" method="GET">
@@ -90,6 +89,10 @@
                $count = mysqli_num_rows($query);
                }
                
+               if($count == 0) :
+               // <!-- <script  language='javascript' type='text/javascript'>alert('Produto não encontrado');window.location.href='pagina_de_listagem.php';</script>  -->
+                header("Location:index.php");
+             endif;
                     while($row = mysqli_fetch_assoc($query)) {  ?>
             <tr>
 
