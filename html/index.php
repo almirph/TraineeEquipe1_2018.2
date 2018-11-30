@@ -156,7 +156,7 @@
 			<hr class="my-4">
 			<div class="home-lab">
 			<p class="lead">Para ver mais novidades</p>
-			<a class="btn btn-dark btn-lg" href="Produtos2.html" role="button">Clique Aqui</a>	
+			<a class="btn btn-dark btn-lg" href="paginaNovidades.php" role="button">Clique Aqui</a>	
 			</div>
 		</div>
 	</div>

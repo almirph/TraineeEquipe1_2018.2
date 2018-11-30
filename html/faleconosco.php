@@ -169,7 +169,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 <div id="contactus" class="container faleconosco2">
 
-	<h1 pb-2 mt-4 mb-2 border-bottom"><span style="font-size: 42px; "><i class="far fa-comments"> </i></span>Fale conosco</h1>
+	<h1 pb-2 mt-4 mb-2 border-bottom><span style="font-size: 42px; "><i class="far fa-comments"> </i></span>Fale conosco</h1>
 	<hr>
 
 	<form action="faleconosco.php" method="post">
