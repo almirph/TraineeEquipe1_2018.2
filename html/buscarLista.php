@@ -47,10 +47,9 @@
                $query = mysqli_query($db_connect,"SELECT * FROM produto WHERE nome_produto LIKE '%$pesquisar_p%' ORDER BY id_categoria DESC LIMIT $inicio, $quantidade ");
                $count = mysqli_num_rows($query);
                }
-               if($count == 0) {
-                echo"<script language='javascript' type='text/javascript'>alert('Produto não encontrado');window.location.href='pagina_de_listagem.php';</script>";
-                 
-                }?>
+               if($count == 0) :?>
+                <script  language='javascript' type='text/javascript'>alert('Produto não encontrado');window.location.href='pagina_de_listagem.php';</script> 
+            <?php endif;?>
     <nav class="navbar">
         <span style="font-size: 24px;"><a href="paginaprodutos-adm.php" class="fas fa-plus" alt="Cadastrar novo usuario"></a></span>
         <form class="form-inline my-2 my-lg-0" action="buscarLista.php?&pagina=1" enctype="multipart/form-data" method="GET">
@@ -90,6 +89,10 @@
                $count = mysqli_num_rows($query);
                }
                
+               if($count == 0) :
+               // <!-- <script  language='javascript' type='text/javascript'>alert('Produto não encontrado');window.location.href='pagina_de_listagem.php';</script>  -->
+                header("Location:index.php");
+             endif;
                     while($row = mysqli_fetch_assoc($query)) {  ?>
             <tr>
 
@@ -177,26 +180,50 @@
             if($pagina != '1')
             {?>
             <li class="page-item">
-                <a class="page-link" href="buscarLista.php?pesquisar=<?php echo $pesquisar_p;?>&pagina=<?php echo $anterior;?>">anterior</a>
+                <a class="page-link paginacao" href="buscarLista.php?pesquisar=<?php echo $pesquisar_p;?>&pagina=<?php echo $anterior;?>">anterior</a>
             </li>
 
             <?php } ?>
             <?php
             if($totalPagina > 1 ){
-         for($i = 1; $i < $totalPagina + 1; $i++) { ?>
+                if($pagina == 1 && $totalPagina >3 )
+                {
+                    for($i = $pagina; $i < $pagina+3; $i++) { ?>
 
-            <li class="page-item"><a class="page-link" href='buscarLista.php?pesquisar=<?php echo $pesquisar_p;?>&pagina=<?php echo $i;?>'>
-                    <?php echo $i;?></a></li>
-            <?php } 
-            }
-      ?>
+                        <li class="page-item"><a class="page-link <?php echo ($pagina ==$i) ? 'cor-paginacao': 'paginacao' ;?>" href='buscarLista.php?pesquisar=<?php echo $pesquisar_p;?>&pagina=<?php echo $i;?>'>
+                                <?php echo $i;?></a></li>
+                     <?php }?> 
+                    <?php  }
+                
+                
+                  elseif($totalPagina>= 3)
+                  {
 
-            <?php 
+                    for($i = $pagina-1; $i < $pagina+1 + 1; $i++) { ?>
+
+                        <li class="page-item "><a class="page-link  <?php echo ($pagina ==$i) ? 'cor-paginacao': 'paginacao' ;?>"  href='buscarLista.php?pesquisar=<?php echo $pesquisar_p;?>&pagina=<?php echo $i;?>'>
+                                <?php echo $i;?></a></li>
+                     <?php }?> 
+                    <?php  }
+                    else
+                    {
+                        for($i = 1; $i < $totalPagina + 1; $i++) { ?>
+
+                            <li class="page-item "><a class="page-link  <?php echo ($pagina ==$i) ? 'cor-paginacao': 'paginacao' ;?>"  href='buscarLista.php?pesquisar=<?php echo $pesquisar_p;?>&pagina=<?php echo $i;?>'>
+                                    <?php echo $i;?></a></li>
+                         <?php  }
+                    }
+                    }
+                    
+                
+         
+
+           
    if($pagina != $totalPagina && $totalPagina > 1)
   {?>
 
             <li class="page-item">
-                <a class="page-link" href="buscarLista.php?pesquisar=<?php echo $pesquisar_p;?>&pagina=<?php echo $proximo;?>">próximo</a>
+                <a class="page-link paginacao" href="buscarLista.php?pesquisar=<?php echo $pesquisar_p;?>&pagina=<?php echo $proximo;?>">próximo</a>
             </li>
             <?php }?>
         </ul>

@@ -45,7 +45,7 @@
         </div>
         <hr>
 
-        <form action="categoria.php" method="post">
+        <form action="lista_categoria.php" method="post">
 
                 <div class="form-row" type="categoria">
 

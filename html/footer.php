@@ -102,15 +102,15 @@
                       <form action="valida-login.php" method="post">
                         <div class="form-group">
                         <label for="txUsuario">Usuario</label>
-                        <input type="text" name = "usuario" class="form-control" id="txUsuario"  placeholder="Digite seu nome de usuario">
+                        <input type="text" name = "usuario" required="required" class="form-control" id="txUsuario"  placeholder="Digite seu nome de usuario">
                         
                     </div>
                     <div class="form-group">
                         <label for="txSenha">Senha</label>
-                        <input type="password" name="senha" class="form-control" id="txSenha" placeholder="Digite sua senha">
+                        <input type="password" name="senha" class="form-control" required="required" id="txSenha" placeholder="Digite sua senha">
                     </div>
                     <hr>
-                    <button type="submit" class="btn btn-outline-dark" value="Entrar">Login</button>
+                    <button type="submit" class="btn btn-dark" value="Entrar">Login</button>
                     
                 </form>
                 </div>

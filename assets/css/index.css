@@ -168,6 +168,9 @@ html, body{
 	margin-left: 0px;
 	margin-bottom: -100px;
 }
+.home-lab{
+	text-align: center;
+}
 .trophy{
 	margin-top: 8px;
 	text-align: right;
@@ -178,19 +181,11 @@ html, body{
 	color: #1E1E24;
 	margin-left: 5px;
 	text-align: left;
-	
 }
 .prod-home {
 	text-align: center;
 	margin-left: 50px;
 	display: inline-flex;
-}
-.img-card-home:hover{
-	-webkit-box-shadow: 6px 4px 6px rgba(50, 50, 50, 0.77);
-	-moz-box-shadow:    6px 4px 6px rgba(50, 50, 50, 0.77);
-	box-shadow:         9px 7px 10px rgba(50, 50, 50, 0.77);
-	transition: all 220ms ease-out;
-	transform: scale(1.05);
 }
 @media (max-width: 617px){
 	.img-card-home{
@@ -202,18 +197,14 @@ html, body{
 	}
 }
 .img-card-home{
-	
+	transition: all 220ms ease-out;
 	text-align: left;
 }
 
 
 
-/************** FALE CONOSCO *************/
-
-								/************** FALE CONOSCO *************/
-
-
-/**********************************************************************************************************/
+								
+/********************************************************FALE CONOSCO*****************************************************/
 
 
 
@@ -240,10 +231,6 @@ html, body{
 
 }
 
-.areatexto{
-
-	background-color: #F1F8F6;
-}
 
 
 form{
@@ -513,9 +500,9 @@ footer{
 .img-quemsomos
 {
 	margin-top: 2.5%;
-	height: 40vh;
-	width: 60vh;
-	border-radius: 10%;
+	border-radius: 2%;
+	height: 75%;
+	width: 75%;
 	margin-bottom: 2.5%;
 	text-align: center;
 
@@ -588,23 +575,7 @@ text-align: justify;
 
 /**********************************************************************************************************/
 
-.paginacao {
-	text-align: right;
-	margin-right: 30px;
-	font-size:25px;
-	margin-bottom: 30px;
-	
-}
-.paginacao a{
-	color:black;
-}
-.letra:hover{
-	-webkit-box-shadow: 6px 4px 6px rgba(50, 50, 50, 0.77);
-	-moz-box-shadow:    6px 4px 6px rgba(50, 50, 50, 0.77);
-	box-shadow:         9px 7px 0px rgba(50, 50, 50, 0.77);
-	transition: all 220ms ease-out;
-	transform: scale(1.05);
-}
+
 
 .p-produtos-top h1{
 	text-align: center;
@@ -684,15 +655,14 @@ a:hover{
 .img-card{
 	margin-top:10%;
 	margin-bottom: 10%;
-
+	transition: all 220ms ease-out;
 	border: 1px solid #1E1E24;
-
+	min-height: 400px;
 }
 .img-card:hover{
 	-webkit-box-shadow: 6px 4px 6px rgba(50, 50, 50, 0.77);
 	-moz-box-shadow:    6px 4px 6px rgba(50, 50, 50, 0.77);
-	box-shadow:         9px 7px 10px rgba(50, 50, 50, 0.77);
-	transition: all 220ms ease-out;
+	box-shadow:         5px 5px 14px rgba(50, 50, 50, 0.55);
 	transform: scale(1.05);
 
 }
@@ -818,8 +788,7 @@ text-align: center;
 .img-pagina{
 
 	text-align: center;
-	width: 80vh;
-	height: 75vh;
+	width: 40%;
 	margin-bottom: 2.5%;
 	margin-top: 2.5%;
 }

@@ -11,8 +11,18 @@
                 $resulto = $db_connect->query($sql1);
                 $row1 = $resulto->fetch_assoc();
                 $categoria = $row1['id_categoria'];
-          
-                $sql = "INSERT INTO produto (`id_produto`, `id_categoria`, `nome_produto`, `preco`, `descricao`, `url_imagem`) 
+                $procura = strpos($url_imagem,".jpg");
+                $procura1 = strpos($url_imagem,".png");
+
+                if($procura ==false && $procura1 == false)
+                {
+                  $_SESSION['msg'] = "formato";
+                  header("Location:paginaprodutos-adm.php");
+
+                }
+                else
+                {
+                  $sql = "INSERT INTO produto (`id_produto`, `id_categoria`, `nome_produto`, `preco`, `descricao`, `url_imagem`) 
                 VALUES ('NULL','$categoria','$nome','$preco' ,'$descricao','$url_imagem') ";
                 
                 
@@ -26,6 +36,8 @@
                        header("Location: paginaprodutos-adm.php");
     
                   }
-                
+                }
 
+                
+                
 ?>

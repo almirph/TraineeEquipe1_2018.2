@@ -169,7 +169,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 <div id="contactus" class="container faleconosco2">
 
-	<h1 pb-2 mt-4 mb-2 border-bottom"><span style="font-size: 42px; "><i class="far fa-comments"> </i></span>Fale conosco</h1>
+	<h1 pb-2 mt-4 mb-2 border-bottom><span style="font-size: 42px; "><i class="far fa-comments"> </i></span>Fale conosco</h1>
 	<hr>
 
 	<form action="faleconosco.php" method="post">
@@ -179,7 +179,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 			<div class="form-group col-sm-6">
 
 				<label for="nome" style="text-align: left;">Nome:</label>
-				<input type="text" class="form-control areatexto" name="nome" id="name" placeholder="Digite seu nome" value="<?php if(isset($nome)){ echo $nome;} ?>">
+				<input type="text" class="form-control "  required="required" name="nome" id="name" placeholder="Digite seu nome" value="<?php if(isset($nome)){ echo $nome;} ?>">
 				<?php if(isset($erro_nome)){ ?>
 
 					<div class="alert alert-danger alerta" role="alert"><?= $erro_nome; ?></div>
@@ -190,7 +190,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 			<div class="form-group col-sm-6">
 
 				<label for="sobrenome">Sobrenome:</label>
-				<input type="text" class="form-control areatexto" id="name" name="sobrenome" placeholder="Digite seu sobrenome" value="<?php if(isset($sobrenome)){ echo $sobrenome;} ?>">
+				<input type="text" class="form-control required="required"" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome" value="<?php if(isset($sobrenome)){ echo $sobrenome;} ?>">
 
 				<?php if(isset($erro_sobrenome)){ ?>
 
@@ -207,7 +207,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 			<div class="form-group col-sm-12">
 
 				<label for="email">E-mail:</label>
-				<input type="email" class="form-control areatexto" id="email" name="email" placeholder="Digite seu e-mail" value="<?php if(isset($email)){ echo $email;} ?>">
+				<input type="email" class="form-control " required="required" id="email" name="email" placeholder="Digite seu e-mail" value="<?php if(isset($email)){ echo $email;} ?>">
 
 				<?php if(isset($erro_email)){ ?>
 
@@ -223,7 +223,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 			<div class="form-group col-sm-12">
 
 				<label for="email">Mensagem:</label>
-				<textarea class="form-control areatexto" rows="8" name="mensagem" placeholder="Digite sua mensagem" value="<?php if(isset($texto)){ echo $texto;} ?>"></textarea>
+				<textarea class="form-control " rows="8" required="required" name="mensagem" placeholder="Digite sua mensagem" value="<?php if(isset($texto)){ echo $texto;} ?>"></textarea>
 
 				<?php if(isset($erro_texto)){ ?>
 
@@ -242,7 +242,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 		</div>
 
 		<div class="modal-footer">
-			<button type ="submit" type="button" class="btn btn-outline-dark">Enviar</button>
+			<button type ="submit" type="button" class="btn btn-dark">Enviar</button>
 		</div>
 
 		
