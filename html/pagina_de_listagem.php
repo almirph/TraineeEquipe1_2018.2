@@ -3,7 +3,7 @@ include "header-adm.php" ?>
 <?php
 
 include 'pagina_conexao.php';
-echo $_SESSION['deleta'];
+
 if (isset($_POST['deleta'])) {
 	if ($_SESSION['deleta'] == '1') { ?>
 <div class="alert alert-success" role="alert">

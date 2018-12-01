@@ -22,11 +22,11 @@
 	$delete = "DELETE FROM `produto` WHERE `produto`.`id_produto` = $auxiliar";
     if( $db_connect->query($delete)== true){
       $_SESSION['deleta'] = "deletado";
-      print_r($_SESSION);
+      
       header("Location: pagina_de_listagem.php");             
     }else{
         $_SESSION['deleta'] = "<p>Não foi possível editar o produto</p>";
-      //header("Location: pagina_de_listagem.php");
+      header("Location: pagina_de_listagem.php");
 
     }    
 	
