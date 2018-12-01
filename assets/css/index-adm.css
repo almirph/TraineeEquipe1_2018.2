@@ -194,7 +194,7 @@ footer{
 }
 .loc-tamanho:hover{
 	cursor: pointer;
- 	 transform: scale(0.9);
+ 	 transform: scale(1.1);
 }
 
 .fa-map-marker-alt{
@@ -296,13 +296,13 @@ footer{
 
 .fa-trash-alt:hover{
 
-	transform: scale(0.9);
+	transform: scale(1.1);
 	cursor: pointer; 
 }
 
 .fa-pen:hover{
 
-	transform: scale(0.9);
+	transform: scale(1.1);
 	cursor: pointer; 
 }
 
@@ -323,7 +323,7 @@ footer{
 
 .fa-plus:hover{
 
-	transform: scale(0.9);
+	transform: scale(1.1);
 	color: black;
 }
 
@@ -355,7 +355,7 @@ footer{
 .fa-arrow-left:hover{
 
 	color: black;
-	transform: scale(0.9);
+	transform: scale(1.1);
 }
 .table-bordered.cat{
 

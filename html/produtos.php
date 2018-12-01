@@ -51,7 +51,7 @@
                                     <?php echo $row2['nome_produto'];?>
                                 </h5>
                                 <h5 style='color:red; font-size:26px;'>R$
-                                    <?php echo $row2['preco']; ?>
+                                <?php echo number_format($row2['preco'],'2',',','.');?>
                                 <h5>
                             </div>
                         </div>
@@ -70,29 +70,55 @@
     </div>
     <nav>
         <ul class="pagination justify-content-end">
-            <?php if ($pagina != '1'): ?>
-                <li class="page-item">
-                    <a class="page-link" href="produtos.php?id_categoria=<?php echo $auxiliar;?>&pagina=<?php echo $anterior;?>">anterior</a>
-                </li>
-            <?php endif; ?>
+            <?php 
+            if($pagina != '1')
+            {?>
+            <li class="page-item">
+                <a class="page-link paginacao" href="produtos.php?id_categoria=<?php echo $auxiliar;?>&pagina=<?php echo $anterior;?>">anterior</a>
+            </li>
 
-            <?php if ($totalPagina > 1 ): ?> 
-                <?php for($i = 1; $i < $totalPagina + 1; $i++): ?>
-                    <li class="page-item">
-                        <a class="page-link" href='produtos.php?id_categoria=<?php echo $auxiliar;?>&pagina=<?php echo $i;?>'>
-                            <?php echo $i;?>
-                        </a>
-                    </li>
-                <?php endfor; ?>          
-            <?php endif; ?>
+            <?php } ?>
+            <?php
+            if($totalPagina > 1 ){
+                if($pagina == 1 && $totalPagina >3 )
+                {
+                    for($i = $pagina; $i < $pagina+3; $i++) { ?>
 
-            <?php if ($pagina != $totalPagina && $totalPagina > 1): ?>
-                <li class="page-item">
-                    <a class="page-link" href="produtos.php?id_categoria=<?php echo $auxiliar;?>&pagina=<?php echo $proximo;?>">próximo</a>
-                </li>
-            <?php endif; ?>
-        </ul>
-    </nav>
+                        <li class="page-item"><a class="page-link <?php echo ($pagina ==$i) ? 'cor-paginacao': 'paginacao' ;?>" href='produtos.php?id_categoria=<?php echo $auxiliar;?>&pagina=<?php echo $i;?>'>
+                                <?php echo $i;?></a></li>
+                     <?php }?> 
+                    <?php  }
+                
+                
+                  elseif($totalPagina>= 3)
+                  {
+
+                    for($i = $pagina-1; $i < $pagina+1 + 1; $i++) { ?>
+
+                        <li class="page-item "><a class="page-link  <?php echo ($pagina ==$i) ? 'cor-paginacao': 'paginacao' ;?>"  href='produtos.php?id_categoria=<?php echo $auxiliar;?>&pagina=<?php echo $i;?>'>
+                                <?php echo $i;?></a></li>
+                     <?php }?> 
+                    <?php  }
+                    else
+                    {
+                        for($i = 1; $i < $totalPagina + 1; $i++) { ?>
+
+                            <li class="page-item "><a class="page-link  <?php echo ($pagina ==$i) ? 'cor-paginacao': 'paginacao' ;?>"  href='produtos.php?id_categoria=<?php echo $auxiliar;?>&pagina=<?php echo $i;?>'>
+                                    <?php echo $i;?></a></li>
+                         <?php  }
+                    }
+                    }   
+                    if($pagina != $totalPagina && $totalPagina > 1)
+                   {?>
+                 
+                             <li class="page-item">
+                                 <a class="page-link paginacao" href="produtos.php?id_categoria=<?php echo $auxiliar;?>&pagina=<?php echo $proximo;?>">próximo</a>
+                             </li>
+                             <?php }?>
+                         </ul>
+                     </nav>
+    
 </div>
+
 
 <?php include 'footer.php'?>

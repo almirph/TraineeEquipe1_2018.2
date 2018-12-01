@@ -1,4 +1,3 @@
-
 <?php
                             
                 $server = 'localhost';
@@ -37,7 +36,7 @@
                    
                 
                     $_SESSION['msg'] = "<p>Não foi possível editar o produto</p>";
-                   header("Location: EditarProdutos.php?id_produto=$id_produto");
+                   //header("Location: EditarProdutos.php?id_produto=$id_produto");
   
                 }
 ?>

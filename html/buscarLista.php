@@ -100,7 +100,7 @@
                     <?php echo $row['nome_produto'];?>
                 </td>
                 <td>
-                    <?php echo $row['preco'];?>
+                R$<?php echo number_format($row['preco'],'2',',','.');?>
                 </td>
 
                 <td>
