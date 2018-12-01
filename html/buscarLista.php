@@ -105,12 +105,12 @@
 
                 <td>
                     <div style="float:left">
-                        <div data-toggle="modal" data-target="#myModalRemarks<?php echo $row['nome_produto'];?>">
+                        <div data-toggle="modal" data-target="#myModalRemarks<?php echo $row['id_produto'];?>">
                             <span style="font-size: 24px;"><button class="fas fa-trash-alt" type="submit" name="excluir"
                                     value="Excluir"></button></span>
                         </div>
                         <!--    <a href="#myModalRemarks<?php echo $row['nome_produto'];?>" class="remarksBtn" data-toggle="modal"><i class="fa fa-info-circle fa-lg">Go Forward</i></a> -->
-                        <div class="modal fade" id="myModalRemarks<?php echo $row['nome_produto'];?>" tabindex="-1"
+                        <div class="modal fade" id="myModalRemarks<?php echo $row['id_produto'];?>" tabindex="-1"
                             role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
 
 
