@@ -1,7 +1,7 @@
 <?php include "header-adm.php";?>
 <div class="container">
   <?php
-                               
+                    print_r($_SESSION);           
                 $server = 'localhost';
                 $user = 'root';
                 $password = '';
@@ -89,7 +89,8 @@
 
     </div>
     <div class="pp-adm">
-      <button type="submit" class="btn btn-dark ">Editar produto</button>
+
+    <button type="submit" class="btn btn-dark ">Editar produto</button>
 
     </div>
 

@@ -1,7 +1,5 @@
-<?php
-include 'Header.php';
- ?>
-
+<?php include 'Header.php';?>
+<?php include 'pagina_conexao.php';?>
 <nav class="navbar navbar-expand-lg navbar-light categoria">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
     aria-expanded="false" aria-label="Toggle navigation">
@@ -24,8 +22,8 @@ $row2 = $resulto1->fetch_assoc();
 ?>
 <div class="container titulo-pag-produtos">
   <h1>
-    <?php
-echo $row2['nome_produto'];?>
+<?php
+  echo $row2['nome_produto'];?>
   </h1>
   <div class="img-produto-pagina">
     <img src="../assets/imagem_banco/<?php
@@ -36,9 +34,9 @@ echo $row2['url_imagem']; ?>" class="img-fluid img-pagina" alt="Imagem responsiv
 
     <p style='color:red; font-size:26px;'>R$
       <?php
-echo $row2['preco']; ?>
+    echo number_format($row2['preco'],'2',',','.');?>
     </p>
-    <p>
+    <p style="font-weight:400;">
       <?php
 echo $row2['descricao']; ?>
     </p>

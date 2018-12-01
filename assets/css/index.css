@@ -255,9 +255,6 @@ form{
 
 
 
-/****************** FOOTER *********************/
-
-
 						/****************** FOOTER *********************/
 
 
@@ -658,6 +655,7 @@ a:hover{
 	transition: all 220ms ease-out;
 	border: 1px solid #1E1E24;
 	min-height: 400px;
+	padding:5px;
 }
 .img-card:hover{
 	-webkit-box-shadow: 6px 4px 6px rgba(50, 50, 50, 0.77);
@@ -667,6 +665,7 @@ a:hover{
 
 }
 .card-produto{
+	
 	text-align: auto;
 	margin-left: 15%;
 	margin-bottom:10%;	
@@ -703,22 +702,25 @@ a:hover{
 		margin-right: 5%;
 	}
 }
-
+@media(max-width:644px)
+{
+	.categoria{
+		position: unset;
+	}
+	.pag-produtos{
+		margin-top:-25px;
+	}
+}
+@media(max-width:992px)
+{
+	.categoria{
+		margin-top: 0;
+	}
+}
 @media (max-width: 1000px)
 
 {
 
-	.card-produto{
-
-		text-align: center;
-	} 
-	.categoria{
-
-		display: none;
-	}
-	.pag-produtos{
-		text-align: center;
-	}
 	.dropdown-menu{
 		background-color:#343a40;
 
@@ -735,41 +737,14 @@ a:hover{
 	.dropdown-item:focus, .dropdown-item:hover{
 		background-color: #343a40;
 		color:white;
-
-
 	}
-
-
-.card-produto{
-
-text-align: center;
-} 
-.categoria{
-	
-	display: none;
 }
-.pag-produtos{
-	text-align: center;
-}
-.dropdown-menu{
-	background-color:#343a40;
-	
-}
-.dropdown-menu a{
-	color:rgba(255,255,255,.5);
-}
-.dropdown-divider{
-	border-color:#1e1e245c; 
-}
-.dropdown-item.active, .dropdown-item:active {
-	background-color: #1E1E24;
-}
-.dropdown-item:focus, .dropdown-item:hover{
-	background-color: #343a40;
-	color:white;
-	
-
-}
+@media(max-width:1000px) and (min-width:992px)
+{
+	.card-produto
+	{
+		margin-left: 18%;
+	}
 }
 .pag-produtos h5{
 	font-size:12px;
@@ -826,7 +801,7 @@ text-align: center;
 }
 #id{
 	transition: all 220ms ease-out;
-
+ 
 }
 .form-group input{
 

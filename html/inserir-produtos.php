@@ -13,7 +13,6 @@
                 $categoria = $row1['id_categoria'];
                 $procura = strpos($url_imagem,".jpg");
                 $procura1 = strpos($url_imagem,".png");
-
                 if($procura ==false && $procura1 == false)
                 {
                   $_SESSION['msg'] = "formato";

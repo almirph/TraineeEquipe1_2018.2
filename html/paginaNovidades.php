@@ -32,7 +32,7 @@
       <img class="card-img-top" src="../assets/imagem_banco/<?php echo $row2['url_imagem']; ?>" alt="Card image cap">
       <div class="card-body">
       <h5 class="card-title"style='color:black; font-size:16px;'><?php echo $row2['nome_produto'];?></h5>
-      <h5 style='color:red; font-size:26px;'>R$ <?php echo $row2['preco'];?><h5>
+      <h5 style='color:red; font-size:26px;'>R$<?php echo number_format($row2['preco'],'2',',','.');?><h5>
       
       </div>
       </div>
