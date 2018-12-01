@@ -3,7 +3,7 @@ include "header-adm.php" ?>
 <?php
 
 include 'pagina_conexao.php';
-
+echo $_SESSION['deleta'];
 if (isset($_POST['deleta'])) {
 	if ($_SESSION['deleta'] == '1') { ?>
 <div class="alert alert-success" role="alert">
@@ -63,13 +63,7 @@ if ($pagina == '') {
 
 $inicio = ($quantidade * $pagina) - $quantidade;
 
-if ($_POST != NULL) {
-	$auxiliar = $_POST['deleta'];
-	$delete = "DELETE FROM `produto` WHERE `produto`.`id_produto` = $auxiliar";
-	$result = $db_connect->query($delete);
-	$_POST['deleta'] = NULL;
-	$_SESSION['deleta'] = '1';
-}
+
 
 $sql = "SELECT * FROM produto ORDER BY id_categoria DESC LIMIT $inicio, $quantidade ";
 $result = $db_connect->query($sql);
@@ -122,12 +116,12 @@ while ($row = $result->fetch_assoc()) { ?>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
 
 
-                    <a href="pagina_de_listagem.php">
+                    <a href="deletaProduto.php?id_produto=<?php echo $row['id_produto'];?>">
 
                       <form method="POST">
                         <input value="<?php
 	echo $row['id_produto']; ?>" name="deleta" type="hidden">
-                        <button type="submit" class="btn btn-dark ">Sim</button>
+                        <button type="button" class="btn btn-dark ">Sim</button>
                     </a>
                     </form>
 
