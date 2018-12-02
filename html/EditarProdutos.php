@@ -1,7 +1,6 @@
 <?php include "header-adm.php";?>
 <div class="container">
-  <?php
-                    print_r($_SESSION);           
+  <?php           
                 $server = 'localhost';
                 $user = 'root';
                 $password = '';
@@ -50,7 +49,7 @@
         <label>Categoria</label>
         <select required="required" class="form-control" name="categoria">
           <option>
-            <?php echo $row_banco_categoria['nome_categoria'].'(' . $row_banco_categoria['id_categoria'] . ')';?>
+            <?php echo $row_banco_categoria['nome_categoria'];?>
           </option>
 
 
@@ -58,9 +57,9 @@
                   $result = $db_connect->query($sql);
                   while ($row2 = $result->fetch_assoc())
                 {?>
-          <?php if($row2['id_categoria'] != $row_banco_categoria['id_categoria']){?>
+          <?php if($row2['id_categoria']){?>
           <option>
-            <?php echo $row2['nome_categoria'] . '(' . $row2['id_categoria'] . ')';?>
+            <?php echo $row2['nome_categoria'] ;?>
           </option>
 
           <?php                        }           

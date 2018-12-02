@@ -1,10 +1,11 @@
+
 <?php
 include "header-adm.php" ?>
 <?php
 
 include 'pagina_conexao.php';
 
-if (isset($_POST['deleta'])) {
+if (isset($_SESSION['deleta'])) {
 	if ($_SESSION['deleta'] == '1') { ?>
 <div class="alert alert-success" role="alert">
   Produto deletado com sucesso.
@@ -12,18 +13,17 @@ if (isset($_POST['deleta'])) {
 <?php
 	}
 
-	$_SESSION['deleta'] = '0';
+	unset($_SESSION['deleta']);
 }
-
+print_r($_SESSION);
 if (isset($_SESSION['msg'])) {
-	if ($_SESSION['msg'] == '2') { ?>
+	if ($_SESSION['msg'] == '1') { ?>
 <div class="alert alert-success" role="alert">
   Produto editado com sucesso.
 </div>
 <?php
 	}
-
-	$_SESSION['msg'] = '54616153515';
+  unset($_SESSION['msg']);
 } ?>
 <div class="container lista-de-usuarios">
 

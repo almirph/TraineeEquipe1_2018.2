@@ -20,7 +20,7 @@ if(isset($_SESSION['msg']))
                     O formato de arquivo não foi aceito.
                   </div>
                   <?php }
-                    $_SESSION['msg']=NULL;
+                    unset($_SESSION['msg']);
                 
             }?>
 
