@@ -24,8 +24,8 @@
 
                 </div>
 
-                <div class="btn-categoria">
-                        <button type="submit" class="btn btn-outline-dark ">Inserir Categoria</button>
+                <div class="pp-adm">
+                        <button type="submit" class="btn btn-dark ">Inserir Categoria</button>
                 </div>
 
         </form>

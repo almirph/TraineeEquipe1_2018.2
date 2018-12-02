@@ -4,21 +4,37 @@ if(isset($_SESSION['msg']))
                 {
                   if($_SESSION['msg']=='ok')
                   {?>
-                    <div class="alert alert-success" role="alert">
+                    <div class="alert alert-success alert-dismissible" role="alert">
                       Produto cadastrado com sucesso.
+
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                     </button>
+                     
                     </div>
                   <?php }
                   if($_SESSION['msg']=='erro')
                   {?>
-                  <div class="alert alert-success" role="alert">
+                  <div class="alert alert-success alert-dismissible" role="alert">
                     Produto não cadastrado.
+
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                     </button>
+
                   </div>
                   <?php }
+                  
                   if($_SESSION['msg']=='formato')
                   {?>
-                  <div class="alert alert-danger" role="alert">
-                    O formato de arquivo não foi aceito.
-                  </div>
+                    <div class="alert alert-danger alert-dismissible" role="alert">
+                      O formato de arquivo não foi aceito.
+
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+
+                    </div>
                   <?php }
                     $_SESSION['msg']=NULL;
                 

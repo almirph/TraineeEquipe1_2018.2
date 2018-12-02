@@ -1,8 +1,5 @@
-<?php
-include "header-adm.php" ?>
-<?php
-
-include 'pagina_conexao.php';
+<?php include "header-adm.php" ?>
+<?php include 'pagina_conexao.php';
 echo $_SESSION['deleta'];
 if (isset($_POST['deleta'])) {
 	if ($_SESSION['deleta'] == '1') { ?>
@@ -19,6 +16,11 @@ if (isset($_SESSION['msg'])) {
 	if ($_SESSION['msg'] == '2') { ?>
 <div class="alert alert-success" role="alert">
   Produto editado com sucesso.
+
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+
 </div>
 <?php
 	}

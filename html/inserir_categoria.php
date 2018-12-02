@@ -9,6 +9,7 @@
 
         if( $db_connect->query($sql)== true ){
         } 
+            $_SESSION['msg'] = "cadastrado";
             header("Location:lista_categoria.php");
     }
 
