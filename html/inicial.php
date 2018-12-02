@@ -9,9 +9,9 @@ include 'pagina_conexao.php';
 if(isset($_SESSION['msg_diferente'])){ ?>
 
 	<div class="alert alert-danger alert-dismissible" role="alert">
-	   		<?php echo $_SESSION['msg_diferente']; unset($_SESSION['msg_diferente']);?>
+		<?php echo $_SESSION['msg_diferente']; unset($_SESSION['msg_diferente']);?>
 
-	   	<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 			<span aria-hidden="true">&times;</span>
 		</button>
 
@@ -22,9 +22,9 @@ if(isset($_SESSION['msg_diferente'])){ ?>
 if(isset($_SESSION['msg_envio'])){ ?>
 
 	<div class="alert alert-success alert-dismissible" role="alert">
-		   <?php echo $_SESSION['msg_envio']; unset($_SESSION['msg_envio']);?>
-		   
-	   	<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		<?php echo $_SESSION['msg_envio']; unset($_SESSION['msg_envio']);?>
+
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 			<span aria-hidden="true">&times;</span>
 		</button>
 
@@ -47,12 +47,12 @@ if(isset($_POST['acao'])){
 		?>
 
 		<div class="alert alert-success alert-dismissible" role="alert">
-			   		<?php echo $_SESSION['msg_delete']; unset($_SESSION['msg_delete']);?>
-			   
-			   	<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-				</button>
-				
+			<?php echo $_SESSION['msg_delete']; unset($_SESSION['msg_delete']);?>
+
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+
 		</div>
 		
 
@@ -108,13 +108,57 @@ function selectIdPessoa($id){
 						<td>
 
 
-							<form name="excluir" action="inicial.php" method="POST">
+							
+							
 
-								<input type="hidden" name="id" value="<?php echo $row['id_usuario']; ?>">
-								<input type="hidden" name="acao" value="excluir">
-								<span style="font-size: 24px"><button class="fas fa-trash-alt" type="submit" name="excluir" value="Excluir"></button></span>
+							<div style="float: left">
+								<div data-toggle="modal" data-target="#myModalRemarks<?php echo $row['id_usuario'];?>">
+									<span style="font-size: 24px;"><button class="fas fa-trash-alt" type="submit" name="excluir"
+										value="Excluir"></button></span>
+									</div>
+									<!--    <a href="#myModalRemarks<?php echo $row['id_categoria'];?>" class="remarksBtn" data-toggle="modal"><i class="fa fa-info-circle fa-lg">Go Forward</i></a> -->
+									<div class="modal fade" id="myModalRemarks<?php echo $row['id_usuario'];?>" tabindex="-1"
+										role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
 
-							</form>
+
+										<div class="modal-dialog">
+											<!-- Modal content -->
+											<div class="modal-content">
+
+												<div class="modal-header">
+													<h4 class="modal-title">Remover usuario</h4>
+													<button type="button" class="close" data-dismiss="modal">&times;</button>
+												</div>
+
+												<div class="modal-body">
+													Deseja mesmo remover o usuario
+													<b><?php echo $row['login'];?></b>?
+												</div>
+
+												<div class="modal-footer">
+													<button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
+													<form method="POST">
+														<input type="hidden" name="id" value="<?php echo $row['id_usuario']; ?>">
+														<input type="hidden" name="acao" value="excluir">
+														<button type="submit" class="btn btn-dark " name="excluir">Sim</button>
+													</form>
+
+												</div>
+
+											</div>
+
+										</div>
+
+									</div>
+
+									
+
+								</form>
+							</div>
+
+
+
+							
 
 							<form name="alterar" action="editar_usuario.php?id_usuario=<?php echo $row['id_usuario'] ?>" method="POST">
 
