@@ -1,6 +1,6 @@
 <?php include "header-adm.php";?>
-<?php 
-print_r($_SESSION);?>
+
+
 <?php if( !isset ($_SESSION ['0'])): ?>
 <?php if(isset($_SESSION['alerta'])):?>
 <?php if ($_SESSION['alerta']==1): ?>
@@ -15,27 +15,10 @@ print_r($_SESSION);?>
 
 </div>
 
-<?php   unset($_SESSION['msg']);
-        unset($_SESSION['alerta']);
-        print_r($_SESSION);
-        
+<?php   
+    unset($_SESSION['alerta']);
                 endif;?>
 <?php endif;?>
-<?php if(isset($_SESSION['msg'])):?>
-<?php if($_SESSION['msg']=='cadastrado'): ?>
-
-<div class="alert alert-success alert-dismissible" role="alert">
-
-    Categoria cadastrada com sucesso.
-
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-    </button>
-
-</div>
-
-<?php endif; ?>
-<?php endif; ?>
 <?php   if($_POST != NULL){
             $auxiliar = $_POST['deleta'];  
             $sqlTotal   = "SELECT * FROM produto WHERE id_categoria LIKE '$auxiliar'";
@@ -86,7 +69,8 @@ print_r($_SESSION);?>
 
 <?php endif; 
                   
-                    $_SESSION['msg']=NULL;?>
+                    unset($_SESSION['msg']);
+                    ?>
 
 <?php endif;  ?>
 
@@ -104,7 +88,7 @@ print_r($_SESSION);?>
     </div>
 
 
-    <span style="font-size: 24px;"><a href="categoria.php?p=categoria" class="fas fa-plus" alt="Cadastrar novo usuario"></a>
+    <span style="font-size: 24px;"><a href="categoria.php" class="fas fa-plus" alt="Cadastrar novo usuario"></a>
 
     </span>
 
@@ -177,8 +161,7 @@ print_r($_SESSION);?>
                     </div>
 
 
-                    <form name="editar" action="editar_categoria.php?id_categoria=<?php echo $row['id_categoria'] ?> method="
-                        POST">
+                    <form name="editar" action="editar_categoria.php?id_categoria=<?php echo $row['id_categoria']; ?>" method='POST'>
 
                         <input type="hidden" name="id" value="<?php echo $row['id_categoria']; ?>">
                         <span style="font-size: 24px;"><button class="fas fa-pen" type="submit" name="editar" value="Editar"></button></span>
