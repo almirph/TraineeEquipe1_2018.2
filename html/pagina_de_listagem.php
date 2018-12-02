@@ -9,17 +9,26 @@ if (isset($_SESSION['deleta'])) {
 	if ($_SESSION['deleta'] == '1') { ?>
 <div class="alert alert-success" role="alert">
   Produto deletado com sucesso.
+  
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+
 </div>
 <?php
 	}
 
 	unset($_SESSION['deleta']);
 }
-print_r($_SESSION);
 if (isset($_SESSION['msg'])) {
 	if ($_SESSION['msg'] == '1') { ?>
 <div class="alert alert-success" role="alert">
   Produto editado com sucesso.
+
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+
 </div>
 <?php
 	}

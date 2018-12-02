@@ -1,4 +1,4 @@
-<?php session_start();?>
+
 <?php include "header-adm.php"?>
 <?php include 'pagina_conexao.php';?>
 <?php 
@@ -19,6 +19,11 @@
             {?>
 <div class="alert alert-success" role="alert">
     Produto deletado com sucesso.
+
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+
 </div>
 <?php }
                     }
@@ -29,6 +34,11 @@
             {?>
 <div class="alert alert-success" role="alert">
     Produto editado com sucesso.
+
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    
 </div>
 <?php }
           
@@ -105,12 +115,12 @@
 
                 <td>
                     <div style="float:left">
-                        <div data-toggle="modal" data-target="#myModalRemarks<?php echo $row['nome_produto'];?>">
+                        <div data-toggle="modal" data-target="#myModalRemarks<?php echo $row['id_produto'];?>">
                             <span style="font-size: 24px;"><button class="fas fa-trash-alt" type="submit" name="excluir"
                                     value="Excluir"></button></span>
                         </div>
                         <!--    <a href="#myModalRemarks<?php echo $row['nome_produto'];?>" class="remarksBtn" data-toggle="modal"><i class="fa fa-info-circle fa-lg">Go Forward</i></a> -->
-                        <div class="modal fade" id="myModalRemarks<?php echo $row['nome_produto'];?>" tabindex="-1"
+                        <div class="modal fade" id="myModalRemarks<?php echo $row['id_produto'];?>" tabindex="-1"
                             role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
 
 

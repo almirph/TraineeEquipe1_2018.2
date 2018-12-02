@@ -1,22 +1,15 @@
 <?php include "header-adm.php";?>
+<?php include "pagina_conexao.php";?>
 <div class="container">
-  <?php           
-                $server = 'localhost';
-                $user = 'root';
-                $password = '';
-                $db_name = 'balao_da_informatica';
-                $port = '3306';                                 
+  <?php                                      
                 $auxiliar =$_GET['id_produto'];
-                $nome="";
-                $preco="";
-                $id_produto="";
-                $descricao = "";
-                $categoria = "";
-                $categoria1= "";
-                $url_img = "";
+                $nome;
+                $preco;
+                $id_produto;
+                $descricao;
+                $categoria;
+                $url_img;
                 $result_produto;                    
-                $db_connect = new mysqli($server,$user,$password,$db_name,$port);
-                mysqli_set_charset($db_connect,"utf-8");
                     
 ?>
   <?php 

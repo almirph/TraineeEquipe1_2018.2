@@ -1,6 +1,6 @@
 <?php include 'Header-adm.php';
 include 'pagina_conexao.php';
-session_start();
+
 
 
 
@@ -118,7 +118,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 			<?php } ?>
 		</div>
 		<hr>
-		<button name="confirmar "type="submit" class="btn btn-outline-dark">Salvar</button>
+		
+		<div class="pp-adm">
+			<button name="confirmar "type="submit" class="btn btn-dark">Salvar</button>
+		</div>
 
 	</form>
 
