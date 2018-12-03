@@ -1,6 +1,21 @@
-<?php include "header-adm.php" ?>
-<?php include 'pagina_conexao.php';
 
+<?php
+include "header-adm.php" ?>
+<?php
+
+include 'pagina_conexao.php';
+
+if (isset($_SESSION['deleta'])) {
+	if ($_SESSION['deleta'] == '1') { ?>
+    <div class="alert alert-success" role="alert">
+      Produto deletado com sucesso.
+      
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button><?php include "header-adm.php" ?>
+<?php include 'pagina_conexao.php';
+  }
+}
 if (isset($_SESSION['deleta'])) {
 	if ($_SESSION['deleta'] == '1') { ?>
 <div class="alert alert-success" role="alert">
@@ -21,9 +36,9 @@ if (isset($_SESSION['msg'])) {
         <span aria-hidden="true">&times;</span>
     </button>
 
-</div>
-<?php
-	}
+    </div>
+    <?php
+  }
 
 	$_SESSION['msg'] = '54616153515';
 } ?>
@@ -40,7 +55,7 @@ if (isset($_SESSION['msg'])) {
     </form>
   </nav>
   
-  <table class="table table-bordered "> 
+  <table class="table table-bordered table-responsive-sm "> 
     <thead>
       <tr>
 
