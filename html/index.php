@@ -117,7 +117,7 @@
 		<div class="container jumbotron-home">
 
 			<div class="container home-produtos">
-				<div class="row card-produto-home">
+				<div class="row justify-content-center card-produto-home">
 				<?php           
       $quantidade = '4';
       $sql = "SELECT * FROM produto ORDER BY id_produto DESC LIMIT $quantidade";

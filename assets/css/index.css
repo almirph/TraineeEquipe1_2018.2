@@ -664,13 +664,6 @@ a:hover{
 	transform: scale(1.05);
 
 }
-.card-produto{
-	
-	text-align: auto;
-	margin-left: 15%;
-	margin-bottom:10%;	
-	
-}
 
 
 
@@ -713,13 +706,6 @@ a:hover{
 	.dropdown-item:focus, .dropdown-item:hover{
 		background-color: #343a40;
 		color:white;
-	}
-}
-@media(max-width:1000px) and (min-width:992px)
-{
-	.card-produto
-	{
-		margin-left: 18%;
 	}
 }
 .pag-produtos h5{

@@ -24,7 +24,7 @@
     </h1>
     <br>
 
-    <div class="row card-produto">
+    <div class="row justify-content-center card-produto">
         <?php 
             $quantidade = 12;
             $pagina;
