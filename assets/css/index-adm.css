@@ -40,11 +40,15 @@ html, body{
 }
 
 
-@media (max-width: 576px){
+/*@media (max-width: 576px){
+
+	.lixo{
+
+		float:none;
+	}
 
 	.lapis{
-
-		
+	
 		margin-left: -26px;
 
 	}
@@ -55,6 +59,31 @@ html, body{
 	
 
 	}
+
+}
+*/
+
+@media (max-width: 767px){
+
+	.lixo{
+
+		margin-left: 36%;
+	}
+
+	.lapis{
+	
+		
+	}
+	.arrumar{
+
+		display: inline-block;
+		margin-left: 15%;
+
+		
+	
+
+	}
+
 }
 
 	.faixa{
