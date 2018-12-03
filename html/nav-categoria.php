@@ -1,7 +1,7 @@
 <?php
               
               include "header-adm.php";
-              include "pagina_conexao.php"
+              include "pagina_conexao.php";
               $sql = "SELECT * FROM categoria";
               $result = $db_connect->query($sql);
 
