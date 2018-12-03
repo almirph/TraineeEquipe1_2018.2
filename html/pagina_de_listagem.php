@@ -76,13 +76,11 @@ while ($row = $result->fetch_assoc()) { ?>
       <tr>
 
         <td>
-          <?php
-	echo $row['nome_produto']; ?>
+          <?php	echo $row['nome_produto']; ?>
         </td>
         <td>
           R$
-          <?php
-	echo number_format($row['preco'], '2', ',', '.'); ?>
+          <?php	echo number_format($row['preco'], '2', ',', '.'); ?>
         </td>
 
         <td colspan="2">
