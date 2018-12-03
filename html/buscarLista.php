@@ -196,7 +196,7 @@
             <?php } ?>
             <?php
             if($totalPagina > 1 ){
-                if($pagina == 1 && $totalPagina >3 )
+                if($pagina == 1 && $totalPagina >3 && $totalPagina >$pagina)
                 {
                     for($i = $pagina; $i < $pagina+3; $i++) { ?>
 
@@ -206,7 +206,7 @@
                     <?php  }
                 
                 
-                  elseif($totalPagina>= 3)
+                  elseif($totalPagina>= 3 && $totalPagina>$pagina)
                   {
 
                     for($i = $pagina-1; $i < $pagina+1 + 1; $i++) { ?>
@@ -229,7 +229,7 @@
          
 
            
-   if($pagina != $totalPagina && $totalPagina > 1)
+   if($pagina != $totalPagina && $totalPagina > 1 && $totalPagina >$pagina)
   {?>
 
             <li class="page-item">
