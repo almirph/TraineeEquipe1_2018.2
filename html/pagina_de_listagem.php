@@ -166,7 +166,7 @@ if ($pagina != '1') { ?>
       <?php
 
 if ($totalPagina > 1) {
-	if ($pagina == 1 && $totalPagina > 3) {
+	if ($pagina == 1 && $totalPagina > 3 && $totalPagina > $pagina) {
 		for ($i = $pagina; $i < $pagina + 3; $i++) { ?>
 
       <li class="page-item"><a class="page-link <?php	echo ($pagina == $i) ? 'cor-paginacao' : 'paginacao'; ?>" href='pagina_de_listagem.php?pagina=<?php			echo $i; ?>'>
@@ -175,7 +175,7 @@ if ($totalPagina > 1) {
 		} ?>
       <?php
 	}
-	elseif ($totalPagina >= 3) {
+	elseif ($totalPagina >= 3 && $totalPagina > $pagina) {
 		for ($i = $pagina - 1; $i < $pagina + 1 + 1; $i++) { ?>
 
       <li class="page-item "><a class="page-link  <?php echo ($pagina == $i) ? 'cor-paginacao' : 'paginacao'; ?>"
@@ -196,7 +196,7 @@ if ($totalPagina > 1) {
 	}
 }
 
-if ($pagina != $totalPagina && $totalPagina > 1) { ?>
+if ($pagina != $totalPagina && $totalPagina > 1 && $pagina < $totalPagina)  { ?>
 
       <li class="page-item">
         <a class="page-link paginacao" href="pagina_de_listagem.php?pagina=<?php echo $proximo; ?>">próximo</a>

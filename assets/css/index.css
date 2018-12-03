@@ -507,10 +507,9 @@ footer{
 
 
 .img-quemsomos{
-
+	height: 350px;
+	width: 450px;
 	border-radius: 2%;
-	height: 75%;
-	width: 75%;
 	border:black 1px solid;
 }
 
@@ -542,6 +541,9 @@ text-align: justify;
 }
 @media(max-width:1000px)
 {
+	.body-quemsomos hr{
+		display: none;
+	}
 	
 	.body-quemsomos
 {
@@ -562,7 +564,9 @@ text-align: justify;
 	
 		
 }
-
+.body-quemsomos{
+	margin-bottom: 8%;
+}
 		
 
 
