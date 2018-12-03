@@ -8,30 +8,30 @@ $auxiliar = $_GET['id_usuario'];
 
 if(isset($_SESSION['msg_diferente'])){ ?>
 
-<div class="alert alert-danger alert-dismissible" role="alert">
-	<?php echo $_SESSION['msg_diferente']; unset($_SESSION['msg_diferente']);?>
+	<div class="alert alert-danger alert-dismissible" role="alert">
+	   <?php echo $_SESSION['msg_diferente']; unset($_SESSION['msg_diferente']);?>
+	   
+	   	<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+        </button>
 
-	<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-		<span aria-hidden="true">&times;</span>
-	</button>
-
-</div>
+	</div>
 
 <?php }
 
 
 if(isset($_SESSION['msg_envio'])){ ?>
 
-<div class="alert alert-success alert-dismissible" role="alert">
-	<?php echo $_SESSION['msg_envio']; unset($_SESSION['msg_envio']);?>
+	<div class="alert alert-success alert-dismissible" role="alert">
+	   <?php echo $_SESSION['msg_envio']; unset($_SESSION['msg_envio']);?>
+	   
+	   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
 
-	<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-		<span aria-hidden="true">&times;</span>
-	</button>
+	</div>
 
-</div>
-
-
+	
 <?php }
 
 
@@ -113,27 +113,19 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 		<div class="form-group">
 			<input type="hidden" name="id_usuario" value="<?php if(isset($auxiliar)){ echo $auxiliar;} ?>">
 			<label for="exampleInputEmail1">Nome</label>
-			<input name="nome" type="name" required class="form-control" id="exampleInputEmail1" value="<?php if(isset($row1['login'])){ echo $row1['login'];} ?>"
-			 aria-describedby="emailHelp" placeholder="Digite o nome">
+			<input name="nome" type="name" required class="form-control" id="exampleInputEmail1"  value="<?php if(isset($row1['login'])){ echo $row1['login'];} ?>" aria-describedby="emailHelp" placeholder="Digite o nome">
 			<?php if(isset($erro_nome)){ ?>
 
-			<div class="alert alert-danger alerta" role="alert">
-				<?= $erro_nome; ?>
-			</div>
+				<div class="alert alert-danger alerta" role="alert"><?= $erro_nome; ?></div>
 			<?php } ?>
-		</div>
-		<div class="form-group">
-			<label for="exampleInputPassword1">Senha Atual</label>
-			<input name="senha-atual" type="password" class="form-control" required id="exampleInputPassword3" placeholder="Senha">
+
 		</div>
 		<div class="form-group">
 			<label for="exampleInputPassword1">Senha</label>
 			<input name="senha" type="password" class="form-control" required id="exampleInputPassword1" placeholder="Senha">
 			<?php if(isset($erro_senha)){ ?>
 
-			<div class="alert alert-danger alerta" role="alert">
-				<?= $erro_senha; ?>
-			</div>
+				<div class="alert alert-danger alerta" role="alert"><?= $erro_senha; ?></div>
 			<?php } ?>
 		</div>
 
@@ -142,15 +134,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 			<input name="csenha" type="password" class="form-control" required id="exampleInputPassword2" placeholder="Confirme sua senha">
 			<?php if(isset($erro_csenha)){ ?>
 
-			<div class="alert alert-danger alerta" role="alert">
-				<?= $erro_csenha; ?>
-			</div>
+				<div class="alert alert-danger alerta" role="alert"><?= $erro_csenha; ?></div>
 			<?php } ?>
 		</div>
 		<hr>
-
+		
 		<div class="pp-adm">
-			<button name="confirmar " type="submit" class="btn btn-dark">Salvar</button>
+			<button name="confirmar "type="submit" class="btn btn-dark">Salvar</button>
 		</div>
 	</form>
 

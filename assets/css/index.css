@@ -677,31 +677,6 @@ a:hover{
 .nprodutos{
 	background-color:#262b2d
 }
-@media(max-width:350px)
-{
-	.card-produto{
-		margin-left: 5%;
-	}
-}
-@media(max-width:300px)
-{
-	.card-produto{
-		margin-left: 0;
-	}
-}
-@media(max-width:1200px) and (min-width:1001px)
-{
-	.card-produto{
-		margin-left: 25%;
-	}
-}
-@media(max-width:766px)and (min-width:520px)
-{
-	.card-produto{
-		margin-left: 25%;
-		margin-right: 5%;
-	}
-}
 @media(max-width:644px)
 {
 	.categoria{

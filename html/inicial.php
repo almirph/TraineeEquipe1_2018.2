@@ -2,29 +2,10 @@
 
 
 $_SESSION['msg_delete'] = 'Usuario deletado com sucesso.';
-print_r($_SESSION);
+
 
 include 'pagina_conexao.php';
-}
 
-if(isset($_SESSION['senha_invalida'])){ 
-
-	if($_SESSION['senha_invalida']==1){
-		?>
-<div class="alert alert-sucess alert-dismissible" role="alert">
-	Senha do Usuário incorreta.
-
-	<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-		<span aria-hidden="true">&times;</span>
-	</button>
-
-</div>
-
-	
-	
-<?php } 
-
-	?>
 if(isset($_SESSION['msg_diferente'])){ ?>
 
 	<div class="alert alert-danger alert-dismissible" role="alert">
@@ -49,7 +30,10 @@ if(isset($_SESSION['msg_envio'])){ ?>
 
 	</div>
 
-}
+	
+	
+<?php } ?>
+
 <?php
 
 if(isset($_POST['acao'])){
