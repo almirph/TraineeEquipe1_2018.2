@@ -64,11 +64,11 @@
         <span style="font-size: 24px;"><a href="paginaprodutos-adm.php" class="fas fa-plus" alt="Cadastrar novo usuario"></a></span>
         <form class="form-inline my-2 my-lg-0" action="buscarLista.php?&pagina=1" enctype="multipart/form-data" method="GET">
             <input class="form-control mr-sm-2" type="text" placeholder="Digite aqui..." name="pesquisar">
-            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Pesquisar</button>
+            <button class="btn btn-dark my-2 my-sm-0" type="submit">Pesquisar</button>
         </form>
     </nav>
-
-    <table class="table table-bordered">
+<div style="overflow-x:auto;">
+    <table class="table table-bordered ">
         <thead>
             <tr>
 
@@ -184,6 +184,7 @@
             </tr>
         </tbody>
     </table>
+    </div>
     <nav>
         <ul class="pagination justify-content-end">
             <?php 
@@ -196,7 +197,7 @@
             <?php } ?>
             <?php
             if($totalPagina > 1 ){
-                if($pagina == 1 && $totalPagina >3 )
+                if($pagina == 1 && $totalPagina >3 && $totalPagina >$pagina)
                 {
                     for($i = $pagina; $i < $pagina+3; $i++) { ?>
 
@@ -206,7 +207,7 @@
                     <?php  }
                 
                 
-                  elseif($totalPagina>= 3)
+                  elseif($totalPagina>= 3 && $totalPagina>$pagina)
                   {
 
                     for($i = $pagina-1; $i < $pagina+1 + 1; $i++) { ?>
@@ -229,7 +230,7 @@
          
 
            
-   if($pagina != $totalPagina && $totalPagina > 1)
+   if($pagina != $totalPagina && $totalPagina > 1 && $totalPagina >$pagina)
   {?>
 
             <li class="page-item">

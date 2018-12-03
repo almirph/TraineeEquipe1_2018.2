@@ -507,10 +507,9 @@ footer{
 
 
 .img-quemsomos{
-
+	height: 350px;
+	width: 450px;
 	border-radius: 2%;
-	height: 75%;
-	width: 75%;
 	border:black 1px solid;
 }
 
@@ -521,7 +520,6 @@ footer{
 }
 .texto-quemsomos h2
 {
-
 	text-align: center;
 }
 
@@ -543,10 +541,8 @@ text-align: justify;
 }
 @media(max-width:1000px)
 {
-	
-	
-	
-
+	.body-quemsomos hr{
+		display: none;
 	}
 	
 	.body-quemsomos
@@ -568,7 +564,9 @@ text-align: justify;
 	
 		
 }
-
+.body-quemsomos{
+	margin-bottom: 8%;
+}
 		
 
 
@@ -587,7 +585,7 @@ text-align: justify;
 .categoria{
 	padding-left: 0;	
 	z-index: 100;
-	position: absolute;
+	float: left;
 	padding-top: 0;
 	border-radius: 0.5; 
 	margin-top: 10%;
@@ -711,6 +709,7 @@ a:hover{
 {
 	.categoria{
 		position: unset;
+		float:none;
 	}
 	.pag-produtos{
 		margin-top:-25px;
