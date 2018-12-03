@@ -84,12 +84,9 @@ while ($row = $result->fetch_assoc()) { ?>
         </td>
 
         <td colspan="3">
-          
+        <div class="arrumar">
           <form name="editar" action="EditarProdutos.php?id_produto=<?php echo $row['id_produto'] ?>" method="POST">
             <input type="hidden" name="id" value="<?php	echo $row['id_usuario']; ?>">
-
-            <div class="arrumar">
-              
             <span class="lapis" style="font-size: 24px;"><button  class="fas fa-pen" type="submit" name="editar" value="Editar"></button></span>
           </form>
           <div style="float:left">
