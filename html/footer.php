@@ -1,5 +1,7 @@
 </div>
 </div>
+<?php include 'pagina_conexao.php';?>
+
 <div class="rodape">
 
     <footer>
@@ -7,10 +9,10 @@
         <div class="container-fluid text-center">
 
             <div class="row informaçoes-primarias py-3">
-                
-                <div class="col-lg-4">
 
-                    
+                <div class="col-lg-3">
+
+
                     <h5 id="fale-conosco">Nossos telefones:</h5>
                     
                     
@@ -23,8 +25,8 @@
                     
                 </div>
 
-                <div class="col-lg-4">
-                    
+                <div class="col-lg-3">
+
                     <h5>Horário de atendimento:</h5>
 
                     <ul class="list-unstyled">
@@ -33,7 +35,7 @@
                     </ul>           
                 </div>
 
-                <div class="col-lg-4 pdd-special ">
+                <div class="col-lg-3 pdd-special">
 
                     <h5>Nossa localização:<span style="font-size: 26px"><button class="fas fa-map-marker-alt loc-tamanho" type="button" class="btn btn-primary " data-toggle="modal" data-target="#exampleModalCenter"></button></span></h5>  
 
@@ -53,46 +55,60 @@
                     </ul>
 
 
-                    
                 </div>
-                <div></div>
 
 
-            </div>
 
-        </div>
+                <div class="col-lg-3">
 
-        <div class="container-fluid text-center">
-
-
-            <div class = "row text-center icons">
-
-                <div class="col-lg-12 text-center py-2">
-                    
-                    <span style="font-size: 32px"><a href="https://www.facebook.com/balaodainformatica.com.br/"><i class="fab fa-facebook-f"></i></a></span>
-                    <span style="font-size: 32px"><a href="https://twitter.com/balaoinfo"><i class="fab fa-twitter"></i></a></span>
-                    <span style="font-size: 32px"><a href="https://www.instagram.com/balaoitatiba/"><i class="fab fa-instagram"></i></a></span>
-                    <span style="font-size: 32px"><a href="https://plus.google.com/discover"><i class="fab fa-google-plus-g"></i></a></span>
-                    <span style="font-size: 12px" class="lock" data-toggle="modal" data-target="#login"><i class="fas fa-lock"></i></span>
-
-                    
-
-                    <div class="modal fade faleconosco-footer" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Tela do usuário</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                          </button>
-                      </div>
-                      <div class="modal-body">
+                    <h5>Receba nossas novidades por <br> e-mail:</h5>
+                    <form action="newsletter.php" class="input-group mb-3" method="POST">
+                        <input type="email" name="imail" required class="form-control" value="<?php if(isset($e_mail)){ echo $e_mail;} ?>" aria-describedby="emailHelp" placeholder="E-mail" aria-label="Recipient's username">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="submit" style="color: white">Cadastrar</button>
+                        </div>
                         
-                      <form action="valida-login.php" method="post">
-                        <div class="form-group">
+
+            </div>  
+        </form>
+
+    </div>
+
+</div>
+
+
+
+<div class="container-fluid text-center">
+
+
+    <div class = "row text-center icons">
+
+        <div class="col-lg-12 text-center py-2">
+
+            <span style="font-size: 32px"><a href="https://www.facebook.com/balaodainformatica.com.br/"><i class="fab fa-facebook-f"></i></a></span>
+            <span style="font-size: 32px"><a href="https://twitter.com/balaoinfo"><i class="fab fa-twitter"></i></a></span>
+            <span style="font-size: 32px"><a href="https://www.instagram.com/balaoitatiba/"><i class="fab fa-instagram"></i></a></span>
+            <span style="font-size: 32px"><a href="https://plus.google.com/discover"><i class="fab fa-google-plus-g"></i></a></span>
+            <span style="font-size: 12px" class="lock" data-toggle="modal" data-target="#login"><i class="fas fa-lock"></i></span>
+
+
+
+            <div class="modal fade faleconosco-footer" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Tela do usuário</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+
+                  <form action="valida-login.php" method="post">
+                    <div class="form-group">
                         <label for="txUsuario">Usuario</label>
                         <input type="text" name = "usuario" required="required" class="form-control" id="txUsuario"  placeholder="Digite seu nome de usuario">
-                        
+
                     </div>
                     <div class="form-group">
                         <label for="txSenha">Senha</label>
@@ -100,19 +116,18 @@
                     </div>
                     <hr>
                     <button type="submit" class="btn btn-dark" value="Entrar">Login</button>
-                    
+
                 </form>
-                </div>
-                
             </div>
+
         </div>
     </div>
-    
-    
 </div>
+
 
 </div>
 
+</div>
 
 </div>
 
