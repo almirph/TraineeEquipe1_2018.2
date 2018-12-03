@@ -38,6 +38,20 @@ html, body{
 		
 	}
 }
+
+
+@media (max-width: 576px){
+	.lapis{
+
+		
+margin-left: -26px;
+	}
+	.arrumar{
+
+		display: flex;
+
+}
+
 .faixa{
 	background-color: #1E1E24;	
 	padding-bottom: 4px;

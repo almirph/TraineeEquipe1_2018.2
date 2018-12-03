@@ -86,14 +86,18 @@ while ($row = $result->fetch_assoc()) { ?>
         </td>
 
         <td>
+          
           <form name="editar" action="EditarProdutos.php?id_produto=<?php echo $row['id_produto'] ?>" method="POST">
             <input type="hidden" name="id" value="<?php	echo $row['id_usuario']; ?>">
-            <span style="font-size: 24px;"><button class="fas fa-pen" type="submit" name="editar" value="Editar"></button></span>
+            <div class="arrumar">
+            <span class="lapis" style="font-size: 24px;"><button  class="fas fa-pen" type="submit" name="editar" value="Editar"></button></span>
           </form>
           <div style="float:left">
             <div data-toggle="modal" data-target="#myModalRemarks<?php	echo $row['id_produto']; ?>">
-              <span style="font-size: 24px;"><button class="fas fa-trash-alt" type="submit" name="excluir" value="Excluir"></button></span>
+              <span class="lixo" style="font-size: 24px;"><button class="fas fa-trash-alt" type="submit" name="excluir" value="Excluir"></button></span>
             </div>
+          </div>
+
             <div class="modal fade" id="myModalRemarks<?php	echo $row['id_produto']; ?>" tabindex="-1" role="dialog"
               aria-labelledby="TituloModalCentralizado" aria-hidden="true">
 

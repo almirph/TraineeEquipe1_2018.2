@@ -19,6 +19,7 @@ html, body{
 
 }
 
+
 .container{
 	min-height: 150px;
 }
@@ -46,6 +47,7 @@ html, body{
 		
 	}
 }
+
 .faixa{
 	background-color: #1E1E24;	
 	padding-bottom: 4px;
