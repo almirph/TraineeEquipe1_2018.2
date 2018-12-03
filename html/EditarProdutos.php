@@ -1,23 +1,15 @@
 <?php include "header-adm.php";?>
+<?php include "pagina_conexao.php";?>
 <div class="container">
-  <?php
-                    print_r($_SESSION);           
-                $server = 'localhost';
-                $user = 'root';
-                $password = '';
-                $db_name = 'balao_da_informatica';
-                $port = '3306';                                 
+  <?php                                      
                 $auxiliar =$_GET['id_produto'];
-                $nome="";
-                $preco="";
-                $id_produto="";
-                $descricao = "";
-                $categoria = "";
-                $categoria1= "";
-                $url_img = "";
+                $nome;
+                $preco;
+                $id_produto;
+                $descricao;
+                $categoria;
+                $url_img;
                 $result_produto;                    
-                $db_connect = new mysqli($server,$user,$password,$db_name,$port);
-                mysqli_set_charset($db_connect,"utf-8");
                     
 ?>
   <?php 
@@ -50,7 +42,7 @@
         <label>Categoria</label>
         <select required="required" class="form-control" name="categoria">
           <option>
-            <?php echo $row_banco_categoria['nome_categoria'].'(' . $row_banco_categoria['id_categoria'] . ')';?>
+            <?php echo $row_banco_categoria['nome_categoria'];?>
           </option>
 
 
@@ -58,9 +50,9 @@
                   $result = $db_connect->query($sql);
                   while ($row2 = $result->fetch_assoc())
                 {?>
-          <?php if($row2['id_categoria'] != $row_banco_categoria['id_categoria']){?>
+          <?php if($row2['id_categoria']){?>
           <option>
-            <?php echo $row2['nome_categoria'] . '(' . $row2['id_categoria'] . ')';?>
+            <?php echo $row2['nome_categoria'] ;?>
           </option>
 
           <?php                        }           

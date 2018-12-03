@@ -19,6 +19,7 @@ html, body{
 
 }
 
+
 .container{
 	min-height: 150px;
 }
@@ -46,6 +47,7 @@ html, body{
 		
 	}
 }
+
 .faixa{
 	background-color: #1E1E24;	
 	padding-bottom: 4px;
@@ -110,7 +112,7 @@ html, body{
 	
 }
 
-}
+
 
 
 .dropdown-menu.home{
@@ -307,7 +309,7 @@ footer{
 }
 
 
-.col-lg-3 h5{
+.col-lg-4 h5{
 
 	padding-top: 16px;
 	
@@ -318,7 +320,7 @@ footer{
 	padding-top: 4px;
 }
 
-.col-lg-3 li{
+.col-lg-4 li{
 
 	font-size: 16px;
 	font-weight: 500;
@@ -488,37 +490,45 @@ footer{
 /********************* QUEM SOMOS *********************/
 
 /*********************************************************************************************************/
+
 .Titulo-quemsomos
 {
 	text-align: center;
-	margin-top:2.5%;
+	margin-top:16%;
 	font-size: 26px;
 }
-.img-quemsomos
-{
-	margin-top: 2.5%;
+
+	/*margin-top: 2.5%;
 	border-radius: 2%;
 	height: 75%;
 	width: 75%;
 	margin-bottom: 2.5%;
 	text-align: center;
 
+	border:black 1px solid;9*/
+
+
+.img-quemsomos{
+	height: 350px;
+	width: 450px;
+	border-radius: 2%;
 	border:black 1px solid;
-} 
+}
 
 .texto-quemsomos
 {
 	text-align: justify;
-	margin-top: 5%;
+	
 }
-.texto-quemsomos h1
+.texto-quemsomos h2
 {
-
 	text-align: center;
 }
+
 .texto-quemsomos p
 {
 	margin-top: 2.5%;
+	padding-bottom: 12px;
 
 }
 
@@ -533,19 +543,14 @@ text-align: justify;
 }
 @media(max-width:1000px)
 {
-	.img-quemsomos
-	{
-		word-wrap: wrap;
-		min-width: 250px;
-	
-	
-
+	.body-quemsomos hr{
+		display: none;
 	}
 	
 	.body-quemsomos
 {
 	text-align: center;
-	margin-top: 5%;
+	
 	
 }
 
@@ -558,12 +563,12 @@ text-align: justify;
 	.quemsomos-100px{
 		display: none;
 	}
-	.body-quemsomos hr{
-		display: none;
-	}
+	
 		
 }
-
+.body-quemsomos{
+	margin-bottom: 8%;
+}
 		
 
 
@@ -582,7 +587,7 @@ text-align: justify;
 .categoria{
 	padding-left: 0;	
 	z-index: 100;
-	position: absolute;
+	float: left;
 	padding-top: 0;
 	border-radius: 0.5; 
 	margin-top: 10%;
@@ -706,6 +711,7 @@ a:hover{
 {
 	.categoria{
 		position: unset;
+		float:none;
 	}
 	.pag-produtos{
 		margin-top:-25px;
@@ -815,6 +821,13 @@ a:hover{
 	font-weight: 550;
 
 }
+
+.faleconosco2 h2{
+
+	text-align: left;
+	font-weight: 18px;
+}
+
 
 .faleconosco2 i{
 

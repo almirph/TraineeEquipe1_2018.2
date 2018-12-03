@@ -1,4 +1,5 @@
-<?php include 'pagina_conexao.php'; ?>
+<?php include "header-adm.php";?>
+<?php include "pagina_conexao.php"; ?>
 
 <?php 
     
@@ -11,6 +12,7 @@
         } 
             $_SESSION['msg'] = "cadastrado";
             header("Location:lista_categoria.php");
-    }
+            
+        }   
 
 ?>

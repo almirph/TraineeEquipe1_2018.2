@@ -1,6 +1,6 @@
 <?php
                               
-                include "verifica-login.php"; 
+                include "header-adm.php"; 
                 include "pagina_conexao.php";
                 $descricao = $_POST['descricao'];
                 $categoria = $_POST['categoria'];

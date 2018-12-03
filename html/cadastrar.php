@@ -1,6 +1,6 @@
 <?php include 'Header-adm.php';
 include 'pagina_conexao.php';
-session_start();
+
 
 
 
@@ -93,7 +93,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 		<div class="form-group">
 			<label for="exampleInputEmail1">Nome</label>
-			<input name="nome" type="name" class="form-control" id="exampleInputEmail1"  value="<?php if(isset($nome)){ echo $nome;} ?>" aria-describedby="emailHelp" placeholder="Digite o nome">
+			<input name="nome" type="name" class="form-control" id="exampleInputEmail1" required value="<?php if(isset($nome)){ echo $nome;} ?>" aria-describedby="emailHelp" placeholder="Digite o nome">
 			<?php if(isset($erro_nome)){ ?>
 
 				<div class="alert alert-danger alerta" role="alert"><?= $erro_nome; ?></div>
@@ -102,7 +102,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 		</div>
 		<div class="form-group">
 			<label for="exampleInputPassword1">Senha</label>
-			<input name="senha" type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+			<input name="senha" type="password" class="form-control" required id="exampleInputPassword1" placeholder="Senha">
 			<?php if(isset($erro_senha)){ ?>
 
 				<div class="alert alert-danger alerta" role="alert"><?= $erro_senha; ?></div>
@@ -111,7 +111,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 		<div class="form-group">
 			<label for="exampleInputPassword1">Confirme a senha</label>
-			<input name="csenha" type="password" class="form-control" id="exampleInputPassword2" placeholder="Confirme sua senha">
+			<input name="csenha" type="password" class="form-control" required id="exampleInputPassword2" placeholder="Confirme sua senha">
 			<?php if(isset($erro_csenha)){ ?>
 
 				<div class="alert alert-danger alerta" role="alert"><?= $erro_csenha; ?></div>

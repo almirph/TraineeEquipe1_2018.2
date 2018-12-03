@@ -1,14 +1,9 @@
 <?php include "header-adm.php";?>
+<?php include "pagina_conexao.php";?>
 <div class="container">
     <?php                                    
-            $aviso_validacao1 = "";
-            $auxiliar =$_GET['id'];
-            $nome="";                                  
-            $id_categoria="";
-            $categoria = "";
-            $categoria1= "";
-            $result_categoria;
-
+           
+            $auxiliar =$_GET['id_categoria'];
 ?>
     <?php 
     
@@ -21,20 +16,18 @@
     <div class="lista-adm">
         <h1>Editar categoria</h1>
     </div>
-
+    <hr>
+    <span style="font-size: 24px;"><a href="lista_categoria.php" class="fas fa-arrow-left"></a></span>
     <form action="edit.php" method='POST'>
         <div class="form-group">
             <input type="hidden" name="id_categoria" value="<?php echo $auxiliar;?>">
             <label>Categoria</label>
-            <input type="text" autocomplete="off" name="categoria" class="form-control" maxlength="50" required="required" value="<?php echo $row1['nome_categoria'];?>">
-            <div class="problema-formulario">
-                <?php echo $aviso_validacao1?>
-            </div>
+            <input type="text" autocomplete="off" name="categoria" required="required" class="form-control" maxlength="50" required="required" value="<?php echo $row1['nome_categoria'];?>">
+            
         </div>
 
         <div class="pp-adm">
             <button type="submit" class="btn btn-dark ">Editar categoria</button>
-            <a href="lista_categoria.php"><button type="button" class="btn btn-dark ">Voltar</button></a>
         </div>
 
     </form>

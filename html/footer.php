@@ -8,7 +8,7 @@
 
             <div class="row informaçoes-primarias py-3">
                 
-                <div class="col-lg-3">
+                <div class="col-lg-4">
 
                     
                     <h5 id="fale-conosco">Nossos telefones:</h5>
@@ -23,7 +23,7 @@
                     
                 </div>
 
-                <div class="col-lg-3">
+                <div class="col-lg-4">
                     
                     <h5>Horário de atendimento:</h5>
 
@@ -33,7 +33,7 @@
                     </ul>           
                 </div>
 
-                <div class="col-lg-3 pdd-special ">
+                <div class="col-lg-4 pdd-special ">
 
                     <h5>Nossa localização:<span style="font-size: 26px"><button class="fas fa-map-marker-alt loc-tamanho" type="button" class="btn btn-primary " data-toggle="modal" data-target="#exampleModalCenter"></button></span></h5>  
 
@@ -55,19 +55,8 @@
 
                     
                 </div>
+                <div></div>
 
-                <div class="col-lg-3">
-                    
-                    <h5>Receba nossas novidades por <br> e-mail:</h5>
-
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="E-mail" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                        <div class="input-group-append">
-                            <button class="btn btn-outline-secondary" type="button" style="color: white">Cadastrar</button>
-                        </div>
-                    </div>  
-                    
-                </div>
 
             </div>
 

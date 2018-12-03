@@ -36,7 +36,7 @@ if(isset($_SESSION['msg']))
 
                     </div>
                   <?php }
-                    $_SESSION['msg']=NULL;
+                    unset($_SESSION['msg']);
                 
             }?>
 
