@@ -1,21 +1,7 @@
-
-<?php
-include "header-adm.php" ?>
-<?php
-
-include 'pagina_conexao.php';
-
-if (isset($_SESSION['deleta'])) {
-	if ($_SESSION['deleta'] == '1') { ?>
-    <div class="alert alert-success" role="alert">
-      Produto deletado com sucesso.
-      
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-    </button><?php include "header-adm.php" ?>
+<?php include "header-adm.php" ;?>
 <?php include 'pagina_conexao.php';
-  }
-}
+  
+
 if (isset($_SESSION['deleta'])) {
 	if ($_SESSION['deleta'] == '1') { ?>
 <div class="alert alert-success" role="alert">
@@ -24,11 +10,11 @@ if (isset($_SESSION['deleta'])) {
 <?php
 	}
 
-	$_SESSION['deleta'] = '0';
+	unset($_SESSION['deleta']);
 }
 
 if (isset($_SESSION['msg'])) {
-	if ($_SESSION['msg'] == '2') { ?>
+	if ($_SESSION['msg'] == '1') { ?>
 <div class="alert alert-success" role="alert">
   Produto editado com sucesso.
 
@@ -40,7 +26,7 @@ if (isset($_SESSION['msg'])) {
     <?php
   }
 
-	$_SESSION['msg'] = '54616153515';
+	unset($_SESSION['msg']);
 } ?>
 <div class="container lista-de-usuarios">
 
@@ -100,19 +86,15 @@ while ($row = $result->fetch_assoc()) { ?>
         </td>
 
         <td>
-          <form name="editar" action="EditarProdutos.php?id_produto=<?php
-	echo $row['id_produto'] ?>" method="POST">
-            <input type="hidden" name="id" value="<?php
-	echo $row['id_usuario']; ?>">
+          <form name="editar" action="EditarProdutos.php?id_produto=<?php echo $row['id_produto'] ?>" method="POST">
+            <input type="hidden" name="id" value="<?php	echo $row['id_usuario']; ?>">
             <span style="font-size: 24px;"><button class="fas fa-pen" type="submit" name="editar" value="Editar"></button></span>
           </form>
           <div style="float:left">
-            <div data-toggle="modal" data-target="#myModalRemarks<?php
-	echo $row['id_produto']; ?>">
+            <div data-toggle="modal" data-target="#myModalRemarks<?php	echo $row['id_produto']; ?>">
               <span style="font-size: 24px;"><button class="fas fa-trash-alt" type="submit" name="excluir" value="Excluir"></button></span>
             </div>
-            <div class="modal fade" id="myModalRemarks<?php
-	echo $row['id_produto']; ?>" tabindex="-1" role="dialog"
+            <div class="modal fade" id="myModalRemarks<?php	echo $row['id_produto']; ?>" tabindex="-1" role="dialog"
               aria-labelledby="TituloModalCentralizado" aria-hidden="true">
 
 
@@ -127,8 +109,7 @@ while ($row = $result->fetch_assoc()) { ?>
                   <div class="modal-body">
                     Deseja mesmo remover o produto
                     <b>
-                      <?php
-	echo $row['nome_produto']; ?></b>?
+                      <?php	echo $row['nome_produto']; ?></b>?
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
@@ -137,8 +118,7 @@ while ($row = $result->fetch_assoc()) { ?>
                     <a href="deletaProduto.php?id_produto=<?php echo $row['id_produto'];?>">
 
                       <form method="POST">
-                        <input value="<?php
-	echo $row['id_produto']; ?>" name="deleta" type="hidden">
+                        <input value="<?php	echo $row['id_produto']; ?>" name="deleta" type="hidden">
                         <button type="button" class="btn btn-dark ">Sim</button>
                     </a>
                     </form>
@@ -178,8 +158,7 @@ $proximo = (($pagina + 1) >= $totalPagina) ? $totalPagina : $pagina + 1;
 
 if ($pagina != '1') { ?>
       <li class="page-item">
-        <a class="page-link paginacao" href="pagina_de_listagem.php?pagina=<?php
-	echo $anterior; ?>">anterior</a>
+        <a class="page-link paginacao" href="pagina_de_listagem.php?pagina=<?php	echo $anterior; ?>">anterior</a>
       </li>
 
       <?php
@@ -190,11 +169,8 @@ if ($totalPagina > 1) {
 	if ($pagina == 1 && $totalPagina > 3) {
 		for ($i = $pagina; $i < $pagina + 3; $i++) { ?>
 
-      <li class="page-item"><a class="page-link <?php
-			echo ($pagina == $i) ? 'cor-paginacao' : 'paginacao'; ?>" href='pagina_de_listagem.php?pagina=<?php
-			echo $i; ?>'>
-          <?php
-			echo $i; ?></a></li>
+      <li class="page-item"><a class="page-link <?php	echo ($pagina == $i) ? 'cor-paginacao' : 'paginacao'; ?>" href='pagina_de_listagem.php?pagina=<?php			echo $i; ?>'>
+          <?php	echo $i; ?></a></li>
       <?php
 		} ?>
       <?php
@@ -202,12 +178,9 @@ if ($totalPagina > 1) {
 	elseif ($totalPagina >= 3) {
 		for ($i = $pagina - 1; $i < $pagina + 1 + 1; $i++) { ?>
 
-      <li class="page-item "><a class="page-link  <?php
-			echo ($pagina == $i) ? 'cor-paginacao' : 'paginacao'; ?>"
-          href='pagina_de_listagem.php?pagina=<?php
-			echo $i; ?>'>
-          <?php
-			echo $i; ?></a></li>
+      <li class="page-item "><a class="page-link  <?php echo ($pagina == $i) ? 'cor-paginacao' : 'paginacao'; ?>"
+          href='pagina_de_listagem.php?pagina=<?php	echo $i; ?>'>
+          <?php	echo $i; ?></a></li>
       <?php
 		} ?>
       <?php
@@ -215,12 +188,9 @@ if ($totalPagina > 1) {
 	else {
 		for ($i = 1; $i < $totalPagina + 1; $i++) { ?>
 
-      <li class="page-item "><a class="page-link  <?php
-			echo ($pagina == $i) ? 'cor-paginacao' : 'paginacao'; ?>"
-          href='pagina_de_listagem.php?pagina=<?php
-			echo $i; ?>'>
-          <?php
-			echo $i; ?></a></li>
+      <li class="page-item "><a class="page-link  <?php	echo ($pagina == $i) ? 'cor-paginacao' : 'paginacao'; ?>"
+          href='pagina_de_listagem.php?pagina=<?php	echo $i; ?>'>
+          <?php	echo $i; ?></a></li>
       <?php
 		}
 	}
@@ -229,8 +199,7 @@ if ($totalPagina > 1) {
 if ($pagina != $totalPagina && $totalPagina > 1) { ?>
 
       <li class="page-item">
-        <a class="page-link paginacao" href="pagina_de_listagem.php?pagina=<?php
-	echo $proximo; ?>">próximo</a>
+        <a class="page-link paginacao" href="pagina_de_listagem.php?pagina=<?php echo $proximo; ?>">próximo</a>
       </li>
       <?php
 } ?>
