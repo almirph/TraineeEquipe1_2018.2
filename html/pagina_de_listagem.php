@@ -41,7 +41,7 @@ if (isset($_SESSION['msg'])) {
     </form>
   </nav>
   
-  <table class="table table-bordered table-responsive-sm "> 
+  <table class="table table-bordered "> 
     <thead>
       <tr>
 
@@ -85,7 +85,7 @@ while ($row = $result->fetch_assoc()) { ?>
 	echo number_format($row['preco'], '2', ',', '.'); ?>
         </td>
 
-        <td>
+        <td colspan="2">
           
           <form name="editar" action="EditarProdutos.php?id_produto=<?php echo $row['id_produto'] ?>" method="POST">
             <input type="hidden" name="id" value="<?php	echo $row['id_usuario']; ?>">
