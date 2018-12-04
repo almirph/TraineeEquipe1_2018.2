@@ -107,8 +107,6 @@ html, body{
 
 	}
 
-.nav-botn{
-	margin-left: 30px;
 	
 }
 
@@ -142,6 +140,7 @@ html, body{
 
 .icones{	
 	padding-top: 10px;
+	margin-bottom: 5px;
 }
 
 .text b{
@@ -181,7 +180,7 @@ html, body{
 	font-size: 1.8rem;
 	margin-top: 15px;
 	color: #1E1E24;
-	margin-left: 5px;
+	margin-left: 15px;
 	text-align: left;
 }
 .prod-home {

@@ -101,44 +101,43 @@
 	</div>
 
 
-	<div class="container mais-vendidos">
-		<div class="row ">
-			<div class="col-2 trophy"></div>
-			<div class="col-10 maisv">
-				
-				<h1 class="display-4 novidades">Mais vendidos</h1>
-
-			</div>
-		</div>
-	</div>
 
 
 	<div class="jumbotron jumbotron-fluid-home">
 		<div class="container jumbotron-home">
+			
+			<div class="container mais-vendidos	">
+				<div class="row ">
+					<div class="maisv">
+						
+						<h1 class="display-4 novidades">Mais vendidos</h1>
+			
+					</div>
+				</div>
+			</div>
 
 			<div class="container home-produtos">
 				<div class="row card-produto-home">
-				<?php           
-      $quantidade = '4';
-      $sql = "SELECT * FROM produto ORDER BY id_produto DESC LIMIT $quantidade";
-      $result = $db_connect->query($sql);
+					<?php           
+					$quantidade = '6';
+					$sql = "SELECT * FROM produto ORDER BY id_produto DESC LIMIT $quantidade";
+					$result = $db_connect->query($sql);
 
-      while ($row2 = $result->fetch_assoc())
+					while ($row2 = $result->fetch_assoc())
+					{?>
+					<a href="paginaProdutos.php?id_produto=<?php echo $row2['id_produto'];?>">
 
-      {?>
-      <a href="paginaProdutos.php?id_produto=<?php echo $row2['id_produto'];?>">
-
-      <div class="col-sm">
-      <div class="card img-card" style="width:14rem;">
-      <img class="card-img-top" src="../assets/imagem_banco/<?php echo $row2['url_imagem']; ?>" alt="Card image cap">
-      <div class="card-body">
-      <h5 class="card-title"style='color:black; font-size:16px;'><?php echo $row2['nome_produto'];?></h5>
-      <h5 style='color:red; font-size:26px;'>R$<?php echo number_format($row2['preco'],'2',',','.');?><h5>
-      </div>
-      </div>
-      </div>
-      </a>
-     <?php }?>
+					<div class="col-sm">
+						<div class="card img-card" style="width:14rem;">
+							<img class="card-img-top" src="../assets/imagem_banco/<?php echo $row2['url_imagem']; ?>" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-title"style='color:black; font-size:16px;'><?php echo $row2['nome_produto'];?></h5>
+								<h5 style='color:red; font-size:26px;'>R$<?php echo number_format($row2['preco'],'2',',','.');?><h5>
+							</div>
+						</div>
+					</div>
+					</a>
+					<?php }?>
 
 
 
@@ -155,8 +154,8 @@
 
 			<hr class="my-4">
 			<div class="home-lab">
-			<p class="lead">Para ver mais novidades</p>
-			<a class="btn btn-dark btn-lg" href="paginaNovidades.php" role="button">Clique Aqui</a>	
+				<p class="lead">Para ver mais novidades</p>
+				<a class="btn btn-dark btn-lg" href="paginaNovidades.php" role="button">Clique Aqui</a>	
 			</div>
 		</div>
 	</div>
