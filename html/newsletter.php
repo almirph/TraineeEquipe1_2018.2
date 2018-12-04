@@ -23,9 +23,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
         if( $db_connect->query($sql_code)== true )
         {
-            $msg_envio =  'Email registrado com sucesso';
-            echo $msg_envio;
-            $_SESSION['msg_envio'] = 'Email ' . $_POST['imail'] . ' registrado com sucesso.';
+            $msg_footer =  'Email registrado com sucesso';
+            echo $msg_footer;
+            $_SESSION['msg_footer'] = 'Email ' . $_POST['imail'] . ' registrado com sucesso.';
            
             ?><script language='javascript' type='text/javascript'>alert('E-mail cadastrado com sucesso!'); window.location.href = 'index.php';</script>; <?php
             $e_mail=NULL;      
