@@ -1,10 +1,10 @@
 <?php include 'header-adm.php';
 
+session_start();
+
 include 'pagina_conexao.php'; ?>
 
 <?php
-
-session_start();
 
 
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
