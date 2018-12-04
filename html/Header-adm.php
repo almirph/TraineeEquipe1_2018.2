@@ -64,7 +64,7 @@
 								<a class="dropdown-item" href="categoria.php">Cadastrar categorias</a>
 								<a class="dropdown-item" href="lista_categoria.php">Lista de categorias</a>
 								<div class="dropdown-divider home-linha"></div>
-								<a class="dropdown-item" href="categoria.php">Enviar E-mail</a>
+								<a class="dropdown-item" href="envio-email.php">Enviar E-mail</a>
 							</div>
 						</li>
 
