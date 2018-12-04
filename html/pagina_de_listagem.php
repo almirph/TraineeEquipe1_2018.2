@@ -12,6 +12,21 @@ if (isset($_SESSION['deleta'])) {
 
   unset($_SESSION['deleta']);
 }
+if (isset($_SESSION['formato'])) {
+	if ($_SESSION['formato'] == '1') { ?>
+    <div class="alert alert-danger" role="alert">
+      Formato de arquivo inválido.
+
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+
+    </div>
+    <?php
+  }
+
+  unset($_SESSION['formato']);
+} 
 
 if (isset($_SESSION['msg'])) {
 	if ($_SESSION['msg'] == '1') { ?>

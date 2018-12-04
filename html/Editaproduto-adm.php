@@ -18,6 +18,16 @@
                 $resultado1 = $db_connect->query($result_produto); 
                 $row= $resultado1->fetch_assoc();
                 $categoria = $row['id_categoria'];
+                $procura = strpos($url_imagem,".jpg");
+                $procura1 = strpos($url_imagem,".png");
+
+                if($procura ==false && $procura1 == false)
+                {
+                  $_SESSION['formato'] = "1";
+                  header("Location:pagina_de_listagem.php");
+
+                }
+                else{
                 $sql = "UPDATE `produto` SET `id_categoria` = '$categoria', `nome_produto` = '$nome', `preco` = '$preco', `descricao` = '$descricao', 
                 `url_imagem` = '$url_img' WHERE `produto`.`id_produto` = '$id_produto';";
                  if( $db_connect->query($sql))
@@ -27,6 +37,7 @@
                             
                  }else{
                      $_SESSION['msg'] = "<p>Não foi possível editar o produto</p>";
-                      header("Location: EditarProdutos.php?id_produto=$id_produto");
+                     header("Location: EditarProdutos.php?id_produto=$id_produto");
                     }
+                  }
 ?>
