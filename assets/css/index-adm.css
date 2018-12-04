@@ -410,3 +410,22 @@ html, body{
 	.paginacao{
 		color:#1E1E24;
 	}
+	  /************************************** INICIAL.PHP ***********************************************/
+	  .home-adm{
+		  margin-top: 20px;
+		  margin-bottom: 20px;
+	  }
+	  .botao-home-adm{
+		  text-align: left;
+	  }
+	  
+	  .img-home-adm{
+		  margin-top: 40px;
+	  }
+
+	  @media (max-width: 992px){
+		.img-home-adm{
+			display: none;
+		}
+	  }
+/********************************************* FIM INDEX-ADM.PHP *****************************************************/

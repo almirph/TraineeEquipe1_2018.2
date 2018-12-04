@@ -4,8 +4,8 @@
 	---------------------------------------------------------------------------------------------------------------->
 	<div class="body-quemsomos">
 		<div class="container faleconosco2">
-			<h1>Quem somos</h1>
-			<hr>
+		<h1 pb-2 mt-4 mb-2 border-bottom><span style="font-size: 42px; "><i class="fas fa-users"></i></span>Quem somos</h1>
+		<hr>
 			<div class="row grid-quemsomos quemsomos-100px">
 				<div class="col-sm ">
 					<img class="img-quemsomos esquerda-1 img-fluid" src="../assets/img/nossaHistoria.jpg" alt="unidade franqueada">
