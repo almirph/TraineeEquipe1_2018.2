@@ -36,7 +36,7 @@
 
 			<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
 				<a class="navbar-brand icone-balao2" href="index.php#body-home">
-					<img src="../assets/img/nl2.png" width="160" height="48"></a>
+					<img src="../assets/img/nl2-branco.png" width="160" height="48"></a>
 
 
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"

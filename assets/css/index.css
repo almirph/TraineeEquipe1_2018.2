@@ -143,6 +143,12 @@ html, body{
 .icones{	
 	padding-top: 10px;
 	margin-bottom: 5px;
+} 
+@media (min-width: 992px){
+	.icones{
+	margin-bottom: - 70px;
+	}
+	
 }
 
 .text b{
@@ -165,11 +171,11 @@ html, body{
 	}
 
 
-.mais-vendidos{
+.novidades{
 	text-align: left;
 	padding-top: 0px;
 	margin-left: 0px;
-	margin-bottom: -100px;
+	
 }
 .home-lab{
 	text-align: center;
@@ -514,7 +520,7 @@ footer{
 	height: 350px;
 	width: 450px;
 	border-radius: 2%;
-	border:black 1px solid;
+	border:#00000078 1px solid;
 }
 
 .texto-quemsomos
@@ -564,6 +570,9 @@ text-align: justify;
 	}
 	.quemsomos-100px{
 		display: none;
+	}
+	.faleconosco2 h1{
+		font-size: 1.5rem;
 	}
 	
 		
