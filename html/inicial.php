@@ -1,11 +1,19 @@
 <?php include 'Header-adm.php';
-
-
 $_SESSION['msg_delete'] = 'Usuario deletado com sucesso.';
-
-
 include 'pagina_conexao.php';
+if(isset($_SESSION['erro'])){ ?>
 
+	<div class="alert alert-danger alert-dismissible" role="alert">
+		Senha inválida! 
+		<?php unset($_SESSION['erro']);?>
+
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+
+	</div>
+
+<?php }
 if(isset($_SESSION['msg_diferente'])){ ?>
 
 	<div class="alert alert-danger alert-dismissible" role="alert">
@@ -18,7 +26,6 @@ if(isset($_SESSION['msg_diferente'])){ ?>
 	</div>
 
 <?php }
-
 if(isset($_SESSION['msg_envio'])){ ?>
 
 	<div class="alert alert-success alert-dismissible" role="alert">
@@ -35,13 +42,9 @@ if(isset($_SESSION['msg_envio'])){ ?>
 <?php } ?>
 
 <?php
-
 if(isset($_POST['acao'])){
-
-
 	if($_POST['acao']=='excluir')
 	{ 
-
 		$sql_code = "DELETE FROM usuario WHERE id_usuario = '{$_POST['id']}'";
 		$db_connect->query($sql_code);
 		?>
@@ -60,17 +63,12 @@ if(isset($_POST['acao'])){
 
 	<?php
 }
-
 function selectIdPessoa($id){
-
-
 	$sql = "SELECT * FROM usuario WHERE id_usuario=" .$id;
 	$resultado = $db_connect->query($sql);
 	$pessoa = mysqli_fetch_assoc($resultado);
-
 	return $pessoa;
 }
-
 ?>
 
 <div class="container lista-de-usuarios">
@@ -93,13 +91,9 @@ function selectIdPessoa($id){
 		<tbody>
 
 			<?php 
-
 			$sql_code = "SELECT * FROM usuario";
-
 			$resultado = $db_connect->query($sql_code);
-
 			while ($row = $resultado->fetch_assoc())
-
 				{?>
 
 					<tr>

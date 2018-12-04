@@ -1,11 +1,6 @@
 <?php include 'Header-adm.php';
-
-
 include 'pagina_conexao.php';
-
-
 $auxiliar = $_GET['id_usuario'];
-
 if(isset($_SESSION['msg_diferente'])){ ?>
 
 	<div class="alert alert-danger alert-dismissible" role="alert">
@@ -18,8 +13,6 @@ if(isset($_SESSION['msg_diferente'])){ ?>
 	</div>
 
 <?php }
-
-
 if(isset($_SESSION['msg_envio'])){ ?>
 
 	<div class="alert alert-success alert-dismissible" role="alert">
@@ -33,62 +26,33 @@ if(isset($_SESSION['msg_envio'])){ ?>
 
 	
 <?php }
-
-
-
 function clean_input($data){
-
 	$cleandata = trim($data);
 	$cleandata = stripcslashes($cleandata);
 	$cleandata = htmlspecialchars($cleandata);
-
 	return $cleandata;
 }
-
-
-
-
 $resultado = "SELECT * FROM usuario WHERE id_usuario LIKE '$auxiliar'";
 $resulto = $db_connect->query($resultado);
 $row1 = $resulto->fetch_assoc();
-
-
-
-
-
-
 /*
-
 if($_SERVER['REQUEST_METHOD'] == 'POST'){ 
-
-
 	
 	$csenha = $_POST['csenha'];
-
 	if($row1['login'] == ""){
-
 		$erro_nome = '* O nome é obrigatório';
 	}
 	elseif($row1['senha'] == ""){
-
 		$erro_senha = '* A senha é obrigatória';
 	}
 	elseif(strcmp($row1['senha'], $csenha) !=0 ){
-
 		$erro_csenha = '* As senhas não são iguais';
 	}
-
 	else{
-
-
 	}
 	
 }
-
-
 */
-
-
 ?>
 
 
@@ -119,6 +83,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 				<div class="alert alert-danger alerta" role="alert"><?= $erro_nome; ?></div>
 			<?php } ?>
 
+		</div>
+		<div class="form-group">
+			<label for="exampleInputPassword3">Senha atual</label>
+			<input name="senha_atual" type="password" class="form-control" required="required" id="exampleInputPassword3" placeholder="Digite sua senha atual">
 		</div>
 		<div class="form-group">
 			<label for="exampleInputPassword1">Senha</label>
