@@ -76,28 +76,6 @@ if (isset($_SESSION['msg'])) {
       <tr>
 
         <td>
-<<<<<<< HEAD
-          <?php
-          echo $row['nome_produto']; ?>
-        </td>
-        <td>
-          R$
-          <?php
-          echo number_format($row['preco'], '2', ',', '.'); ?>
-        </td>
-
-        <td colspan="2">
-          <div class="arrumar">
-            <form name="editar" action="EditarProdutos.php?id_produto=<?php echo $row['id_produto'] ?>" method="POST">
-              <input type="hidden" name="id" value="<?php	echo $row['id_usuario']; ?>">
-              
-              <span class="lapis" style="font-size: 24px;"><button  class="fas fa-pen" type="submit" name="editar" value="Editar"></button></span>
-            </form>
-            <div style="float:left">
-              <div data-toggle="modal" data-target="#myModalRemarks<?php	echo $row['id_produto']; ?>">
-                <span class="lixo" style="font-size: 24px;"><button class="fas fa-trash-alt" type="submit" name="excluir" value="Excluir"></button></span>
-              </div>
-=======
           <?php	echo $row['nome_produto']; ?>
         </td>
         <td>
@@ -114,7 +92,6 @@ if (isset($_SESSION['msg'])) {
           <div style="float:left">
             <div data-toggle="modal" data-target="#myModalRemarks<?php	echo $row['id_produto']; ?>">
               <span class="lixo" style="font-size: 24px;"><button class="fas fa-trash-alt" type="submit" name="excluir" value="Excluir"></button></span>
->>>>>>> master
             </div>
           </div>
 
