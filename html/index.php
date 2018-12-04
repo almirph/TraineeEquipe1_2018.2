@@ -117,27 +117,28 @@
 			</div>
 
 			<div class="container home-produtos">
-				<div class="row card-produto-home">
-					<?php           
-					$quantidade = '6';
-					$sql = "SELECT * FROM produto ORDER BY id_produto DESC LIMIT $quantidade";
-					$result = $db_connect->query($sql);
+				<div class="row justify-content-center card-produto-home">
+				<?php           
+      $quantidade = '4';
+      $sql = "SELECT * FROM produto ORDER BY id_produto DESC LIMIT $quantidade";
+      $result = $db_connect->query($sql);
 
-					while ($row2 = $result->fetch_assoc())
-					{?>
-					<a href="paginaProdutos.php?id_produto=<?php echo $row2['id_produto'];?>">
+      while ($row2 = $result->fetch_assoc())
 
-					<div class="col-sm">
-						<div class="card img-card" style="width:14rem;">
-							<img class="card-img-top" src="../assets/imagem_banco/<?php echo $row2['url_imagem']; ?>" alt="Card image cap">
-							<div class="card-body">
-								<h5 class="card-title"style='color:black; font-size:16px;'><?php echo $row2['nome_produto'];?></h5>
-								<h5 style='color:red; font-size:26px;'>R$<?php echo number_format($row2['preco'],'2',',','.');?><h5>
-							</div>
-						</div>
-					</div>
-					</a>
-					<?php }?>
+      {?>
+      <a href="paginaProdutos.php?id_produto=<?php echo $row2['id_produto'];?>">
+
+      <div class="col-sm">
+      <div class="card img-card" style="width:14rem;">
+      <img class="card-img-top" src="../assets/imagem_banco/<?php echo $row2['url_imagem']; ?>" alt="Card image cap">
+      <div class="card-body">
+      <h5 class="card-title"style='color:black; font-size:16px;'><?php echo $row2['nome_produto'];?></h5>
+      <h5 style='color:red; font-size:26px;'>R$<?php echo number_format($row2['preco'],'2',',','.');?><h5>
+      </div>
+      </div>
+      </div>
+      </a>
+     <?php }?>
 
 
 

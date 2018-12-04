@@ -1,4 +1,3 @@
-
 html, body{
 	padding: 0;
 	margin: 0;
@@ -41,25 +40,18 @@ html, body{
 
 
 /*@media (max-width: 576px){
-
 	.lixo{
-
 		float:none;
 	}
-
 	.lapis{
 	
 		margin-left: -26px;
-
 	}
 	.arrumar{
-
 		display: flex;
 		flex-direction: row;
 	
-
 	}
-
 }
 */
 
