@@ -77,7 +77,7 @@
 
     <div class="form-group">
       <label>URL da imagem </label><br>
-      <input type="file" required="required" autocomplete="off" name="url_imagem">
+      <input type="file" required="required" accept="image/*" autocomplete="off" name="url_imagem">
 
     </div>
     <div class="pp-adm">
