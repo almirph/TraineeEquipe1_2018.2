@@ -34,11 +34,11 @@
 		<div id="main">
 			<div class="faixa" id="body-home">
 
-				<a href="index-adm.php"><img src="../assets/img/nl2.png" class="img-fluid"></a>
+				<a href="index-adm.php"><img src="../assets/img/nl2-branco.png" class="img-fluid"></a>
 			</div>
 
 			<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-				<a class="navbar-brand icone-balao2" href="index.php#body-home">
+				<a class="navbar-brand icone-balao2" href="index-adm.php">
 					<img src="../assets/img/nl2-branco.png" width="160" height="48"></a>
 
 
