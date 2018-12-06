@@ -13,7 +13,6 @@ use PHPMailer\PHPMailer\Exception;
 
 
 if($_SESSION['msg'] == 'ok'){
-
     $nome_produto = $_SESSION['nome_produto'];
     $preco = $_SESSION['preco'];
     $descricao=  $_SESSION['descricao'];
@@ -29,7 +28,6 @@ if($_SESSION['msg'] == 'ok'){
 	$flag = true;
 
 	if(($mensagem1 != ""|| $mensagem2 != "" )&& $assunto!= ""){
-	
 		$flag = false;
 
 	}
@@ -49,10 +47,7 @@ if($_SESSION['msg'] == 'ok'){
 
 		$texto_msg = 'E-mail enviado do formulário do site Balão da Informática' . '<br><br>' .
 
-		
 		 $mensagem1 . $nome_produto . $mensagem2.'<br>';
-
-
 
 		try {
 
