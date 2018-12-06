@@ -38,10 +38,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 		$mail = new PHPMailer(true); 
 		$mail->CharSet="UTF-8";
 
-		$texto_msg = 'E-mail enviado do formulário do site Balão da Informática' . '<br><br>' .
+		$texto_msg = 
 
 		'E-mail: ' . $row['e-mail'] . '<br>' .
-		'Mensagem: ' . $_POST['texto'] . '<br>';
+		'Mensagem: ' . $_POST['texto'] . '<br>' . 'E-mail enviado do formulário do site Balão da Informática' . '<br><br>';
 
 
 

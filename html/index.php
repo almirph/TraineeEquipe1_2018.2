@@ -1,6 +1,8 @@
 <?php include 'Header.php'; ?>
+<?php 
+	session_start();
 
-
+?>
 
 
 
@@ -175,4 +177,31 @@
 <!------------------------------------------------------------------------------------------------------------------>
 <!------------------------------------------------------------------------------------------------------------------>
 
+<div class="modal fade" id="aviso">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                
+                E-mail cadastrado com sucesso
+
+            </div>
+        </div>
+    </div>
+ </div>
+
+
 <?php include 'footer.php'?>
+
+<?php if ($_SESSION['modal'] == true): ?>
+ 
+	<script>
+
+		$('#aviso').modal('show');
+		alert(':D');
+
+	</script>
+	<?php $_SESSION['modal'] = false; ?>
+<?php endif; ?>
+
+
+

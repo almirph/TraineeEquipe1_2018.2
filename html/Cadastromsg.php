@@ -45,9 +45,8 @@ if($_SESSION['msg'] == 'ok'){
 		$mail = new PHPMailer(true); 
 		$mail->CharSet="UTF-8";
 
-		$texto_msg = 'E-mail enviado do formulário do site Balão da Informática' . '<br><br>' .
-
-		 $mensagem1 . $nome_produto . $mensagem2.'<br>';
+		$texto_msg = $mensagem1 . $nome_produto . $mensagem2.'<br>'.
+		'E-mail enviado do formulário do site Balão da Informática' . '<br><br>' ;
 
 		try {
 
