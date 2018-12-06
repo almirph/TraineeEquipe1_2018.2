@@ -28,6 +28,9 @@
                 if( $db_connect->query($sql)== true )
                   {   
                       $_SESSION['msg'] = "ok";
+                      $_SESSION['nome_produto'] = $nome;
+                      $_SESSION['preco'] = $preco;
+                      $_SESSION['descricao'] = $descricao;
                       header("Location: Cadastromsg.php");             
                            
                   }else{
