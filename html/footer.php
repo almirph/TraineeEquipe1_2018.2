@@ -69,8 +69,9 @@
                         </div>
                         
 
-            </div>  
-        </form>
+                    </form>
+
+                </div>  
 
     </div>
 
@@ -134,6 +135,7 @@
 </footer>
 
 </div>
+
 
 
 <!-- Fim do footer -->

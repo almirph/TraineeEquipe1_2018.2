@@ -139,8 +139,7 @@
 
                                     <div class="modal-body">
                                         Deseja mesmo remover a categoria
-                                        <b>
-                                            <?php echo $row['nome_categoria'];?></b>?
+                                        <b><?php echo $row['nome_categoria'];?></b>?
                                     </div>
 
                                     <div class="modal-footer">
@@ -149,7 +148,7 @@
                                             <input value="<?php echo $row['id_categoria'];?>" name="deleta" type="hidden">
                                             <button type="submit" class="btn btn-dark ">Sim</button>
                                         </form>
-                                        </a>
+                                        
                                     </div>
 
                                 </div>

@@ -54,7 +54,7 @@
 					e seus resultados muito melhores! </p>
 				</div>
 				<div class="col-sm">
-					<img class="img-quemsomos direita img-fluid" src="../assets/img/objetivo.jpg" alt="uma grande estrutura para você">
+					<img class="img-quemsomos direita img-fluid" src="../assets/img/goals2.jpg" alt="uma grande estrutura para você">
 				</div>
 			</div>
 			<div class="row grid-quemsomos quemsomos-row">
@@ -99,7 +99,7 @@
 
 			<div class="row grid-quemsomos quemsomos-row">
 				<div class="col-sm ">
-					<img class="img-quemsomos direita img-fluid" src="../assets/img/objetivo.jpg" alt="uma grande estrutura para você">
+					<img class="img-quemsomos direita img-fluid" src="../assets/img/goals2.jpg" alt="uma grande estrutura para você">
 				</div>
 				<div class="col-sm texto-quemsomos esquerda">
 					<h2>Objetivo</h2>
