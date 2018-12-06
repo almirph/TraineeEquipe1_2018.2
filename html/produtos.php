@@ -69,7 +69,10 @@
         ?>
     </div>
     <nav>
-        <ul class="pagination justify-content-end">
+        
+</div>
+<div class="container">
+        <ul class="pagination justify-content-center">
             <?php 
             if($pagina != '1')
             {?>
@@ -117,7 +120,6 @@
                              <?php }?>
                          </ul>
                      </nav>
-    
 </div>
 
 
