@@ -48,7 +48,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 		try {
 
         //Retire o comentário abaixo para soltar detalhes do envio 
-        // $mail->SMTPDebug = 2;                                
+        //$mail->SMTPDebug = 2;                                
 
         // Usar SMTP para o envio
 			$mail->isSMTP();                                      
@@ -105,10 +105,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 			echo 'A mensagem não foi enviada pelo seguinte motivo: ', $mail->ErrorInfo;
 		}
 
-
+		
 		$sucess_text = '* O formulário foi enviado com sucesso';
-		header("Location: envio-email.php");
-
+		//header("Location: envio-email.php");
+		echo "ola";
 		
 		
     }
@@ -125,6 +125,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     <div class="lista-adm">
         <h1>E-mail</h1>
     </div>
+	<hr>
     <form action="envio-email.php" method="POST">
         <div class="form-group">
             <label>Assunto</label>
