@@ -14,6 +14,7 @@ use PHPMailer\PHPMailer\Exception;
 
 if($_SESSION['msg'] == 'ok'){
 
+<<<<<<< HEAD
     $nome = $_SESSION['nome_produto'];
     $preco = $_SESSION['preco'];
     $descricao=  $_SESSION['descricao'];
@@ -27,6 +28,23 @@ if($_SESSION['msg'] == 'ok'){
 	$flag = true;
 
 	if($mensagem != "" && $assunto!= ""){
+=======
+    $nome_produto = $_SESSION['nome_produto'];
+    $preco = $_SESSION['preco'];
+    $descricao=  $_SESSION['descricao'];
+    unset($_SESSION['nome_produto']);
+    unset($_SESSION['preco']);
+    unset($_SESSION['descricao']);
+    $query = mysqli_query($db_connect,"SELECT * FROM produto WHERE nome_produto LIKE '$nome_produto'");
+    $mensagem1 = "Mais um novo produto entrou para nossa coleção! Venha conferir o mais novo ";
+    $mensagem2 = " no nosso site";
+    $assunto = "Novidades";
+  
+    $nome = 'Balão da Informática';
+	$flag = true;
+
+	if(($mensagem1 != ""|| $mensagem2 != "" )&& $assunto!= ""){
+>>>>>>> master
 	
 		$flag = false;
 
@@ -47,8 +65,13 @@ if($_SESSION['msg'] == 'ok'){
 
 		$texto_msg = 'E-mail enviado do formulário do site Balão da Informática' . '<br><br>' .
 
+<<<<<<< HEAD
 		'E-mail: ' . $row['e-mail'] . '<br>' .
 		'Mensagem: ' . $mensagem . '<br>';
+=======
+		
+		 $mensagem1 . $nome_produto . $mensagem2.'<br>';
+>>>>>>> master
 
 
 
@@ -58,7 +81,11 @@ if($_SESSION['msg'] == 'ok'){
         // $mail->SMTPDebug = 2;                                
 
         // Usar SMTP para o envio
+<<<<<<< HEAD
 			$mail->isSMTP();                                      
+=======
+        $mail->isSMTP();                                      
+>>>>>>> master
 
         // Detalhes do servidor (No nosso exemplo é o Google)
 			$mail->Host = 'smtp.gmail.com';
@@ -113,7 +140,12 @@ if($_SESSION['msg'] == 'ok'){
 		}
 
 
+<<<<<<< HEAD
 		$sucess_text = '* O formulário foi enviado com sucesso';
+=======
+        $sucess_text = '* O formulário foi enviado com sucesso';
+      
+>>>>>>> master
 		header("Location: paginaprodutos-adm.php");
 
 		
