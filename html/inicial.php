@@ -84,7 +84,7 @@ function selectIdPessoa($id){
 			<tr>
 				<th scope="col">#</th>
 				<th scope="col">Nome</th>
-				<th scope="col">Ação</th>
+				<th scope="col">Ações</th>
 				
 			</tr>
 		</thead>

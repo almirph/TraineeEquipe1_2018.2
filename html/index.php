@@ -101,15 +101,16 @@
 	</div>
 </div>
 
-<hr>
+<div class="jumbotron jumbotron-fluid-home">
+	<div class="container jumbotron-home">
 <div class="pag-produtos lead">
+
+<hr>
 
 <h1 class="display-4 novidades">Novidades</h1>
 
 </div>
 
-<div class="jumbotron jumbotron-fluid-home">
-	<div class="container jumbotron-home">
 
 		
 
@@ -192,12 +193,11 @@
 
 <?php include 'footer.php'?>
 
-<?php if ($_SESSION['modal'] == true): ?>
+<?php if (isset($_SESSION['modal'])): ?>
  
 	<script>
 
 		$('#aviso').modal('show');
-		alert(':D');
 
 	</script>
 	<?php $_SESSION['modal'] = false; ?>

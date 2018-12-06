@@ -97,7 +97,7 @@
 
             <tr>
                 <th scope="col-3">Categoria</th>
-                <th scope="col">Ação</th>
+                <th scope="col">Ações</th>
             </tr>
 
         </thead>

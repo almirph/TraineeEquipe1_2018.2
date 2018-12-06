@@ -605,6 +605,7 @@ text-align: justify;
 	border-radius: 0.5; 
 	margin-top: 10%;
 	
+	
 
 }
 
@@ -631,7 +632,8 @@ text-align: justify;
 	padding-right: 2%;
 	width: 200px;
 	border: none;
-	background-color:rgb(255,255,255,.75);	
+	background-color:rgb(255,255,255,.75);
+	border-bottom: 1px solid #4d53587a!important;	
 	
 }
 
@@ -671,7 +673,7 @@ a:hover{
 	margin-top:10%;
 	margin-bottom: 10%;
 	transition: all 220ms ease-out;
-	border: 1px solid #1E1E24;
+	border: 1px solid rgba(30, 30, 36, 0.58);
 	min-height: 400px;
 	padding:5px;
 }

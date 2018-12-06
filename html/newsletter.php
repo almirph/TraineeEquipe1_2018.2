@@ -23,6 +23,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         if( $db_connect->query($sql_code)== true )
         {
             session_start();
+            
             $_SESSION['modal'] = true;
             header("Location:index.php");
            

@@ -6,7 +6,7 @@
 <div class="container">
 
         <div class="lista-adm">
-                <h1>Página Categorias</h1>
+                <h1>Cadastrar Categorias</h1>
         </div>
         <hr>
 
