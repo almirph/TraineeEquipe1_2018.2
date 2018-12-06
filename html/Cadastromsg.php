@@ -17,6 +17,9 @@ if($_SESSION['msg'] == 'ok'){
     $nome = $_SESSION['nome_produto'];
     $preco = $_SESSION['preco'];
     $descricao=  $_SESSION['descricao'];
+    usset($_SESSION['nome_produto']);
+    usset($_SESSION['preco']);
+    usset($_SESSION['descricao']);
     $query = mysqli_query($db_connect,"SELECT * FROM produto WHERE nome_produto LIKE '$nome'");
 	$mensagem = "Ola";
     $assunto = "Novidade ";
