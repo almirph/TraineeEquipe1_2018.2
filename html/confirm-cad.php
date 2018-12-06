@@ -6,12 +6,8 @@
             <div class="modal-body">
                 
                 E-mail cadastrado com sucesso
-            
-            
+
             </div>
-            
-                
-            
         </div>
     </div>
  </div> 
@@ -25,13 +21,13 @@
  
  var modal = 0;
  
- if(modal != 1){
- $('#aviso').modal('show');
- }
+    if(modal != 1){
+        $('#aviso').modal('show');
+    }
 
-$(".modal").on("hidden.bs.modal", function () {
-    window.location = "index.php";
-});
+    $(".modal").on("hidden.bs.modal", function () {
+        window.location = "index.php";
+    });
  </script>
 
 
