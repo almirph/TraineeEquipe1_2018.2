@@ -28,7 +28,10 @@
                 if( $db_connect->query($sql)== true )
                   {   
                       $_SESSION['msg'] = "ok";
-                      header("Location: paginaprodutos-adm.php");             
+                      $_SESSION['nome_produto'] = $nome;
+                      $_SESSION['preco'] = $preco;
+                      $_SESSION['descricao'] = $descricao;
+                      header("Location: cadastromsg.php");             
                            
                   }else{
                     $_SESSION['msg']="erro";

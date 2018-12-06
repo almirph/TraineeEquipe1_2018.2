@@ -1,7 +1,4 @@
-<?php include 'header-adm.php';
-
-session_start();
-
+<?php
 include 'pagina_conexao.php'; ?>
 
 <?php
@@ -30,6 +27,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
             ?><script language='javascript' type='text/javascript'>alert('E-mail cadastrado com sucesso!'); window.location.href = 'index.php';</script>; <?php
             $e_mail=NULL;      
         }
+        else
+        {?>
+            <script language='javascript' type='text/javascript'>alert('E-mail já cadastrado!'); window.location.href = 'index.php';</script>
+        <?php }
 
 
 
