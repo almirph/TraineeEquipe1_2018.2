@@ -1,23 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta http-equiv="X-UA-Compatible" content="ie=edge">
- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
- <title>Document</title>
-</head>
-<body>
+<?php include 'index.php'; ?>
 
  <div class="modal fade" id="aviso">
- <div class="modal-dialog">
- <div class="modal-content">
- <div class="modal-body">
- <h1>Aviso Importante</h1>
- <p>Recadastre sua Senha</p>
- </div>
- </div>
- </div>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                
+                E-mail cadastrado com sucesso
+            
+            
+            </div>
+            
+                
+            
+        </div>
+    </div>
  </div> 
 
 
@@ -27,14 +23,15 @@
 
  <script>
  
- var senha = 0;
+ var modal = 0;
  
- if(senha != 1){
+ if(modal != 1){
  $('#aviso').modal('show');
  }
 
-
+$(".modal").on("hidden.bs.modal", function () {
+    window.location = "index.php";
+});
  </script>
 
-</body>
-</html>
+

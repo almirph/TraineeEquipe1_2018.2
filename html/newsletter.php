@@ -8,6 +8,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 
     $e_mail = $_POST['imail'];
+    $modal = 1;
 
     
     if($e_mail != "")
@@ -20,11 +21,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
         if( $db_connect->query($sql_code)== true )
         {
-            $msg_footer =  'Email registrado com sucesso';
-            echo $msg_footer;
-            $_SESSION['msg_footer'] = 'Email ' . $_POST['imail'] . ' registrado com sucesso.';
+            header("Location:confirm-cad.php");
            
-            ?><script language='javascript' type='text/javascript'>alert('E-mail cadastrado com sucesso!'); window.location.href = 'index.php';</script>; <?php
+            
             $e_mail=NULL;      
         }
         else
