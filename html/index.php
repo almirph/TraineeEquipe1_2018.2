@@ -101,7 +101,7 @@
 	</div>
 </div>
 
-
+<hr>
 <div class="pag-produtos lead">
 
 <h1 class="display-4 novidades">Novidades</h1>

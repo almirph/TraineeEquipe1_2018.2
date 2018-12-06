@@ -58,9 +58,8 @@
                 </div>
 
 
-
                 <div class="col-lg-3">
-
+                
                     <h5>Receba nossas novidades por <br> e-mail:</h5>
                     <form action="newsletter.php" class="input-group mb-3" method="POST">
                         <input type="email" name="imail" required class="form-control" value="<?php if(isset($e_mail)){ echo $e_mail;} ?>" aria-describedby="emailHelp" placeholder="E-mail" aria-label="Recipient's username">
