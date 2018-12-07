@@ -14,13 +14,13 @@
 	<!--<link href="https://fonts.googleapis.com/css?family=Montserrat:200,400" rel="stylesheet"> -->
 	<link href="../assets/FontsA/css/all.css" rel="stylesheet">
 	<!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-	 crossorigin="anonymous"> -->
+		crossorigin="anonymous"> -->
 
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<link rel="icon" type="imagem/png" href="../assets/img/2.png" />
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<link rel="icon" type="imagem/png" href="../assets/img/2.png" />
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -40,8 +40,8 @@
 					<img src="../assets/img/nl2-branco.png" width="160" height="48"></a>
 
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-				 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+					aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 
@@ -52,31 +52,31 @@
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle nav-botn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-							 aria-haspopup="true" aria-expanded="false">
-								Tabelas
-							</a>
-							<div class="dropdown-menu home" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="paginaprodutos-adm.php">Cadastrar produtos</a>
-								<a class="dropdown-item" href="pagina_de_listagem.php">Lista de produtos</a>
-								<div class="dropdown-divider home-linha"></div>
-								<a class="dropdown-item" href="cadastrar.php">Cadastrar usuarios</a>
-								<a class="dropdown-item" href="inicial.php">Lista de usuarios</a>
-								<div class="dropdown-divider home-linha"></div>
-								<a class="dropdown-item" href="categoria.php">Cadastrar categorias</a>
-								<a class="dropdown-item" href="lista_categoria.php">Lista de categorias</a>
-								<div class="dropdown-divider home-linha"></div>
-								<a class="dropdown-item" href="envio-email.php">Enviar E-mail</a>
-							</div>
-						</li>
+							aria-haspopup="true" aria-expanded="false">
+							Tabelas
+						</a>
+						<div class="dropdown-menu home" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="paginaprodutos-adm.php">Cadastrar produtos</a>
+							<a class="dropdown-item" href="pagina_de_listagem.php">Lista de produtos</a>
+							<div class="dropdown-divider home-linha"></div>
+							<a class="dropdown-item" href="cadastrar.php">Cadastrar usuarios</a>
+							<a class="dropdown-item" href="inicial.php">Lista de usuarios</a>
+							<div class="dropdown-divider home-linha"></div>
+							<a class="dropdown-item" href="categoria.php">Cadastrar categorias</a>
+							<a class="dropdown-item" href="lista_categoria.php">Lista de categorias</a>
+							<div class="dropdown-divider home-linha"></div>
+							<a class="dropdown-item" href="envio-email.php">Enviar E-mail</a>
+						</div>
+					</li>
 
-						<li class="nav-item">
-							<a class="nav-link nav-botn" href="logout.php">Logout</a>
-						</li>
+					<li class="nav-item">
+						<a class="nav-link nav-botn" href="logout.php">Logout</a>
+					</li>
 
 
-					</ul>
+				</ul>
 
-				</div>
-			</nav>
-			<?php include "pagina_conexao.php";?>
-			<?php include "Verifica-login.php";?>
+			</div>
+		</nav>
+		<?php include "pagina_conexao.php";?>
+		<?php include "Verifica-login.php";?>

@@ -26,19 +26,19 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
             
             $_SESSION['modal'] = true;
             header("Location:index.php");
-           
+            
             
             $e_mail=NULL;      
         }
         else
-        {?>
-            <script language='javascript' type='text/javascript'>alert('E-mail já cadastrado!'); window.location.href = 'index.php';</script>
-        <?php }
+            {?>
+                <script language='javascript' type='text/javascript'>alert('E-mail já cadastrado!'); window.location.href = 'index.php';</script>
+            <?php }
 
 
 
+        }
     }
-}
 
 
-?>
+    ?>

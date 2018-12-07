@@ -4,11 +4,11 @@ $auxiliar = $_GET['id_usuario'];
 if(isset($_SESSION['msg_diferente'])){ ?>
 
 	<div class="alert alert-danger alert-dismissible" role="alert">
-	   <?php echo $_SESSION['msg_diferente']; unset($_SESSION['msg_diferente']);?>
-	   
-	   	<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-        </button>
+		<?php echo $_SESSION['msg_diferente']; unset($_SESSION['msg_diferente']);?>
+		
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
 
 	</div>
 
@@ -16,11 +16,11 @@ if(isset($_SESSION['msg_diferente'])){ ?>
 if(isset($_SESSION['msg_envio'])){ ?>
 
 	<div class="alert alert-success alert-dismissible" role="alert">
-	   <?php echo $_SESSION['msg_envio']; unset($_SESSION['msg_envio']);?>
-	   
-	   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
+		<?php echo $_SESSION['msg_envio']; unset($_SESSION['msg_envio']);?>
+		
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
 
 	</div>
 

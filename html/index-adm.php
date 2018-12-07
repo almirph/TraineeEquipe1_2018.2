@@ -13,20 +13,20 @@
 
             <h1>Bem vindo,
                 <?php echo $_SESSION['Usuario'];?> !</h1>
-            <hr>
-            <a class="btn btn-dark btn-lg btn-block botao-home-adm" href="pagina_de_listagem.php" role="button">Produtos</a>
-            <a class="btn btn-dark btn-lg btn-block botao-home-adm" href="inicial.php" role="button">Usuários</a>
-            <a class="btn btn-dark btn-lg btn-block botao-home-adm" href="categoria.php" role="button">Categorias</a>
-            <a class="btn btn-dark btn-lg btn-block botao-home-adm" href="envio-email.php" role="button">Enviar e-mails</a>
+                <hr>
+                <a class="btn btn-dark btn-lg btn-block botao-home-adm" href="pagina_de_listagem.php" role="button">Produtos</a>
+                <a class="btn btn-dark btn-lg btn-block botao-home-adm" href="inicial.php" role="button">Usuários</a>
+                <a class="btn btn-dark btn-lg btn-block botao-home-adm" href="categoria.php" role="button">Categorias</a>
+                <a class="btn btn-dark btn-lg btn-block botao-home-adm" href="envio-email.php" role="button">Enviar e-mails</a>
+
+            </div>
 
         </div>
 
     </div>
 
-</div>
 
 
 
 
-
-<?php include "footer.php";?>
+    <?php include "footer.php";?>
