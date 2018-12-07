@@ -101,8 +101,9 @@
 	</div>
 </div>
 
-
-<div class="pag-produtos lead">
+	<div class="container home-produtos">
+			
+			<div class="pag-produtos lead">
 <hr>
 <h1 class="display-4 novidades">Novidades</h1>
 
@@ -110,9 +111,8 @@
 
 
 		
-
-		<div class="container home-produtos">
-			<div class="row justify-content-center card-produto-home">
+		<div class="row justify-content-center card-produto-home">
+	
 				<?php           
 					$quantidade = '4';
 					$sql = "SELECT * FROM produto ORDER BY id_produto DESC LIMIT $quantidade";

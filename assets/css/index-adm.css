@@ -48,6 +48,25 @@ html, body{
 	}
 
 }
+@media(max-width:1000px)
+{
+	
+	.dropdown-menu{
+		background-color:#343a40;
+
+	}
+	.dropdown-menu a{
+		color:rgba(255,255,255,.5);
+	}
+	.dropdown-item.active, .dropdown-item:active {
+		background-color: #1E1E24;
+	}
+	.dropdown-item:focus, .dropdown-item:hover{
+		background-color: #343a40;
+		color:white;
+	}
+}
+
 @media (min-width: 992px){
 	.navbar-brand.icone-balao2{
 		display: none;

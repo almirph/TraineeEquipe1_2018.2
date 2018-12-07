@@ -89,10 +89,10 @@ if(isset($_SESSION['msg']))
       <textarea class="form-control" autocomplete="off" name='descricao' rows="3" required="required"></textarea>
 
     </div>
-    <div class="form-group " enctype="multipart/form-data">
-      <label>URL da imagem </label><br>
-      <input type="file" autocomplete="off" name="url_imagem" accept="image/*" required="required">
-    </div>
+    <div class="form-group">
+    <label for="exampleFormControlFile1">URL da imagem</label>
+    <input type="file"  class="form-control-file" name="url_imagem" required="required"accept="image/*" id="exampleFormControlFile1">
+  </div>
     <?php
  
 

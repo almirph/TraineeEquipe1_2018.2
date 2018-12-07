@@ -76,10 +76,9 @@
     </div>
 
     <div class="form-group">
-      <label>URL da imagem </label><br>
-      <input type="file" required="required" accept="image/*" autocomplete="off" name="url_imagem">
-
-    </div>
+    <label for="exampleFormControlFile1">URL da imagem</label>
+    <input type="file"  class="form-control-file" name="url_imagem" value="<?php echo $row1['url_imagem'];?> required="required"accept="image/*" id="exampleFormControlFile1">
+  </div>
     <div class="pp-adm">
 
     <button type="submit" class="btn btn-dark ">Editar produto</button>
