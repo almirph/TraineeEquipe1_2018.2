@@ -48,7 +48,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 		try {
 
         //Retire o comentário abaixo para soltar detalhes do envio 
-        //$mail->SMTPDebug = 2;                                
+        $mail->SMTPDebug = 2;                                
 
         // Usar SMTP para o envio
 			$mail->isSMTP();                                      

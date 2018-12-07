@@ -200,7 +200,7 @@
 		$('#aviso').modal('show');
 
 	</script>
-	<?php $_SESSION['modal'] = false; ?>
+	<?php $_SESSION['modal'] = NULL; ?>
 <?php endif; ?>
 
 
