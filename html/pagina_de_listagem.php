@@ -1,6 +1,6 @@
 <?php include "header-adm.php" ;?>
 <?php include 'pagina_conexao.php';
-print_r($_SESSION);
+
 if (isset($_SESSION['deleta'])) {
 	if ($_SESSION['deleta'] == '1') { ?>
     <div class="alert alert-success" role="alert">
@@ -182,8 +182,8 @@ if (isset($_SESSION['msg'])) {
 
     if ($totalPagina > 1) {
      if ($pagina == 1 && $totalPagina > 3 && $totalPagina > $pagina) {
-      for ($i = $pagina; $i < $pagina + 3; $i++) { ?>
-
+      for ($i = $pagina; $i < $pagina + 1; $i++) { ?>
+        
         <li class="page-item"><a class="page-link <?php	echo ($pagina == $i) ? 'cor-paginacao' : 'paginacao'; ?>" href='pagina_de_listagem.php?pagina=<?php			echo $i; ?>'>
           <?php	echo $i; ?></a></li>
           <?php
@@ -191,15 +191,16 @@ if (isset($_SESSION['msg'])) {
         <?php
       }
       elseif ($totalPagina >= 3 && $totalPagina > $pagina) {
-        for ($i = $pagina - 1; $i < $pagina + 1 + 1; $i++) { ?>
-
+        for ($i = $pagina-1; $i < $pagina  + 2; $i++) { ?>
+          <?php if($i != 0 )
+          {?>
           <li class="page-item "><a class="page-link  <?php echo ($pagina == $i) ? 'cor-paginacao' : 'paginacao'; ?>"
             href='pagina_de_listagem.php?pagina=<?php	echo $i; ?>'>
             <?php	echo $i; ?></a></li>
             <?php
           } ?>
           <?php
-        }
+        }}
         else {
           for ($i = 1; $i < $totalPagina + 1; $i++) { ?>
 
@@ -222,7 +223,6 @@ if (isset($_SESSION['msg'])) {
     </nav>
   </div>
 </div>
-
 
 <?php
 include "footer.php" ?>

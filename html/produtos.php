@@ -4,7 +4,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
         aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span style="font-size: 14px;">
-        <i class="fas fa-arrow-down"></i>Categoria</span>
+        <i class="fas fa-arrow-down"></i> Categoria</span>
     </button>
     <div class="collapse navbar-collapse action-menu" id="navbarTogglerDemo01">
         <ul class="list-group mr-auto mt-2 mt-lg-0  menu-list">
@@ -88,7 +88,7 @@
                 {
                     for($i = $pagina; $i < $pagina+3; $i++) { ?>
 
-                        <li class="page-item"><a class="page-link <?php echo ($pagina ==$i) ? 'cor-paginacao': 'paginacao' ;?>" href='produtos.php?id_categoria=<?php echo $auxiliar;?>&pagina=<?php echo $i;?>'>
+                        <li class="page-item"><a class="page-link<?php echo ($pagina == $i) ? 'cor-paginacao' : 'paginacao' ;?>" href='produtos.php?id_categoria=<?php echo $auxiliar;?>&pagina=<?php echo $i;?>'>
                                 <?php echo $i;?></a></li>
                      <?php }?> 
                     <?php  }
@@ -99,7 +99,7 @@
 
                     for($i = $pagina-1; $i < $pagina+1 + 1; $i++) { ?>
 
-                        <li class="page-item "><a class="page-link  <?php echo ($pagina ==$i) ? 'cor-paginacao': 'paginacao' ;?>"  href='produtos.php?id_categoria=<?php echo $auxiliar;?>&pagina=<?php echo $i;?>'>
+                        <li class="page-item "><a class="page-link <?php echo ($pagina == $i) ? 'cor-paginacao' : 'paginacao' ;?>"  href='produtos.php?id_categoria=<?php echo $auxiliar;?>&pagina=<?php echo $i;?>'>
                                 <?php echo $i;?></a></li>
                      <?php }?> 
                     <?php  }
@@ -107,7 +107,7 @@
                     {
                         for($i = 1; $i < $totalPagina + 1; $i++) { ?>
 
-                            <li class="page-item "><a class="page-link  <?php echo ($pagina ==$i) ? 'cor-paginacao': 'paginacao' ;?>"  href='produtos.php?id_categoria=<?php echo $auxiliar;?>&pagina=<?php echo $i;?>'>
+                            <li class="page-item "><a class="page-link <?php echo ($pagina == $i) ? 'cor-paginacao' : 'paginacao' ;?>"  href='produtos.php?id_categoria=<?php echo $auxiliar;?>&pagina=<?php echo $i;?>'>
                                     <?php echo $i;?></a></li>
                          <?php  }
                     }
