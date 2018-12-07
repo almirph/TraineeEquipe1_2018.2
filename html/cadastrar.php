@@ -80,7 +80,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 <div class="container cadastrar-usuarios">
 
-	<h1>Cadastrar</h1>
+	<h1>Cadastrar usuário</h1>
 
 	<hr>
 

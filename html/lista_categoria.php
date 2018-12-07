@@ -83,7 +83,7 @@
 
     <div class="lista-adm">
 
-        <h1>Lista de Categorias</h1>
+        <h1>Lista de categorias</h1>
 
     </div>
 
@@ -97,7 +97,7 @@
 
             <tr>
                 <th scope="col-3">Categoria</th>
-                <th scope="col">Ação</th>
+                <th scope="col">Ações</th>
             </tr>
 
         </thead>

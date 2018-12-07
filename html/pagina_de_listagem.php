@@ -61,7 +61,7 @@ if (isset($_SESSION['msg'])) {
 
         <th scope="col">Nome</th>
         <th scope="col-3">Preço</th>
-        <th scope="col-2">Ação</th>
+        <th scope="col-2">Ações</th>
 
       </tr>
     </thead>

@@ -1,6 +1,8 @@
 <?php include 'Header.php'; ?>
+<?php 
+	session_start();
 
-
+?>
 
 
 
@@ -106,8 +108,6 @@
 
 </div>
 
-<div class="jumbotron jumbotron-fluid-home">
-	<div class="container jumbotron-home">
 
 		
 
@@ -175,4 +175,30 @@
 <!------------------------------------------------------------------------------------------------------------------>
 <!------------------------------------------------------------------------------------------------------------------>
 
+<div class="modal fade" id="aviso">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                
+                E-mail cadastrado com sucesso
+
+            </div>
+        </div>
+    </div>
+ </div>
+
+
 <?php include 'footer.php'?>
+
+<?php if (isset($_SESSION['modal'])): ?>
+ 
+	<script>
+
+		$('#aviso').modal('show');
+
+	</script>
+	<?php $_SESSION['modal'] = NULL; ?>
+<?php endif; ?>
+
+
+

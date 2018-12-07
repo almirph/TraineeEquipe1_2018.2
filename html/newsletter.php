@@ -4,6 +4,7 @@ include 'pagina_conexao.php'; ?>
 <?php
 
 
+
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 
@@ -21,7 +22,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
         if( $db_connect->query($sql_code)== true )
         {
-            header("Location:confirm-cad.php");
+            session_start();
+            
+            $_SESSION['modal'] = true;
+            header("Location:index.php");
            
             
             $e_mail=NULL;      

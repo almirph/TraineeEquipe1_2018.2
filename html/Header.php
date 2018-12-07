@@ -11,9 +11,11 @@
 	<!-- Bootstrap -->
 	<link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link href="../assets/css/index.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,400" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-	 crossorigin="anonymous">
+<!--	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,400" rel="stylesheet"> -->
+	<link href="../assets/FontsA/css/all.css" rel="stylesheet">
+
+	<!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+	 crossorigin="anonymous"> -->
 	<link rel="icon" type="imagem/png" href="../assets/img/2.png" />
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
