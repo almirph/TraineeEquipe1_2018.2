@@ -13,7 +13,7 @@
                 <div class="col-lg-3">
 
 
-                    <h5 id="fale-conosco">Nossos telefones:</h5>
+                    <h5 id="fale-conosco">Nossos telefones: <span style="font-size:26px;"><i class="fas fa-phone"></i></span></h5>
                     
                     
 
@@ -27,7 +27,7 @@
 
                 <div class="col-lg-3">
 
-                    <h5>Horário de atendimento:</h5>
+                    <h5>Horário de atendimento: <span style="font-size:26px"><i class="fas fa-headphones-alt"></i><span></h5>
 
                     <ul class="list-unstyled">
                         <li>8h00 às 18h00</li>
@@ -35,7 +35,7 @@
                     </ul>           
                 </div>
 
-                <div class="col-lg-3 pdd-special">
+                <div class="col-lg-3 ">
 
                     <h5>Nossa localização:<span style="font-size: 26px"><button class="fas fa-map-marker-alt loc-tamanho" type="button" class="btn btn-primary " data-toggle="modal" data-target="#exampleModalCenter"></button></span></h5>  
 
@@ -58,7 +58,7 @@
                 </div>
 
 
-                <div class="col-lg-3">
+                <div class="col-lg-3 pdd-special">
                 
                     <h5>Receba nossas novidades por <br> e-mail:</h5>
                     <form action="newsletter.php" class="input-group mb-3" method="POST">

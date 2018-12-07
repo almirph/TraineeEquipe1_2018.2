@@ -201,9 +201,6 @@ html, body{
 		margin-left: 15%;
 
 	}
-	.form-control{
-		width: 45%;
-	}
 }
 .img-card-home{
 	transition: all 220ms ease-out;
@@ -324,7 +321,7 @@ footer{
 
 .pdd-special h5{
 
-	padding-top:4px;
+	margin-top:5px;
 
 }
 
