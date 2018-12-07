@@ -73,7 +73,7 @@ function selectIdPessoa($id){
 
 <div class="container lista-de-usuarios">
 
-	<h1>Usuarios</h1>
+	<h1>Lista de usuários</h1>
 
 	<hr>
 

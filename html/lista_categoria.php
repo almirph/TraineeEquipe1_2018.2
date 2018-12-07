@@ -83,7 +83,7 @@
 
     <div class="lista-adm">
 
-        <h1>Lista de Categorias</h1>
+        <h1>Lista de categorias</h1>
 
     </div>
 

@@ -1,6 +1,6 @@
 <?php include "header-adm.php" ;?>
 <?php include 'pagina_conexao.php';
-print_r($_SESSION);
+
 if (isset($_SESSION['deleta'])) {
 	if ($_SESSION['deleta'] == '1') { ?>
     <div class="alert alert-success" role="alert">

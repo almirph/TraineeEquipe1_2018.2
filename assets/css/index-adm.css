@@ -1,3 +1,20 @@
+@font-face{
+
+	font-family: "montserrat";
+	src: url("../Fonte/Montserrat/Montserrat-Regular.ttf") format('truetype');
+	font-weight: 400;
+	
+	
+}
+@font-face{
+
+	font-family: "montserrat";
+	src: url("../Fonte/Montserrat/Montserrat-ExtraLight.ttf") format('truetype');
+	font-weight: 200;
+	
+	
+}
+
 html, body{
 	padding: 0;
 	margin: 0;
@@ -222,7 +239,23 @@ html, body{
 
 	.pdd-special h5{
 
-		padding-top: 4px;
+		padding-top: 19px;
+	}
+	.fa-phone{
+
+		padding-left: 12px;
+	
+		background-color:#1E1E24;
+	
+		border-width: 0;
+		color: white;
+	}
+	.fa-headphones-alt{
+
+		padding-left: 12px;
+		background-color:#1E1E24;
+		color: white;
+		border-width: 0;
 	}
 
 	.col-lg-3 li{
