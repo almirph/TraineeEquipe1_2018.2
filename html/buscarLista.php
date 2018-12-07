@@ -54,7 +54,7 @@
                $pesquisar_p = $_GET['pesquisar'];
                $pesquisar_p = preg_replace("[#^0-9a-z#]","","$pesquisar_p");
         
-               $query = mysqli_query($db_connect,"SELECT * FROM produto WHERE nome_produto LIKE '%$pesquisar_p%' ORDER BY id_categoria DESC LIMIT $inicio, $quantidade ");
+               $query = mysqli_query($db_connect,"SELECT * FROM produto WHERE nome_produto LIKE '%$pesquisar_p%' ORDER BY id_produto DESC LIMIT $inicio, $quantidade ");
                $count = mysqli_num_rows($query);
                }
                if($count == 0) :?>

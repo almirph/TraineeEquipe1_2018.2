@@ -1,6 +1,5 @@
 <?php include "header-adm.php" ;?>
 <?php include 'pagina_conexao.php';
-
 if (isset($_SESSION['deleta'])) {
 	if ($_SESSION['deleta'] == '1') { ?>
     <div class="alert alert-success" role="alert">
@@ -8,7 +7,6 @@ if (isset($_SESSION['deleta'])) {
     </div>
     <?php
   }
-
   unset($_SESSION['deleta']);
 }
 if (isset($_SESSION['formato'])) {
@@ -23,10 +21,8 @@ if (isset($_SESSION['formato'])) {
     </div>
     <?php
   }
-
   unset($_SESSION['formato']);
 } 
-
 if (isset($_SESSION['msg'])) {
 	if ($_SESSION['msg'] == '1') { ?>
     <div class="alert alert-success" role="alert">
@@ -39,7 +35,6 @@ if (isset($_SESSION['msg'])) {
     </div>
     <?php
   }
-
   unset($_SESSION['msg']);
 } ?>
 <div class="container lista-de-usuarios">
@@ -70,22 +65,15 @@ if (isset($_SESSION['msg'])) {
       <?php
       $quantidade = 15;
       $pagina = "";
-
       if ((isset($_GET['pagina'])) == true) {
        $pagina = $_GET['pagina'];
      }
-
      if ($pagina == '') {
        $pagina = '1';
      }
-
      $inicio = ($quantidade * $pagina) - $quantidade;
-
-
-
-     $sql = "SELECT * FROM produto ORDER BY id_categoria DESC LIMIT $inicio, $quantidade ";
+     $sql = "SELECT * FROM produto ORDER BY id_produto DESC LIMIT $inicio, $quantidade ";
      $result = $db_connect->query($sql);
-
      while ($row = $result->fetch_assoc()) { ?>
       <tr>
 
@@ -98,79 +86,77 @@ if (isset($_SESSION['msg'])) {
         </td>
 
         <td colspan="3">
-        <div class="arrumar">
-          <form name="editar" action="EditarProdutos.php?id_produto=<?php echo $row['id_produto'] ?>" method="POST">
-            <input type="hidden" name="id" value="<?php	echo $row['id_usuario']; ?>">
-            <span class="lapis" style="font-size: 24px;"><button  class="fas fa-pen" type="submit" name="editar" value="Editar"></button></span>
-          </form>
-          <div style="float:left">
-            <div data-toggle="modal" data-target="#myModalRemarks<?php	echo $row['id_produto']; ?>">
-              <span class="lixo" style="font-size: 24px;"><button class="fas fa-trash-alt" type="submit" name="excluir" value="Excluir"></button></span>
+          <div class="arrumar">
+            <form name="editar" action="EditarProdutos.php?id_produto=<?php echo $row['id_produto'] ?>" method="POST">
+              <input type="hidden" name="id" value="<?php	echo $row['id_usuario']; ?>">
+              <span class="lapis" style="font-size: 24px;"><button  class="fas fa-pen" type="submit" name="editar" value="Editar"></button></span>
+            </form>
+            <div style="float:left">
+              <div data-toggle="modal" data-target="#myModalRemarks<?php	echo $row['id_produto']; ?>">
+                <span class="lixo" style="font-size: 24px;"><button class="fas fa-trash-alt" type="submit" name="excluir" value="Excluir"></button></span>
+              </div>
             </div>
-          </div>
 
-          <div class="modal fade" id="myModalRemarks<?php	echo $row['id_produto']; ?>" tabindex="-1" role="dialog"
-            aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+            <div class="modal fade" id="myModalRemarks<?php	echo $row['id_produto']; ?>" tabindex="-1" role="dialog"
+              aria-labelledby="TituloModalCentralizado" aria-hidden="true">
 
 
-            <div class="modal-dialog">
-              <!-- Modal content -->
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h2>Deletar produto</h2>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title"></h4>
-                </div>
-                <div class="modal-body">
-                  Deseja mesmo remover o produto
-                  <b>
-                    <?php	echo $row['nome_produto']; ?></b>?
+              <div class="modal-dialog">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2>Deletar produto</h2>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"></h4>
                   </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
+                  <div class="modal-body">
+                    Deseja mesmo remover o produto
+                    <b>
+                      <?php	echo $row['nome_produto']; ?></b>?
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
 
 
-                    <a href="deletaProduto.php?id_produto=<?php echo $row['id_produto'];?>">
+                      <a href="deletaProduto.php?id_produto=<?php echo $row['id_produto'];?>">
 
-                      <form method="POST">
-                        <input value="<?php	echo $row['id_produto']; ?>" name="deleta" type="hidden">
-                        <button type="button" class="btn btn-dark ">Sim</button>
-                      </a>
-                    </form>
+                        <form method="POST">
+                          <input value="<?php	echo $row['id_produto']; ?>" name="deleta" type="hidden">
+                          <button type="button" class="btn btn-dark ">Sim</button>
+                        </a>
+                      </form>
+
+                    </div>
+
+
 
                   </div>
-
-
-
                 </div>
               </div>
             </div>
-          </div>
-        </form>
+          </form>
 
-      </td>
-    </tr>
+        </td>
+      </tr>
 
 
-    <?php
-  }
+      <?php
+    }
+    $sqlTotal = "SELECT id_produto FROM produto";
+    $qrTotal = $db_connect->query($sqlTotal);
+    $numTotal = $qrTotal->num_rows;
+    $totalPagina = ceil($numTotal / $quantidade);
+    $anterior = (($pagina - 1) == 0) ? 1 : $pagina - 1;
+    $proximo = (($pagina + 1) >= $totalPagina) ? $totalPagina : $pagina + 1;
+    ?>
 
-  $sqlTotal = "SELECT id_produto FROM produto";
-  $qrTotal = $db_connect->query($sqlTotal);
-  $numTotal = $qrTotal->num_rows;
-  $totalPagina = ceil($numTotal / $quantidade);
-  $anterior = (($pagina - 1) == 0) ? 1 : $pagina - 1;
-  $proximo = (($pagina + 1) >= $totalPagina) ? $totalPagina : $pagina + 1;
-  ?>
-
-</tr>
+  </tr>
 </tbody>
 </div>
 </table>
 <nav>
   <ul class="pagination justify-content-end">
     <?php
-
     if ($pagina != '1') { ?>
       <li class="page-item">
         <a class="page-link paginacao" href="pagina_de_listagem.php?pagina=<?php	echo $anterior; ?>">anterior</a>
@@ -179,7 +165,6 @@ if (isset($_SESSION['msg'])) {
       <?php
     } ?>
     <?php
-
     if ($totalPagina > 1) {
      if ($pagina == 1 && $totalPagina > 3 && $totalPagina > $pagina) {
       for ($i = $pagina; $i < $pagina + 1; $i++) { ?>
@@ -194,35 +179,34 @@ if (isset($_SESSION['msg'])) {
         for ($i = $pagina-1; $i < $pagina  + 2; $i++) { ?>
           <?php if($i != 0 )
           {?>
-          <li class="page-item "><a class="page-link  <?php echo ($pagina == $i) ? 'cor-paginacao' : 'paginacao'; ?>"
-            href='pagina_de_listagem.php?pagina=<?php	echo $i; ?>'>
-            <?php	echo $i; ?></a></li>
-            <?php
-          } ?>
-          <?php
-        }}
-        else {
-          for ($i = 1; $i < $totalPagina + 1; $i++) { ?>
-
-            <li class="page-item "><a class="page-link  <?php	echo ($pagina == $i) ? 'cor-paginacao' : 'paginacao'; ?>"
+            <li class="page-item "><a class="page-link  <?php echo ($pagina == $i) ? 'cor-paginacao' : 'paginacao'; ?>"
               href='pagina_de_listagem.php?pagina=<?php	echo $i; ?>'>
               <?php	echo $i; ?></a></li>
               <?php
+            } ?>
+            <?php
+          }}
+          else {
+            for ($i = 1; $i < $totalPagina + 1; $i++) { ?>
+
+              <li class="page-item "><a class="page-link  <?php	echo ($pagina == $i) ? 'cor-paginacao' : 'paginacao'; ?>"
+                href='pagina_de_listagem.php?pagina=<?php	echo $i; ?>'>
+                <?php	echo $i; ?></a></li>
+                <?php
+              }
             }
           }
-        }
+          if ($pagina != $totalPagina && $totalPagina > 1 && $pagina < $totalPagina)  { ?>
 
-        if ($pagina != $totalPagina && $totalPagina > 1 && $pagina < $totalPagina)  { ?>
-
-          <li class="page-item">
-            <a class="page-link paginacao" href="pagina_de_listagem.php?pagina=<?php echo $proximo; ?>">próximo</a>
-          </li>
-          <?php
-        } ?>
-      </ul>
-    </nav>
+            <li class="page-item">
+              <a class="page-link paginacao" href="pagina_de_listagem.php?pagina=<?php echo $proximo; ?>">próximo</a>
+            </li>
+            <?php
+          } ?>
+        </ul>
+      </nav>
+    </div>
   </div>
-</div>
 
-<?php
-include "footer.php" ?>
+  <?php
+  include "footer.php" ?>

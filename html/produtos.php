@@ -39,7 +39,7 @@
             }
             $inicio = ($quantidade * $pagina) - $quantidade;
 
-            $sql = "SELECT *FROM produto  WHERE id_categoria LIKE '$auxiliar' ORDER BY id_categoria DESC LIMIT $inicio, $quantidade ";
+            $sql = "SELECT *FROM produto  WHERE id_categoria LIKE '$auxiliar' ORDER BY id_produto DESC LIMIT $inicio, $quantidade ";
             $result = $db_connect->query($sql);
             
             while ($row2 = $result->fetch_assoc()): ?>
