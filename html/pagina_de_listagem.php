@@ -197,10 +197,6 @@ if (isset($_SESSION['msg'])) {
               }
             }
           }
-<<<<<<< HEAD
-=======
-
->>>>>>> master
           if ($pagina != $totalPagina && $totalPagina > 1 && $pagina < $totalPagina)  { ?>
 
             <li class="page-item">
