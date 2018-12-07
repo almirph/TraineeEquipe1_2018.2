@@ -1,33 +1,6 @@
 <?php include "header.php";?>
 <?php include "pagina_conexao.php";?>
-
-
 <?php
-$output = '';
-$prod = '';
-
-
-?>
-
-
-<nav class="navbar navbar-expand-lg navbar-light categoria">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse action-menu" id="navbarTogglerDemo01">
-
-    <ul class="list-group mr-auto mt-2 mt-lg-0  menu-list">
-        <?php include "nav-categoria.php"?>
-    </ul>
-</div>
-</nav>
-<div class="container pag-produtos">
-    <h1>Resultado da pesquisa:
-        <?php echo $_GET['pesquisar']  ;?>
-    </h1><br>
-
-    <?php
     $quantidade = 12;
     $pagina = "";
     if((isset($_GET['pagina']))==true)
@@ -47,20 +20,37 @@ $prod = '';
        
        $query = mysqli_query($db_connect,"SELECT * FROM produto WHERE nome_produto LIKE '%$pesquisar_p%' ORDER BY id_produto DESC LIMIT $inicio, $quantidade ");
        $count = mysqli_num_rows($query);
-       ?>
-       <div class="row card-produto">
-        <?php
+       
+       if($count == 0) {
+        header("Location: paginaNovidades.php");
         
-        if($count == 0) {
-            header("Location: produtos.php");
-            
-        }else{
+    }
+       ?>
+
+
+<nav class="navbar navbar-expand-lg navbar-light categoria">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse action-menu" id="navbarTogglerDemo01">
+
+    <ul class="list-group mr-auto mt-2 mt-lg-0  menu-list">
+        <?php include "nav-categoria.php"?>
+    </ul>
+</div>
+</nav>
+<div class="container pag-produtos">
+    <h1>Resultado da pesquisa:
+        <?php echo $_GET['pesquisar']  ;?>
+    </h1><br>
+
+
+       <div class="row justify-content-center card-produto">
+        <?php
+       
             while($row = mysqli_fetch_assoc($query)) {             
                 ?>
-
-
-
-
                 <a href="paginaProdutos.php?id_produto=<?php echo $row['id_produto'];?>">
 
                     <div class="col-sm">
@@ -82,7 +72,7 @@ $prod = '';
                     }
                     
                 }
-            }
+            
             $sqlTotal   = "SELECT id_produto FROM produto WHERE nome_produto LIKE '%$pesquisar_p%'";
             $qrTotal    = $db_connect->query($sqlTotal);
             $numTotal   = $qrTotal->num_rows;
