@@ -3,7 +3,8 @@
 <nav class="navbar navbar-expand-lg navbar-light categoria">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
         aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span style="font-size: 14px;">
+        <i class="fas fa-arrow-down"></i>Categoria</span>
     </button>
     <div class="collapse navbar-collapse action-menu" id="navbarTogglerDemo01">
         <ul class="list-group mr-auto mt-2 mt-lg-0  menu-list">

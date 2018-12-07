@@ -190,7 +190,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 			<div class="form-group col-sm-6">
 
 				<label for="sobrenome">Sobrenome:</label>
-				<input type="text" class="form-control required="required"" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome" value="<?php if(isset($sobrenome)){ echo $sobrenome;} ?>">
+				<input type="text" class="form-control required="required""z id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome" value="<?php if(isset($sobrenome)){ echo $sobrenome;} ?>">
 
 				<?php if(isset($erro_sobrenome)){ ?>
 
