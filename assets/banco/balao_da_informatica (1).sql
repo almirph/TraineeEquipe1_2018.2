@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 07-Dez-2018 às 03:44
+-- Generation Time: 07-Dez-2018 às 15:19
 -- Versão do servidor: 10.1.37-MariaDB
 -- versão do PHP: 7.2.12
 
@@ -40,7 +40,9 @@ CREATE TABLE `categoria` (
 INSERT INTO `categoria` (`id_categoria`, `nome_categoria`) VALUES
 (3, 'Gabinete'),
 (4, 'Headset'),
-(5, 'Processadores');
+(5, 'Processadores'),
+(6, 'Notebook'),
+(7, 'Teclados');
 
 -- --------------------------------------------------------
 
@@ -57,6 +59,7 @@ CREATE TABLE `email` (
 --
 
 INSERT INTO `email` (`e-mail`) VALUES
+('alo@ice.vom'),
 ('barbosa1@ice.ufjf.br'),
 ('gustavo.morais@engenharia.ufjf.br'),
 ('i.westma@gmail.com'),
@@ -120,7 +123,17 @@ INSERT INTO `produto` (`id_produto`, `id_categoria`, `nome_produto`, `preco`, `d
 (295, 4, 'Headset Asus Cerberus', 315.18, 'Headset Asus Cerberus Preto e Vermelho', '94593_1516879291_index_gg.jpg'),
 (296, 4, 'Headset Gamer C3 Tech Flycatcher', 79.88, 'Desenvolvido com belo design, lhe da conforto e uma Ã³tima experiÃªncia de Ã¡udio, tem isolamento acÃºstico e microfone, ideal para uma boa partida do seu game favorito.', '98508_1537819511_index_gg.jpg'),
 (297, 4, 'Headset Gamer Steelseries Arctis 3', 612.82, 'Headset Gamer Steelseries Arctis 3 Blue 7.1', '95889_1523034763_index_gg.jpg'),
-(298, 5, 'Processador Intel Celeron G3930', 221.06, 'Processador Intel Celeron G3930 Kaby Lake, Cache 2MB, 2.9GHz, LGA 1151, Intel HD Graphics 610 ', '86327_index_gg.jpg');
+(298, 5, 'Processador Intel Celeron G3930', 221.06, 'Processador Intel Celeron G3930 Kaby Lake, Cache 2MB, 2.9GHz, LGA 1151, Intel HD Graphics 610 ', '86327_index_gg.jpg'),
+(299, 6, 'Notebook Lenovo Thinkpad E470', 4635.18, 'Notebook Lenovo Thinkpad E470 Intel Core i7-7500U 8GB 1TB 14Â´Â´ NVIDIA Geforce 940mx GB Windows 10 PRO Preto', '95454_1520967523_index_gg.jpg'),
+(300, 6, 'Notebook Dell Inspiron 15 3000', 2199, 'Notebook de 15 polegadas com recursos essenciais para ajudar vocÃª nas tarefas diÃ¡rias, incluindo processador IntelÂ® PentiumÂ®, CinemaStream, CinemaSound e teclado alfanumÃ©rico em um design estiloso e diferenciado', 'dell-laptops-inspiron-15-3000-intel-turis-pdp-hero.jpg'),
+(301, 7, 'Teclado MecÃ¢nico Gamer Aorus', 694, 'Teclado MecÃ¢nico Gamer Aorus Switch Flaretech Blue,Ã“ptico, RGB, US ', '95131_1519846295_index_gg.jpg'),
+(302, 7, 'Teclado Gamer HyperX Mars', 420.95, 'O teclado MARS apresenta retroiluminaÃ§Ã£o que vocÃª pode personalizar atravÃ©s do software Genesis, que Ã© fÃ¡cil de usar. AlÃ©m disso, suas teclas garantem 50 milhÃµes de toques e sem perda de qualidade. Por fim, vocÃª pode contar com um conector USB banhado a ouro e um cabo tranÃ§ado de 1,8m.', '92590_index_gg.jpg'),
+(303, 7, 'Teclado MecÃ¢nico Gamer Redragon', 312.9, 'O Varuna Ã© uma opÃ§Ã£o de alta performance da Redragon. Com sistema de iluminaÃ§Ã£o RGB, sistema anti-ghosting em todas as teclas e renomados switches mecÃ¢nicos Outemu Blue com durabilidade de atÃ© 50 milhÃµes de cliques, o Varuna volta agora em ABNT2 no excelente padrÃ£o de qualidade Double Shot Injection nas teclas, e Ã© a mais avanÃ§ada opÃ§Ã£o de alta qualidade e estilo para gamers e entusiastas.', '93165_4_1534786848_gg.jpg'),
+(304, 7, 'Teclado Gamer PCTop Falcon Goliator', 138.47, 'O teclado Falcon Goliator 3000 traz na sua concepÃ§Ã£o teclas hibridas (teclas com sensaÃ§Ã£o tÃ¡til semelhantes Ã s de um teclado mecÃ¢nico), proporcionando maior precisÃ£o para os gamers e conforto para os trabalhos do dia a dia. A iluminaÃ§Ã£o RGB (8 cores) com programaÃ§Ã£o â€œon-the-flyâ€ permite a customizaÃ§Ã£o em 8 tipos de esquema de cores diferentes, para vocÃª deixar o teclado do seu jeito! AlÃ©m das tradicionais teclas multimÃ­dias, o Falcon 3000 vem ornamentado numa exclusiva chapa de alumÃ­nio escovado, fazendo dele o teclado definitivo da linha Falcon!', '93064_index_gg.jpg'),
+(305, 7, 'Teclado Gamer Corsair MecÃ¢nico Switch Cherry', 498.36, 'O teclado mecÃ¢nico CORSAIR K68 possui exclusivamente teclas vermelhas CHERRY MX com luz de fundo dinÃ¢mica e Ã© resistente a poeira e derrames, para possibilitar uma experiÃªncia de jogo de alto desempenho.', '92821_index_gg.jpg'),
+(306, 7, 'Teclado Gamer Dazz', 70.47, 'Teclado Gamer Dazz Rapidfire', '81537_index_gg.jpg'),
+(307, 6, 'Notebook Gamer Lenovo Legion', 7645.88, 'ConheÃ§a o mais novo notebook gamer, a combinaÃ§Ã£o perfeita entre potÃªncia e portabilidade. Equipado com a 7Âª GeraÃ§Ã£o de Processadores IntelÂ® Coreâ„¢ i7 e placa de vÃ­deo dedicada NVIDIA GeForce GTX 1060, este notebook suporta os melhores jogos, inclusive em realidade virtual.', '96613_1_1525868147_gg.jpg'),
+(308, 6, 'Notebook Gamer Acer Predator ', 7058.71, 'Notebook Gamer Acer Predator Helios 300 Intel Core i7-7700HQ 16GB 2TB NVIDIA GeForce GTX 1060 6GB GDDR5 15,6', '95974_1523368364_index_gg.jpg');
 
 -- --------------------------------------------------------
 
@@ -139,10 +152,10 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`id_usuario`, `login`, `senha`) VALUES
-(14, 'josue', '93a68f83b1f798de2d623a5b1a06d6ec'),
 (15, 'almir', '547be849b6fe8b8bfb799fe2413e0f8f'),
 (16, 'pedro', 'f62cd9fd3c3ec4dd0ecd9cb48fdaf62f'),
-(17, 'igor', '3eacd70583843a8268b5bf416727cef5');
+(17, 'igor', '3eacd70583843a8268b5bf416727cef5'),
+(18, 'josue', '93a68f83b1f798de2d623a5b1a06d6ec');
 
 --
 -- Indexes for dumped tables
@@ -182,19 +195,19 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT for table `categoria`
 --
 ALTER TABLE `categoria`
-  MODIFY `id_categoria` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_categoria` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `produto`
 --
 ALTER TABLE `produto`
-  MODIFY `id_produto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=299;
+  MODIFY `id_produto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=309;
 
 --
 -- AUTO_INCREMENT for table `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- Constraints for dumped tables

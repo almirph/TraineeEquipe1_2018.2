@@ -1,8 +1,8 @@
-<?php include 'Header.php'; ?>
+
 <?php 
 session_start();
-
 ?>
+<?php include 'Header.php'; ?>
 
 
 
@@ -20,13 +20,16 @@ session_start();
 		</ol>
 		<div class="carousel-inner">
 			<div class="carousel-item active img-slide-home">
-				<img class="d-block w-100" src="../assets/img/Lenovo-ThinkPad.jpg" alt="First slide">
+				<a href="http://localhost/Code/TraineeEquipe1_2018.2/html/paginaProdutos.php?id_produto=299">
+				<img class="d-block w-100" src="../assets/img/Lenovo-ThinkPad.jpg" alt="First slide"></a>
 			</div>
 			<div class="carousel-item img-slide-home">
-				<img class="d-block w-100" src="../assets/img/k7-Banner.png" alt="Second slide">
+				<a href="http://localhost/Code/TraineeEquipe1_2018.2/html/paginaProdutos.php?id_produto=301">
+				<img class="d-block w-100" src="../assets/img/k7-Banner.png" alt="Second slide"></a>
 			</div>
 			<div class="carousel-item img-slide-home">
-				<img class="d-block w-100" src="../assets/img/Dell-laptop.jpg" alt="Third slide">
+				<a href="http://localhost/Code/TraineeEquipe1_2018.2/html/paginaProdutos.php?id_produto=300">
+				<img class="d-block w-100" src="../assets/img/Dell-laptop.jpg" alt="Third slide"></a>
 			</div>
 		</div>
 
