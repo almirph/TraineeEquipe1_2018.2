@@ -1,6 +1,6 @@
 <?php include 'Header.php'; ?>
 <?php 
-	session_start();
+session_start();
 
 ?>
 
@@ -101,26 +101,26 @@
 	</div>
 </div>
 
-	<div class="container home-produtos">
-			
-			<div class="pag-produtos lead">
-<hr>
-<h1 class="display-4 novidades">Novidades</h1>
-
-</div>
-
-
-		
-		<div class="row justify-content-center card-produto-home">
+<div class="container home-produtos">
 	
-				<?php           
-					$quantidade = '4';
-					$sql = "SELECT * FROM produto ORDER BY id_produto DESC LIMIT $quantidade";
-					$result = $db_connect->query($sql);
+	<div class="pag-produtos lead">
+		<hr>
+		<h1 class="display-4 novidades">Novidades</h1>
 
-					while ($row2 = $result->fetch_assoc())
+	</div>
 
-					{?>
+
+	
+	<div class="row justify-content-center card-produto-home">
+		
+		<?php           
+		$quantidade = '4';
+		$sql = "SELECT * FROM produto ORDER BY id_produto DESC LIMIT $quantidade";
+		$result = $db_connect->query($sql);
+
+		while ($row2 = $result->fetch_assoc())
+
+			{?>
 				<a href="paginaProdutos.php?id_produto=<?php echo $row2['id_produto'];?>">
 
 					<div class="col-sm">
@@ -134,32 +134,32 @@
 								<h5 style='color:red; font-size:26px;'>R$
 									<?php echo number_format($row2['preco'],'2',',','.');?>
 									<h5>
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-				</a>
-				<?php }?>
+						</a>
+					<?php }?>
 
 
 
 
+
+				</div>
 
 			</div>
 
-		</div>
 
 
 
 
 
-
-		<hr class="my-4">
-		<div class="home-lab">
-			<p class="lead">Para ver mais novidades</p>
-			<a class="btn btn-dark btn-lg" href="paginaNovidades.php" role="button">Clique Aqui</a>
+			<hr class="my-4">
+			<div class="home-lab">
+				<p class="lead">Para ver mais novidades</p>
+				<a class="btn btn-dark btn-lg" href="paginaNovidades.php" role="button">Clique Aqui</a>
+			</div>
 		</div>
 	</div>
-</div>
 
 
 
@@ -171,34 +171,34 @@
 
 
 
-<!-- FIM JUMBOTRON PRODUTOS-HOME -->
-<!------------------------------------------------------------------------------------------------------------------>
-<!------------------------------------------------------------------------------------------------------------------>
+	<!-- FIM JUMBOTRON PRODUTOS-HOME -->
+	<!------------------------------------------------------------------------------------------------------------------>
+	<!------------------------------------------------------------------------------------------------------------------>
 
-<div class="modal fade" id="aviso">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body">
-                
-                E-mail cadastrado com sucesso
+	<div class="modal fade" id="aviso">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					
+					E-mail cadastrado com sucesso
 
-            </div>
-        </div>
-    </div>
- </div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
-<?php include 'footer.php'?>
+	<?php include 'footer.php'?>
 
-<?php if (isset($_SESSION['modal'])): ?>
- 
-	<script>
+	<?php if (isset($_SESSION['modal'])): ?>
+		
+		<script>
 
-		$('#aviso').modal('show');
+			$('#aviso').modal('show');
 
-	</script>
-	<?php $_SESSION['modal'] = NULL; ?>
-<?php endif; ?>
+		</script>
+		<?php $_SESSION['modal'] = NULL; ?>
+	<?php endif; ?>
 
 
 

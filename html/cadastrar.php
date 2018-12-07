@@ -56,7 +56,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 			$nome=NULL;
 			$senha=NULL;
-			  
+			
 			header("Location: inicial.php");         
 		}
 		else{

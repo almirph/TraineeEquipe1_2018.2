@@ -142,6 +142,7 @@ if (isset($_SESSION['msg'])) {
 
       <?php
     }
+
     $sqlTotal = "SELECT id_produto FROM produto";
     $qrTotal = $db_connect->query($sqlTotal);
     $numTotal = $qrTotal->num_rows;
@@ -196,6 +197,10 @@ if (isset($_SESSION['msg'])) {
               }
             }
           }
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
           if ($pagina != $totalPagina && $totalPagina > 1 && $pagina < $totalPagina)  { ?>
 
             <li class="page-item">

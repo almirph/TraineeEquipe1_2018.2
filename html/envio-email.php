@@ -15,104 +15,104 @@ use PHPMailer\PHPMailer\Exception;
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 	$mensagem = $_POST['texto'];
-    $assunto = $_POST['assunt'];
-    $nome = 'Balão da Informática';
+	$assunto = $_POST['assunt'];
+	$nome = 'Balão da Informática';
 	$flag = true;
 
 	if($mensagem != "" && $assunto!= ""){
-	
+		
 		$flag = false;
 
 	}
 	if($flag == false){
 
 
-        $sql_code = "SELECT * FROM email";
+		$sql_code = "SELECT * FROM email";
 
-			$resultado = $db_connect->query($sql_code);
+		$resultado = $db_connect->query($sql_code);
 
-			while ($row = $resultado->fetch_assoc()){
+		while ($row = $resultado->fetch_assoc()){
 
 
 		// Criação do Objeto da Classe PHPMailer
-		$mail = new PHPMailer(true); 
-		$mail->CharSet="UTF-8";
+			$mail = new PHPMailer(true); 
+			$mail->CharSet="UTF-8";
 
-		$texto_msg = 
+			$texto_msg = 
 
-		'E-mail: ' . $row['e-mail'] . '<br>' .
-		'Mensagem: ' . $_POST['texto'] . '<br>' . 'E-mail enviado do formulário do site Balão da Informática' . '<br><br>';
+			'E-mail: ' . $row['e-mail'] . '<br>' .
+			'Mensagem: ' . $_POST['texto'] . '<br>' . 'E-mail enviado do formulário do site Balão da Informática' . '<br><br>';
 
 
 
-		try {
+			try {
 
         //Retire o comentário abaixo para soltar detalhes do envio 
-        $mail->SMTPDebug = 2;                                
+				$mail->SMTPDebug = 2;                                
 
         // Usar SMTP para o envio
-			$mail->isSMTP();                                      
+				$mail->isSMTP();                                      
 
         // Detalhes do servidor (No nosso exemplo é o Google)
-			$mail->Host = 'smtp.gmail.com';
+				$mail->Host = 'smtp.gmail.com';
 
         // Permitir autenticação SMTP
-			$mail->SMTPAuth = true;                               
+				$mail->SMTPAuth = true;                               
 
         // Nome do usuário
-			$mail->Username = 'testefaleconosco0@gmail.com';        
+				$mail->Username = 'testefaleconosco0@gmail.com';        
         // Senha do E-mail         
-			$mail->Password = '789456123cju';                           
+				$mail->Password = '789456123cju';                           
         // Tipo de protocolo de segurança
-			$mail->SMTPSecure = 'tls';   
+				$mail->SMTPSecure = 'tls';   
 
         // Porta de conexão com o servidor                        
-			$mail->Port = 587;
+				$mail->Port = 587;
 
 
         // Garantir a autenticação com o Google
-			$mail->SMTPOptions = array(
-				'ssl' => array(
-					'verify_peer' => false,
-					'verify_peer_name' => false,
-					'allow_self_signed' => true
-				)
-			);
+				$mail->SMTPOptions = array(
+					'ssl' => array(
+						'verify_peer' => false,
+						'verify_peer_name' => false,
+						'allow_self_signed' => true
+					)
+				);
 
         // Remetente
-			$mail->setFrom($mail->Username, $nome);
+				$mail->setFrom($mail->Username, $nome);
 
         // Destinatário
-			$mail->addAddress($row['e-mail'], 'Balão da Informática');
+				$mail->addAddress($row['e-mail'], 'Balão da Informática');
 
         // Conteúdo
 
         // Define conteúdo como HTML
-			$mail->isHTML(true);                                  
+				$mail->isHTML(true);                                  
 
         // Assunto
-			$mail->Subject =  $assunto;
-			$mail->Body    = $texto_msg;
-			$mail->AltBody = $texto_msg;
+				$mail->Subject =  $assunto;
+				$mail->Body    = $texto_msg;
+				$mail->AltBody = $texto_msg;
 
         // Enviar E-mail
-			$mail->send();
-		 
+				$mail->send();
+				
+				
+			}
 			
-        }
-    
-		catch (Exception $e) {
-			echo 'A mensagem não foi enviada pelo seguinte motivo: ', $mail->ErrorInfo;
-		}
+			catch (Exception $e) {
+				echo 'A mensagem não foi enviada pelo seguinte motivo: ', $mail->ErrorInfo;
+			}
 
-		
-		$sucess_text = '* O formulário foi enviado com sucesso';
+			
+			$sucess_text = '* O formulário foi enviado com sucesso';
 		//header("Location: envio-email.php");
-		echo "ola";
-		
-		
-    }
-} 
+			echo "ola";
+			
+			
+		}
+	} 
 }
 
 
@@ -122,27 +122,27 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 ?>
 
 <div class="container cadastrar-usuarios">
-    <div class="lista-adm">
-        <h1>E-mail</h1>
-    </div>
+	<div class="lista-adm">
+		<h1>E-mail</h1>
+	</div>
 	<hr>
-    <form action="envio-email.php" method="POST">
-        <div class="form-group">
-            <label>Assunto</label>
-            <input type="text" autocomplete="off" name="assunt" required="required" class="form-control" maxlength="50">
-        </div>
+	<form action="envio-email.php" method="POST">
+		<div class="form-group">
+			<label>Assunto</label>
+			<input type="text" autocomplete="off" name="assunt" required="required" class="form-control" maxlength="50">
+		</div>
 
-        <div class="form-group">
-            <label>Texto</label>
-            <textarea class="form-control" required="required" autocomplete="off" name='texto' rows="6"></textarea>
-        </div>
-        <div class="pp-adm">
+		<div class="form-group">
+			<label>Texto</label>
+			<textarea class="form-control" required="required" autocomplete="off" name='texto' rows="6"></textarea>
+		</div>
+		<div class="pp-adm">
 
-            <button type="submit" class="btn btn-dark ">Enviar</button>
+			<button type="submit" class="btn btn-dark ">Enviar</button>
 
-        </div>
+		</div>
 
-    </form>
+	</form>
 
-    </div>
-        <?php include "footer.php";?>
+</div>
+<?php include "footer.php";?>

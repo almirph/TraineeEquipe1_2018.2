@@ -2,14 +2,14 @@
 <?php include "pagina_conexao.php";?>
 <div class="container">
     <?php                                    
-           
-            $auxiliar =$_GET['id_categoria'];
-?>
+    
+    $auxiliar =$_GET['id_categoria'];
+    ?>
     <?php 
     
-        $resultado = "SELECT * FROM categoria WHERE id_categoria LIKE '$auxiliar'";
-        $resulto = $db_connect->query($resultado);
-        $row1 = $resulto->fetch_assoc();
+    $resultado = "SELECT * FROM categoria WHERE id_categoria LIKE '$auxiliar'";
+    $resulto = $db_connect->query($resultado);
+    $row1 = $resulto->fetch_assoc();
 
     ?>
 

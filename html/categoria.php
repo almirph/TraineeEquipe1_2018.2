@@ -18,7 +18,7 @@
                                 <div class="form-group">
                                         <label>Categoria:</label>
                                         <input type="text" autocomplete="off" name="categoria" class="form-control"
-                                                maxlength="50" required="required">
+                                        maxlength="50" required="required">
                                 </div>
                         </div>
 

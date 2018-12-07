@@ -13,18 +13,18 @@ use PHPMailer\PHPMailer\Exception;
 
 
 if($_SESSION['msg'] == 'ok'){
-    $nome_produto = $_SESSION['nome_produto'];
-    $preco = $_SESSION['preco'];
-    $descricao=  $_SESSION['descricao'];
-    unset($_SESSION['nome_produto']);
-    unset($_SESSION['preco']);
-    unset($_SESSION['descricao']);
-    $query = mysqli_query($db_connect,"SELECT * FROM produto WHERE nome_produto LIKE '$nome_produto'");
-    $mensagem1 = "Mais um novo produto entrou para nossa coleção! Venha conferir o mais novo ";
-    $mensagem2 = " no nosso site";
-    $assunto = "Novidades";
-  
-    $nome = 'Balão da Informática';
+	$nome_produto = $_SESSION['nome_produto'];
+	$preco = $_SESSION['preco'];
+	$descricao=  $_SESSION['descricao'];
+	unset($_SESSION['nome_produto']);
+	unset($_SESSION['preco']);
+	unset($_SESSION['descricao']);
+	$query = mysqli_query($db_connect,"SELECT * FROM produto WHERE nome_produto LIKE '$nome_produto'");
+	$mensagem1 = "Mais um novo produto entrou para nossa coleção! Venha conferir o mais novo ";
+	$mensagem2 = " no nosso site";
+	$assunto = "Novidades";
+	
+	$nome = 'Balão da Informática';
 	$flag = true;
 
 	if(($mensagem1 != ""|| $mensagem2 != "" )&& $assunto!= ""){
@@ -34,88 +34,88 @@ if($_SESSION['msg'] == 'ok'){
 	if($flag == false){
 
 
-        $sql_code = "SELECT * FROM email";
+		$sql_code = "SELECT * FROM email";
 
-			$resultado = $db_connect->query($sql_code);
+		$resultado = $db_connect->query($sql_code);
 
-			while ($row = $resultado->fetch_assoc()){
+		while ($row = $resultado->fetch_assoc()){
 
 
 		// Criação do Objeto da Classe PHPMailer
-		$mail = new PHPMailer(true); 
-		$mail->CharSet="UTF-8";
+			$mail = new PHPMailer(true); 
+			$mail->CharSet="UTF-8";
 
-		$texto_msg = $mensagem1 . $nome_produto . $mensagem2.'<br>'.
-		'E-mail enviado do formulário do site Balão da Informática' . '<br><br>' ;
+			$texto_msg = $mensagem1 . $nome_produto . $mensagem2.'<br>'.
+			'E-mail enviado do formulário do site Balão da Informática' . '<br><br>' ;
 
-		try {
+			try {
 
         //Retire o comentário abaixo para soltar detalhes do envio 
         // $mail->SMTPDebug = 2;                                
 
         // Usar SMTP para o envio
-        $mail->isSMTP();                                      
+				$mail->isSMTP();                                      
 
         // Detalhes do servidor (No nosso exemplo é o Google)
-			$mail->Host = 'smtp.gmail.com';
+				$mail->Host = 'smtp.gmail.com';
 
         // Permitir autenticação SMTP
-			$mail->SMTPAuth = true;                               
+				$mail->SMTPAuth = true;                               
 
         // Nome do usuário
-			$mail->Username = 'testefaleconosco0@gmail.com';        
+				$mail->Username = 'testefaleconosco0@gmail.com';        
         // Senha do E-mail         
-			$mail->Password = '789456123cju';                           
+				$mail->Password = '789456123cju';                           
         // Tipo de protocolo de segurança
-			$mail->SMTPSecure = 'tls';   
+				$mail->SMTPSecure = 'tls';   
 
         // Porta de conexão com o servidor                        
-			$mail->Port = 587;
+				$mail->Port = 587;
 
 
         // Garantir a autenticação com o Google
-			$mail->SMTPOptions = array(
-				'ssl' => array(
-					'verify_peer' => false,
-					'verify_peer_name' => false,
-					'allow_self_signed' => true
-				)
-			);
+				$mail->SMTPOptions = array(
+					'ssl' => array(
+						'verify_peer' => false,
+						'verify_peer_name' => false,
+						'allow_self_signed' => true
+					)
+				);
 
         // Remetente
-			$mail->setFrom($mail->Username, $nome);
+				$mail->setFrom($mail->Username, $nome);
 
         // Destinatário
-			$mail->addAddress($row['e-mail'], 'Balão da Informática');
+				$mail->addAddress($row['e-mail'], 'Balão da Informática');
 
         // Conteúdo
 
         // Define conteúdo como HTML
-			$mail->isHTML(true);                                  
+				$mail->isHTML(true);                                  
 
         // Assunto
-			$mail->Subject =  $assunto;
-			$mail->Body    = $texto_msg;
-			$mail->AltBody = $texto_msg;
+				$mail->Subject =  $assunto;
+				$mail->Body    = $texto_msg;
+				$mail->AltBody = $texto_msg;
 
         // Enviar E-mail
-			$mail->send();
-		 
+				$mail->send();
+				
+				
+			}
 			
-        }
-    
-		catch (Exception $e) {
-			echo 'A mensagem não foi enviada pelo seguinte motivo: ', $mail->ErrorInfo;
+			catch (Exception $e) {
+				echo 'A mensagem não foi enviada pelo seguinte motivo: ', $mail->ErrorInfo;
+			}
+
+
+			$sucess_text = '* O formulário foi enviado com sucesso';
+			header("Location: paginaprodutos-adm.php");
+
+			
+			
 		}
-
-
-		$sucess_text = '* O formulário foi enviado com sucesso';
-		header("Location: paginaprodutos-adm.php");
-
-		
-		
-    }
-} 
+	} 
 }
 
 
